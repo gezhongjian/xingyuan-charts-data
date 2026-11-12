@@ -12,7 +12,7 @@ after each collection run (09:40 and 21:40 Asia/Shanghai, twice a day).
 |---|---|
 | captured_at | `2026-11-12T21:40:04+08:00` |
 | boards | 18 |
-| rows | 900 |
+| rows | 1598 |
 | cross-platform songs | 12 |
 | key_version | `1` |
 
