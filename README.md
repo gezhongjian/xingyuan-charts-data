@@ -19,6 +19,17 @@ after each collection run (09:40 and 21:40 Asia/Shanghai, twice a day).
 Download: [`data/latest.json`](data/latest.json) · [`data/latest.csv`](data/latest.csv)
 <!-- LATEST:END -->
 
+## This week (2026-11-07 → 2026-11-13)
+
+This week the mirror moved from 50 to 100 rows on the 100-position boards: the 21:40 run on
+11-12 carried 900 rows, the 09:40 run on 11-13 carries 1,607. With the deeper boards, 12 songs
+appear on five or more of the six closed-screen platforms in the latest run, and 8 of them are
+on all six. The widest spread is *Hong Kong (feat. 王菲季候风)* by The Weeknd (Apple #1,
+NetEase #5, QQ #6, Kugou #15, Kuwo #29, Qishui #46); next is 许嵩's 《天龙八部之宿敌》
+(QQ #2, Qishui #2, Kugou #4, Kuwo #7, NetEase #8, Apple #52). Cross-platform identity is
+rebuilt each run from title + lead artist; versions more than 20 seconds apart stay separate.
+Live view: <https://xingyuan.beer/trends?src=github>.
+
 ## Files
 
 | path | what |
@@ -40,8 +51,9 @@ Download: [`data/latest.json`](data/latest.json) · [`data/latest.csv`](data/lat
 | `tracks[].dedupe_key` | cross-platform identity key (title + lead artist, normalised). Same key = same song on different platforms. |
 | `cross[]` | songs charting on two or more platforms in this run |
 
-Chart depth is whatever the platform publishes: most boards expose 50 positions, three
-Kuwo boards 20, Qishui New Songs 43. We never pad a chart to a round number.
+Chart depth is what we mirror from the site snapshot, capped at 100 rows per board: the
+11-13 09:40 run carries 100 rows on NetEase, QQ, Kugou, Kuwo and Apple; 97 on Bilibili,
+60 on Weibo, 50 on Qishui and Douyin. We never pad a chart to a round number.
 
 ## What this is not
 
