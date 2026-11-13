@@ -112,7 +112,7 @@ captured_at,platform,board,board_name,rank,title,artists,rank_delta,is_new,strea
 2026-11-13T21:40:03+08:00,netease,3779629,新歌榜,11,宝船,DOUDOU / 燕云十六声,0,false,9,宝船|doudou/燕云十六声
 2026-11-13T21:40:03+08:00,netease,3779629,新歌榜,12,爱而不得 (Live),薛之谦 / 黄子弘凡,0,false,9,爱而不得|薛之谦/黄子弘凡
 2026-11-13T21:40:03+08:00,netease,3779629,新歌榜,13,遗憾总是贯穿人生始终,供销社乐队 / 边缘,0,false,9,遗憾总是贯穿人生始终|供销社乐队/边缘
-2026-11-13T21:40:03+08:00,netease,3779629,新歌榜,14,​雁南飞​,王齐铭WatchMe / 热单间HEATROOM,0,false,9,雁南飞|热单间heatroom/王齐铭watchme
+2026-11-13T21:40:03+08:00,netease,3779629,新歌榜,14,雁南飞,王齐铭WatchMe / 热单间HEATROOM,0,false,9,雁南飞|热单间heatroom/王齐铭watchme
 2026-11-13T21:40:03+08:00,netease,3779629,新歌榜,15,慌啥子嘛,村口吴老二,0,false,9,慌啥子嘛|村口吴老二
 2026-11-13T21:40:03+08:00,netease,3779629,新歌榜,16,后会友期 (综艺《后会友期》片尾曲),许飞,0,false,9,后会友期|许飞
 2026-11-13T21:40:03+08:00,netease,3779629,新歌榜,17,Cherry Candy,Lunak,0,false,9,cherrycandy|lunak
@@ -200,7 +200,7 @@ captured_at,platform,board,board_name,rank,title,artists,rank_delta,is_new,strea
 2026-11-13T21:40:03+08:00,netease,3779629,新歌榜,99,FIRESTARTER,K/DA / 英雄联盟 / i-dle / Mimi Webb / Sophie Powers / 曺薇娟 / 田小娟,,true,1,firestarter|idle/kda/mimiwebb/sophiepowers/曺薇娟/田小娟/英雄联盟
 2026-11-13T21:40:03+08:00,netease,3779629,新歌榜,100,Beep Beep,LNGSHOT,,true,1,beepbeep|lngshot
 2026-11-13T21:40:03+08:00,netease,19723756,飙升榜,1,时过境迁,苏艺馨Chency,0,false,8,时过境迁|苏艺馨chency
-2026-11-13T21:40:03+08:00,netease,19723756,飙升榜,2,​雁南飞​,王齐铭WatchMe / 热单间HEATROOM,0,false,2,雁南飞|热单间heatroom/王齐铭watchme
+2026-11-13T21:40:03+08:00,netease,19723756,飙升榜,2,雁南飞,王齐铭WatchMe / 热单间HEATROOM,0,false,2,雁南飞|热单间heatroom/王齐铭watchme
 2026-11-13T21:40:03+08:00,netease,19723756,飙升榜,3,谎言（Luv like zombie）,DiorGoFlex / 斑比Bambii,0,false,2,谎言|diorgoflex/斑比bambii
 2026-11-13T21:40:03+08:00,netease,19723756,飙升榜,4,二加一,小奥奥,0,false,2,二加一|小奥奥
 2026-11-13T21:40:03+08:00,netease,19723756,飙升榜,5,【FREE】“Follow Your Flow” Smooth Boombap Type Beat,洄,0,false,2,followyourflowsmoothboombaptypebeat|洄
@@ -866,7 +866,7 @@ captured_at,platform,board,board_name,rank,title,artists,rank_delta,is_new,strea
 2026-11-13T21:40:03+08:00,kugou,6666,飙升榜,65,隔着屏幕拥抱你,李智英,,true,1,隔着屏幕拥抱你|李智英
 2026-11-13T21:40:03+08:00,kugou,6666,飙升榜,66,拼了命也没留住你,刘书云 / 赵赵呀,,true,1,拼了命也没留住你|刘书云/赵赵呀
 2026-11-13T21:40:03+08:00,kugou,6666,飙升榜,67,老夫老妻,刘佳宁,,true,1,老夫老妻|刘佳宁
-2026-11-13T21:40:03+08:00,kugou,6666,飙升榜,68,The Best of All Days  纯音乐,博格达下是故乡,,true,1,thebestofalldays纯音乐|博格达下是故乡
+2026-11-13T21:40:03+08:00,kugou,6666,飙升榜,68,The Best of All Days 纯音乐,博格达下是故乡,,true,1,thebestofalldays纯音乐|博格达下是故乡
 2026-11-13T21:40:03+08:00,kugou,6666,飙升榜,69,Fever Mode Sped,VGVT,,true,1,fevermodesped|vgvt
 2026-11-13T21:40:03+08:00,kugou,6666,飙升榜,70,茉茉,Nzwin 黄跃成,,true,1,茉茉|nzwin黄跃成
 2026-11-13T21:40:03+08:00,kugou,6666,飙升榜,71,唯你真 (乡野版),白九,-13,false,4,唯你真|白九
@@ -1325,7 +1325,7 @@ captured_at,platform,board,board_name,rank,title,artists,rank_delta,is_new,strea
 2026-11-13T21:40:03+08:00,qishui,新歌榜,汽水新歌榜,24,我是不是你最疼爱的人(烟嗓版),烟嗓扬哥,,true,1,我是不是你最疼爱的人|烟嗓扬哥
 2026-11-13T21:40:03+08:00,qishui,新歌榜,汽水新歌榜,25,就让冷风吹 雨纷飞,江一也,,true,1,就让冷风吹雨纷飞|江一也
 2026-11-13T21:40:03+08:00,qishui,新歌榜,汽水新歌榜,26,隔岸,姚六一,,true,1,隔岸|姚六一
-2026-11-13T21:40:03+08:00,qishui,新歌榜,汽水新歌榜,27,Doll​,晚月moon,,true,1,doll|晚月moon
+2026-11-13T21:40:03+08:00,qishui,新歌榜,汽水新歌榜,27,Doll,晚月moon,,true,1,doll|晚月moon
 2026-11-13T21:40:03+08:00,qishui,新歌榜,汽水新歌榜,28,桥边姑娘,轻烟大叔,2,false,9,桥边姑娘|轻烟大叔
 2026-11-13T21:40:03+08:00,qishui,新歌榜,汽水新歌榜,29,等你三千年,杜怡,,true,1,等你三千年|杜怡
 2026-11-13T21:40:03+08:00,qishui,新歌榜,汽水新歌榜,30,Dancing,抖音7v,,true,1,dancing|抖音7v

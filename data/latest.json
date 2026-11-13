@@ -7,7 +7,7 @@
  "key_note": "Dedupe keys are derived from the raw title and artists (see key-golden.json for the rule and runnable cases). Known gaps: 'X - Live' (dash suffix, no brackets) normalizes to 'xlive' and does not merge with 'X'; Separators inside one artist string are not split: 'R!N/Gemie' stays one artist, so it does not collide with artists ['R!N', 'Gemie']; Artist aliases (周杰伦 / Jay Chou) are not merged: the site undercounts cross-platform presence rather than inventing a merge; Bracket stripping also merges different recordings of the same title (a 65-second edit with the full-length original): the key is not a recording identity",
  "key_golden": "https://xingyuan.beer/key-golden.json",
  "captured_at": "2026-11-13T21:40:03+08:00",
- "generated_at": "2026-11-13T21:42:15+08:00",
+ "generated_at": "2026-11-14T02:17:09+08:00",
  "cadence": "09:40 / 21:40 Asia/Shanghai, twice a day",
  "rank_delta_convention": "rank_delta > 0 = moved up, < 0 = moved down, 0 = unchanged; new entries carry is_new=true and may have no previous rank",
  "boards": [
@@ -2352,7 +2352,7 @@
     },
     {
      "rank": 14,
-     "title": "​雁南飞​",
+     "title": "雁南飞",
      "artists": [
       "王齐铭WatchMe",
       "热单间HEATROOM"
@@ -4102,7 +4102,7 @@
     },
     {
      "rank": 2,
-     "title": "​雁南飞​",
+     "title": "雁南飞",
      "artists": [
       "王齐铭WatchMe",
       "热单间HEATROOM"
@@ -17579,7 +17579,7 @@
     },
     {
      "rank": 68,
-     "title": "The Best of All Days  纯音乐",
+     "title": "The Best of All Days 纯音乐",
      "artists": [
       "博格达下是故乡"
      ],
@@ -26693,7 +26693,7 @@
     },
     {
      "rank": 27,
-     "title": "Doll​",
+     "title": "Doll",
      "artists": [
       "晚月moon"
      ],
