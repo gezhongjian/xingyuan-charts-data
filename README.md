@@ -22,9 +22,9 @@ Download: [`data/latest.json`](data/latest.json) · [`data/latest.csv`](data/lat
 ## This week (2026-11-07 → 2026-11-13)
 
 This week the mirror moved from 50 to 100 rows on the 100-position boards: the 21:40 run on
-11-12 carried 900 rows, the 09:40 run on 11-13 carries 1,607. With the deeper boards, 12 songs
+11-12 carried 900 rows, the 09:40 run on 11-13 carries 1,607. At the new depth, 12 songs
 appear on five or more of the six closed-screen platforms in the latest run, and 8 of them are
-on all six. The widest spread is *Hong Kong (feat. 王菲季候风)* by The Weeknd (Apple #1,
+on all six (2 at the previous 50-row depth). The widest spread is *Hong Kong (feat. 王菲季候风)* by The Weeknd (Apple #1,
 NetEase #5, QQ #6, Kugou #15, Kuwo #29, Qishui #46); next is 许嵩's 《天龙八部之宿敌》
 (QQ #2, Qishui #2, Kugou #4, Kuwo #7, NetEase #8, Apple #52). Cross-platform identity is
 rebuilt each run from title + lead artist; versions more than 20 seconds apart stay separate.
