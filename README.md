@@ -19,14 +19,16 @@ after each collection run (09:40 and 21:40 Asia/Shanghai, twice a day).
 Download: [`data/latest.json`](data/latest.json) · [`data/latest.csv`](data/latest.csv)
 <!-- LATEST:END -->
 
-## This week (2026-11-07 → 2026-11-13)
+## This week (2026-11-08 → 2026-11-14)
 
-This week the mirror moved from 50 to 100 rows on the 100-position boards: the 21:40 run on
-11-12 carried 900 rows, the 09:40 run on 11-13 carries 1,607. At the new depth, 12 songs
-appear on five or more of the six closed-screen platforms in the latest run, and 8 of them are
-on all six (2 at the previous 50-row depth). The widest spread is *Hong Kong (feat. 王菲季候风)* by The Weeknd (Apple #1,
-NetEase #5, QQ #6, Kugou #15, Kuwo #29, Qishui #46); next is 许嵩's 《天龙八部之宿敌》
-(QQ #2, Qishui #2, Kugou #4, Kuwo #7, NetEase #8, Apple #52). Cross-platform identity is
+The 11-14 09:40 run carries 1,620 rows across 18 boards: 100 rows on the NetEase, QQ, Kugou,
+Kuwo and Apple boards, 97 on Bilibili, 73 on Weibo, 50 on Qishui and Douyin. At that depth,
+12 songs appear on five or more of the six closed-screen platforms, and 9 of them are on all
+six — up from 8 on the 11-13 morning run; the ninth was already there by the 11-13 evening run.
+The top of the cross-platform list has not changed: the widest spread is *Hong Kong (feat.
+王菲季候风)* by The Weeknd (Apple #1, NetEase #1, Qishui #2, QQ #10, Kugou #18, Kuwo #30;
+NetEase was #5 and Qishui #46 on 11-13 morning), next is 许嵩's 《天龙八部之宿敌》
+(QQ #3, Qishui #2, NetEase #4, Kugou #5, Kuwo #8, Apple #51). Cross-platform identity is
 rebuilt each run from title + lead artist; versions more than 20 seconds apart stay separate.
 Live view: <https://xingyuan.beer/trends?src=github>.
 
