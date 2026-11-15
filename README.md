@@ -19,17 +19,21 @@ after each collection run (09:40 and 21:40 Asia/Shanghai, twice a day).
 Download: [`data/latest.json`](data/latest.json) · [`data/latest.csv`](data/latest.csv)
 <!-- LATEST:END -->
 
-## This week (2026-11-08 → 2026-11-14)
+## This week (2026-11-09 → 2026-11-15)
 
-The 11-14 09:40 run carries 1,620 rows across 18 boards: 100 rows on the NetEase, QQ, Kugou,
-Kuwo and Apple boards, 97 on Bilibili, 73 on Weibo, 50 on Qishui and Douyin. At that depth,
-12 songs appear on five or more of the six closed-screen platforms, and 9 of them are on all
-six — up from 8 on the 11-13 morning run; the ninth was already there by the 11-13 evening run.
-The top of the cross-platform list has not changed: the widest spread is *Hong Kong (feat.
-王菲季候风)* by The Weeknd (Apple #1, NetEase #1, Qishui #2, QQ #10, Kugou #18, Kuwo #30;
-NetEase was #5 and Qishui #46 on 11-13 morning), next is 许嵩's 《天龙八部之宿敌》
-(QQ #3, Qishui #2, NetEase #4, Kugou #5, Kuwo #8, Apple #51). Cross-platform identity is
-rebuilt each run from title + lead artist; versions more than 20 seconds apart stay separate.
+The 11-15 09:40 run holds 1,619 rows across 18 boards: 100 rows on the NetEase, QQ, Kugou,
+Kuwo and Apple boards, 97 on Bilibili, 72 on Weibo, 50 on Qishui and Douyin. The cross block is
+the top 12 songs by platform count, not a census: all 12 sit on at least five of the six
+closed-screen platforms, and 9 sit on all six. Ten of the twelve are 2000s–2010s Chinese
+catalog tracks — 孙燕姿's 《开始懂了》/《我不难过》/《我怀念的》, 梁静茹《情歌》, 陈奕迅《最佳损友》,
+杨丞琳《雨爱》, 许嵩's 《幻听》 and 《天龙八部之宿敌》, 薛之谦《其实》, Suki 刘舒妤《失眠》 — the
+exceptions are 李荣浩's 2024 《恋人》 and The Weeknd's 2026 *Hong Kong (feat. 王菲季候风)*.
+The useful read is the spread inside one song, not the aggregate: 《我不难过》 is #1 on QQ and
+#2 on NetEase and Apple but #25 on Kuwo, and 《开始懂了》 is #14 on Apple but #73 on Kuwo.
+Within the week, *Hong Kong* cooled on NetEase from #1 to #7 while 《天龙八部之宿敌》 rose
+from #9 to #4. Data note: the Kugou TOP500 was mirrored 50 deep until 11-12 21:40 and 100 deep
+after, so platform counts that straddle that change are not comparable. Cross-platform identity
+is rebuilt each run from title + lead artist; versions more than 20 seconds apart stay separate.
 Live view: <https://xingyuan.beer/trends?src=github>.
 
 ## Files
