@@ -7,7 +7,7 @@
  "key_note": "Dedupe keys are derived from the raw title and artists (see key-golden.json for the rule and runnable cases). Known gaps: 'X - Live' (dash suffix, no brackets) normalizes to 'xlive' and does not merge with 'X'; Separators inside one artist string are not split: 'R!N/Gemie' stays one artist, so it does not collide with artists ['R!N', 'Gemie']; Artist aliases (周杰伦 / Jay Chou) are not merged: the site undercounts cross-platform presence rather than inventing a merge; Bracket stripping also merges different recordings of the same title (a 65-second edit with the full-length original): the key is not a recording identity",
  "key_golden": "https://xingyuan.beer/key-golden.json",
  "captured_at": "2026-11-17T09:40:06+08:00",
- "generated_at": "2026-11-17T09:41:49+08:00",
+ "generated_at": "2026-11-17T11:18:28+08:00",
  "cadence": "09:40 / 21:40 Asia/Shanghai, twice a day",
  "rank_delta_convention": "rank_delta > 0 = moved up, < 0 = moved down, 0 = unchanged; new entries carry is_new=true and may have no previous rank",
  "boards": [
@@ -2415,9 +2415,10 @@
      "prev_rank": 15,
      "rank_delta": -1,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
-      "netease"
+      "netease",
+      "qq"
      ],
      "streak": 16,
      "days_on_board": 9,
@@ -2475,9 +2476,10 @@
      "prev_rank": 17,
      "rank_delta": -2,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
-      "netease"
+      "netease",
+      "qq"
      ],
      "streak": 16,
      "days_on_board": 9,
@@ -2661,9 +2663,10 @@
      "prev_rank": 28,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
+      "qq",
       "kugou",
       "kuwo",
       "qishui"
@@ -2840,9 +2843,10 @@
      "prev_rank": 43,
      "rank_delta": 6,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
-      "netease"
+      "netease",
+      "qq"
      ],
      "streak": 7,
      "days_on_board": 4,
@@ -2998,9 +3002,10 @@
      "prev_rank": 52,
      "rank_delta": 7,
      "is_new": false,
-     "platform_count": 3,
+     "platform_count": 4,
      "platforms": [
       "netease",
+      "qq",
       "qishui",
       "weibo"
      ],
@@ -3256,9 +3261,10 @@
      "prev_rank": 66,
      "rank_delta": 8,
      "is_new": false,
-     "platform_count": 3,
+     "platform_count": 4,
      "platforms": [
       "netease",
+      "qq",
       "kuwo",
       "weibo"
      ],
@@ -3728,9 +3734,10 @@
      "prev_rank": 70,
      "rank_delta": -12,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
-      "netease"
+      "netease",
+      "qq"
      ],
      "streak": 11,
      "days_on_board": 6,
@@ -3985,9 +3992,10 @@
      "prev_rank": 97,
      "rank_delta": 2,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
-      "netease"
+      "netease",
+      "qq"
      ],
      "streak": 3,
      "days_on_board": 2,
@@ -4651,9 +4659,10 @@
      "prev_rank": 15,
      "rank_delta": -13,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
-      "netease"
+      "netease",
+      "qq"
      ],
      "streak": 3,
      "days_on_board": 2,
@@ -5122,9 +5131,10 @@
      "prev_rank": 70,
      "rank_delta": 18,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
+      "qq",
       "kugou",
       "kuwo",
       "qishui"
@@ -5163,9 +5173,10 @@
      "prev_rank": null,
      "rank_delta": null,
      "is_new": true,
-     "platform_count": 3,
+     "platform_count": 4,
      "platforms": [
       "netease",
+      "qq",
       "qishui",
       "weibo"
      ],
@@ -5223,9 +5234,10 @@
      "prev_rank": 98,
      "rank_delta": 41,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
-      "netease"
+      "netease",
+      "qq"
      ],
      "streak": 2,
      "days_on_board": 2,
@@ -5963,9 +5975,10 @@
      "prev_rank": null,
      "rank_delta": null,
      "is_new": true,
-     "platform_count": 3,
+     "platform_count": 4,
      "platforms": [
       "netease",
+      "qq",
       "kuwo",
       "weibo"
      ],
@@ -6071,6 +6084,2009 @@
      "days_on_board": 1,
      "song_path": "/song/%E6%88%91%E6%83%B3%E8%B7%9F%E4%BD%A0%E5%9C%A8%E4%B8%80%E8%B5%B7%E4%B8%8D%E6%83%B3%E5%86%8D%E7%BB%8F%E5%8E%86%E7%A6%BB%E6%95%A3%7C%E5%8D%8A%E9%9C%9C",
      "url": "https://music.163.com/song?id=3450456332"
+    }
+   ]
+  },
+  {
+   "platform": "qq",
+   "board": "27",
+   "name": "QQ 音乐 抖音热歌榜",
+   "board_name": "抖音热歌榜",
+   "path": "/board/qq/qq-douyin",
+   "captured_at": "2026-11-17T09:40:06+08:00",
+   "total": 100,
+   "tracks": [
+    {
+     "rank": 1,
+     "title": "阴天也会有烦恼吗",
+     "artists": [
+      "TF_ING穆祉丞"
+     ],
+     "dedupe_key": "阴天也会有烦恼吗|tfing穆祉丞",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%98%B4%E5%A4%A9%E4%B9%9F%E4%BC%9A%E6%9C%89%E7%83%A6%E6%81%BC%E5%90%97%7Ctfing%E7%A9%86%E7%A5%89%E4%B8%9E",
+     "url": "https://y.qq.com/n/ryqq/songDetail/001o06q51R6oRV"
+    },
+    {
+     "rank": 2,
+     "title": "最佳对手",
+     "artists": [
+      "云旗",
+      "郝熠然"
+     ],
+     "dedupe_key": "最佳对手|云旗/郝熠然",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 3,
+     "platforms": [
+      "qq",
+      "kugou",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%9C%80%E4%BD%B3%E5%AF%B9%E6%89%8B%7C%E4%BA%91%E6%97%97%2F%E9%83%9D%E7%86%A0%E7%84%B6",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002uaCOF3Euu5V"
+    },
+    {
+     "rank": 3,
+     "title": "慌啥子嘛 (赵本山版)",
+     "artists": [
+      "赵本山"
+     ],
+     "dedupe_key": "慌啥子嘛|赵本山",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 4,
+     "platforms": [
+      "netease",
+      "qq",
+      "kugou",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%85%8C%E5%95%A5%E5%AD%90%E5%98%9B%7C%E8%B5%B5%E6%9C%AC%E5%B1%B1",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002lzYCa14usQ5"
+    },
+    {
+     "rank": 4,
+     "title": "Hong Kong (feat. 王菲季候风)",
+     "artists": [
+      "The Weeknd"
+     ],
+     "dedupe_key": "hongkong|theweeknd",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 6,
+     "platforms": [
+      "netease",
+      "qq",
+      "kugou",
+      "kuwo",
+      "qishui",
+      "apple"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/hongkong%7Ctheweeknd",
+     "url": "https://y.qq.com/n/ryqq/songDetail/00255MYE3GNkZF"
+    },
+    {
+     "rank": 5,
+     "title": "一念焚心",
+     "artists": [
+      "周深"
+     ],
+     "dedupe_key": "一念焚心|周深",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 3,
+     "platforms": [
+      "qq",
+      "kugou",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%B8%80%E5%BF%B5%E7%84%9A%E5%BF%83%7C%E5%91%A8%E6%B7%B1",
+     "url": "https://y.qq.com/n/ryqq/songDetail/00007qin2cfS2H"
+    },
+    {
+     "rank": 6,
+     "title": "想你就写信",
+     "artists": [
+      "郝熠然"
+     ],
+     "dedupe_key": "想你就写信|郝熠然",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 3,
+     "platforms": [
+      "qq",
+      "kugou",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%83%B3%E4%BD%A0%E5%B0%B1%E5%86%99%E4%BF%A1%7C%E9%83%9D%E7%86%A0%E7%84%B6",
+     "url": "https://y.qq.com/n/ryqq/songDetail/001FWzfR43GOzm"
+    },
+    {
+     "rank": 7,
+     "title": "Dancing in the Dark",
+     "artists": [
+      "A2O SOUL",
+      "A2O"
+     ],
+     "dedupe_key": "dancinginthedark|a2o/a2osoul",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/dancinginthedark%7Ca2o%2Fa2osoul",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002S33vz1t3MBz"
+    },
+    {
+     "rank": 8,
+     "title": "The Moment You Saw Me（当我，在你的目光里）",
+     "artists": [
+      "米卡"
+     ],
+     "dedupe_key": "themomentyousawme|米卡",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "netease",
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/themomentyousawme%7C%E7%B1%B3%E5%8D%A1",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002R4Ah30dPiUR"
+    },
+    {
+     "rank": 9,
+     "title": "雪化作泪滴",
+     "artists": [
+      "Cheeze",
+      "Lil Trazzy",
+      "雾明"
+     ],
+     "dedupe_key": "雪化作泪滴|cheeze/liltrazzy/雾明",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "qq",
+      "kugou"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%9B%AA%E5%8C%96%E4%BD%9C%E6%B3%AA%E6%BB%B4%7Ccheeze%2Fliltrazzy%2F%E9%9B%BE%E6%98%8E",
+     "url": "https://y.qq.com/n/ryqq/songDetail/000PB9Ol2Em0Oa"
+    },
+    {
+     "rank": 10,
+     "title": "DEPENDS",
+     "artists": [
+      "XG"
+     ],
+     "dedupe_key": "depends|xg",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 3,
+     "platforms": [
+      "netease",
+      "qq",
+      "apple"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/depends%7Cxg",
+     "url": "https://y.qq.com/n/ryqq/songDetail/001C5QWr4bvY1A"
+    },
+    {
+     "rank": 11,
+     "title": "冬天又来临",
+     "artists": [
+      "罗言RollFlash"
+     ],
+     "dedupe_key": "冬天又来临|罗言rollflash",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%86%AC%E5%A4%A9%E5%8F%88%E6%9D%A5%E4%B8%B4%7C%E7%BD%97%E8%A8%80rollflash",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002swe0E0c9wLY"
+    },
+    {
+     "rank": 12,
+     "title": "You're Under Arrest",
+     "artists": [
+      "ILLIT (아일릿)"
+     ],
+     "dedupe_key": "youreunderarrest|illit",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 3,
+     "platforms": [
+      "qq",
+      "kuwo",
+      "apple"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/youreunderarrest%7Cillit",
+     "url": "https://y.qq.com/n/ryqq/songDetail/004GusH53fGeg2"
+    },
+    {
+     "rank": 13,
+     "title": "牡丹亭",
+     "artists": [
+      "张远"
+     ],
+     "dedupe_key": "牡丹亭|张远",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "qq",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%89%A1%E4%B8%B9%E4%BA%AD%7C%E5%BC%A0%E8%BF%9C",
+     "url": "https://y.qq.com/n/ryqq/songDetail/003qsUgr2lccyg"
+    },
+    {
+     "rank": 14,
+     "title": "风吹过",
+     "artists": [
+      "张玮"
+     ],
+     "dedupe_key": "风吹过|张玮",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 5,
+     "platforms": [
+      "netease",
+      "qq",
+      "kugou",
+      "kuwo",
+      "qishui"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%A3%8E%E5%90%B9%E8%BF%87%7C%E5%BC%A0%E7%8E%AE",
+     "url": "https://y.qq.com/n/ryqq/songDetail/003f3Wqk2yb5bB"
+    },
+    {
+     "rank": 15,
+     "title": "慢倍速",
+     "artists": [
+      "方了个木"
+     ],
+     "dedupe_key": "慢倍速|方了个木",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "qq",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%85%A2%E5%80%8D%E9%80%9F%7C%E6%96%B9%E4%BA%86%E4%B8%AA%E6%9C%A8",
+     "url": "https://y.qq.com/n/ryqq/songDetail/003heQpc3Lve9E"
+    },
+    {
+     "rank": 16,
+     "title": "小城",
+     "artists": [
+      "任素汐"
+     ],
+     "dedupe_key": "小城|任素汐",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 3,
+     "platforms": [
+      "qq",
+      "kugou",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%B0%8F%E5%9F%8E%7C%E4%BB%BB%E7%B4%A0%E6%B1%90",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002BqShi1NMhDz"
+    },
+    {
+     "rank": 17,
+     "title": "无中生有 Ex Nihilo",
+     "artists": [
+      "HOYO-MiX",
+      "當山みれい (当山真玲)"
+     ],
+     "dedupe_key": "无中生有exnihilo|hoyomix/當山",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 3,
+     "platforms": [
+      "qq",
+      "kugou",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%97%A0%E4%B8%AD%E7%94%9F%E6%9C%89exnihilo%7Choyomix%2F%E7%95%B6%E5%B1%B1",
+     "url": "https://y.qq.com/n/ryqq/songDetail/0010Eg5d0I2o2b"
+    },
+    {
+     "rank": 18,
+     "title": "卡农to me(最重要的是自己开心)",
+     "artists": [
+      "雾安Misty",
+      "撒安德萨"
+     ],
+     "dedupe_key": "卡农tome|撒安德萨/雾安misty",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "qq",
+      "kugou"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%8D%A1%E5%86%9Ctome%7C%E6%92%92%E5%AE%89%E5%BE%B7%E8%90%A8%2F%E9%9B%BE%E5%AE%89misty",
+     "url": "https://y.qq.com/n/ryqq/songDetail/003817Ye03ASbL"
+    },
+    {
+     "rank": 19,
+     "title": "While We're Young",
+     "artists": [
+      "A2O SOUL",
+      "A2O"
+     ],
+     "dedupe_key": "whilewereyoung|a2o/a2osoul",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/whilewereyoung%7Ca2o%2Fa2osoul",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002xf0Fe2xFie9"
+    },
+    {
+     "rank": 20,
+     "title": "一万零一次沉溺",
+     "artists": [
+      "李佳薇"
+     ],
+     "dedupe_key": "一万零一次沉溺|李佳薇",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%B8%80%E4%B8%87%E9%9B%B6%E4%B8%80%E6%AC%A1%E6%B2%89%E6%BA%BA%7C%E6%9D%8E%E4%BD%B3%E8%96%87",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002hCJqQ3xv1BF"
+    },
+    {
+     "rank": 21,
+     "title": "番茄花",
+     "artists": [
+      "呆呆破"
+     ],
+     "dedupe_key": "番茄花|呆呆破",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "netease",
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%95%AA%E8%8C%84%E8%8A%B1%7C%E5%91%86%E5%91%86%E7%A0%B4",
+     "url": "https://y.qq.com/n/ryqq/songDetail/000WPOQX1Gc8L1"
+    },
+    {
+     "rank": 22,
+     "title": "两个人叫我们",
+     "artists": [
+      "悦开心",
+      "张家旺"
+     ],
+     "dedupe_key": "两个人叫我们|张家旺/悦开心",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "qq",
+      "kugou"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%B8%A4%E4%B8%AA%E4%BA%BA%E5%8F%AB%E6%88%91%E4%BB%AC%7C%E5%BC%A0%E5%AE%B6%E6%97%BA%2F%E6%82%A6%E5%BC%80%E5%BF%83",
+     "url": "https://y.qq.com/n/ryqq/songDetail/003OfIxd1BhCdy"
+    },
+    {
+     "rank": 23,
+     "title": "天下有情人",
+     "artists": [
+      "半吨兄弟",
+      "文星淇"
+     ],
+     "dedupe_key": "天下有情人|半吨兄弟/文星淇",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A4%A9%E4%B8%8B%E6%9C%89%E6%83%85%E4%BA%BA%7C%E5%8D%8A%E5%90%A8%E5%85%84%E5%BC%9F%2F%E6%96%87%E6%98%9F%E6%B7%87",
+     "url": "https://y.qq.com/n/ryqq/songDetail/001LD0pS2tnYih"
+    },
+    {
+     "rank": 24,
+     "title": "后会友期",
+     "artists": [
+      "许飞"
+     ],
+     "dedupe_key": "后会友期|许飞",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "netease",
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%90%8E%E4%BC%9A%E5%8F%8B%E6%9C%9F%7C%E8%AE%B8%E9%A3%9E",
+     "url": "https://y.qq.com/n/ryqq/songDetail/004bcSjG0udnPa"
+    },
+    {
+     "rank": 25,
+     "title": "假装不爱你",
+     "artists": [
+      "鹭卓"
+     ],
+     "dedupe_key": "假装不爱你|鹭卓",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "qq",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%81%87%E8%A3%85%E4%B8%8D%E7%88%B1%E4%BD%A0%7C%E9%B9%AD%E5%8D%93",
+     "url": "https://y.qq.com/n/ryqq/songDetail/003GlhSy4Ogwtv"
+    },
+    {
+     "rank": 26,
+     "title": "雾读",
+     "artists": [
+      "陈卓璇"
+     ],
+     "dedupe_key": "雾读|陈卓璇",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "qq",
+      "kugou"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%9B%BE%E8%AF%BB%7C%E9%99%88%E5%8D%93%E7%92%87",
+     "url": "https://y.qq.com/n/ryqq/songDetail/004Ace7X07szWs"
+    },
+    {
+     "rank": 27,
+     "title": "管他的公路尽头",
+     "artists": [
+      "王源"
+     ],
+     "dedupe_key": "管他的公路尽头|王源",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "qq",
+      "kugou"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%AE%A1%E4%BB%96%E7%9A%84%E5%85%AC%E8%B7%AF%E5%B0%BD%E5%A4%B4%7C%E7%8E%8B%E6%BA%90",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002slmrD2ix3rX"
+    },
+    {
+     "rank": 28,
+     "title": "我护我",
+     "artists": [
+      "张碧晨"
+     ],
+     "dedupe_key": "我护我|张碧晨",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E6%8A%A4%E6%88%91%7C%E5%BC%A0%E7%A2%A7%E6%99%A8",
+     "url": "https://y.qq.com/n/ryqq/songDetail/000vZbfe2HOCPt"
+    },
+    {
+     "rank": 29,
+     "title": "DESERVE",
+     "artists": [
+      "BABYMONSTER (베이비몬스터)"
+     ],
+     "dedupe_key": "deserve|babymonster",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "qq",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/deserve%7Cbabymonster",
+     "url": "https://y.qq.com/n/ryqq/songDetail/0035NK3D30B4V6"
+    },
+    {
+     "rank": 30,
+     "title": "RTTT",
+     "artists": [
+      "鹭卓"
+     ],
+     "dedupe_key": "rttt|鹭卓",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/rttt%7C%E9%B9%AD%E5%8D%93",
+     "url": "https://y.qq.com/n/ryqq/songDetail/003nOV4o0lXcMH"
+    },
+    {
+     "rank": 31,
+     "title": "秋风一吹又老一岁",
+     "artists": [
+      "洋澜一"
+     ],
+     "dedupe_key": "秋风一吹又老一岁|洋澜一",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 3,
+     "platforms": [
+      "qq",
+      "kugou",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%A7%8B%E9%A3%8E%E4%B8%80%E5%90%B9%E5%8F%88%E8%80%81%E4%B8%80%E5%B2%81%7C%E6%B4%8B%E6%BE%9C%E4%B8%80",
+     "url": "https://y.qq.com/n/ryqq/songDetail/001pGNpO2Foqk8"
+    },
+    {
+     "rank": 32,
+     "title": "Very First Love (初恋)",
+     "artists": [
+      "A2O SOUL",
+      "A2O"
+     ],
+     "dedupe_key": "veryfirstlove|a2o/a2osoul",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/veryfirstlove%7Ca2o%2Fa2osoul",
+     "url": "https://y.qq.com/n/ryqq/songDetail/001LZIYc05JW7L"
+    },
+    {
+     "rank": 33,
+     "title": "Reno My Color",
+     "artists": [
+      "宋雨琦 (YUQI) (우기)"
+     ],
+     "dedupe_key": "renomycolor|宋雨琦",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "netease",
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/renomycolor%7C%E5%AE%8B%E9%9B%A8%E7%90%A6",
+     "url": "https://y.qq.com/n/ryqq/songDetail/0029REsA06tOwE"
+    },
+    {
+     "rank": 34,
+     "title": "逆风的船",
+     "artists": [
+      "半吨兄弟"
+     ],
+     "dedupe_key": "逆风的船|半吨兄弟",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%80%86%E9%A3%8E%E7%9A%84%E8%88%B9%7C%E5%8D%8A%E5%90%A8%E5%85%84%E5%BC%9F",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002tXkZr3dra94"
+    },
+    {
+     "rank": 35,
+     "title": "Moonlight Shadow",
+     "artists": [
+      "A2O SOUL",
+      "A2O"
+     ],
+     "dedupe_key": "moonlightshadow|a2o/a2osoul",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/moonlightshadow%7Ca2o%2Fa2osoul",
+     "url": "https://y.qq.com/n/ryqq/songDetail/004BrJ552h3HTm"
+    },
+    {
+     "rank": 36,
+     "title": "我以为 (温柔版)",
+     "artists": [
+      "wilson生 (徐伟生)"
+     ],
+     "dedupe_key": "我以为|wilson生",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E4%BB%A5%E4%B8%BA%7Cwilson%E7%94%9F",
+     "url": "https://y.qq.com/n/ryqq/songDetail/003HIOy51iEqBf"
+    },
+    {
+     "rank": 37,
+     "title": "不能成情人",
+     "artists": [
+      "鱼蛋"
+     ],
+     "dedupe_key": "不能成情人|鱼蛋",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%B8%8D%E8%83%BD%E6%88%90%E6%83%85%E4%BA%BA%7C%E9%B1%BC%E8%9B%8B",
+     "url": "https://y.qq.com/n/ryqq/songDetail/001cOeNX2IlNkY"
+    },
+    {
+     "rank": 38,
+     "title": "Kiss my soul（坠入爱河）",
+     "artists": [
+      "Viik潘唯奇"
+     ],
+     "dedupe_key": "kissmysoul|viik潘唯奇",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "netease",
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/kissmysoul%7Cviik%E6%BD%98%E5%94%AF%E5%A5%87",
+     "url": "https://y.qq.com/n/ryqq/songDetail/0021JGLK3jIdk3"
+    },
+    {
+     "rank": 39,
+     "title": "念念于你",
+     "artists": [
+      "伍嘉成"
+     ],
+     "dedupe_key": "念念于你|伍嘉成",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "netease",
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%BF%B5%E5%BF%B5%E4%BA%8E%E4%BD%A0%7C%E4%BC%8D%E5%98%89%E6%88%90",
+     "url": "https://y.qq.com/n/ryqq/songDetail/0038NTT23o36PQ"
+    },
+    {
+     "rank": 40,
+     "title": "With",
+     "artists": [
+      "RESCENE (리센느)"
+     ],
+     "dedupe_key": "with|rescene",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/with%7Crescene",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002bSCYJ4PUZVh"
+    },
+    {
+     "rank": 41,
+     "title": "轻轻",
+     "artists": [
+      "肖战"
+     ],
+     "dedupe_key": "轻轻|肖战",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 4,
+     "platforms": [
+      "netease",
+      "qq",
+      "kuwo",
+      "weibo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E8%BD%BB%E8%BD%BB%7C%E8%82%96%E6%88%98",
+     "url": "https://y.qq.com/n/ryqq/songDetail/000qgdMS2J7UZ9"
+    },
+    {
+     "rank": 42,
+     "title": "Angel Bite",
+     "artists": [
+      "TOMORROW X TOGETHER (투모로우바이투게더)"
+     ],
+     "dedupe_key": "angelbite|tomorrowxtogether",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/angelbite%7Ctomorrowxtogether",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002RKNzc1kpVdu"
+    },
+    {
+     "rank": 43,
+     "title": "人间",
+     "artists": [
+      "许飞"
+     ],
+     "dedupe_key": "人间|许飞",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 4,
+     "platforms": [
+      "netease",
+      "qq",
+      "qishui",
+      "weibo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BA%BA%E9%97%B4%7C%E8%AE%B8%E9%A3%9E",
+     "url": "https://y.qq.com/n/ryqq/songDetail/004Y2f6c0Zeld1"
+    },
+    {
+     "rank": 44,
+     "title": "你说那时我们太幼稚",
+     "artists": [
+      "刘艺哲"
+     ],
+     "dedupe_key": "你说那时我们太幼稚|刘艺哲",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BD%A0%E8%AF%B4%E9%82%A3%E6%97%B6%E6%88%91%E4%BB%AC%E5%A4%AA%E5%B9%BC%E7%A8%9A%7C%E5%88%98%E8%89%BA%E5%93%B2",
+     "url": "https://y.qq.com/n/ryqq/songDetail/004207UW3pmTvl"
+    },
+    {
+     "rank": 45,
+     "title": "不知道说什么",
+     "artists": [
+      "张靓颖"
+     ],
+     "dedupe_key": "不知道说什么|张靓颖",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%B8%8D%E7%9F%A5%E9%81%93%E8%AF%B4%E4%BB%80%E4%B9%88%7C%E5%BC%A0%E9%9D%93%E9%A2%96",
+     "url": "https://y.qq.com/n/ryqq/songDetail/0016a5YS1wS8EE"
+    },
+    {
+     "rank": 46,
+     "title": "今夜让我带你高飞远走",
+     "artists": [
+      "五月天 阿信",
+      "言承旭",
+      "吴建豪",
+      "周渝民",
+      "刘宇宁"
+     ],
+     "dedupe_key": "今夜让我带你高飞远走|五月天阿信/刘宇宁/吴建豪/周渝民/言承旭",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "qq",
+      "kugou"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BB%8A%E5%A4%9C%E8%AE%A9%E6%88%91%E5%B8%A6%E4%BD%A0%E9%AB%98%E9%A3%9E%E8%BF%9C%E8%B5%B0%7C%E4%BA%94%E6%9C%88%E5%A4%A9%E9%98%BF%E4%BF%A1%2F%E5%88%98%E5%AE%87%E5%AE%81%2F%E5%90%B4%E5%BB%BA%E8%B1%AA%2F%E5%91%A8%E6%B8%9D%E6%B0%91%2F%E8%A8%80%E6%89%BF%E6%97%AD",
+     "url": "https://y.qq.com/n/ryqq/songDetail/0021l8uU2eRXT9"
+    },
+    {
+     "rank": 47,
+     "title": "时间会回答",
+     "artists": [
+      "七元"
+     ],
+     "dedupe_key": "时间会回答|七元",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 3,
+     "platforms": [
+      "qq",
+      "kugou",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%97%B6%E9%97%B4%E4%BC%9A%E5%9B%9E%E7%AD%94%7C%E4%B8%83%E5%85%83",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002eom782x5HrI"
+    },
+    {
+     "rank": 48,
+     "title": "Insomnia",
+     "artists": [
+      "RIIZE (라이즈)"
+     ],
+     "dedupe_key": "insomnia|riize",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/insomnia%7Criize",
+     "url": "https://y.qq.com/n/ryqq/songDetail/001dxbD32WNtak"
+    },
+    {
+     "rank": 49,
+     "title": "茉莉",
+     "artists": [
+      "说唱先锋Official"
+     ],
+     "dedupe_key": "茉莉|说唱先锋official",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E8%8C%89%E8%8E%89%7C%E8%AF%B4%E5%94%B1%E5%85%88%E9%94%8Bofficial",
+     "url": "https://y.qq.com/n/ryqq/songDetail/0025Nuse4GpPIe"
+    },
+    {
+     "rank": 50,
+     "title": "找一个忘记的理由",
+     "artists": [
+      "文夫"
+     ],
+     "dedupe_key": "找一个忘记的理由|文夫",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "qq",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%89%BE%E4%B8%80%E4%B8%AA%E5%BF%98%E8%AE%B0%E7%9A%84%E7%90%86%E7%94%B1%7C%E6%96%87%E5%A4%AB",
+     "url": "https://y.qq.com/n/ryqq/songDetail/004HiAfk1CFJWO"
+    },
+    {
+     "rank": 51,
+     "title": "同往",
+     "artists": [
+      "章昊 (AND2BLE)"
+     ],
+     "dedupe_key": "同往|章昊",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%90%8C%E5%BE%80%7C%E7%AB%A0%E6%98%8A",
+     "url": "https://y.qq.com/n/ryqq/songDetail/0043OHRH2JHZT7"
+    },
+    {
+     "rank": 52,
+     "title": "我可以",
+     "artists": [
+      "张鑫"
+     ],
+     "dedupe_key": "我可以|张鑫",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E5%8F%AF%E4%BB%A5%7C%E5%BC%A0%E9%91%AB",
+     "url": "https://y.qq.com/n/ryqq/songDetail/003yAsig3gw3wl"
+    },
+    {
+     "rank": 53,
+     "title": "泪海（你怎么舍得让我的泪流向海）",
+     "artists": [
+      "橘子妹"
+     ],
+     "dedupe_key": "泪海|橘子妹",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%B3%AA%E6%B5%B7%7C%E6%A9%98%E5%AD%90%E5%A6%B9",
+     "url": "https://y.qq.com/n/ryqq/songDetail/004Bm3eU0GDneX"
+    },
+    {
+     "rank": 54,
+     "title": "Dient",
+     "artists": [
+      "Nicholas Witt"
+     ],
+     "dedupe_key": "dient|nicholaswitt",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/dient%7Cnicholaswitt",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002bupkZ1v0iBf"
+    },
+    {
+     "rank": 55,
+     "title": "Good Enough",
+     "artists": [
+      "Chris James"
+     ],
+     "dedupe_key": "goodenough|chrisjames",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "netease",
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/goodenough%7Cchrisjames",
+     "url": "https://y.qq.com/n/ryqq/songDetail/0048V2fV31Wrl5"
+    },
+    {
+     "rank": 56,
+     "title": "致年少的自己",
+     "artists": [
+      "马嘉祺"
+     ],
+     "dedupe_key": "致年少的自己|马嘉祺",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E8%87%B4%E5%B9%B4%E5%B0%91%E7%9A%84%E8%87%AA%E5%B7%B1%7C%E9%A9%AC%E5%98%89%E7%A5%BA",
+     "url": "https://y.qq.com/n/ryqq/songDetail/001FJcaj1R3F02"
+    },
+    {
+     "rank": 57,
+     "title": "北京没有你 (黑人版)",
+     "artists": [
+      "陶不易"
+     ],
+     "dedupe_key": "北京没有你|陶不易",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 3,
+     "platforms": [
+      "qq",
+      "kugou",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%8C%97%E4%BA%AC%E6%B2%A1%E6%9C%89%E4%BD%A0%7C%E9%99%B6%E4%B8%8D%E6%98%93",
+     "url": "https://y.qq.com/n/ryqq/songDetail/0041Wodw4W26Ra"
+    },
+    {
+     "rank": 58,
+     "title": "情歌而已",
+     "artists": [
+      "苏醒AllenSu"
+     ],
+     "dedupe_key": "情歌而已|苏醒allensu",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "qq",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%83%85%E6%AD%8C%E8%80%8C%E5%B7%B2%7C%E8%8B%8F%E9%86%92allensu",
+     "url": "https://y.qq.com/n/ryqq/songDetail/003ty4Jd2HVSlv"
+    },
+    {
+     "rank": 59,
+     "title": "Lovesick",
+     "artists": [
+      "彩领 (CHAERYEONG)"
+     ],
+     "dedupe_key": "lovesick|彩领",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/lovesick%7C%E5%BD%A9%E9%A2%86",
+     "url": "https://y.qq.com/n/ryqq/songDetail/003bM5fY1siVSu"
+    },
+    {
+     "rank": 60,
+     "title": "我年轻过",
+     "artists": [
+      "刘德华"
+     ],
+     "dedupe_key": "我年轻过|刘德华",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 3,
+     "platforms": [
+      "qq",
+      "kugou",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E5%B9%B4%E8%BD%BB%E8%BF%87%7C%E5%88%98%E5%BE%B7%E5%8D%8E",
+     "url": "https://y.qq.com/n/ryqq/songDetail/000LrFEW3nsxTf"
+    },
+    {
+     "rank": 61,
+     "title": "于是-陈怀安",
+     "artists": [
+      "陈怀安an"
+     ],
+     "dedupe_key": "于是陈怀安|陈怀安an",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BA%8E%E6%98%AF%E9%99%88%E6%80%80%E5%AE%89%7C%E9%99%88%E6%80%80%E5%AE%89an",
+     "url": "https://y.qq.com/n/ryqq/songDetail/004OaHX80E7cYM"
+    },
+    {
+     "rank": 62,
+     "title": "내 이름을 불러줘 (Call My Name)",
+     "artists": [
+      "TWS (투어스)"
+     ],
+     "dedupe_key": "|tws",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%7Ctws",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002mPAIi2D9RNT"
+    },
+    {
+     "rank": 63,
+     "title": "50-Cent Disco",
+     "artists": [
+      "HSHK",
+      "VodKe"
+     ],
+     "dedupe_key": "50centdisco|hshk/vodke",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/50centdisco%7Chshk%2Fvodke",
+     "url": "https://y.qq.com/n/ryqq/songDetail/003UBMR43Lk5kA"
+    },
+    {
+     "rank": 64,
+     "title": "好想好想",
+     "artists": [
+      "古巨基"
+     ],
+     "dedupe_key": "好想好想|古巨基",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A5%BD%E6%83%B3%E5%A5%BD%E6%83%B3%7C%E5%8F%A4%E5%B7%A8%E5%9F%BA",
+     "url": "https://y.qq.com/n/ryqq/songDetail/003BoLEb0spYxL"
+    },
+    {
+     "rank": 65,
+     "title": "지금까지와는 다른 무언가가 필요해 (Storm is...)",
+     "artists": [
+      "TOMORROW X TOGETHER (투모로우바이투게더)"
+     ],
+     "dedupe_key": "|tomorrowxtogether",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%7Ctomorrowxtogether",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002XiuLx2Gu6yy"
+    },
+    {
+     "rank": 66,
+     "title": "心湖",
+     "artists": [
+      "张靓颖"
+     ],
+     "dedupe_key": "心湖|张靓颖",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%BF%83%E6%B9%96%7C%E5%BC%A0%E9%9D%93%E9%A2%96",
+     "url": "https://y.qq.com/n/ryqq/songDetail/003xIl0w0kepGm"
+    },
+    {
+     "rank": 67,
+     "title": "故乡的炊烟",
+     "artists": [
+      "天津李四",
+      "李佳燃"
+     ],
+     "dedupe_key": "故乡的炊烟|天津李四/李佳燃",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "qq",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%95%85%E4%B9%A1%E7%9A%84%E7%82%8A%E7%83%9F%7C%E5%A4%A9%E6%B4%A5%E6%9D%8E%E5%9B%9B%2F%E6%9D%8E%E4%BD%B3%E7%87%83",
+     "url": "https://y.qq.com/n/ryqq/songDetail/0005wcrO497KQi"
+    },
+    {
+     "rank": 68,
+     "title": "All The Way",
+     "artists": [
+      "MIKS"
+     ],
+     "dedupe_key": "alltheway|miks",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/alltheway%7Cmiks",
+     "url": "https://y.qq.com/n/ryqq/songDetail/001XlhRE1ULGr2"
+    },
+    {
+     "rank": 69,
+     "title": "TENDER WATCH",
+     "artists": [
+      "MKMS"
+     ],
+     "dedupe_key": "tenderwatch|mkms",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/tenderwatch%7Cmkms",
+     "url": "https://y.qq.com/n/ryqq/songDetail/0023KD3D0kBdjV"
+    },
+    {
+     "rank": 70,
+     "title": "我想跟你在一起不想再经历离散",
+     "artists": [
+      "邱霖BigL",
+      "灰蒙蒙",
+      "锁心锁"
+     ],
+     "dedupe_key": "我想跟你在一起不想再经历离散|灰蒙蒙/邱霖bigl/锁心锁",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E6%83%B3%E8%B7%9F%E4%BD%A0%E5%9C%A8%E4%B8%80%E8%B5%B7%E4%B8%8D%E6%83%B3%E5%86%8D%E7%BB%8F%E5%8E%86%E7%A6%BB%E6%95%A3%7C%E7%81%B0%E8%92%99%E8%92%99%2F%E9%82%B1%E9%9C%96bigl%2F%E9%94%81%E5%BF%83%E9%94%81",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002zjWIM0hyLoE"
+    },
+    {
+     "rank": 71,
+     "title": "Side By Side",
+     "artists": [
+      "王铮亮"
+     ],
+     "dedupe_key": "sidebyside|王铮亮",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/sidebyside%7C%E7%8E%8B%E9%93%AE%E4%BA%AE",
+     "url": "https://y.qq.com/n/ryqq/songDetail/003hVi940fhVYl"
+    },
+    {
+     "rank": 72,
+     "title": "Shadow",
+     "artists": [
+      "闵智云 (Min Jiwoon)"
+     ],
+     "dedupe_key": "shadow|闵智云",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/shadow%7C%E9%97%B5%E6%99%BA%E4%BA%91",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002kSDNv4XcHiS"
+    },
+    {
+     "rank": 73,
+     "title": "戒断 (BAD HABITS TONITE)",
+     "artists": [
+      "A2O MAY",
+      "A2O"
+     ],
+     "dedupe_key": "戒断|a2o/a2omay",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%92%E6%96%AD%7Ca2o%2Fa2omay",
+     "url": "https://y.qq.com/n/ryqq/songDetail/000JO2Y74N9mcH"
+    },
+    {
+     "rank": 74,
+     "title": "知心宙",
+     "artists": [
+      "曾舜晞"
+     ],
+     "dedupe_key": "知心宙|曾舜晞",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "netease",
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%9F%A5%E5%BF%83%E5%AE%99%7C%E6%9B%BE%E8%88%9C%E6%99%9E",
+     "url": "https://y.qq.com/n/ryqq/songDetail/001SfDp92lr9n5"
+    },
+    {
+     "rank": 75,
+     "title": "Pop",
+     "artists": [
+      "ILLIT (아일릿)"
+     ],
+     "dedupe_key": "pop|illit",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/pop%7Cillit",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002w2uLf21Gk3y"
+    },
+    {
+     "rank": 76,
+     "title": "Higher Love",
+     "artists": [
+      "TOMORROW X TOGETHER (투모로우바이투게더)"
+     ],
+     "dedupe_key": "higherlove|tomorrowxtogether",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/higherlove%7Ctomorrowxtogether",
+     "url": "https://y.qq.com/n/ryqq/songDetail/001JwfhU3qgNri"
+    },
+    {
+     "rank": 77,
+     "title": "红笔",
+     "artists": [
+      "林时LAMZz",
+      "邓乐怡"
+     ],
+     "dedupe_key": "红笔|林时lamzz/邓乐怡",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%BA%A2%E7%AC%94%7C%E6%9E%97%E6%97%B6lamzz%2F%E9%82%93%E4%B9%90%E6%80%A1",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002Qju6Y3ip2Vs"
+    },
+    {
+     "rank": 78,
+     "title": "Hate It or Love It",
+     "artists": [
+      "TOMORROW X TOGETHER (투모로우바이투게더)"
+     ],
+     "dedupe_key": "hateitorloveit|tomorrowxtogether",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/hateitorloveit%7Ctomorrowxtogether",
+     "url": "https://y.qq.com/n/ryqq/songDetail/000aRF2g3CTDAE"
+    },
+    {
+     "rank": 79,
+     "title": "太晚了",
+     "artists": [
+      "风范",
+      "许风驰"
+     ],
+     "dedupe_key": "太晚了|许风驰/风范",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A4%AA%E6%99%9A%E4%BA%86%7C%E8%AE%B8%E9%A3%8E%E9%A9%B0%2F%E9%A3%8E%E8%8C%83",
+     "url": "https://y.qq.com/n/ryqq/songDetail/000n6v3P3Nq3Fm"
+    },
+    {
+     "rank": 80,
+     "title": "在同一片气候里相爱",
+     "artists": [
+      "房东的猫"
+     ],
+     "dedupe_key": "在同一片气候里相爱|房东的猫",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%9C%A8%E5%90%8C%E4%B8%80%E7%89%87%E6%B0%94%E5%80%99%E9%87%8C%E7%9B%B8%E7%88%B1%7C%E6%88%BF%E4%B8%9C%E7%9A%84%E7%8C%AB",
+     "url": "https://y.qq.com/n/ryqq/songDetail/003aGPsz310LfK"
+    },
+    {
+     "rank": 81,
+     "title": "雨花",
+     "artists": [
+      "承桓"
+     ],
+     "dedupe_key": "雨花|承桓",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%9B%A8%E8%8A%B1%7C%E6%89%BF%E6%A1%93",
+     "url": "https://y.qq.com/n/ryqq/songDetail/000ahIGq16gfWT"
+    },
+    {
+     "rank": 82,
+     "title": "无奈的思绪 (氛围版)",
+     "artists": [
+      "周深深"
+     ],
+     "dedupe_key": "无奈的思绪|周深深",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%97%A0%E5%A5%88%E7%9A%84%E6%80%9D%E7%BB%AA%7C%E5%91%A8%E6%B7%B1%E6%B7%B1",
+     "url": "https://y.qq.com/n/ryqq/songDetail/004QqW4Z1OB6Ni"
+    },
+    {
+     "rank": 83,
+     "title": "牵挂",
+     "artists": [
+      "曾沛慈"
+     ],
+     "dedupe_key": "牵挂|曾沛慈",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%89%B5%E6%8C%82%7C%E6%9B%BE%E6%B2%9B%E6%85%88",
+     "url": "https://y.qq.com/n/ryqq/songDetail/003GtCtX1R9Fmx"
+    },
+    {
+     "rank": 84,
+     "title": "大约在冬季",
+     "artists": [
+      "半吨兄弟"
+     ],
+     "dedupe_key": "大约在冬季|半吨兄弟",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "qq",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A4%A7%E7%BA%A6%E5%9C%A8%E5%86%AC%E5%AD%A3%7C%E5%8D%8A%E5%90%A8%E5%85%84%E5%BC%9F",
+     "url": "https://y.qq.com/n/ryqq/songDetail/004aS0fC00n82Z"
+    },
+    {
+     "rank": 85,
+     "title": "唯你真 (乡野版)",
+     "artists": [
+      "白九"
+     ],
+     "dedupe_key": "唯你真|白九",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 3,
+     "platforms": [
+      "qq",
+      "kugou",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%94%AF%E4%BD%A0%E7%9C%9F%7C%E7%99%BD%E4%B9%9D",
+     "url": "https://y.qq.com/n/ryqq/songDetail/001qK4gy1VM6Lm"
+    },
+    {
+     "rank": 86,
+     "title": "Sweetest Escape",
+     "artists": [
+      "TOMORROW X TOGETHER (투모로우바이투게더)"
+     ],
+     "dedupe_key": "sweetestescape|tomorrowxtogether",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/sweetestescape%7Ctomorrowxtogether",
+     "url": "https://y.qq.com/n/ryqq/songDetail/003Eue0U25z6Yf"
+    },
+    {
+     "rank": 87,
+     "title": "我的心事只有风懂 (抒情版)",
+     "artists": [
+      "赵柯珩"
+     ],
+     "dedupe_key": "我的心事只有风懂|赵柯珩",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E7%9A%84%E5%BF%83%E4%BA%8B%E5%8F%AA%E6%9C%89%E9%A3%8E%E6%87%82%7C%E8%B5%B5%E6%9F%AF%E7%8F%A9",
+     "url": "https://y.qq.com/n/ryqq/songDetail/000QE9Rs2HJeo6"
+    },
+    {
+     "rank": 88,
+     "title": "Touch the Sky",
+     "artists": [
+      "TOMORROW X TOGETHER (투모로우바이투게더)"
+     ],
+     "dedupe_key": "touchthesky|tomorrowxtogether",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/touchthesky%7Ctomorrowxtogether",
+     "url": "https://y.qq.com/n/ryqq/songDetail/00442cCD0hzS0U"
+    },
+    {
+     "rank": 89,
+     "title": "我等（我等过彼岸花开）",
+     "artists": [
+      "加木措"
+     ],
+     "dedupe_key": "我等|加木措",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E7%AD%89%7C%E5%8A%A0%E6%9C%A8%E6%8E%AA",
+     "url": "https://y.qq.com/n/ryqq/songDetail/0045dwkw0tKZFX"
+    },
+    {
+     "rank": 90,
+     "title": "无梦镇",
+     "artists": [
+      "魏晨"
+     ],
+     "dedupe_key": "无梦镇|魏晨",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "qq",
+      "weibo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%97%A0%E6%A2%A6%E9%95%87%7C%E9%AD%8F%E6%99%A8",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002lWavD2ISKAK"
+    },
+    {
+     "rank": 91,
+     "title": "时间线",
+     "artists": [
+      "于冬然"
+     ],
+     "dedupe_key": "时间线|于冬然",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%97%B6%E9%97%B4%E7%BA%BF%7C%E4%BA%8E%E5%86%AC%E7%84%B6",
+     "url": "https://y.qq.com/n/ryqq/songDetail/001lVP1700Fxgw"
+    },
+    {
+     "rank": 92,
+     "title": "遗落的行李",
+     "artists": [
+      "徐靖雯",
+      "屿溪"
+     ],
+     "dedupe_key": "遗落的行李|屿溪/徐靖雯",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%81%97%E8%90%BD%E7%9A%84%E8%A1%8C%E6%9D%8E%7C%E5%B1%BF%E6%BA%AA%2F%E5%BE%90%E9%9D%96%E9%9B%AF",
+     "url": "https://y.qq.com/n/ryqq/songDetail/002lmNh12Lnnx0"
+    },
+    {
+     "rank": 93,
+     "title": "说好一辈子",
+     "artists": [
+      "张云雷"
+     ],
+     "dedupe_key": "说好一辈子|张云雷",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E8%AF%B4%E5%A5%BD%E4%B8%80%E8%BE%88%E5%AD%90%7C%E5%BC%A0%E4%BA%91%E9%9B%B7",
+     "url": "https://y.qq.com/n/ryqq/songDetail/000jos5L4EuTMd"
+    },
+    {
+     "rank": 94,
+     "title": "定格",
+     "artists": [
+      "颜人中"
+     ],
+     "dedupe_key": "定格|颜人中",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%AE%9A%E6%A0%BC%7C%E9%A2%9C%E4%BA%BA%E4%B8%AD",
+     "url": "https://y.qq.com/n/ryqq/songDetail/0023k9t71RkyyB"
+    },
+    {
+     "rank": 95,
+     "title": "Cherry Candy",
+     "artists": [
+      "Lunak"
+     ],
+     "dedupe_key": "cherrycandy|lunak",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "netease",
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/cherrycandy%7Clunak",
+     "url": "https://y.qq.com/n/ryqq/songDetail/003KUOtt4LN4cW"
+    },
+    {
+     "rank": 96,
+     "title": "喜月 (Moonglow)",
+     "artists": [
+      "任素汐"
+     ],
+     "dedupe_key": "喜月|任素汐",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "netease",
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%96%9C%E6%9C%88%7C%E4%BB%BB%E7%B4%A0%E6%B1%90",
+     "url": "https://y.qq.com/n/ryqq/songDetail/0044KUCJ4PHXs7"
+    },
+    {
+     "rank": 97,
+     "title": "Drawn",
+     "artists": [
+      "THAMA"
+     ],
+     "dedupe_key": "drawn|thama",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/drawn%7Cthama",
+     "url": "https://y.qq.com/n/ryqq/songDetail/0047s6S72yM2Aq"
+    },
+    {
+     "rank": 98,
+     "title": "如果爱我是一种负担",
+     "artists": [
+      "李毅恩Lye"
+     ],
+     "dedupe_key": "如果爱我是一种负担|李毅恩lye",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A6%82%E6%9E%9C%E7%88%B1%E6%88%91%E6%98%AF%E4%B8%80%E7%A7%8D%E8%B4%9F%E6%8B%85%7C%E6%9D%8E%E6%AF%85%E6%81%A9lye",
+     "url": "https://y.qq.com/n/ryqq/songDetail/000fXB6B1qAWPo"
+    },
+    {
+     "rank": 99,
+     "title": "蔷薇青竹",
+     "artists": [
+      "张远",
+      "黄霄雲"
+     ],
+     "dedupe_key": "蔷薇青竹|张远/黄霄雲",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qq"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E8%94%B7%E8%96%87%E9%9D%92%E7%AB%B9%7C%E5%BC%A0%E8%BF%9C%2F%E9%BB%84%E9%9C%84%E9%9B%B2",
+     "url": "https://y.qq.com/n/ryqq/songDetail/0039e6Rx08dAhI"
+    },
+    {
+     "rank": 100,
+     "title": "牡丹亭 (白九版)",
+     "artists": [
+      "浮生生"
+     ],
+     "dedupe_key": "牡丹亭|浮生生",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "qq",
+      "kuwo"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%89%A1%E4%B8%B9%E4%BA%AD%7C%E6%B5%AE%E7%94%9F%E7%94%9F",
+     "url": "https://y.qq.com/n/ryqq/songDetail/0040Wl2a1PxvZa"
     }
    ]
   },
@@ -12859,9 +14875,10 @@
      "prev_rank": 27,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
+      "qq",
       "kugou",
       "kuwo",
       "qishui"
@@ -13263,8 +15280,9 @@
      "prev_rank": 46,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 3,
      "platforms": [
+      "qq",
       "kugou",
       "kuwo"
      ],
@@ -13364,8 +15382,9 @@
      "prev_rank": 51,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 3,
      "platforms": [
+      "qq",
       "kugou",
       "kuwo"
      ],
@@ -14741,9 +16760,10 @@
      "prev_rank": 16,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
+      "qq",
       "kugou",
       "kuwo",
       "qishui"
@@ -14824,8 +16844,9 @@
      "prev_rank": 20,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 3,
      "platforms": [
+      "qq",
       "kugou",
       "kuwo"
      ],
@@ -15314,8 +17335,9 @@
      "prev_rank": 45,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 3,
      "platforms": [
+      "qq",
       "kugou",
       "kuwo"
      ],
@@ -15669,8 +17691,9 @@
      "prev_rank": 63,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
+      "qq",
       "kugou"
      ],
      "streak": 12,
@@ -15745,8 +17768,9 @@
      "prev_rank": 67,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 3,
      "platforms": [
+      "qq",
       "kugou",
       "kuwo"
      ],
@@ -16003,8 +18027,9 @@
      "prev_rank": 80,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 3,
      "platforms": [
+      "qq",
       "kugou",
       "kuwo"
      ],
@@ -16119,8 +18144,9 @@
      "prev_rank": 86,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 3,
      "platforms": [
+      "qq",
       "kugou",
       "kuwo"
      ],
@@ -21359,8 +23385,9 @@
      "prev_rank": 3,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 3,
      "platforms": [
+      "qq",
       "kugou",
       "kuwo"
      ],
@@ -21559,8 +23586,9 @@
      "prev_rank": 13,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
+      "qq",
       "kuwo"
      ],
      "streak": 6,
@@ -21861,8 +23889,9 @@
      "prev_rank": 28,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 3,
      "platforms": [
+      "qq",
       "kugou",
       "kuwo"
      ],
@@ -21881,8 +23910,9 @@
      "prev_rank": 29,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 3,
      "platforms": [
+      "qq",
       "kugou",
       "kuwo"
      ],
@@ -21920,8 +23950,9 @@
      "prev_rank": 31,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
+      "qq",
       "kuwo"
      ],
      "streak": 11,
@@ -22135,8 +24166,9 @@
      "prev_rank": 42,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 3,
      "platforms": [
+      "qq",
       "kugou",
       "kuwo"
      ],
@@ -22175,8 +24207,9 @@
      "prev_rank": 44,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 3,
      "platforms": [
+      "qq",
       "kugou",
       "kuwo"
      ],
@@ -22352,9 +24385,10 @@
      "prev_rank": 53,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
+      "qq",
       "kugou",
       "kuwo",
       "qishui"
@@ -22374,9 +24408,10 @@
      "prev_rank": 54,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 3,
+     "platform_count": 4,
      "platforms": [
       "netease",
+      "qq",
       "kuwo",
       "weibo"
      ],
@@ -22929,8 +24964,9 @@
      "prev_rank": 82,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
+      "qq",
       "kuwo"
      ],
      "streak": 11,
@@ -22989,8 +25025,9 @@
      "prev_rank": 85,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
+      "qq",
       "kuwo"
      ],
      "streak": 11,
@@ -23029,8 +25066,9 @@
      "prev_rank": 87,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
+      "qq",
       "kuwo"
      ],
      "streak": 4,
@@ -23108,8 +25146,9 @@
      "prev_rank": 91,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 3,
      "platforms": [
+      "qq",
       "kugou",
       "kuwo"
      ],
@@ -23167,8 +25206,9 @@
      "prev_rank": 94,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 3,
      "platforms": [
+      "qq",
       "kuwo",
       "apple"
      ],
@@ -26488,9 +28528,10 @@
      "prev_rank": 1,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
+      "qq",
       "kugou",
       "kuwo",
       "qishui"
@@ -26690,9 +28731,10 @@
      "prev_rank": 11,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 3,
+     "platform_count": 4,
      "platforms": [
       "netease",
+      "qq",
       "qishui",
       "weibo"
      ],
@@ -27473,9 +29515,10 @@
      "prev_rank": 1,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 3,
+     "platform_count": 4,
      "platforms": [
       "netease",
+      "qq",
       "kuwo",
       "weibo"
      ],
@@ -27950,8 +29993,9 @@
      "prev_rank": 43,
      "rank_delta": 17,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
+      "qq",
       "weibo"
      ],
      "streak": 2,
@@ -28255,9 +30299,10 @@
      "prev_rank": 71,
      "rank_delta": 29,
      "is_new": false,
-     "platform_count": 3,
+     "platform_count": 4,
      "platforms": [
       "netease",
+      "qq",
       "qishui",
       "weibo"
      ],
@@ -32617,8 +34662,9 @@
      "prev_rank": 68,
      "rank_delta": -1,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 3,
      "platforms": [
+      "qq",
       "kuwo",
       "apple"
      ],
@@ -33267,7 +35313,7 @@
    "platform_count": 6,
    "ranks": {
     "netease": 5,
-    "qq": 26,
+    "qq": 4,
     "kugou": 11,
     "kuwo": 22,
     "qishui": 2,
