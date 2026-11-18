@@ -130,6 +130,31 @@ def cmd_ask(a) -> int:
     return 0
 
 
+
+def cmd_subscribe(a) -> int:
+    """下单：POST /api/order → 服务端把 6 位验证码发到这个邮箱。"""
+    try:
+        out = post("/api/order", {"email": a.email, "src": "cli"})
+    except urllib.error.HTTPError as exc:
+        print(json.dumps({"ok": False, "status": exc.code,
+                          "body": exc.read(300).decode("utf-8", "replace")}, ensure_ascii=False))
+        return 1
+    print(json.dumps(out, ensure_ascii=False, indent=2))
+    return 0 if out.get("ok") else 1
+
+
+def cmd_verify(a) -> int:
+    """验码：POST /api/verify → 拿订单页面（支付入口）。"""
+    try:
+        out = post("/api/verify", {"order_id": a.order_id, "code": a.code})
+    except urllib.error.HTTPError as exc:
+        print(json.dumps({"ok": False, "status": exc.code,
+                          "body": exc.read(300).decode("utf-8", "replace")}, ensure_ascii=False))
+        return 1
+    print(json.dumps(out, ensure_ascii=False, indent=2))
+    return 0 if out.get("ok") else 1
+
+
 def _emit(rows: list[dict], a, cols: tuple[str, ...]) -> int:
     if a.table:
         widths = {c: max(len(c), *(len(str(r.get(c, ""))) for r in rows)) if rows else len(c)
@@ -167,6 +192,16 @@ def main(argv=None) -> int:
     p.add_argument("query")
     p.add_argument("--limit", type=int, default=10)
     p.set_defaults(func=cmd_song)
+
+
+    p = sub.add_parser("subscribe", help="下单：用你的邮箱订阅（会把验证码发到邮箱）")
+    p.add_argument("--email", required=True)
+    p.set_defaults(func=cmd_subscribe)
+
+    p = sub.add_parser("verify", help="验码：拿订单页面（支付入口）")
+    p.add_argument("--order-id", required=True)
+    p.add_argument("--code", required=True)
+    p.set_defaults(func=cmd_verify)
 
     p = sub.add_parser("ask", help="向星愿提问（需订阅 token）")
     p.add_argument("question")
