@@ -6,8 +6,8 @@
  "key_format": "<normalized title>|<sorted normalized artists joined by '/'>",
  "key_note": "Dedupe keys are derived from the raw title and artists (see key-golden.json for the rule and runnable cases). Known gaps: 'X - Live' (dash suffix, no brackets) normalizes to 'xlive' and does not merge with 'X'; Separators inside one artist string are not split: 'R!N/Gemie' stays one artist, so it does not collide with artists ['R!N', 'Gemie']; Artist aliases (周杰伦 / Jay Chou) are not merged: the site undercounts cross-platform presence rather than inventing a merge; Bracket stripping also merges different recordings of the same title (a 65-second edit with the full-length original): the key is not a recording identity",
  "key_golden": "https://xingyuan.beer/key-golden.json",
- "captured_at": "2026-11-19T09:40:05+08:00",
- "generated_at": "2026-11-19T17:05:12+08:00",
+ "captured_at": "2026-11-19T18:06:26+08:00",
+ "generated_at": "2026-11-19T18:06:28+08:00",
  "cadence": "09:40 / 21:40 Asia/Shanghai, twice a day",
  "rank_delta_convention": "rank_delta > 0 = moved up, < 0 = moved down, 0 = unchanged; new entries carry is_new=true and may have no previous rank",
  "boards": [
@@ -240,13 +240,12 @@
      "prev_rank": 9,
      "rank_delta": -2,
      "is_new": false,
-     "platform_count": 6,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
       "kuwo",
-      "qishui",
       "apple"
      ],
      "streak": 35,
@@ -619,12 +618,13 @@
      "prev_rank": 35,
      "rank_delta": 6,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 3,
      "days_on_board": 2,
@@ -802,12 +802,13 @@
      "prev_rank": 51,
      "rank_delta": 13,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 7,
      "days_on_board": 4,
@@ -1032,10 +1033,9 @@
      "prev_rank": 53,
      "rank_delta": 4,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 1,
      "platforms": [
-      "netease",
-      "qishui"
+      "netease"
      ],
      "streak": 19,
      "days_on_board": 10,
@@ -1152,12 +1152,13 @@
      "prev_rank": 38,
      "rank_delta": -17,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 21,
      "days_on_board": 11,
@@ -1342,9 +1343,10 @@
      "prev_rank": 61,
      "rank_delta": -3,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
-      "netease"
+      "netease",
+      "qishui"
      ],
      "streak": 15,
      "days_on_board": 8,
@@ -1983,12 +1985,11 @@
      "prev_rank": 91,
      "rank_delta": -5,
      "is_new": false,
-     "platform_count": 5,
+     "platform_count": 4,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "qishui",
       "apple"
      ],
      "streak": 15,
@@ -2115,13 +2116,12 @@
      "prev_rank": 1,
      "rank_delta": -1,
      "is_new": false,
-     "platform_count": 6,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
       "kuwo",
-      "qishui",
       "apple"
      ],
      "streak": 20,
@@ -2161,12 +2161,13 @@
      "prev_rank": 6,
      "rank_delta": 2,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 5,
      "days_on_board": 3,
@@ -2203,12 +2204,13 @@
      "prev_rank": 5,
      "rank_delta": -1,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 20,
      "days_on_board": 11,
@@ -2225,9 +2227,10 @@
      "prev_rank": 7,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
-      "netease"
+      "netease",
+      "qishui"
      ],
      "streak": 20,
      "days_on_board": 11,
@@ -2644,10 +2647,9 @@
      "prev_rank": null,
      "rank_delta": null,
      "is_new": true,
-     "platform_count": 2,
+     "platform_count": 1,
      "platforms": [
-      "netease",
-      "qishui"
+      "netease"
      ],
      "streak": 1,
      "days_on_board": 1,
@@ -2920,11 +2922,10 @@
      "prev_rank": 46,
      "rank_delta": 4,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 3,
      "platforms": [
       "netease",
       "qq",
-      "qishui",
       "weibo"
      ],
      "streak": 19,
@@ -4189,10 +4190,9 @@
      "prev_rank": null,
      "rank_delta": null,
      "is_new": true,
-     "platform_count": 2,
+     "platform_count": 1,
      "platforms": [
-      "netease",
-      "qishui"
+      "netease"
      ],
      "streak": 1,
      "days_on_board": 1,
@@ -4251,12 +4251,13 @@
      "prev_rank": 2,
      "rank_delta": -7,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 5,
      "days_on_board": 3,
@@ -4493,12 +4494,13 @@
      "prev_rank": 29,
      "rank_delta": 8,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 5,
      "days_on_board": 3,
@@ -6077,12 +6079,13 @@
      "prev_rank": 1,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 5,
      "days_on_board": 3,
@@ -6142,13 +6145,12 @@
      "prev_rank": 4,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 6,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
       "kuwo",
-      "qishui",
       "apple"
      ],
      "streak": 5,
@@ -6790,9 +6792,10 @@
      "prev_rank": 36,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
-      "qq"
+      "qq",
+      "qishui"
      ],
      "streak": 5,
      "days_on_board": 3,
@@ -7145,11 +7148,10 @@
      "prev_rank": 54,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 3,
      "platforms": [
       "netease",
       "qq",
-      "qishui",
       "weibo"
      ],
      "streak": 5,
@@ -8065,12 +8067,13 @@
      "prev_rank": 1,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 10,
      "days_on_board": 6,
@@ -8134,12 +8137,13 @@
      "prev_rank": 4,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 34,
      "days_on_board": 18,
@@ -8692,10 +8696,9 @@
      "prev_rank": 29,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 1,
      "platforms": [
-      "qq",
-      "qishui"
+      "qq"
      ],
      "streak": 42,
      "days_on_board": 20,
@@ -8930,13 +8933,12 @@
      "prev_rank": 40,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 6,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
       "kuwo",
-      "qishui",
       "apple"
      ],
      "streak": 34,
@@ -9243,12 +9245,13 @@
      "prev_rank": 55,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 20,
      "days_on_board": 11,
@@ -9388,12 +9391,11 @@
      "prev_rank": 62,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 5,
+     "platform_count": 4,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "qishui",
       "apple"
      ],
      "streak": 15,
@@ -10184,12 +10186,13 @@
      "prev_rank": 1,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 10,
      "days_on_board": 6,
@@ -11717,9 +11720,10 @@
      "prev_rank": 77,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
-      "qq"
+      "qq",
+      "qishui"
      ],
      "streak": 2,
      "days_on_board": 2,
@@ -11796,12 +11800,13 @@
      "prev_rank": 81,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 2,
      "days_on_board": 2,
@@ -13699,12 +13704,13 @@
      "prev_rank": 77,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 2,
      "days_on_board": 2,
@@ -14180,12 +14186,13 @@
      "prev_rank": 1,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 10,
      "days_on_board": 6,
@@ -14245,12 +14252,13 @@
      "prev_rank": 4,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 22,
      "days_on_board": 12,
@@ -14526,12 +14534,13 @@
      "prev_rank": 17,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 32,
      "days_on_board": 17,
@@ -14784,13 +14793,12 @@
      "prev_rank": 29,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 6,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
       "kuwo",
-      "qishui",
       "apple"
      ],
      "streak": 17,
@@ -14867,10 +14875,9 @@
      "prev_rank": 33,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 1,
      "platforms": [
-      "kugou",
-      "qishui"
+      "kugou"
      ],
      "streak": 42,
      "days_on_board": 20,
@@ -15324,10 +15331,9 @@
      "prev_rank": 55,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 1,
      "platforms": [
-      "kugou",
-      "qishui"
+      "kugou"
      ],
      "streak": 15,
      "days_on_board": 8,
@@ -16133,12 +16139,11 @@
      "prev_rank": 94,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 5,
+     "platform_count": 4,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "qishui",
       "apple"
      ],
      "streak": 15,
@@ -16293,12 +16298,13 @@
      "prev_rank": 1,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 10,
      "days_on_board": 6,
@@ -16417,12 +16423,13 @@
      "prev_rank": 7,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 20,
      "days_on_board": 11,
@@ -17603,13 +17610,12 @@
      "prev_rank": 67,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 6,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
       "kuwo",
-      "qishui",
       "apple"
      ],
      "streak": 15,
@@ -18285,12 +18291,13 @@
      "prev_rank": 1,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 10,
      "days_on_board": 6,
@@ -18605,12 +18612,13 @@
      "prev_rank": 17,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 2,
      "days_on_board": 2,
@@ -21111,12 +21119,13 @@
      "prev_rank": 1,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 10,
      "days_on_board": 6,
@@ -21490,9 +21499,10 @@
      "prev_rank": 19,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 33,
      "days_on_board": 17,
@@ -22782,12 +22792,13 @@
      "prev_rank": 83,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 8,
      "days_on_board": 5,
@@ -23155,12 +23166,13 @@
      "prev_rank": 1,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 10,
      "days_on_board": 6,
@@ -23341,12 +23353,13 @@
      "prev_rank": 10,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 15,
      "days_on_board": 8,
@@ -23703,13 +23716,12 @@
      "prev_rank": 28,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 6,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
       "kuwo",
-      "qishui",
       "apple"
      ],
      "streak": 15,
@@ -25246,12 +25258,13 @@
      "prev_rank": 5,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 8,
      "days_on_board": 5,
@@ -25489,12 +25502,13 @@
      "prev_rank": 17,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "kuwo"
+      "kuwo",
+      "qishui"
      ],
      "streak": 8,
      "days_on_board": 5,
@@ -27120,41 +27134,18 @@
    "name": "汽水音乐 汽水热歌榜",
    "board_name": "汽水热歌榜",
    "path": "/board/qishui/qishui-hot",
-   "captured_at": "2026-11-19T09:40:05+08:00",
+   "captured_at": "2026-11-19T18:06:26+08:00",
    "total": 50,
    "tracks": [
     {
      "rank": 1,
-     "title": "我好像在哪见过你",
-     "artists": [
-      "薛之谦"
-     ],
-     "dedupe_key": "我好像在哪见过你|薛之谦",
-     "prev_rank": 1,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 5,
-     "platforms": [
-      "netease",
-      "qq",
-      "kugou",
-      "kuwo",
-      "qishui"
-     ],
-     "streak": 33,
-     "days_on_board": 17,
-     "song_path": "/song/%E6%88%91%E5%A5%BD%E5%83%8F%E5%9C%A8%E5%93%AA%E8%A7%81%E8%BF%87%E4%BD%A0%7C%E8%96%9B%E4%B9%8B%E8%B0%A6",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=6778775242320906241"
-    },
-    {
-     "rank": 2,
      "title": "天龙八部之宿敌",
      "artists": [
       "许嵩"
      ],
      "dedupe_key": "天龙八部之宿敌|许嵩",
      "prev_rank": 2,
-     "rank_delta": 0,
+     "rank_delta": 1,
      "is_new": false,
      "platform_count": 6,
      "platforms": [
@@ -27165,10 +27156,33 @@
       "qishui",
       "apple"
      ],
-     "streak": 33,
+     "streak": 34,
      "days_on_board": 17,
      "song_path": "/song/%E5%A4%A9%E9%BE%99%E5%85%AB%E9%83%A8%E4%B9%8B%E5%AE%BF%E6%95%8C%7C%E8%AE%B8%E5%B5%A9",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6849381964508596226"
+    },
+    {
+     "rank": 2,
+     "title": "我好像在哪见过你",
+     "artists": [
+      "薛之谦"
+     ],
+     "dedupe_key": "我好像在哪见过你|薛之谦",
+     "prev_rank": 1,
+     "rank_delta": -1,
+     "is_new": false,
+     "platform_count": 5,
+     "platforms": [
+      "netease",
+      "qq",
+      "kugou",
+      "kuwo",
+      "qishui"
+     ],
+     "streak": 34,
+     "days_on_board": 17,
+     "song_path": "/song/%E6%88%91%E5%A5%BD%E5%83%8F%E5%9C%A8%E5%93%AA%E8%A7%81%E8%BF%87%E4%BD%A0%7C%E8%96%9B%E4%B9%8B%E8%B0%A6",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=6778775242320906241"
     },
     {
      "rank": 3,
@@ -27189,7 +27203,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 33,
+     "streak": 34,
      "days_on_board": 17,
      "song_path": "/song/%E6%88%91%E4%B8%8D%E9%9A%BE%E8%BF%87%7C%E5%AD%99%E7%87%95%E5%A7%BF",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6705065595320141825"
@@ -27211,7 +27225,7 @@
       "kugou",
       "qishui"
      ],
-     "streak": 33,
+     "streak": 34,
      "days_on_board": 17,
      "song_path": "/song/%E6%97%B6%E8%BF%87%E5%A2%83%E8%BF%81%7C%E8%8B%8F%E8%89%BA%E9%A6%A8chency",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7688548940955781161"
@@ -27234,7 +27248,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 33,
+     "streak": 34,
      "days_on_board": 17,
      "song_path": "/song/%E6%BC%94%E5%91%98%7C%E8%96%9B%E4%B9%8B%E8%B0%A6",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6778775241108752385"
@@ -27256,20 +27270,106 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 33,
+     "streak": 34,
      "days_on_board": 17,
      "song_path": "/song/%E7%BA%A2%E8%89%B2%E9%AB%98%E8%B7%9F%E9%9E%8B%7C%E8%94%A1%E5%81%A5%E9%9B%85",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7068138081588611073"
     },
     {
      "rank": 7,
+     "title": "Call your name",
+     "artists": [
+      "小米儿"
+     ],
+     "dedupe_key": "callyourname|小米儿",
+     "prev_rank": 29,
+     "rank_delta": 22,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qishui"
+     ],
+     "streak": 15,
+     "days_on_board": 8,
+     "song_path": "/song/callyourname%7C%E5%B0%8F%E7%B1%B3%E5%84%BF",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7688926437487249459"
+    },
+    {
+     "rank": 8,
+     "title": "小半",
+     "artists": [
+      "陈粒"
+     ],
+     "dedupe_key": "小半|陈粒",
+     "prev_rank": 21,
+     "rank_delta": 13,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "netease",
+      "qishui"
+     ],
+     "streak": 34,
+     "days_on_board": 17,
+     "song_path": "/song/%E5%B0%8F%E5%8D%8A%7C%E9%99%88%E7%B2%92",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7079108541549643812"
+    },
+    {
+     "rank": 9,
+     "title": "烂奇迹(不小心惹了上帝)",
+     "artists": [
+      "杨羊烊"
+     ],
+     "dedupe_key": "烂奇迹|杨羊烊",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 5,
+     "platforms": [
+      "netease",
+      "qq",
+      "kugou",
+      "kuwo",
+      "qishui"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%83%82%E5%A5%87%E8%BF%B9%7C%E6%9D%A8%E7%BE%8A%E7%83%8A",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7705267063577511990"
+    },
+    {
+     "rank": 10,
+     "title": "我怀念的",
+     "artists": [
+      "孙燕姿"
+     ],
+     "dedupe_key": "我怀念的|孙燕姿",
+     "prev_rank": 9,
+     "rank_delta": -1,
+     "is_new": false,
+     "platform_count": 6,
+     "platforms": [
+      "netease",
+      "qq",
+      "kugou",
+      "kuwo",
+      "qishui",
+      "apple"
+     ],
+     "streak": 34,
+     "days_on_board": 17,
+     "song_path": "/song/%E6%88%91%E6%80%80%E5%BF%B5%E7%9A%84%7C%E5%AD%99%E7%87%95%E5%A7%BF",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=6705014751795087362"
+    },
+    {
+     "rank": 11,
      "title": "偏爱",
      "artists": [
       "张芸京"
      ],
      "dedupe_key": "偏爱|张芸京",
      "prev_rank": 7,
-     "rank_delta": 0,
+     "rank_delta": -4,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -27278,20 +27378,128 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 33,
+     "streak": 34,
      "days_on_board": 17,
      "song_path": "/song/%E5%81%8F%E7%88%B1%7C%E5%BC%A0%E8%8A%B8%E4%BA%AC",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7468197025571948560"
     },
     {
-     "rank": 8,
+     "rank": 12,
+     "title": "心墙",
+     "artists": [
+      "郭静"
+     ],
+     "dedupe_key": "心墙|郭静",
+     "prev_rank": 14,
+     "rank_delta": 2,
+     "is_new": false,
+     "platform_count": 3,
+     "platforms": [
+      "qq",
+      "kuwo",
+      "qishui"
+     ],
+     "streak": 34,
+     "days_on_board": 17,
+     "song_path": "/song/%E5%BF%83%E5%A2%99%7C%E9%83%AD%E9%9D%99",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7169644136629274663"
+    },
+    {
+     "rank": 13,
+     "title": "恋人",
+     "artists": [
+      "李荣浩"
+     ],
+     "dedupe_key": "恋人|李荣浩",
+     "prev_rank": 10,
+     "rank_delta": -3,
+     "is_new": false,
+     "platform_count": 6,
+     "platforms": [
+      "netease",
+      "qq",
+      "kugou",
+      "kuwo",
+      "qishui",
+      "apple"
+     ],
+     "streak": 34,
+     "days_on_board": 17,
+     "song_path": "/song/%E6%81%8B%E4%BA%BA%7C%E6%9D%8E%E8%8D%A3%E6%B5%A9",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7436998767289845777"
+    },
+    {
+     "rank": 14,
+     "title": "我好想你",
+     "artists": [
+      "苏打绿"
+     ],
+     "dedupe_key": "我好想你|苏打绿",
+     "prev_rank": 15,
+     "rank_delta": 1,
+     "is_new": false,
+     "platform_count": 4,
+     "platforms": [
+      "netease",
+      "qq",
+      "kugou",
+      "qishui"
+     ],
+     "streak": 34,
+     "days_on_board": 17,
+     "song_path": "/song/%E6%88%91%E5%A5%BD%E6%83%B3%E4%BD%A0%7C%E8%8B%8F%E6%89%93%E7%BB%BF",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=6738435351683041282"
+    },
+    {
+     "rank": 15,
+     "title": "雪下的时候",
+     "artists": [
+      "乔佳旭"
+     ],
+     "dedupe_key": "雪下的时候|乔佳旭",
+     "prev_rank": 17,
+     "rank_delta": 2,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "kugou",
+      "qishui"
+     ],
+     "streak": 34,
+     "days_on_board": 17,
+     "song_path": "/song/%E9%9B%AA%E4%B8%8B%E7%9A%84%E6%97%B6%E5%80%99%7C%E4%B9%94%E4%BD%B3%E6%97%AD",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7554592201637693467"
+    },
+    {
+     "rank": 16,
+     "title": "Always Online",
+     "artists": [
+      "林俊杰"
+     ],
+     "dedupe_key": "alwaysonline|林俊杰",
+     "prev_rank": 12,
+     "rank_delta": -4,
+     "is_new": false,
+     "platform_count": 3,
+     "platforms": [
+      "netease",
+      "qq",
+      "qishui"
+     ],
+     "streak": 34,
+     "days_on_board": 17,
+     "song_path": "/song/alwaysonline%7C%E6%9E%97%E4%BF%8A%E6%9D%B0",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=6726058369783711745"
+    },
+    {
+     "rank": 17,
      "title": "甲乙丙丁（你我怎么两清）",
      "artists": [
       "李佳薇"
      ],
      "dedupe_key": "甲乙丙丁|李佳薇",
      "prev_rank": 8,
-     "rank_delta": 0,
+     "rank_delta": -9,
      "is_new": false,
      "platform_count": 5,
      "platforms": [
@@ -27301,229 +27509,77 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 33,
+     "streak": 34,
      "days_on_board": 17,
      "song_path": "/song/%E7%94%B2%E4%B9%99%E4%B8%99%E4%B8%81%7C%E6%9D%8E%E4%BD%B3%E8%96%87",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7657099403009804305"
     },
     {
-     "rank": 9,
-     "title": "我怀念的",
-     "artists": [
-      "孙燕姿"
-     ],
-     "dedupe_key": "我怀念的|孙燕姿",
-     "prev_rank": 9,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 6,
-     "platforms": [
-      "netease",
-      "qq",
-      "kugou",
-      "kuwo",
-      "qishui",
-      "apple"
-     ],
-     "streak": 33,
-     "days_on_board": 17,
-     "song_path": "/song/%E6%88%91%E6%80%80%E5%BF%B5%E7%9A%84%7C%E5%AD%99%E7%87%95%E5%A7%BF",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=6705014751795087362"
-    },
-    {
-     "rank": 10,
-     "title": "恋人",
-     "artists": [
-      "李荣浩"
-     ],
-     "dedupe_key": "恋人|李荣浩",
-     "prev_rank": 10,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 6,
-     "platforms": [
-      "netease",
-      "qq",
-      "kugou",
-      "kuwo",
-      "qishui",
-      "apple"
-     ],
-     "streak": 33,
-     "days_on_board": 17,
-     "song_path": "/song/%E6%81%8B%E4%BA%BA%7C%E6%9D%8E%E8%8D%A3%E6%B5%A9",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7436998767289845777"
-    },
-    {
-     "rank": 11,
-     "title": "茶汤",
-     "artists": [
-      "郁可唯"
-     ],
-     "dedupe_key": "茶汤|郁可唯",
-     "prev_rank": 11,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 2,
-     "platforms": [
-      "kugou",
-      "qishui"
-     ],
-     "streak": 33,
-     "days_on_board": 17,
-     "song_path": "/song/%E8%8C%B6%E6%B1%A4%7C%E9%83%81%E5%8F%AF%E5%94%AF",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7168861366286190604"
-    },
-    {
-     "rank": 12,
-     "title": "Always Online",
-     "artists": [
-      "林俊杰"
-     ],
-     "dedupe_key": "alwaysonline|林俊杰",
-     "prev_rank": 12,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 3,
-     "platforms": [
-      "netease",
-      "qq",
-      "qishui"
-     ],
-     "streak": 33,
-     "days_on_board": 17,
-     "song_path": "/song/alwaysonline%7C%E6%9E%97%E4%BF%8A%E6%9D%B0",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=6726058369783711745"
-    },
-    {
-     "rank": 13,
-     "title": "我的歌声里 (T.back)",
-     "artists": [
-      "归期电台"
-     ],
-     "dedupe_key": "我的歌声里|归期电台",
-     "prev_rank": 13,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "qishui"
-     ],
-     "streak": 14,
-     "days_on_board": 8,
-     "song_path": "/song/%E6%88%91%E7%9A%84%E6%AD%8C%E5%A3%B0%E9%87%8C%7C%E5%BD%92%E6%9C%9F%E7%94%B5%E5%8F%B0",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7702756970180708406"
-    },
-    {
-     "rank": 14,
-     "title": "心墙",
-     "artists": [
-      "郭静"
-     ],
-     "dedupe_key": "心墙|郭静",
-     "prev_rank": 14,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 3,
-     "platforms": [
-      "qq",
-      "kuwo",
-      "qishui"
-     ],
-     "streak": 33,
-     "days_on_board": 17,
-     "song_path": "/song/%E5%BF%83%E5%A2%99%7C%E9%83%AD%E9%9D%99",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7169644136629274663"
-    },
-    {
-     "rank": 15,
-     "title": "我好想你",
-     "artists": [
-      "苏打绿"
-     ],
-     "dedupe_key": "我好想你|苏打绿",
-     "prev_rank": 15,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 4,
-     "platforms": [
-      "netease",
-      "qq",
-      "kugou",
-      "qishui"
-     ],
-     "streak": 33,
-     "days_on_board": 17,
-     "song_path": "/song/%E6%88%91%E5%A5%BD%E6%83%B3%E4%BD%A0%7C%E8%8B%8F%E6%89%93%E7%BB%BF",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=6738435351683041282"
-    },
-    {
-     "rank": 16,
+     "rank": 18,
      "title": "你不该权衡利弊",
      "artists": [
       "Popsicle"
      ],
      "dedupe_key": "你不该权衡利弊|popsicle",
      "prev_rank": 16,
-     "rank_delta": 0,
+     "rank_delta": -2,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 33,
+     "streak": 34,
      "days_on_board": 17,
      "song_path": "/song/%E4%BD%A0%E4%B8%8D%E8%AF%A5%E6%9D%83%E8%A1%A1%E5%88%A9%E5%BC%8A%7Cpopsicle",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7674873487907670054"
     },
     {
-     "rank": 17,
-     "title": "雪下的时候",
+     "rank": 19,
+     "title": "慢冷",
      "artists": [
-      "乔佳旭"
+      "李荣浩"
      ],
-     "dedupe_key": "雪下的时候|乔佳旭",
-     "prev_rank": 17,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 2,
-     "platforms": [
-      "kugou",
-      "qishui"
-     ],
-     "streak": 33,
-     "days_on_board": 17,
-     "song_path": "/song/%E9%9B%AA%E4%B8%8B%E7%9A%84%E6%97%B6%E5%80%99%7C%E4%B9%94%E4%BD%B3%E6%97%AD",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7554592201637693467"
-    },
-    {
-     "rank": 18,
-     "title": "我听见了，你的痛苦成立",
-     "artists": [
-      "供销社乐队"
-     ],
-     "dedupe_key": "我听见了你的痛苦成立|供销社乐队",
-     "prev_rank": 18,
-     "rank_delta": 0,
+     "dedupe_key": "慢冷|李荣浩",
+     "prev_rank": 23,
+     "rank_delta": 4,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 33,
+     "streak": 34,
      "days_on_board": 17,
-     "song_path": "/song/%E6%88%91%E5%90%AC%E8%A7%81%E4%BA%86%E4%BD%A0%E7%9A%84%E7%97%9B%E8%8B%A6%E6%88%90%E7%AB%8B%7C%E4%BE%9B%E9%94%80%E7%A4%BE%E4%B9%90%E9%98%9F",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7646998266635094067"
+     "song_path": "/song/%E6%85%A2%E5%86%B7%7C%E6%9D%8E%E8%8D%A3%E6%B5%A9",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7128288774983550977"
     },
     {
-     "rank": 19,
+     "rank": 20,
+     "title": "望故乡",
+     "artists": [
+      "吴知晚"
+     ],
+     "dedupe_key": "望故乡|吴知晚",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 1,
+     "platforms": [
+      "qishui"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%9C%9B%E6%95%85%E4%B9%A1%7C%E5%90%B4%E7%9F%A5%E6%99%9A",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7706158569767389235"
+    },
+    {
+     "rank": 21,
      "title": "情歌",
      "artists": [
       "梁静茹"
      ],
      "dedupe_key": "情歌|梁静茹",
      "prev_rank": 19,
-     "rank_delta": 0,
+     "rank_delta": -2,
      "is_new": false,
      "platform_count": 6,
      "platforms": [
@@ -27534,20 +27590,20 @@
       "qishui",
       "apple"
      ],
-     "streak": 33,
+     "streak": 34,
      "days_on_board": 17,
      "song_path": "/song/%E6%83%85%E6%AD%8C%7C%E6%A2%81%E9%9D%99%E8%8C%B9",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6990754046848010276"
     },
     {
-     "rank": 20,
+     "rank": 22,
      "title": "失眠",
      "artists": [
       "Suki刘舒妤"
      ],
      "dedupe_key": "失眠|suki刘舒妤",
      "prev_rank": 20,
-     "rank_delta": 0,
+     "rank_delta": -2,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -27556,40 +27612,39 @@
       "kugou",
       "qishui"
      ],
-     "streak": 33,
+     "streak": 34,
      "days_on_board": 17,
      "song_path": "/song/%E5%A4%B1%E7%9C%A0%7Csuki%E5%88%98%E8%88%92%E5%A6%A4",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7574231906780137489"
     },
     {
-     "rank": 21,
-     "title": "小半",
+     "rank": 23,
+     "title": "异乡的夜",
      "artists": [
-      "陈粒"
+      "欣晚柠"
      ],
-     "dedupe_key": "小半|陈粒",
-     "prev_rank": 21,
-     "rank_delta": 0,
+     "dedupe_key": "异乡的夜|欣晚柠",
+     "prev_rank": 30,
+     "rank_delta": 7,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 1,
      "platforms": [
-      "netease",
       "qishui"
      ],
-     "streak": 33,
+     "streak": 34,
      "days_on_board": 17,
-     "song_path": "/song/%E5%B0%8F%E5%8D%8A%7C%E9%99%88%E7%B2%92",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7079108541549643812"
+     "song_path": "/song/%E5%BC%82%E4%B9%A1%E7%9A%84%E5%A4%9C%7C%E6%AC%A3%E6%99%9A%E6%9F%A0",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7695376967742769187"
     },
     {
-     "rank": 22,
+     "rank": 24,
      "title": "幻听",
      "artists": [
       "许嵩"
      ],
      "dedupe_key": "幻听|许嵩",
      "prev_rank": 22,
-     "rank_delta": 0,
+     "rank_delta": -2,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -27598,39 +27653,20 @@
       "kugou",
       "qishui"
      ],
-     "streak": 33,
+     "streak": 34,
      "days_on_board": 17,
      "song_path": "/song/%E5%B9%BB%E5%90%AC%7C%E8%AE%B8%E5%B5%A9",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6849428442203555842"
     },
     {
-     "rank": 23,
-     "title": "慢冷",
-     "artists": [
-      "李荣浩"
-     ],
-     "dedupe_key": "慢冷|李荣浩",
-     "prev_rank": 23,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "qishui"
-     ],
-     "streak": 33,
-     "days_on_board": 17,
-     "song_path": "/song/%E6%85%A2%E5%86%B7%7C%E6%9D%8E%E8%8D%A3%E6%B5%A9",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7128288774983550977"
-    },
-    {
-     "rank": 24,
+     "rank": 25,
      "title": "雨过后的风景",
      "artists": [
       "Dizzy Dizzo (蔡诗芸)"
      ],
      "dedupe_key": "雨过后的风景|dizzydizzo",
      "prev_rank": 24,
-     "rank_delta": 0,
+     "rank_delta": -1,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -27639,30 +27675,10 @@
       "kugou",
       "qishui"
      ],
-     "streak": 33,
+     "streak": 34,
      "days_on_board": 17,
      "song_path": "/song/%E9%9B%A8%E8%BF%87%E5%90%8E%E7%9A%84%E9%A3%8E%E6%99%AF%7Cdizzydizzo",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7634441185327745025"
-    },
-    {
-     "rank": 25,
-     "title": "天外来物",
-     "artists": [
-      "薛之谦"
-     ],
-     "dedupe_key": "天外来物|薛之谦",
-     "prev_rank": 25,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 2,
-     "platforms": [
-      "qq",
-      "qishui"
-     ],
-     "streak": 28,
-     "days_on_board": 15,
-     "song_path": "/song/%E5%A4%A9%E5%A4%96%E6%9D%A5%E7%89%A9%7C%E8%96%9B%E4%B9%8B%E8%B0%A6",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=6850116360324810753"
     },
     {
      "rank": 26,
@@ -27678,7 +27694,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 33,
+     "streak": 34,
      "days_on_board": 17,
      "song_path": "/song/%E9%81%97%E5%A4%B1%E7%9A%84%E5%BF%83%E8%B7%B3%7C%E8%90%A7%E4%BA%9A%E8%BD%A9",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6920323667041732609"
@@ -27702,99 +27718,78 @@
       "qishui",
       "apple"
      ],
-     "streak": 33,
+     "streak": 34,
      "days_on_board": 17,
      "song_path": "/song/%E9%9B%A8%E7%88%B1%7C%E6%9D%A8%E4%B8%9E%E7%90%B3",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6696408181523875842"
     },
     {
      "rank": 28,
-     "title": "睡前别想太多",
+     "title": "天外来物",
      "artists": [
-      "李雨霏"
+      "薛之谦"
      ],
-     "dedupe_key": "睡前别想太多|李雨霏",
-     "prev_rank": 28,
-     "rank_delta": 0,
+     "dedupe_key": "天外来物|薛之谦",
+     "prev_rank": 25,
+     "rank_delta": -3,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 2,
      "platforms": [
+      "qq",
       "qishui"
      ],
-     "streak": 28,
+     "streak": 29,
      "days_on_board": 15,
-     "song_path": "/song/%E7%9D%A1%E5%89%8D%E5%88%AB%E6%83%B3%E5%A4%AA%E5%A4%9A%7C%E6%9D%8E%E9%9B%A8%E9%9C%8F",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7689447702921349121"
+     "song_path": "/song/%E5%A4%A9%E5%A4%96%E6%9D%A5%E7%89%A9%7C%E8%96%9B%E4%B9%8B%E8%B0%A6",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=6850116360324810753"
     },
     {
      "rank": 29,
-     "title": "Call your name",
+     "title": "苹果香",
      "artists": [
-      "小米儿"
+      "瑶清"
      ],
-     "dedupe_key": "callyourname|小米儿",
-     "prev_rank": 29,
-     "rank_delta": 0,
-     "is_new": false,
+     "dedupe_key": "苹果香|瑶清",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 14,
-     "days_on_board": 8,
-     "song_path": "/song/callyourname%7C%E5%B0%8F%E7%B1%B3%E5%84%BF",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7688926437487249459"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E8%8B%B9%E6%9E%9C%E9%A6%99%7C%E7%91%B6%E6%B8%85",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7704212718422100031"
     },
     {
      "rank": 30,
-     "title": "异乡的夜",
+     "title": "我的歌声里 (T.back)",
      "artists": [
-      "欣晚柠"
+      "归期电台"
      ],
-     "dedupe_key": "异乡的夜|欣晚柠",
-     "prev_rank": 30,
-     "rank_delta": 0,
+     "dedupe_key": "我的歌声里|归期电台",
+     "prev_rank": 13,
+     "rank_delta": -17,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 33,
-     "days_on_board": 17,
-     "song_path": "/song/%E5%BC%82%E4%B9%A1%E7%9A%84%E5%A4%9C%7C%E6%AC%A3%E6%99%9A%E6%9F%A0",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7695376967742769187"
+     "streak": 15,
+     "days_on_board": 8,
+     "song_path": "/song/%E6%88%91%E7%9A%84%E6%AD%8C%E5%A3%B0%E9%87%8C%7C%E5%BD%92%E6%9C%9F%E7%94%B5%E5%8F%B0",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7702756970180708406"
     },
     {
      "rank": 31,
-     "title": "盛夏的果实",
-     "artists": [
-      "莫文蔚"
-     ],
-     "dedupe_key": "盛夏的果实|莫文蔚",
-     "prev_rank": 31,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 4,
-     "platforms": [
-      "qq",
-      "kugou",
-      "kuwo",
-      "qishui"
-     ],
-     "streak": 33,
-     "days_on_board": 17,
-     "song_path": "/song/%E7%9B%9B%E5%A4%8F%E7%9A%84%E6%9E%9C%E5%AE%9E%7C%E8%8E%AB%E6%96%87%E8%94%9A",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7168856635396327463"
-    },
-    {
-     "rank": 32,
      "title": "开始懂了",
      "artists": [
       "孙燕姿"
      ],
      "dedupe_key": "开始懂了|孙燕姿",
      "prev_rank": 32,
-     "rank_delta": 0,
+     "rank_delta": 1,
      "is_new": false,
      "platform_count": 6,
      "platforms": [
@@ -27805,60 +27800,20 @@
       "qishui",
       "apple"
      ],
-     "streak": 33,
+     "streak": 34,
      "days_on_board": 17,
      "song_path": "/song/%E5%BC%80%E5%A7%8B%E6%87%82%E4%BA%86%7C%E5%AD%99%E7%87%95%E5%A7%BF",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6704952949321238529"
     },
     {
-     "rank": 33,
-     "title": "回到你身边（让你知道）",
-     "artists": [
-      "h3R3"
-     ],
-     "dedupe_key": "回到你身边|h3r3",
-     "prev_rank": 33,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 2,
-     "platforms": [
-      "netease",
-      "qishui"
-     ],
-     "streak": 14,
-     "days_on_board": 8,
-     "song_path": "/song/%E5%9B%9E%E5%88%B0%E4%BD%A0%E8%BA%AB%E8%BE%B9%7Ch3r3",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7654827514128730113"
-    },
-    {
-     "rank": 34,
-     "title": "瞬",
-     "artists": [
-      "郑润泽"
-     ],
-     "dedupe_key": "瞬|郑润泽",
-     "prev_rank": 34,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 2,
-     "platforms": [
-      "qq",
-      "qishui"
-     ],
-     "streak": 33,
-     "days_on_board": 17,
-     "song_path": "/song/%E7%9E%AC%7C%E9%83%91%E6%B6%A6%E6%B3%BD",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7255195662504740866"
-    },
-    {
-     "rank": 35,
+     "rank": 32,
      "title": "特别的人",
      "artists": [
       "方大同"
      ],
      "dedupe_key": "特别的人|方大同",
      "prev_rank": 35,
-     "rank_delta": 0,
+     "rank_delta": 3,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -27867,49 +27822,114 @@
       "qishui",
       "apple"
      ],
-     "streak": 33,
+     "streak": 34,
      "days_on_board": 17,
      "song_path": "/song/%E7%89%B9%E5%88%AB%E7%9A%84%E4%BA%BA%7C%E6%96%B9%E5%A4%A7%E5%90%8C",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6918195036836349953"
     },
     {
-     "rank": 36,
-     "title": "可不可以",
+     "rank": 33,
+     "title": "唯一",
      "artists": [
-      "张紫豪"
+      "G.E.M. 邓紫棋"
      ],
-     "dedupe_key": "可不可以|张紫豪",
-     "prev_rank": 36,
-     "rank_delta": 0,
+     "dedupe_key": "唯一|gem邓紫棋",
+     "prev_rank": 39,
+     "rank_delta": 6,
+     "is_new": false,
+     "platform_count": 4,
+     "platforms": [
+      "netease",
+      "qq",
+      "kuwo",
+      "qishui"
+     ],
+     "streak": 34,
+     "days_on_board": 17,
+     "song_path": "/song/%E5%94%AF%E4%B8%80%7Cgem%E9%82%93%E7%B4%AB%E6%A3%8B",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7284443920741058562"
+    },
+    {
+     "rank": 34,
+     "title": "茶汤",
+     "artists": [
+      "郁可唯"
+     ],
+     "dedupe_key": "茶汤|郁可唯",
+     "prev_rank": 11,
+     "rank_delta": -23,
+     "is_new": false,
+     "platform_count": 2,
+     "platforms": [
+      "kugou",
+      "qishui"
+     ],
+     "streak": 34,
+     "days_on_board": 17,
+     "song_path": "/song/%E8%8C%B6%E6%B1%A4%7C%E9%83%81%E5%8F%AF%E5%94%AF",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7168861366286190604"
+    },
+    {
+     "rank": 35,
+     "title": "海阔天空",
+     "artists": [
+      "Beyond"
+     ],
+     "dedupe_key": "海阔天空|beyond",
+     "prev_rank": 41,
+     "rank_delta": 6,
+     "is_new": false,
+     "platform_count": 3,
+     "platforms": [
+      "qq",
+      "kuwo",
+      "qishui"
+     ],
+     "streak": 34,
+     "days_on_board": 17,
+     "song_path": "/song/%E6%B5%B7%E9%98%94%E5%A4%A9%E7%A9%BA%7Cbeyond",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=6705003948140398594"
+    },
+    {
+     "rank": 36,
+     "title": "瞬",
+     "artists": [
+      "郑润泽"
+     ],
+     "dedupe_key": "瞬|郑润泽",
+     "prev_rank": 34,
+     "rank_delta": -2,
      "is_new": false,
      "platform_count": 2,
      "platforms": [
       "qq",
       "qishui"
      ],
-     "streak": 28,
-     "days_on_board": 15,
-     "song_path": "/song/%E5%8F%AF%E4%B8%8D%E5%8F%AF%E4%BB%A5%7C%E5%BC%A0%E7%B4%AB%E8%B1%AA",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7296021946923141122"
+     "streak": 34,
+     "days_on_board": 17,
+     "song_path": "/song/%E7%9E%AC%7C%E9%83%91%E6%B6%A6%E6%B3%BD",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7255195662504740866"
     },
     {
      "rank": 37,
-     "title": "指纹",
+     "title": "Letting Go",
      "artists": [
-      "杜宣达"
+      "蔡健雅"
      ],
-     "dedupe_key": "指纹|杜宣达",
-     "prev_rank": 37,
-     "rank_delta": 0,
+     "dedupe_key": "lettinggo|蔡健雅",
+     "prev_rank": 43,
+     "rank_delta": 6,
      "is_new": false,
-     "platform_count": 1,
+     "platform_count": 3,
      "platforms": [
+      "netease",
+      "qq",
       "qishui"
      ],
-     "streak": 33,
-     "days_on_board": 17,
-     "song_path": "/song/%E6%8C%87%E7%BA%B9%7C%E6%9D%9C%E5%AE%A3%E8%BE%BE",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7025566199207430145"
+     "streak": 15,
+     "days_on_board": 8,
+     "song_path": "/song/lettinggo%7C%E8%94%A1%E5%81%A5%E9%9B%85",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=6917708258018854913"
     },
     {
      "rank": 38,
@@ -27925,224 +27945,162 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 33,
+     "streak": 34,
      "days_on_board": 17,
      "song_path": "/song/%E7%AC%AC57%E6%AC%A1%E5%8F%96%E6%B6%88%E5%8F%91%E9%80%81%7C%E9%99%86%E7%BB%AE%E8%8F%B2",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7491130229642283025"
     },
     {
      "rank": 39,
-     "title": "唯一",
+     "title": "可不可以",
      "artists": [
-      "G.E.M. 邓紫棋"
+      "张紫豪"
      ],
-     "dedupe_key": "唯一|gem邓紫棋",
-     "prev_rank": 39,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 4,
-     "platforms": [
-      "netease",
-      "qq",
-      "kuwo",
-      "qishui"
-     ],
-     "streak": 33,
-     "days_on_board": 17,
-     "song_path": "/song/%E5%94%AF%E4%B8%80%7Cgem%E9%82%93%E7%B4%AB%E6%A3%8B",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7284443920741058562"
-    },
-    {
-     "rank": 40,
-     "title": "其实",
-     "artists": [
-      "薛之谦"
-     ],
-     "dedupe_key": "其实|薛之谦",
-     "prev_rank": 40,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 3,
-     "platforms": [
-      "qq",
-      "qishui",
-      "apple"
-     ],
-     "streak": 28,
-     "days_on_board": 15,
-     "song_path": "/song/%E5%85%B6%E5%AE%9E%7C%E8%96%9B%E4%B9%8B%E8%B0%A6",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=6726058972337424385"
-    },
-    {
-     "rank": 41,
-     "title": "海阔天空",
-     "artists": [
-      "Beyond"
-     ],
-     "dedupe_key": "海阔天空|beyond",
-     "prev_rank": 41,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 3,
-     "platforms": [
-      "qq",
-      "kuwo",
-      "qishui"
-     ],
-     "streak": 33,
-     "days_on_board": 17,
-     "song_path": "/song/%E6%B5%B7%E9%98%94%E5%A4%A9%E7%A9%BA%7Cbeyond",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=6705003948140398594"
-    },
-    {
-     "rank": 42,
-     "title": "如果累了就回故乡",
-     "artists": [
-      "烟雨微醺"
-     ],
-     "dedupe_key": "如果累了就回故乡|烟雨微醺",
-     "prev_rank": 42,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "qishui"
-     ],
-     "streak": 33,
-     "days_on_board": 17,
-     "song_path": "/song/%E5%A6%82%E6%9E%9C%E7%B4%AF%E4%BA%86%E5%B0%B1%E5%9B%9E%E6%95%85%E4%B9%A1%7C%E7%83%9F%E9%9B%A8%E5%BE%AE%E9%86%BA",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7676054928352036902"
-    },
-    {
-     "rank": 43,
-     "title": "Letting Go",
-     "artists": [
-      "蔡健雅"
-     ],
-     "dedupe_key": "lettinggo|蔡健雅",
-     "prev_rank": 43,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 3,
-     "platforms": [
-      "netease",
-      "qq",
-      "qishui"
-     ],
-     "streak": 14,
-     "days_on_board": 8,
-     "song_path": "/song/lettinggo%7C%E8%94%A1%E5%81%A5%E9%9B%85",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=6917708258018854913"
-    },
-    {
-     "rank": 44,
-     "title": "不死鸟",
-     "artists": [
-      "霍尊"
-     ],
-     "dedupe_key": "不死鸟|霍尊",
-     "prev_rank": 44,
-     "rank_delta": 0,
+     "dedupe_key": "可不可以|张紫豪",
+     "prev_rank": 36,
+     "rank_delta": -3,
      "is_new": false,
      "platform_count": 2,
      "platforms": [
-      "kugou",
+      "qq",
       "qishui"
      ],
-     "streak": 28,
+     "streak": 29,
      "days_on_board": 15,
-     "song_path": "/song/%E4%B8%8D%E6%AD%BB%E9%B8%9F%7C%E9%9C%8D%E5%B0%8A",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7478140320557647899"
+     "song_path": "/song/%E5%8F%AF%E4%B8%8D%E5%8F%AF%E4%BB%A5%7C%E5%BC%A0%E7%B4%AB%E8%B1%AA",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7296021946923141122"
     },
     {
-     "rank": 45,
-     "title": "最佳损友",
+     "rank": 40,
+     "title": "연애의 조건 (Love Options)",
      "artists": [
-      "陈奕迅"
+      "BESTie"
      ],
-     "dedupe_key": "最佳损友|陈奕迅",
-     "prev_rank": 45,
-     "rank_delta": 0,
-     "is_new": false,
+     "dedupe_key": "|bestie",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "qishui",
-      "apple"
+      "kuwo",
+      "qishui"
      ],
-     "streak": 28,
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%7Cbestie",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=6870951710504781825"
+    },
+    {
+     "rank": 41,
+     "title": "盛夏的果实",
+     "artists": [
+      "莫文蔚"
+     ],
+     "dedupe_key": "盛夏的果实|莫文蔚",
+     "prev_rank": 31,
+     "rank_delta": -10,
+     "is_new": false,
+     "platform_count": 4,
+     "platforms": [
+      "qq",
+      "kugou",
+      "kuwo",
+      "qishui"
+     ],
+     "streak": 34,
+     "days_on_board": 17,
+     "song_path": "/song/%E7%9B%9B%E5%A4%8F%E7%9A%84%E6%9E%9C%E5%AE%9E%7C%E8%8E%AB%E6%96%87%E8%94%9A",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7168856635396327463"
+    },
+    {
+     "rank": 42,
+     "title": "睡前别想太多",
+     "artists": [
+      "李雨霏"
+     ],
+     "dedupe_key": "睡前别想太多|李雨霏",
+     "prev_rank": 28,
+     "rank_delta": -14,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qishui"
+     ],
+     "streak": 29,
      "days_on_board": 15,
-     "song_path": "/song/%E6%9C%80%E4%BD%B3%E6%8D%9F%E5%8F%8B%7C%E9%99%88%E5%A5%95%E8%BF%85",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=6733773613821855745"
+     "song_path": "/song/%E7%9D%A1%E5%89%8D%E5%88%AB%E6%83%B3%E5%A4%AA%E5%A4%9A%7C%E6%9D%8E%E9%9B%A8%E9%9C%8F",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7689447702921349121"
+    },
+    {
+     "rank": 43,
+     "title": "茶花开了",
+     "artists": [
+      "王睿卓"
+     ],
+     "dedupe_key": "茶花开了|王睿卓",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 2,
+     "platforms": [
+      "kuwo",
+      "qishui"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E8%8C%B6%E8%8A%B1%E5%BC%80%E4%BA%86%7C%E7%8E%8B%E7%9D%BF%E5%8D%93",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7441873398400894977"
+    },
+    {
+     "rank": 44,
+     "title": "好走不见",
+     "artists": [
+      "曹格"
+     ],
+     "dedupe_key": "好走不见|曹格",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 1,
+     "platforms": [
+      "qishui"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A5%BD%E8%B5%B0%E4%B8%8D%E8%A7%81%7C%E6%9B%B9%E6%A0%BC",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7168991636456736779"
+    },
+    {
+     "rank": 45,
+     "title": "指纹",
+     "artists": [
+      "杜宣达"
+     ],
+     "dedupe_key": "指纹|杜宣达",
+     "prev_rank": 37,
+     "rank_delta": -8,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qishui"
+     ],
+     "streak": 34,
+     "days_on_board": 17,
+     "song_path": "/song/%E6%8C%87%E7%BA%B9%7C%E6%9D%9C%E5%AE%A3%E8%BE%BE",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7025566199207430145"
     },
     {
      "rank": 46,
-     "title": "戒烟",
-     "artists": [
-      "李荣浩"
-     ],
-     "dedupe_key": "戒烟|李荣浩",
-     "prev_rank": 46,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "qishui"
-     ],
-     "streak": 33,
-     "days_on_board": 17,
-     "song_path": "/song/%E6%88%92%E7%83%9F%7C%E6%9D%8E%E8%8D%A3%E6%B5%A9",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=6704980467805849601"
-    },
-    {
-     "rank": 47,
-     "title": "慌啥子嘛 慢慢来",
-     "artists": [
-      "12pitch"
-     ],
-     "dedupe_key": "慌啥子嘛慢慢来|12pitch",
-     "prev_rank": 47,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "qishui"
-     ],
-     "streak": 14,
-     "days_on_board": 8,
-     "song_path": "/song/%E6%85%8C%E5%95%A5%E5%AD%90%E5%98%9B%E6%85%A2%E6%85%A2%E6%9D%A5%7C12pitch",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7703532697327601707"
-    },
-    {
-     "rank": 48,
-     "title": "慢慢离开你",
-     "artists": [
-      "金润吉"
-     ],
-     "dedupe_key": "慢慢离开你|金润吉",
-     "prev_rank": 48,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "qishui"
-     ],
-     "streak": 14,
-     "days_on_board": 8,
-     "song_path": "/song/%E6%85%A2%E6%85%A2%E7%A6%BB%E5%BC%80%E4%BD%A0%7C%E9%87%91%E6%B6%A6%E5%90%89",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7431021241299666945"
-    },
-    {
-     "rank": 49,
      "title": "玻璃",
      "artists": [
       "Gareth.T"
      ],
      "dedupe_key": "玻璃|garetht",
      "prev_rank": 49,
-     "rank_delta": 0,
+     "rank_delta": 3,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -28151,30 +28109,91 @@
       "qishui",
       "apple"
      ],
-     "streak": 14,
+     "streak": 15,
      "days_on_board": 8,
      "song_path": "/song/%E7%8E%BB%E7%92%83%7Cgaretht",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7640738269363587073"
     },
     {
-     "rank": 50,
-     "title": "我们俩",
+     "rank": 47,
+     "title": "茉茉",
      "artists": [
-      "郭顶"
+      "Nzwin黄跃成"
      ],
-     "dedupe_key": "我们俩|郭顶",
-     "prev_rank": 50,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 2,
+     "dedupe_key": "茉茉|nzwin黄跃成",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 4,
      "platforms": [
+      "netease",
       "qq",
+      "kugou",
       "qishui"
      ],
-     "streak": 14,
-     "days_on_board": 8,
-     "song_path": "/song/%E6%88%91%E4%BB%AC%E4%BF%A9%7C%E9%83%AD%E9%A1%B6",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7631943856258566161"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E8%8C%89%E8%8C%89%7Cnzwin%E9%BB%84%E8%B7%83%E6%88%90",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7696444848367831041"
+    },
+    {
+     "rank": 48,
+     "title": "我听见了，你的痛苦成立",
+     "artists": [
+      "供销社乐队"
+     ],
+     "dedupe_key": "我听见了你的痛苦成立|供销社乐队",
+     "prev_rank": 18,
+     "rank_delta": -30,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qishui"
+     ],
+     "streak": 34,
+     "days_on_board": 17,
+     "song_path": "/song/%E6%88%91%E5%90%AC%E8%A7%81%E4%BA%86%E4%BD%A0%E7%9A%84%E7%97%9B%E8%8B%A6%E6%88%90%E7%AB%8B%7C%E4%BE%9B%E9%94%80%E7%A4%BE%E4%B9%90%E9%98%9F",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7646998266635094067"
+    },
+    {
+     "rank": 49,
+     "title": "戒烟",
+     "artists": [
+      "李荣浩"
+     ],
+     "dedupe_key": "戒烟|李荣浩",
+     "prev_rank": 46,
+     "rank_delta": -3,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "qishui"
+     ],
+     "streak": 34,
+     "days_on_board": 17,
+     "song_path": "/song/%E6%88%92%E7%83%9F%7C%E6%9D%8E%E8%8D%A3%E6%B5%A9",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=6704980467805849601"
+    },
+    {
+     "rank": 50,
+     "title": "其实",
+     "artists": [
+      "薛之谦"
+     ],
+     "dedupe_key": "其实|薛之谦",
+     "prev_rank": 40,
+     "rank_delta": -10,
+     "is_new": false,
+     "platform_count": 3,
+     "platforms": [
+      "qq",
+      "qishui",
+      "apple"
+     ],
+     "streak": 29,
+     "days_on_board": 15,
+     "song_path": "/song/%E5%85%B6%E5%AE%9E%7C%E8%96%9B%E4%B9%8B%E8%B0%A6",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=6726058972337424385"
     }
    ]
   },
@@ -28184,18 +28203,217 @@
    "name": "汽水音乐 汽水新歌榜",
    "board_name": "汽水新歌榜",
    "path": "/board/qishui/qishui-new",
-   "captured_at": "2026-11-19T09:40:05+08:00",
+   "captured_at": "2026-11-19T18:06:26+08:00",
    "total": 50,
    "tracks": [
     {
      "rank": 1,
+     "title": "烂奇迹(不小心惹了上帝)",
+     "artists": [
+      "杨羊烊"
+     ],
+     "dedupe_key": "烂奇迹|杨羊烊",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 5,
+     "platforms": [
+      "netease",
+      "qq",
+      "kugou",
+      "kuwo",
+      "qishui"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%83%82%E5%A5%87%E8%BF%B9%7C%E6%9D%A8%E7%BE%8A%E7%83%8A",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7705267063577511990"
+    },
+    {
+     "rank": 2,
+     "title": "我可以",
+     "artists": [
+      "张鑫"
+     ],
+     "dedupe_key": "我可以|张鑫",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 2,
+     "platforms": [
+      "qq",
+      "qishui"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E5%8F%AF%E4%BB%A5%7C%E5%BC%A0%E9%91%AB",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7703856318196893734"
+    },
+    {
+     "rank": 3,
+     "title": "望故乡",
+     "artists": [
+      "吴知晚"
+     ],
+     "dedupe_key": "望故乡|吴知晚",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 1,
+     "platforms": [
+      "qishui"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%9C%9B%E6%95%85%E4%B9%A1%7C%E5%90%B4%E7%9F%A5%E6%99%9A",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7706158569767389235"
+    },
+    {
+     "rank": 4,
+     "title": "苹果香",
+     "artists": [
+      "瑶清"
+     ],
+     "dedupe_key": "苹果香|瑶清",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 1,
+     "platforms": [
+      "qishui"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E8%8B%B9%E6%9E%9C%E9%A6%99%7C%E7%91%B6%E6%B8%85",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7704212718422100031"
+    },
+    {
+     "rank": 5,
+     "title": "长风来",
+     "artists": [
+      "孟西"
+     ],
+     "dedupe_key": "长风来|孟西",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 1,
+     "platforms": [
+      "qishui"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%95%BF%E9%A3%8E%E6%9D%A5%7C%E5%AD%9F%E8%A5%BF",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7707195306404694017"
+    },
+    {
+     "rank": 6,
+     "title": "我的歌声里 (T.back)",
+     "artists": [
+      "归期电台"
+     ],
+     "dedupe_key": "我的歌声里|归期电台",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 1,
+     "platforms": [
+      "qishui"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E7%9A%84%E6%AD%8C%E5%A3%B0%E9%87%8C%7C%E5%BD%92%E6%9C%9F%E7%94%B5%E5%8F%B0",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7702756970180708406"
+    },
+    {
+     "rank": 7,
+     "title": "风雨无阻(重鼓男版)",
+     "artists": [
+      "DJ阿超"
+     ],
+     "dedupe_key": "风雨无阻|dj阿超",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 1,
+     "platforms": [
+      "qishui"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%A3%8E%E9%9B%A8%E6%97%A0%E9%98%BB%7Cdj%E9%98%BF%E8%B6%85",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7706012136116209707"
+    },
+    {
+     "rank": 8,
+     "title": "慌啥子嘛（赵本山版）（网剧《走马上任》推广曲）",
+     "artists": [
+      "赵本山"
+     ],
+     "dedupe_key": "慌啥子嘛|赵本山",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 5,
+     "platforms": [
+      "netease",
+      "qq",
+      "kugou",
+      "kuwo",
+      "qishui"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%85%8C%E5%95%A5%E5%AD%90%E5%98%9B%7C%E8%B5%B5%E6%9C%AC%E5%B1%B1",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7707574371884632065"
+    },
+    {
+     "rank": 9,
+     "title": "天下有情人",
+     "artists": [
+      "澜雨临汀"
+     ],
+     "dedupe_key": "天下有情人|澜雨临汀",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 1,
+     "platforms": [
+      "qishui"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A4%A9%E4%B8%8B%E6%9C%89%E6%83%85%E4%BA%BA%7C%E6%BE%9C%E9%9B%A8%E4%B8%B4%E6%B1%80",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7704726904372512783"
+    },
+    {
+     "rank": 10,
+     "title": "人生不过三万天",
+     "artists": [
+      "离晚情歌"
+     ],
+     "dedupe_key": "人生不过三万天|离晚情歌",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 1,
+     "platforms": [
+      "qishui"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BA%BA%E7%94%9F%E4%B8%8D%E8%BF%87%E4%B8%89%E4%B8%87%E5%A4%A9%7C%E7%A6%BB%E6%99%9A%E6%83%85%E6%AD%8C",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7702367786971482147"
+    },
+    {
+     "rank": 11,
      "title": "风吹过",
      "artists": [
       "张玮"
      ],
      "dedupe_key": "风吹过|张玮",
      "prev_rank": 1,
-     "rank_delta": 0,
+     "rank_delta": -10,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -28204,940 +28422,724 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 14,
+     "streak": 15,
      "days_on_board": 8,
      "song_path": "/song/%E9%A3%8E%E5%90%B9%E8%BF%87%7C%E5%BC%A0%E7%8E%AE",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7697529725602940979"
     },
     {
-     "rank": 2,
-     "title": "Hong Kong (feat. 王菲季候风）",
-     "artists": [
-      "The Weeknd"
-     ],
-     "dedupe_key": "hongkong|theweeknd",
-     "prev_rank": 2,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 6,
-     "platforms": [
-      "netease",
-      "qq",
-      "kugou",
-      "kuwo",
-      "qishui",
-      "apple"
-     ],
-     "streak": 14,
-     "days_on_board": 8,
-     "song_path": "/song/hongkong%7Ctheweeknd",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7702702398532290566"
-    },
-    {
-     "rank": 3,
-     "title": "七宗罪之首",
-     "artists": [
-      "Kytherian"
-     ],
-     "dedupe_key": "七宗罪之首|kytherian",
-     "prev_rank": 4,
-     "rank_delta": 1,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "qishui"
-     ],
-     "streak": 14,
-     "days_on_board": 8,
-     "song_path": "/song/%E4%B8%83%E5%AE%97%E7%BD%AA%E4%B9%8B%E9%A6%96%7Ckytherian",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7700805010113005619"
-    },
-    {
-     "rank": 4,
-     "title": "昨天，今天（汪苏泷概念创作集《联名2》作品）",
-     "artists": [
-      "莫文蔚"
-     ],
-     "dedupe_key": "昨天今天|莫文蔚",
-     "prev_rank": 5,
-     "rank_delta": 1,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "qishui"
-     ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E6%98%A8%E5%A4%A9%E4%BB%8A%E5%A4%A9%7C%E8%8E%AB%E6%96%87%E8%94%9A",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7686771034430998545"
-    },
-    {
-     "rank": 5,
-     "title": "茉茉",
-     "artists": [
-      "Nzwin黄跃成"
-     ],
-     "dedupe_key": "茉茉|nzwin黄跃成",
-     "prev_rank": 6,
-     "rank_delta": 1,
-     "is_new": false,
-     "platform_count": 4,
-     "platforms": [
-      "netease",
-      "qq",
-      "kugou",
-      "qishui"
-     ],
-     "streak": 14,
-     "days_on_board": 8,
-     "song_path": "/song/%E8%8C%89%E8%8C%89%7Cnzwin%E9%BB%84%E8%B7%83%E6%88%90",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7696444848367831041"
-    },
-    {
-     "rank": 6,
-     "title": "每个春天我都会唱歌",
-     "artists": [
-      "许飞"
-     ],
-     "dedupe_key": "每个春天我都会唱歌|许飞",
-     "prev_rank": 7,
-     "rank_delta": 1,
-     "is_new": false,
-     "platform_count": 2,
-     "platforms": [
-      "qishui",
-      "weibo"
-     ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E6%AF%8F%E4%B8%AA%E6%98%A5%E5%A4%A9%E6%88%91%E9%83%BD%E4%BC%9A%E5%94%B1%E6%AD%8C%7C%E8%AE%B8%E9%A3%9E",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7698655415668246529"
-    },
-    {
-     "rank": 7,
-     "title": "New Thang",
-     "artists": [
-      "真相"
-     ],
-     "dedupe_key": "newthang|真相",
-     "prev_rank": 8,
-     "rank_delta": 1,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "qishui"
-     ],
-     "streak": 14,
-     "days_on_board": 8,
-     "song_path": "/song/newthang%7C%E7%9C%9F%E7%9B%B8",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7702036356323887114"
-    },
-    {
-     "rank": 8,
-     "title": "情似风",
-     "artists": [
-      "陆麒LUQI"
-     ],
-     "dedupe_key": "情似风|陆麒luqi",
-     "prev_rank": 10,
-     "rank_delta": 2,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "qishui"
-     ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E6%83%85%E4%BC%BC%E9%A3%8E%7C%E9%99%86%E9%BA%92luqi",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7687491293735585793"
-    },
-    {
-     "rank": 9,
-     "title": "人间",
-     "artists": [
-      "许飞"
-     ],
-     "dedupe_key": "人间|许飞",
-     "prev_rank": 11,
-     "rank_delta": 2,
-     "is_new": false,
-     "platform_count": 4,
-     "platforms": [
-      "netease",
-      "qq",
-      "qishui",
-      "weibo"
-     ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E4%BA%BA%E9%97%B4%7C%E8%AE%B8%E9%A3%9E",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7698655415668033537"
-    },
-    {
-     "rank": 10,
-     "title": "异乡的夜",
-     "artists": [
-      "欣晚柠"
-     ],
-     "dedupe_key": "异乡的夜|欣晚柠",
-     "prev_rank": 12,
-     "rank_delta": 2,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "qishui"
-     ],
-     "streak": 20,
-     "days_on_board": 11,
-     "song_path": "/song/%E5%BC%82%E4%B9%A1%E7%9A%84%E5%A4%9C%7C%E6%AC%A3%E6%99%9A%E6%9F%A0",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7695376967742769187"
-    },
-    {
-     "rank": 11,
-     "title": "热烈之后",
-     "artists": [
-      "希林娜依•高"
-     ],
-     "dedupe_key": "热烈之后|希林娜依高",
-     "prev_rank": 13,
-     "rank_delta": 2,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "qishui"
-     ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E7%83%AD%E7%83%88%E4%B9%8B%E5%90%8E%7C%E5%B8%8C%E6%9E%97%E5%A8%9C%E4%BE%9D%E9%AB%98",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7698650861412550657"
-    },
-    {
      "rank": 12,
-     "title": "JUICE",
+     "title": "迷雾散尽 一切终于变清晰",
      "artists": [
-      "周震南"
+      "维妮"
      ],
-     "dedupe_key": "juice|周震南",
-     "prev_rank": 14,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "迷雾散尽一切终于变清晰|维妮",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/juice%7C%E5%91%A8%E9%9C%87%E5%8D%97",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7702046892915083316"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E8%BF%B7%E9%9B%BE%E6%95%A3%E5%B0%BD%E4%B8%80%E5%88%87%E7%BB%88%E4%BA%8E%E5%8F%98%E6%B8%85%E6%99%B0%7C%E7%BB%B4%E5%A6%AE",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7707996874494232611"
     },
     {
      "rank": 13,
-     "title": "红线儿",
+     "title": "山外山(我想去山外的山看看)",
      "artists": [
-      "沈春阳"
+      "疏疏呀"
      ],
-     "dedupe_key": "红线儿|沈春阳",
-     "prev_rank": 15,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "山外山|疏疏呀",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E7%BA%A2%E7%BA%BF%E5%84%BF%7C%E6%B2%88%E6%98%A5%E9%98%B3",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7702046685984835585"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%B1%B1%E5%A4%96%E5%B1%B1%7C%E7%96%8F%E7%96%8F%E5%91%80",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7705641976683317263"
     },
     {
      "rank": 14,
-     "title": "任我是大漠里的一粒沙被风吹到天涯",
+     "title": "如果爱还在（听屿拾月）",
      "artists": [
-      "银河兔"
+      "听屿拾月"
      ],
-     "dedupe_key": "任我是大漠里的一粒沙被风吹到天涯|银河兔",
-     "prev_rank": 16,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "如果爱还在|听屿拾月",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E4%BB%BB%E6%88%91%E6%98%AF%E5%A4%A7%E6%BC%A0%E9%87%8C%E7%9A%84%E4%B8%80%E7%B2%92%E6%B2%99%E8%A2%AB%E9%A3%8E%E5%90%B9%E5%88%B0%E5%A4%A9%E6%B6%AF%7C%E9%93%B6%E6%B2%B3%E5%85%94",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7700174549509556265"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A6%82%E6%9E%9C%E7%88%B1%E8%BF%98%E5%9C%A8%7C%E5%90%AC%E5%B1%BF%E6%8B%BE%E6%9C%88",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7705688103680788515"
     },
     {
      "rank": 15,
-     "title": "POP",
+     "title": "夜间巡航（钢琴版）",
      "artists": [
-      "林辰涵"
+      "Kytherian"
      ],
-     "dedupe_key": "pop|林辰涵",
-     "prev_rank": 17,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "夜间巡航|kytherian",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/pop%7C%E6%9E%97%E8%BE%B0%E6%B6%B5",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7701264271522908212"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A4%9C%E9%97%B4%E5%B7%A1%E8%88%AA%7Ckytherian",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7704533801566078995"
     },
     {
      "rank": 16,
-     "title": "向天再借五百年",
+     "title": "也有春花秋月",
      "artists": [
-      "美玲儿"
+      "星禾禾"
      ],
-     "dedupe_key": "向天再借五百年|美玲儿",
-     "prev_rank": 18,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "也有春花秋月|星禾禾",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 20,
-     "days_on_board": 11,
-     "song_path": "/song/%E5%90%91%E5%A4%A9%E5%86%8D%E5%80%9F%E4%BA%94%E7%99%BE%E5%B9%B4%7C%E7%BE%8E%E7%8E%B2%E5%84%BF",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7696710408020396051"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%B9%9F%E6%9C%89%E6%98%A5%E8%8A%B1%E7%A7%8B%E6%9C%88%7C%E6%98%9F%E7%A6%BE%E7%A6%BE",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7703477435291158563"
     },
     {
      "rank": 17,
-     "title": "我听人说思念像风一样(前世不欠，今生不见)",
+     "title": "浪人琵琶（我的思念似六月里的小雨）",
      "artists": [
-      "顿珠拉姆",
-      "自游诗"
+      "奶酪ovo"
      ],
-     "dedupe_key": "我听人说思念像风一样|自游诗/顿珠拉姆",
-     "prev_rank": 19,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "浪人琵琶|奶酪ovo",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E6%88%91%E5%90%AC%E4%BA%BA%E8%AF%B4%E6%80%9D%E5%BF%B5%E5%83%8F%E9%A3%8E%E4%B8%80%E6%A0%B7%7C%E8%87%AA%E6%B8%B8%E8%AF%97%2F%E9%A1%BF%E7%8F%A0%E6%8B%89%E5%A7%86",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7687090424119363611"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%B5%AA%E4%BA%BA%E7%90%B5%E7%90%B6%7C%E5%A5%B6%E9%85%AAovo",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7707115131444578355"
     },
     {
      "rank": 18,
-     "title": "时过境迁（氛围版）",
+     "title": "千年修得共枕眠",
      "artists": [
-      "苏艺馨Chency"
+      "Love2U"
      ],
-     "dedupe_key": "时过境迁|苏艺馨chency",
-     "prev_rank": 20,
-     "rank_delta": 2,
-     "is_new": false,
-     "platform_count": 4,
+     "dedupe_key": "千年修得共枕眠|love2u",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 1,
      "platforms": [
-      "netease",
-      "qq",
-      "kugou",
       "qishui"
      ],
-     "streak": 20,
-     "days_on_board": 11,
-     "song_path": "/song/%E6%97%B6%E8%BF%87%E5%A2%83%E8%BF%81%7C%E8%8B%8F%E8%89%BA%E9%A6%A8chency",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7696708924242692123"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%8D%83%E5%B9%B4%E4%BF%AE%E5%BE%97%E5%85%B1%E6%9E%95%E7%9C%A0%7Clove2u",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7706024615732889636"
     },
     {
      "rank": 19,
-     "title": "迟来的爱",
+     "title": "真的爱着你",
      "artists": [
-      "温见秋"
+      "离晚情歌"
      ],
-     "dedupe_key": "迟来的爱|温见秋",
-     "prev_rank": 21,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "真的爱着你|离晚情歌",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E8%BF%9F%E6%9D%A5%E7%9A%84%E7%88%B1%7C%E6%B8%A9%E8%A7%81%E7%A7%8B",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7699866515735005235"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%9C%9F%E7%9A%84%E7%88%B1%E7%9D%80%E4%BD%A0%7C%E7%A6%BB%E6%99%9A%E6%83%85%E6%AD%8C",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7706453329695262754"
     },
     {
      "rank": 20,
-     "title": "紧紧握着青花信物(破碎版)",
+     "title": "慢倍速",
      "artists": [
-      "深情老李"
+      "简柯"
      ],
-     "dedupe_key": "紧紧握着青花信物|深情老李",
-     "prev_rank": 22,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "慢倍速|简柯",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E7%B4%A7%E7%B4%A7%E6%8F%A1%E7%9D%80%E9%9D%92%E8%8A%B1%E4%BF%A1%E7%89%A9%7C%E6%B7%B1%E6%83%85%E8%80%81%E6%9D%8E",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7686742694505433139"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%85%A2%E5%80%8D%E9%80%9F%7C%E7%AE%80%E6%9F%AF",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7703583252494534699"
     },
     {
      "rank": 21,
-     "title": "Superstar Slowed",
+     "title": "Sweet but Psycho Deep",
      "artists": [
       "4hhhi"
      ],
-     "dedupe_key": "superstarslowed|4hhhi",
-     "prev_rank": 23,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "sweetbutpsychodeep|4hhhi",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 20,
-     "days_on_board": 11,
-     "song_path": "/song/superstarslowed%7C4hhhi",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7697105022199760906"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/sweetbutpsychodeep%7C4hhhi",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7704585748015548467"
     },
     {
      "rank": 22,
-     "title": "我是不是你最疼爱的人(烟嗓版)",
+     "title": "把回忆拼好给你",
      "artists": [
-      "烟嗓扬哥"
+      "妙音"
      ],
-     "dedupe_key": "我是不是你最疼爱的人|烟嗓扬哥",
-     "prev_rank": 24,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "把回忆拼好给你|妙音",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E6%88%91%E6%98%AF%E4%B8%8D%E6%98%AF%E4%BD%A0%E6%9C%80%E7%96%BC%E7%88%B1%E7%9A%84%E4%BA%BA%7C%E7%83%9F%E5%97%93%E6%89%AC%E5%93%A5",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7687060775579584563"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%8A%8A%E5%9B%9E%E5%BF%86%E6%8B%BC%E5%A5%BD%E7%BB%99%E4%BD%A0%7C%E5%A6%99%E9%9F%B3",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7701533324322523187"
     },
     {
      "rank": 23,
-     "title": "就让冷风吹 雨纷飞",
+     "title": "我的心早已被你宠坏",
      "artists": [
-      "江一也"
+      "Love2U"
      ],
-     "dedupe_key": "就让冷风吹雨纷飞|江一也",
-     "prev_rank": 25,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "我的心早已被你宠坏|love2u",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E5%B0%B1%E8%AE%A9%E5%86%B7%E9%A3%8E%E5%90%B9%E9%9B%A8%E7%BA%B7%E9%A3%9E%7C%E6%B1%9F%E4%B8%80%E4%B9%9F",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7695602803406784554"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E7%9A%84%E5%BF%83%E6%97%A9%E5%B7%B2%E8%A2%AB%E4%BD%A0%E5%AE%A0%E5%9D%8F%7Clove2u",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7706744769842808886"
     },
     {
      "rank": 24,
-     "title": "隔岸",
+     "title": "我本该命途齐天 唯有破开了天",
      "artists": [
-      "姚六一"
+      "圆思思YU"
      ],
-     "dedupe_key": "隔岸|姚六一",
-     "prev_rank": 26,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "我本该命途齐天唯有破开了天|圆思思yu",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E9%9A%94%E5%B2%B8%7C%E5%A7%9A%E5%85%AD%E4%B8%80",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7687841416274561075"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E6%9C%AC%E8%AF%A5%E5%91%BD%E9%80%94%E9%BD%90%E5%A4%A9%E5%94%AF%E6%9C%89%E7%A0%B4%E5%BC%80%E4%BA%86%E5%A4%A9%7C%E5%9C%86%E6%80%9D%E6%80%9Dyu",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7703089127147341859"
     },
     {
      "rank": 25,
-     "title": "Doll",
+     "title": "我一直在你身旁",
      "artists": [
-      "晚月moon"
+      "云海瑶"
      ],
-     "dedupe_key": "doll|晚月moon",
-     "prev_rank": 27,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "我一直在你身旁|云海瑶",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/doll%7C%E6%99%9A%E6%9C%88moon",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7694259649903609875"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E4%B8%80%E7%9B%B4%E5%9C%A8%E4%BD%A0%E8%BA%AB%E6%97%81%7C%E4%BA%91%E6%B5%B7%E7%91%B6",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7705697692467365888"
     },
     {
      "rank": 26,
-     "title": "桥边姑娘",
+     "title": "我们认识了那么久",
      "artists": [
-      "轻烟大叔"
+      "烟嗓老张"
      ],
-     "dedupe_key": "桥边姑娘|轻烟大叔",
-     "prev_rank": 28,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "我们认识了那么久|烟嗓老张",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 20,
-     "days_on_board": 11,
-     "song_path": "/song/%E6%A1%A5%E8%BE%B9%E5%A7%91%E5%A8%98%7C%E8%BD%BB%E7%83%9F%E5%A4%A7%E5%8F%94",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7694936330908420122"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E4%BB%AC%E8%AE%A4%E8%AF%86%E4%BA%86%E9%82%A3%E4%B9%88%E4%B9%85%7C%E7%83%9F%E5%97%93%E8%80%81%E5%BC%A0",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7704934390010480676"
     },
     {
      "rank": 27,
-     "title": "等你三千年",
+     "title": "我不知為何 你怎麼忘了你先說愛我",
      "artists": [
-      "杜怡"
+      "知秋"
      ],
-     "dedupe_key": "等你三千年|杜怡",
-     "prev_rank": 29,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "我不知為何你怎麼忘了你先說愛我|知秋",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E7%AD%89%E4%BD%A0%E4%B8%89%E5%8D%83%E5%B9%B4%7C%E6%9D%9C%E6%80%A1",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7693005664193251363"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E4%B8%8D%E7%9F%A5%E7%82%BA%E4%BD%95%E4%BD%A0%E6%80%8E%E9%BA%BC%E5%BF%98%E4%BA%86%E4%BD%A0%E5%85%88%E8%AA%AA%E6%84%9B%E6%88%91%7C%E7%9F%A5%E7%A7%8B",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7703958660259399715"
     },
     {
      "rank": 28,
-     "title": "Dancing",
+     "title": "我一直在你身旁",
      "artists": [
-      "抖音7v"
+      "扎西尕尔"
      ],
-     "dedupe_key": "dancing|抖音7v",
-     "prev_rank": 30,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "我一直在你身旁|扎西尕尔",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/dancing%7C%E6%8A%96%E9%9F%B37v",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7688218317181618219"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E4%B8%80%E7%9B%B4%E5%9C%A8%E4%BD%A0%E8%BA%AB%E6%97%81%7C%E6%89%8E%E8%A5%BF%E5%B0%95%E5%B0%94",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7704508718734362634"
     },
     {
      "rank": 29,
-     "title": "若如初见（开智小曲）",
+     "title": "我本该命途齐天",
      "artists": [
-      "秋成"
+      "苏向晚"
      ],
-     "dedupe_key": "若如初见|秋成",
-     "prev_rank": 31,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "我本该命途齐天|苏向晚",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E8%8B%A5%E5%A6%82%E5%88%9D%E8%A7%81%7C%E7%A7%8B%E6%88%90",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7694482861722765338"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E6%9C%AC%E8%AF%A5%E5%91%BD%E9%80%94%E9%BD%90%E5%A4%A9%7C%E8%8B%8F%E5%90%91%E6%99%9A",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7701546995970017334"
     },
     {
      "rank": 30,
-     "title": "Montagem Nada",
+     "title": "你看你看月亮的脸(重鼓版)",
      "artists": [
-      "ntil",
-      "T3CHN0",
-      "Moonphase"
+      "DJ阿超"
      ],
-     "dedupe_key": "montagemnada|moonphase/ntil/t3chn0",
-     "prev_rank": 32,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "你看你看月亮的脸|dj阿超",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/montagemnada%7Cmoonphase%2Fntil%2Ft3chn0",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7698840430120667187"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BD%A0%E7%9C%8B%E4%BD%A0%E7%9C%8B%E6%9C%88%E4%BA%AE%E7%9A%84%E8%84%B8%7Cdj%E9%98%BF%E8%B6%85",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7705998647239034906"
     },
     {
      "rank": 31,
-     "title": "荒",
+     "title": "爱与痛都成回忆",
      "artists": [
-      "平生不晚"
+      "胡嗒嗒"
      ],
-     "dedupe_key": "荒|平生不晚",
-     "prev_rank": 33,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "爱与痛都成回忆|胡嗒嗒",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E8%8D%92%7C%E5%B9%B3%E7%94%9F%E4%B8%8D%E6%99%9A",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7694620605631596550"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%88%B1%E4%B8%8E%E7%97%9B%E9%83%BD%E6%88%90%E5%9B%9E%E5%BF%86%7C%E8%83%A1%E5%97%92%E5%97%92",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7707853059658057779"
     },
     {
      "rank": 32,
-     "title": "Lonely Again",
+     "title": "人们把难言的爱都埋入土壤里",
      "artists": [
-      "皮皮皮皮朱"
+      "辛子"
      ],
-     "dedupe_key": "lonelyagain|皮皮皮皮朱",
-     "prev_rank": 34,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "人们把难言的爱都埋入土壤里|辛子",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/lonelyagain%7C%E7%9A%AE%E7%9A%AE%E7%9A%AE%E7%9A%AE%E6%9C%B1",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7701520140778113030"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BA%BA%E4%BB%AC%E6%8A%8A%E9%9A%BE%E8%A8%80%E7%9A%84%E7%88%B1%E9%83%BD%E5%9F%8B%E5%85%A5%E5%9C%9F%E5%A3%A4%E9%87%8C%7C%E8%BE%9B%E5%AD%90",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7706359398785222710"
     },
     {
      "rank": 33,
-     "title": "瘦不回去的胖子",
+     "title": "我想跟你在一起不想再经历离散",
      "artists": [
-      "陈赫"
+      "Love2U"
      ],
-     "dedupe_key": "瘦不回去的胖子|陈赫",
-     "prev_rank": 35,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "我想跟你在一起不想再经历离散|love2u",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E7%98%A6%E4%B8%8D%E5%9B%9E%E5%8E%BB%E7%9A%84%E8%83%96%E5%AD%90%7C%E9%99%88%E8%B5%AB",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7698691983195801606"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E6%83%B3%E8%B7%9F%E4%BD%A0%E5%9C%A8%E4%B8%80%E8%B5%B7%E4%B8%8D%E6%83%B3%E5%86%8D%E7%BB%8F%E5%8E%86%E7%A6%BB%E6%95%A3%7Clove2u",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7704518304790431780"
     },
     {
      "rank": 34,
-     "title": "浮游生物",
+     "title": "慌啥子嘛 慢慢来",
      "artists": [
-      "Yamy郭颖"
+      "12pitch"
      ],
-     "dedupe_key": "浮游生物|yamy郭颖",
-     "prev_rank": 36,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "慌啥子嘛慢慢来|12pitch",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E6%B5%AE%E6%B8%B8%E7%94%9F%E7%89%A9%7Cyamy%E9%83%AD%E9%A2%96",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7696472730133186612"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%85%8C%E5%95%A5%E5%AD%90%E5%98%9B%E6%85%A2%E6%85%A2%E6%9D%A5%7C12pitch",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7703532697327601707"
     },
     {
      "rank": 35,
-     "title": "无法了解的你",
+     "title": "FIGHT PIRACY",
      "artists": [
-      "陈妍希",
-      "早安"
+      "Yang.lc"
      ],
-     "dedupe_key": "无法了解的你|早安/陈妍希",
-     "prev_rank": 37,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "fightpiracy|yanglc",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E6%97%A0%E6%B3%95%E4%BA%86%E8%A7%A3%E7%9A%84%E4%BD%A0%7C%E6%97%A9%E5%AE%89%2F%E9%99%88%E5%A6%8D%E5%B8%8C",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7697164678381094964"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/fightpiracy%7Cyanglc",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7706483106560247827"
     },
     {
      "rank": 36,
-     "title": "放羊歌",
+     "title": "需要人陪",
      "artists": [
-      "林墨"
+      "Love2U"
      ],
-     "dedupe_key": "放羊歌|林墨",
-     "prev_rank": 38,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "需要人陪|love2u",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E6%94%BE%E7%BE%8A%E6%AD%8C%7C%E6%9E%97%E5%A2%A8",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7697156889876826113"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%9C%80%E8%A6%81%E4%BA%BA%E9%99%AA%7Clove2u",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7701936379455916095"
     },
     {
      "rank": 37,
-     "title": "时过境迁",
+     "title": "我该说是我想你 还是天冷了",
      "artists": [
-      "苏艺馨Chency"
+      "星禾禾"
      ],
-     "dedupe_key": "时过境迁|苏艺馨chency",
-     "prev_rank": 39,
-     "rank_delta": 2,
-     "is_new": false,
-     "platform_count": 4,
+     "dedupe_key": "我该说是我想你还是天冷了|星禾禾",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 1,
      "platforms": [
-      "netease",
-      "qq",
-      "kugou",
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E6%97%B6%E8%BF%87%E5%A2%83%E8%BF%81%7C%E8%8B%8F%E8%89%BA%E9%A6%A8chency",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7688548940955781161"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E8%AF%A5%E8%AF%B4%E6%98%AF%E6%88%91%E6%83%B3%E4%BD%A0%E8%BF%98%E6%98%AF%E5%A4%A9%E5%86%B7%E4%BA%86%7C%E6%98%9F%E7%A6%BE%E7%A6%BE",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7704608151194585088"
     },
     {
      "rank": 38,
-     "title": "和日落邂逅一万次",
+     "title": "你的不经意",
      "artists": [
-      "黄浩雯"
+      "Fozik佛子克"
      ],
-     "dedupe_key": "和日落邂逅一万次|黄浩雯",
-     "prev_rank": 40,
-     "rank_delta": 2,
-     "is_new": false,
-     "platform_count": 1,
+     "dedupe_key": "你的不经意|fozik佛子克",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 2,
      "platforms": [
+      "netease",
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E5%92%8C%E6%97%A5%E8%90%BD%E9%82%82%E9%80%85%E4%B8%80%E4%B8%87%E6%AC%A1%7C%E9%BB%84%E6%B5%A9%E9%9B%AF",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7695225628825159681"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BD%A0%E7%9A%84%E4%B8%8D%E7%BB%8F%E6%84%8F%7Cfozik%E4%BD%9B%E5%AD%90%E5%85%8B",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7698840430121191475"
     },
     {
      "rank": 39,
-     "title": "别来我梦里",
+     "title": "淋一场雨",
      "artists": [
-      "任然"
+      "慕疏禾"
      ],
-     "dedupe_key": "别来我梦里|任然",
-     "prev_rank": 41,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "淋一场雨|慕疏禾",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E5%88%AB%E6%9D%A5%E6%88%91%E6%A2%A6%E9%87%8C%7C%E4%BB%BB%E7%84%B6",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7698199940028581894"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%B7%8B%E4%B8%80%E5%9C%BA%E9%9B%A8%7C%E6%85%95%E7%96%8F%E7%A6%BE",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7706801760443222016"
     },
     {
      "rank": 40,
-     "title": "命运降临前的三千次日落（影视剧《好一个乖乖女》插曲）",
+     "title": "Cry For Me（那年冬）",
      "artists": [
-      "辛雯"
+      "Pexc"
      ],
-     "dedupe_key": "命运降临前的三千次日落|辛雯",
-     "prev_rank": 42,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "cryforme|pexc",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E5%91%BD%E8%BF%90%E9%99%8D%E4%B8%B4%E5%89%8D%E7%9A%84%E4%B8%89%E5%8D%83%E6%AC%A1%E6%97%A5%E8%90%BD%7C%E8%BE%9B%E9%9B%AF",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7696307623666796545"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/cryforme%7Cpexc",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7704521250891319315"
     },
     {
      "rank": 41,
-     "title": "不配说爱我(烟嗓版)",
+     "title": "我不愿看到你流泪的眼睛",
      "artists": [
-      "烟嗓扬哥"
+      "落风波",
+      "永夜"
      ],
-     "dedupe_key": "不配说爱我|烟嗓扬哥",
-     "prev_rank": 43,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "我不愿看到你流泪的眼睛|永夜/落风波",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E4%B8%8D%E9%85%8D%E8%AF%B4%E7%88%B1%E6%88%91%7C%E7%83%9F%E5%97%93%E6%89%AC%E5%93%A5",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7688229627085129764"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E4%B8%8D%E6%84%BF%E7%9C%8B%E5%88%B0%E4%BD%A0%E6%B5%81%E6%B3%AA%E7%9A%84%E7%9C%BC%E7%9D%9B%7C%E6%B0%B8%E5%A4%9C%2F%E8%90%BD%E9%A3%8E%E6%B3%A2",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7701257545760589862"
     },
     {
      "rank": 42,
-     "title": "我听人说思念像风一样(宿命合唱版)",
+     "title": "我听见了(你的痛苦成立)",
      "artists": [
-      "雪山阿木",
-      "顿珠拉姆"
+      "冬日吉他猫"
      ],
-     "dedupe_key": "我听人说思念像风一样|雪山阿木/顿珠拉姆",
-     "prev_rank": 44,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "我听见了|冬日吉他猫",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E6%88%91%E5%90%AC%E4%BA%BA%E8%AF%B4%E6%80%9D%E5%BF%B5%E5%83%8F%E9%A3%8E%E4%B8%80%E6%A0%B7%7C%E9%9B%AA%E5%B1%B1%E9%98%BF%E6%9C%A8%2F%E9%A1%BF%E7%8F%A0%E6%8B%89%E5%A7%86",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7688964528848095270"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E5%90%AC%E8%A7%81%E4%BA%86%7C%E5%86%AC%E6%97%A5%E5%90%89%E4%BB%96%E7%8C%AB",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7702032128628066347"
     },
     {
      "rank": 43,
-     "title": "慢红尘（微醺版）",
+     "title": "鬼迷心窍",
      "artists": [
-      "江楠楠"
+      "大头针Scream"
      ],
-     "dedupe_key": "慢红尘|江楠楠",
-     "prev_rank": 45,
-     "rank_delta": 2,
-     "is_new": false,
-     "platform_count": 2,
+     "dedupe_key": "鬼迷心窍|大头针scream",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 1,
      "platforms": [
-      "kugou",
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E6%85%A2%E7%BA%A2%E5%B0%98%7C%E6%B1%9F%E6%A5%A0%E6%A5%A0",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7688218609235904528"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%AC%BC%E8%BF%B7%E5%BF%83%E7%AA%8D%7C%E5%A4%A7%E5%A4%B4%E9%92%88scream",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7703399637500168235"
     },
     {
      "rank": 44,
-     "title": "Warner",
+     "title": "一半青涩一半纯真",
      "artists": [
-      "抖音7v"
+      "苏向晚"
      ],
-     "dedupe_key": "warner|抖音7v",
-     "prev_rank": 46,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "一半青涩一半纯真|苏向晚",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/warner%7C%E6%8A%96%E9%9F%B37v",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7691199601781262363"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%B8%80%E5%8D%8A%E9%9D%92%E6%B6%A9%E4%B8%80%E5%8D%8A%E7%BA%AF%E7%9C%9F%7C%E8%8B%8F%E5%90%91%E6%99%9A",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7706390353923115051"
     },
     {
      "rank": 45,
-     "title": "得不到想要的那就放下",
+     "title": "你从未离去（纯享版)",
      "artists": [
-      "Boy壹"
+      "Jerry音乐站"
      ],
-     "dedupe_key": "得不到想要的那就放下|boy壹",
-     "prev_rank": 47,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "你从未离去|jerry音乐站",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E5%BE%97%E4%B8%8D%E5%88%B0%E6%83%B3%E8%A6%81%E7%9A%84%E9%82%A3%E5%B0%B1%E6%94%BE%E4%B8%8B%7Cboy%E5%A3%B9",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7689431895206316095"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BD%A0%E4%BB%8E%E6%9C%AA%E7%A6%BB%E5%8E%BB%7Cjerry%E9%9F%B3%E4%B9%90%E7%AB%99",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7701173928131774514"
     },
     {
      "rank": 46,
-     "title": "想(其实我也曾经幻想改变)",
+     "title": "那就这样吧(爱都曲终人散了)",
      "artists": [
-      "暴躁默"
+      "黄靖轩"
      ],
-     "dedupe_key": "想|暴躁默",
-     "prev_rank": 48,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "那就这样吧|黄靖轩",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E6%83%B3%7C%E6%9A%B4%E8%BA%81%E9%BB%98",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7690430268327888923"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%82%A3%E5%B0%B1%E8%BF%99%E6%A0%B7%E5%90%A7%7C%E9%BB%84%E9%9D%96%E8%BD%A9",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7704896978358814758"
     },
     {
      "rank": 47,
-     "title": "任我是大漠里的一粒沙 -雾时",
+     "title": "我走了你别再难过（烟嗓男声版）",
      "artists": [
-      "雾时"
+      "川松星子"
      ],
-     "dedupe_key": "任我是大漠里的一粒沙雾时|雾时",
-     "prev_rank": 49,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "我走了你别再难过|川松星子",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/%E4%BB%BB%E6%88%91%E6%98%AF%E5%A4%A7%E6%BC%A0%E9%87%8C%E7%9A%84%E4%B8%80%E7%B2%92%E6%B2%99%E9%9B%BE%E6%97%B6%7C%E9%9B%BE%E6%97%B6",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7690434810422495286"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E8%B5%B0%E4%BA%86%E4%BD%A0%E5%88%AB%E5%86%8D%E9%9A%BE%E8%BF%87%7C%E5%B7%9D%E6%9D%BE%E6%98%9F%E5%AD%90",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7703916588380178467"
     },
     {
      "rank": 48,
-     "title": "Call your name",
+     "title": "Fever Touch",
      "artists": [
-      "小米儿"
+      "DJ小西",
+      "秋成"
      ],
-     "dedupe_key": "callyourname|小米儿",
-     "prev_rank": 50,
-     "rank_delta": 2,
-     "is_new": false,
+     "dedupe_key": "fevertouch|dj小西/秋成",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
      ],
-     "streak": 12,
-     "days_on_board": 7,
-     "song_path": "/song/callyourname%7C%E5%B0%8F%E7%B1%B3%E5%84%BF",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7688926437487249459"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/fevertouch%7Cdj%E5%B0%8F%E8%A5%BF%2F%E7%A7%8B%E6%88%90",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7698565789204875291"
     },
     {
      "rank": 49,
-     "title": "我们慢慢变老 心态一定要好(顺其自然live现场版)",
+     "title": "你和我的绝对恋爱规bgm",
      "artists": [
-      "老饼",
-      "乱弹Keyboard杰",
-      "阿珍又分手",
-      "玖拾久",
-      "老窦",
-      "柳十六"
+      "Inspiration"
      ],
-     "dedupe_key": "我们慢慢变老心态一定要好|乱弹keyboard杰/柳十六/玖拾久/老窦/老饼/阿珍又分手",
+     "dedupe_key": "你和我的绝对恋爱规bgm|inspiration",
      "prev_rank": null,
      "rank_delta": null,
      "is_new": true,
@@ -29147,16 +29149,16 @@
      ],
      "streak": 1,
      "days_on_board": 1,
-     "song_path": "/song/%E6%88%91%E4%BB%AC%E6%85%A2%E6%85%A2%E5%8F%98%E8%80%81%E5%BF%83%E6%80%81%E4%B8%80%E5%AE%9A%E8%A6%81%E5%A5%BD%7C%E4%B9%B1%E5%BC%B9keyboard%E6%9D%B0%2F%E6%9F%B3%E5%8D%81%E5%85%AD%2F%E7%8E%96%E6%8B%BE%E4%B9%85%2F%E8%80%81%E7%AA%A6%2F%E8%80%81%E9%A5%BC%2F%E9%98%BF%E7%8F%8D%E5%8F%88%E5%88%86%E6%89%8B",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7688209986460583962"
+     "song_path": "/song/%E4%BD%A0%E5%92%8C%E6%88%91%E7%9A%84%E7%BB%9D%E5%AF%B9%E6%81%8B%E7%88%B1%E8%A7%84bgm%7Cinspiration",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7701554183447578678"
     },
     {
      "rank": 50,
-     "title": "Heat System",
+     "title": "孟婆莫断我尘缘（男版）",
      "artists": [
-      "kama"
+      "如果是你"
      ],
-     "dedupe_key": "heatsystem|kama",
+     "dedupe_key": "孟婆莫断我尘缘|如果是你",
      "prev_rank": null,
      "rank_delta": null,
      "is_new": true,
@@ -29166,8 +29168,8 @@
      ],
      "streak": 1,
      "days_on_board": 1,
-     "song_path": "/song/heatsystem%7Ckama",
-     "url": "https://music.douyin.com/qishui/share/track?track_id=7693758355680626742"
+     "song_path": "/song/%E5%AD%9F%E5%A9%86%E8%8E%AB%E6%96%AD%E6%88%91%E5%B0%98%E7%BC%98%7C%E5%A6%82%E6%9E%9C%E6%98%AF%E4%BD%A0",
+     "url": "https://music.douyin.com/qishui/share/track?track_id=7705424156183152649"
     }
    ]
   },
@@ -30390,9 +30392,8 @@
      "prev_rank": 52,
      "rank_delta": -12,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 1,
      "platforms": [
-      "qishui",
       "weibo"
      ],
      "streak": 6,
@@ -30410,11 +30411,10 @@
      "prev_rank": 37,
      "rank_delta": -28,
      "is_new": false,
-     "platform_count": 4,
+     "platform_count": 3,
      "platforms": [
       "netease",
       "qq",
-      "qishui",
       "weibo"
      ],
      "streak": 6,
@@ -32891,13 +32891,12 @@
      "prev_rank": 2,
      "rank_delta": 0,
      "is_new": false,
-     "platform_count": 6,
+     "platform_count": 5,
      "platforms": [
       "netease",
       "qq",
       "kugou",
       "kuwo",
-      "qishui",
       "apple"
      ],
      "streak": 33,
@@ -34154,12 +34153,11 @@
      "prev_rank": 67,
      "rank_delta": 2,
      "is_new": false,
-     "platform_count": 5,
+     "platform_count": 4,
      "platforms": [
       "netease",
       "qq",
       "kugou",
-      "qishui",
       "apple"
      ],
      "streak": 15,
@@ -34860,30 +34858,6 @@
  ],
  "cross": [
   {
-   "dedupe_key": "hongkong|theweeknd",
-   "title": "Hong Kong (feat. 王菲季候风)",
-   "artists": [
-    "The Weeknd"
-   ],
-   "platforms": [
-    "netease",
-    "qq",
-    "kugou",
-    "kuwo",
-    "qishui",
-    "apple"
-   ],
-   "platform_count": 6,
-   "ranks": {
-    "netease": 11,
-    "qq": 4,
-    "kugou": 29,
-    "kuwo": 28,
-    "qishui": 2,
-    "apple": 2
-   }
-  },
-  {
    "dedupe_key": "天龙八部之宿敌|许嵩",
    "title": "天龙八部之宿敌",
    "artists": [
@@ -34903,7 +34877,7 @@
     "qq": 5,
     "kugou": 5,
     "kuwo": 6,
-    "qishui": 2,
+    "qishui": 1,
     "apple": 64
    }
   },
@@ -34927,7 +34901,7 @@
     "qq": 15,
     "kugou": 66,
     "kuwo": 86,
-    "qishui": 32,
+    "qishui": 31,
     "apple": 14
    }
   },
@@ -34951,7 +34925,7 @@
     "qq": 12,
     "kugou": 69,
     "kuwo": 41,
-    "qishui": 10,
+    "qishui": 13,
     "apple": 46
    }
   },
@@ -34975,7 +34949,7 @@
     "qq": 13,
     "kugou": 51,
     "kuwo": 28,
-    "qishui": 19,
+    "qishui": 21,
     "apple": 16
    }
   },
@@ -35023,7 +34997,7 @@
     "qq": 9,
     "kugou": 100,
     "kuwo": 47,
-    "qishui": 9,
+    "qishui": 10,
     "apple": 8
    }
   },
@@ -35052,6 +35026,50 @@
    }
   },
   {
+   "dedupe_key": "hongkong|theweeknd",
+   "title": "Hong Kong (feat. 王菲季候风)",
+   "artists": [
+    "The Weeknd"
+   ],
+   "platforms": [
+    "netease",
+    "qq",
+    "kugou",
+    "kuwo",
+    "apple"
+   ],
+   "platform_count": 5,
+   "ranks": {
+    "netease": 11,
+    "qq": 4,
+    "kugou": 29,
+    "kuwo": 28,
+    "apple": 2
+   }
+  },
+  {
+   "dedupe_key": "慌啥子嘛|赵本山",
+   "title": "慌啥子嘛",
+   "artists": [
+    "赵本山"
+   ],
+   "platforms": [
+    "netease",
+    "qq",
+    "kugou",
+    "kuwo",
+    "qishui"
+   ],
+   "platform_count": 5,
+   "ranks": {
+    "netease": 29,
+    "qq": 1,
+    "kugou": 1,
+    "kuwo": 1,
+    "qishui": 8
+   }
+  },
+  {
    "dedupe_key": "我好像在哪见过你|薛之谦",
    "title": "我好像在哪见过你",
    "artists": [
@@ -35070,29 +35088,7 @@
     "qq": 6,
     "kugou": 14,
     "kuwo": 8,
-    "qishui": 1
-   }
-  },
-  {
-   "dedupe_key": "最佳损友|陈奕迅",
-   "title": "最佳损友",
-   "artists": [
-    "陈奕迅"
-   ],
-   "platforms": [
-    "netease",
-    "qq",
-    "kugou",
-    "qishui",
-    "apple"
-   ],
-   "platform_count": 5,
-   "ranks": {
-    "netease": 96,
-    "qq": 62,
-    "kugou": 94,
-    "qishui": 45,
-    "apple": 65
+    "qishui": 2
    }
   },
   {
@@ -35118,10 +35114,10 @@
    }
   },
   {
-   "dedupe_key": "甲乙丙丁|李佳薇",
-   "title": "甲乙丙丁 (你我怎么两清)",
+   "dedupe_key": "烂奇迹|杨羊烊",
+   "title": "烂奇迹(不小心惹了上帝)",
    "artists": [
-    "李佳薇"
+    "杨羊烊"
    ],
    "platforms": [
     "netease",
@@ -35132,11 +35128,11 @@
    ],
    "platform_count": 5,
    "ranks": {
-    "netease": 16,
-    "qq": 8,
-    "kugou": 20,
-    "kuwo": 9,
-    "qishui": 8
+    "netease": 55,
+    "qq": 55,
+    "kugou": 4,
+    "kuwo": 10,
+    "qishui": 9
    }
   }
  ],

@@ -10,7 +10,7 @@ after each collection run (09:40 and 21:40 Asia/Shanghai, twice a day).
 <!-- LATEST:BEGIN -->
 | field | value |
 |---|---|
-| captured_at | `2026-11-19T09:40:05+08:00` |
+| captured_at | `2026-11-19T18:06:26+08:00` |
 | boards | 19 |
 | rows | 1740 |
 | cross-platform songs | 12 |
