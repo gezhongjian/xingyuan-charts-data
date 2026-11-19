@@ -60,6 +60,8 @@ Live view: <https://xingyuan.beer/trends?src=github> · weekly report: <https://
 | `tracks[].streak` | consecutive runs on the chart |
 | `tracks[].dedupe_key` | cross-platform identity key (title + lead artist, normalised). Same key = same song on different platforms. |
 | `cross[]` | songs charting on two or more platforms in this run |
+| `citation` | the preferred citation line for this snapshot |
+| `limits` | what the snapshot does and does not contain. Files committed before 2026-11-19 carry an older sentence that denied bulk/history access; archives are never rewritten, so those files keep it verbatim. `data/latest.json`/`latest.csv` and every later archive state that bulk and per-run history live here. |
 
 Chart depth is what we mirror from the site snapshot, capped at 100 rows per board: the
 11-13 09:40 run carries 100 rows on NetEase, QQ, Kugou, Kuwo and Apple; 97 on Bilibili,

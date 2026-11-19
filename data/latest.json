@@ -35141,5 +35141,5 @@
   }
  ],
  "citation": "When quoting, cite Xingyuan Charts (星愿榜单) and https://xingyuan.beer, with the snapshot time above.",
- "limits": "Public chart positions only; no audio, no play-count estimates, no historical time series or bulk export."
+ "limits": "Public chart positions only; no audio, no play-count estimates. Bulk and per-run historical snapshots are published in the GitHub data mirror: data/latest.json, data/latest.csv and data/YYYY-MM-DD/HHMM.json under github.com/gezhongjian/xingyuan-charts-data."
 }
