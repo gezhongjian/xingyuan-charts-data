@@ -19,24 +19,18 @@ after each collection run (09:40 and 21:40 Asia/Shanghai, twice a day).
 Download: [`data/latest.json`](data/latest.json) · [`data/latest.csv`](data/latest.csv)
 <!-- LATEST:END -->
 
-## This week (2026-11-09 → 2026-11-16)
+## This week (2026-11-13 → 2026-11-20)
 
-Twelve boards were live on both days (of eighteen live now). They held 432 distinct tracks at
-the start of the week and 428 at the end: 190 arrived, 194 left. Arrivals and departures are close
-to balanced, so the interesting number is not the turnover but who moved where.
+Eighteen boards were live on both days (nineteen now; QQ Music's Douyin Hot Songs came online on
+11-17 and is left out below). Read at the depth both days had, they held 1,121 distinct tracks a
+week ago and 1,105 today: 509 arrived, 525 left. Most of that churn sits on the fast boards —
+Bilibili kept every row, Apple Music 92% and NetEase Hot Songs 91%.
 
-The largest single climb was 《烂奇迹（不小心惹了上帝）》 by 杨羊烊, Kugou Top 500 #34 → #4 (+30).
-The Douyin audio carrying it is a 104-second edit, roughly three minutes shorter than the version
-Kugou charts — the clip that spreads and the recording that earns are not the same file. The widest
-runner was 《慌啥子嘛》: two platforms at the start, four now, with 赵本山's version at #1 on Kugou
-Top 500 and 村口吴老二's original just behind at #2. 《5th》 by 石衍恺 added the most places without
-gaining a platform (NetEase Rising #47 → #13, +34) — still a single-board story, not a run.
-
-Board stickiness reads as clearly as the arrivals: Bilibili kept every compared row, NetEase Hot
-Songs 92%, Apple Music 90%, while Douyin's challenge board kept 7 of 50 and Kugou Rising kept none.
-Housekeeping note: ten boards got deeper during the week (Kuwo Hot Songs 20 → 100 ranks) and six
-went live mid-week (all the new-song boards). Every count above stops at the depth both days read,
-so extra coverage never becomes an arrival.
+The largest same-board climb was 《笑看人间》 by 郭少杰, Kugou New Songs #98 → #7 (+91). The widest
+runner was "time machine" by mj apanay and aren park: one board a week ago, four now, with
+NetEase Hot Songs #79 → #7 over the same week. Weibo's board deepened from 60 to 100 ranks
+mid-week; every count above stops at the depth both days read, so the extra rows never turn into
+"arrivals".
 
 Live view: <https://xingyuan.beer/trends?src=github> · weekly report: <https://xingyuan.beer/reports?src=github>
 
