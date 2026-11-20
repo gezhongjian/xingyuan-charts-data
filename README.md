@@ -2,7 +2,8 @@
 
 Twice-daily, machine-readable snapshots of the **public charts** on nine Chinese music
 platforms — NetEase Cloud Music, QQ Music, Kugou, Kuwo, Qishui, Douyin, Weibo, Bilibili
-and Apple Music. Eighteen charts per snapshot: hot/rising boards plus new-song boards.
+and Apple Music. Nineteen charts per snapshot: hot/rising boards, new-song boards, and the
+Douyin challenge board.
 
 This repository is the data mirror of <https://xingyuan.beer/charts.json>. It is updated
 after each collection run (09:40 and 21:40 Asia/Shanghai, twice a day).
