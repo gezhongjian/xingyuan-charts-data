@@ -20,18 +20,17 @@ after each collection run (09:40 and 21:40 Asia/Shanghai, twice a day).
 Download: [`data/latest.json`](data/latest.json) · [`data/latest.csv`](data/latest.csv)
 <!-- LATEST:END -->
 
-## This week (2026-11-13 → 2026-11-20)
+## This week (2026-11-14 → 2026-11-21)
 
 Eighteen boards were live on both days (nineteen now; QQ Music's Douyin Hot Songs came online on
-11-17 and is left out below). Read at the depth both days had, they held 1,121 distinct tracks a
-week ago and 1,105 today: 509 arrived, 525 left. Most of that churn sits on the fast boards —
-Bilibili kept every row, Apple Music 92% and NetEase Hot Songs 91%.
+11-17 and is left out below). Read at the depth both days had, they held 1,128 distinct tracks a
+week ago and 1,121 today: 525 arrived, 532 left. Bilibili kept every row and Apple Music 95%; the
+fast boards turned over almost completely — Kugou's 6666 board kept 1%, Qishui's new-song board 2%.
 
-The largest same-board climb was 《笑看人间》 by 郭少杰, Kugou New Songs #98 → #7 (+91). The widest
-runner was "time machine" by mj apanay and aren park: one board a week ago, four now, with
-NetEase Hot Songs #79 → #7 over the same week. Weibo's board deepened from 60 to 100 ranks
-mid-week; every count above stops at the depth both days read, so the extra rows never turn into
-"arrivals".
+The largest same-board climb was 《牡丹亭》 by 浅影阿, Kuwo Hot Songs #98 → #13 (+85). The widest
+runner was "time machine" by mj apanay and aren park — one board a week ago, four now — tied with
+队长's 《哪里都是你》. Weibo's board went from 73 to 100 ranks mid-week; every count above stops at
+the depth both days read, so the extra rows never turn into "arrivals".
 
 Live view: <https://xingyuan.beer/trends?src=github> · weekly report: <https://xingyuan.beer/reports?src=github>
 
