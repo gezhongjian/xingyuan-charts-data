@@ -7,7 +7,7 @@
  "key_note": "Dedupe keys are derived from the raw title and artists (see key-golden.json for the rule and runnable cases). Known gaps: 'X - Live' (dash suffix, no brackets) normalizes to 'xlive' and does not merge with 'X'; Separators inside one artist string are not split: 'R!N/Gemie' stays one artist, so it does not collide with artists ['R!N', 'Gemie']; Artist aliases (周杰伦 / Jay Chou) are not merged: the site undercounts cross-platform presence rather than inventing a merge; Bracket stripping also merges different recordings of the same title (a 65-second edit with the full-length original): the key is not a recording identity",
  "key_golden": "https://xingyuan.beer/key-golden.json",
  "captured_at": "2026-11-21T21:40:05+08:00",
- "generated_at": "2026-11-21T21:42:55+08:00",
+ "generated_at": "2026-11-21T23:11:33+08:00",
  "cadence": "09:40 / 21:40 Asia/Shanghai, twice a day; boards with cadence=weekly re-rank weekly (rank_delta stays 0 between snapshots of the same release)",
  "rank_delta_convention": "rank_delta > 0 = moved up, < 0 = moved down, 0 = unchanged; new entries carry is_new=true and may have no previous rank",
  "boards": [
@@ -35,7 +35,7 @@
      "platforms": [
       "netease"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%B5%B7%E5%B1%BF%E4%BD%A0%7C%E9%A9%AC%E4%B9%9Fcrabbit",
      "url": "https://music.163.com/song?id=1973665667"
@@ -74,7 +74,7 @@
      "platforms": [
       "netease"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E7%BD%97%E7%94%9F%E9%97%A8%7Cwizh%E5%BC%A0%E5%AD%90%E8%B1%AA%2F%E6%A2%A8%E5%86%BB%E7%B4%A7",
      "url": "https://music.163.com/song?id=1456890009"
@@ -98,7 +98,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%88%91%E4%B8%8D%E9%9A%BE%E8%BF%87%7C%E5%AD%99%E7%87%95%E5%A7%BF",
      "url": "https://music.163.com/song?id=287398"
@@ -139,7 +139,7 @@
      "platforms": [
       "netease"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E4%BA%8E%E6%98%AF%7C%E9%83%91%E6%B6%A6%E6%B3%BD",
      "url": "https://music.163.com/song?id=1303464858"
@@ -160,7 +160,7 @@
       "qq",
       "kugou"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/99%7Ctizzyt",
      "url": "https://music.163.com/song?id=2741144144"
@@ -184,7 +184,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%A4%A9%E9%BE%99%E5%85%AB%E9%83%A8%E4%B9%8B%E5%AE%BF%E6%95%8C%7C%E8%AE%B8%E5%B5%A9",
      "url": "https://music.163.com/song?id=167691"
@@ -231,7 +231,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%81%8B%E4%BA%BA%7C%E6%9D%8E%E8%8D%A3%E6%B5%A9",
      "url": "https://music.163.com/song?id=2600493765"
@@ -254,7 +254,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E7%94%B2%E4%B9%99%E4%B8%99%E4%B8%81%7C%E6%9D%8E%E4%BD%B3%E8%96%87",
      "url": "https://music.163.com/song?id=3399839173"
@@ -321,7 +321,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E7%8E%BB%E7%92%83%7Cgaretht",
      "url": "https://music.163.com/song?id=3382908505"
@@ -359,7 +359,7 @@
      "platforms": [
       "netease"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%A6%82%E6%9E%9C%E5%91%A2%7C%E9%83%91%E6%B6%A6%E6%B3%BD",
      "url": "https://music.163.com/song?id=1842728629"
@@ -382,7 +382,7 @@
       "kuwo",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%84%BF%E4%B8%8E%E6%84%81%7C%E6%9E%97%E4%BF%8A%E6%9D%B0",
      "url": "https://music.163.com/song?id=2041026502"
@@ -401,7 +401,7 @@
      "platforms": [
       "netease"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%98%8E%E7%9F%A5%E6%95%85%E7%8A%AF%7Cmax%E6%9D%8E%E7%8E%84",
      "url": "https://music.163.com/song?id=3342319503"
@@ -421,7 +421,7 @@
      "platforms": [
       "netease"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E4%B8%80%E5%8D%8A%E4%B8%80%E5%8D%8A%7Cindecompany%2Ftopbarry",
      "url": "https://music.163.com/song?id=3333988321"
@@ -442,7 +442,7 @@
       "netease",
       "qq"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/youareallineed%7Cflycoast%2F%E4%BA%8C%E5%AE%AE%E6%84%9B",
      "url": "https://music.163.com/song?id=27562048"
@@ -465,7 +465,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E9%9B%A8%E8%BF%87%E5%90%8E%E7%9A%84%E9%A3%8E%E6%99%AF%7Cdizzydizzo",
      "url": "https://music.163.com/song?id=215382"
@@ -484,7 +484,7 @@
      "platforms": [
       "netease"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E7%A2%8E%E7%A2%8E%E5%BF%B5%7C%E9%98%9F%E9%95%BF",
      "url": "https://music.163.com/song?id=2097443876"
@@ -507,7 +507,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%88%91%E6%80%80%E5%BF%B5%E7%9A%84%7C%E5%AD%99%E7%87%95%E5%A7%BF",
      "url": "https://music.163.com/song?id=287063"
@@ -547,7 +547,7 @@
      "platforms": [
       "netease"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%B7%A6%E8%BD%AC%E7%81%AF%7Cmacovaseas%2F%E6%B4%BE%E4%BC%9F%E4%BF%8A",
      "url": "https://music.163.com/song?id=2755710644"
@@ -566,7 +566,7 @@
      "platforms": [
       "netease"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E7%BA%A2%7C%E7%BD%97%E8%A8%80",
      "url": "https://music.163.com/song?id=1918576268"
@@ -585,7 +585,7 @@
      "platforms": [
       "netease"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%BF%98%E4%B8%8D%E6%8E%89%E7%9A%84%E4%BD%A0%7Ch3r3",
      "url": "https://music.163.com/song?id=1851652156"
@@ -630,7 +630,7 @@
       "kugou",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%88%91%E5%A5%BD%E6%83%B3%E4%BD%A0%7C%E8%8B%8F%E6%89%93%E7%BB%BF",
      "url": "https://music.163.com/song?id=2652647276"
@@ -653,7 +653,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%A4%B1%E7%9C%A0%7Csuki%E5%88%98%E8%88%92%E5%A6%A4",
      "url": "https://music.163.com/song?id=273114"
@@ -672,7 +672,7 @@
      "platforms": [
       "netease"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E9%A2%9C%E8%89%B2%7Cgaretht",
      "url": "https://music.163.com/song?id=2701139855"
@@ -691,7 +691,7 @@
      "platforms": [
       "netease"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%97%9C%E5%A5%BD%7C%E9%A2%9C%E4%BA%BA%E4%B8%AD",
      "url": "https://music.163.com/song?id=1391891631"
@@ -710,7 +710,7 @@
      "platforms": [
       "netease"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E4%B8%A4%E9%9A%BE%7C%E5%8A%A0%E6%9C%A8",
      "url": "https://music.163.com/song?id=2163210456"
@@ -730,7 +730,7 @@
      "platforms": [
       "netease"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E8%BF%98%E6%98%AF%E4%BC%9A%E6%83%B3%E4%BD%A0%7Ch3r3%2F%E6%9E%97%E8%BE%BE%E6%B5%AA",
      "url": "https://music.163.com/song?id=1827600686"
@@ -811,7 +811,7 @@
      "platforms": [
       "netease"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E9%81%90%E6%83%B3%7C%E9%83%91%E6%B6%A6%E6%B3%BD",
      "url": "https://music.163.com/song?id=2018733994"
@@ -857,7 +857,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%B9%BB%E5%90%AC%7C%E8%AE%B8%E5%B5%A9",
      "url": "https://music.163.com/song?id=167655"
@@ -919,7 +919,7 @@
      "platforms": [
       "netease"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%8A%8A%E5%9B%9E%E5%BF%86%E6%8B%BC%E5%A5%BD%E7%BB%99%E4%BD%A0%7C%E7%8E%8B%E8%B4%B0%E6%B5%AA",
      "url": "https://music.163.com/song?id=1403318151"
@@ -938,7 +938,7 @@
      "platforms": [
       "netease"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%99%9A%E5%AE%89%7C%E9%A2%9C%E4%BA%BA%E4%B8%AD",
      "url": "https://music.163.com/song?id=1359356908"
@@ -960,7 +960,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E7%89%B9%E5%88%AB%E7%9A%84%E4%BA%BA%7C%E6%96%B9%E5%A4%A7%E5%90%8C",
      "url": "https://music.163.com/song?id=28403111"
@@ -1043,7 +1043,7 @@
       "kugou",
       "qishui"
      ],
-     "streak": 42,
+     "streak": 41,
      "days_on_board": 21,
      "song_path": "/song/%E6%97%B6%E8%BF%87%E5%A2%83%E8%BF%81%7C%E8%8B%8F%E8%89%BA%E9%A6%A8chency",
      "url": "https://music.163.com/song?id=2078101758"
@@ -1067,7 +1067,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E9%9B%A8%E7%88%B1%7C%E6%9D%A8%E4%B8%9E%E7%90%B3",
      "url": "https://music.163.com/song?id=316100"
@@ -1205,7 +1205,7 @@
       "netease",
       "qq"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%88%BB%E5%9C%A8%E6%88%91%E5%BF%83%E5%BA%95%E7%9A%84%E5%90%8D%E5%AD%97%7C%E5%8D%A2%E5%B9%BF%E4%BB%B2",
      "url": "https://music.163.com/song?id=1472921626"
@@ -8278,7 +8278,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%88%91%E4%B8%8D%E9%9A%BE%E8%BF%87%7C%E5%AD%99%E7%87%95%E5%A7%BF",
      "url": "https://y.qq.com/n/ryqq/songDetail/001fsNdn1zuZnA"
@@ -8302,7 +8302,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%A4%A9%E9%BE%99%E5%85%AB%E9%83%A8%E4%B9%8B%E5%AE%BF%E6%95%8C%7C%E8%AE%B8%E5%B5%A9",
      "url": "https://y.qq.com/n/ryqq/songDetail/001bLkWD2EYA4P"
@@ -8325,7 +8325,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%88%91%E5%A5%BD%E5%83%8F%E5%9C%A8%E5%93%AA%E8%A7%81%E8%BF%87%E4%BD%A0%7C%E8%96%9B%E4%B9%8B%E8%B0%A6",
      "url": "https://y.qq.com/n/ryqq/songDetail/004VBMk71TdUuR"
@@ -8348,7 +8348,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E7%94%B2%E4%B9%99%E4%B8%99%E4%B8%81%7C%E6%9D%8E%E4%BD%B3%E8%96%87",
      "url": "https://y.qq.com/n/ryqq/songDetail/002AZauQ1UKQxe"
@@ -8371,7 +8371,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%88%91%E6%80%80%E5%BF%B5%E7%9A%84%7C%E5%AD%99%E7%87%95%E5%A7%BF",
      "url": "https://y.qq.com/n/ryqq/songDetail/000BO3xy4fd8BJ"
@@ -8395,7 +8395,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E9%9B%A8%E7%88%B1%7C%E6%9D%A8%E4%B8%9E%E7%90%B3",
      "url": "https://y.qq.com/n/ryqq/songDetail/000rh0dE2TyUic"
@@ -8419,7 +8419,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%81%8B%E4%BA%BA%7C%E6%9D%8E%E8%8D%A3%E6%B5%A9",
      "url": "https://y.qq.com/n/ryqq/songDetail/001auUcH4WQs2V"
@@ -8441,7 +8441,7 @@
       "kuwo",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%8F%91%E5%A6%82%E9%9B%AA%7C%E5%91%A8%E6%9D%B0%E4%BC%A6",
      "url": "https://y.qq.com/n/ryqq/songDetail/0027oMO61wWi55"
@@ -8509,7 +8509,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%83%85%E6%AD%8C%7C%E6%A2%81%E9%9D%99%E8%8C%B9",
      "url": "https://y.qq.com/n/ryqq/songDetail/0010BrWk2SucQr"
@@ -8531,7 +8531,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/alwaysonline%7C%E6%9E%97%E4%BF%8A%E6%9D%B0",
      "url": "https://y.qq.com/n/ryqq/songDetail/001N8e5Q4Gjxda"
@@ -8552,7 +8552,7 @@
       "kuwo",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E7%88%B1%E9%94%99%7C%E7%8E%8B%E5%8A%9B%E5%AE%8F",
      "url": "https://y.qq.com/n/ryqq/songDetail/004fneUm24gD2c"
@@ -8574,7 +8574,7 @@
       "kuwo",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%B3%AA%E6%B5%B7%7C%E8%AE%B8%E8%8C%B9%E8%8A%B8",
      "url": "https://y.qq.com/n/ryqq/songDetail/003Haf8k2E6fYX"
@@ -8595,7 +8595,7 @@
       "qq",
       "kuwo"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%98%A5%E5%A8%87%E4%B8%8E%E5%BF%97%E6%98%8E%7C%E6%AC%A7%E9%98%B3%E8%80%80%E8%8E%B9%2F%E8%A1%97%E9%81%93%E5%8A%9Egdc",
      "url": "https://y.qq.com/n/ryqq/songDetail/004Uln1G2Aunqw"
@@ -8618,7 +8618,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%BC%94%E5%91%98%7C%E8%96%9B%E4%B9%8B%E8%B0%A6",
      "url": "https://y.qq.com/n/ryqq/songDetail/001Qu4I30eVFYb"
@@ -8640,7 +8640,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E7%89%B9%E5%88%AB%E7%9A%84%E4%BA%BA%7C%E6%96%B9%E5%A4%A7%E5%90%8C",
      "url": "https://y.qq.com/n/ryqq/songDetail/003cSLOO35W3yP"
@@ -8664,7 +8664,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%BC%80%E5%A7%8B%E6%87%82%E4%BA%86%7C%E5%AD%99%E7%87%95%E5%A7%BF",
      "url": "https://y.qq.com/n/ryqq/songDetail/003PSWcB4EDl6P"
@@ -8686,7 +8686,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E7%BA%A2%E8%89%B2%E9%AB%98%E8%B7%9F%E9%9E%8B%7C%E8%94%A1%E5%81%A5%E9%9B%85",
      "url": "https://y.qq.com/n/ryqq/songDetail/003IGhQO0JdnuC"
@@ -8708,7 +8708,7 @@
       "kuwo",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%B1%9F%E5%8D%97%7C%E6%9E%97%E4%BF%8A%E6%9D%B0",
      "url": "https://y.qq.com/n/ryqq/songDetail/004TXEXY2G2c7C"
@@ -8730,7 +8730,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%94%AF%E4%B8%80%7Cgem%E9%82%93%E7%B4%AB%E6%A3%8B",
      "url": "https://y.qq.com/n/ryqq/songDetail/001NgljR0RUhy1"
@@ -8774,7 +8774,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E9%9B%A8%E8%BF%87%E5%90%8E%E7%9A%84%E9%A3%8E%E6%99%AF%7Cdizzydizzo",
      "url": "https://y.qq.com/n/ryqq/songDetail/004GEXe13HYtsE"
@@ -8797,7 +8797,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%B9%BB%E5%90%AC%7C%E8%AE%B8%E5%B5%A9",
      "url": "https://y.qq.com/n/ryqq/songDetail/003MUDkf30pS5B"
@@ -8857,7 +8857,7 @@
       "qq",
       "kuwo"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%88%91%E4%BB%AC%E4%BF%A9%7C%E9%83%AD%E9%A1%B6",
      "url": "https://y.qq.com/n/ryqq/songDetail/003MASv802hpJ7"
@@ -8879,7 +8879,7 @@
       "qq",
       "kuwo"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E7%B4%A0%E9%A2%9C%7C%E4%BD%95%E6%9B%BC%E5%A9%B7%2F%E8%AE%B8%E5%B5%A9",
      "url": "https://y.qq.com/n/ryqq/songDetail/004Gq0xE1YC8xp"
@@ -8902,7 +8902,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%A4%B1%E7%9C%A0%7Csuki%E5%88%98%E8%88%92%E5%A6%A4",
      "url": "https://y.qq.com/n/ryqq/songDetail/001Y2S0F1OaM2s"
@@ -8967,7 +8967,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E7%8E%BB%E7%92%83%7Cgaretht",
      "url": "https://y.qq.com/n/ryqq/songDetail/001brxL63DYjSr"
@@ -9008,7 +9008,7 @@
       "netease",
       "qq"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%A4%9A%E8%BF%9C%E9%83%BD%E8%A6%81%E5%9C%A8%E4%B8%80%E8%B5%B7%7Cgem%E9%82%93%E7%B4%AB%E6%A3%8B",
      "url": "https://y.qq.com/n/ryqq/songDetail/003S1hgM2asCye"
@@ -9030,7 +9030,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%81%8F%E7%88%B1%7C%E5%BC%A0%E8%8A%B8%E4%BA%AC",
      "url": "https://y.qq.com/n/ryqq/songDetail/003Ho2cO2RXwUc"
@@ -9071,7 +9071,7 @@
       "qq",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E9%81%87%E8%A7%81%7C%E5%AD%99%E7%87%95%E5%A7%BF",
      "url": "https://y.qq.com/n/ryqq/songDetail/001xJbdb2MBaaz"
@@ -9133,7 +9133,7 @@
       "qq",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%AF%8C%E5%A3%AB%E5%B1%B1%E4%B8%8B%7C%E9%99%88%E5%A5%95%E8%BF%85",
      "url": "https://y.qq.com/n/ryqq/songDetail/003aAPj81VWrbL"
@@ -9174,7 +9174,7 @@
       "netease",
       "qq"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/neon%7Ca2o%2Fa2olite",
      "url": "https://y.qq.com/n/ryqq/songDetail/001qilBV4GHXGJ"
@@ -9194,7 +9194,7 @@
       "qq",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/moonride%7Chearts2hearts",
      "url": "https://y.qq.com/n/ryqq/songDetail/001qW0XY1BqDiE"
@@ -9344,7 +9344,7 @@
       "netease",
       "qq"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/youareallineed%7Cflycoast%2F%E4%BA%8C%E5%AE%AE%E6%84%9B",
      "url": "https://y.qq.com/n/ryqq/songDetail/002dG09F2B9jlJ"
@@ -9904,7 +9904,7 @@
       "kugou",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%AD%A3%E5%80%99%E9%A3%8E%7C%E7%8E%8B%E8%8F%B2",
      "url": "https://y.qq.com/n/ryqq/songDetail/001SFw584CAgoJ"
@@ -14521,7 +14521,7 @@
       "kugou",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%97%B6%E8%BF%87%E5%A2%83%E8%BF%81%7C%E8%8B%8F%E8%89%BA%E9%A6%A8chency",
      "url": "https://www.kugou.com/song/#hash=DB3014A58B305E63F94ECBE4AA8C9AE1"
@@ -14591,7 +14591,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%A4%A9%E9%BE%99%E5%85%AB%E9%83%A8%E4%B9%8B%E5%AE%BF%E6%95%8C%7C%E8%AE%B8%E5%B5%A9",
      "url": "https://www.kugou.com/song/#hash=9092283E08915874302A9C64032BC79D"
@@ -14615,7 +14615,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%88%91%E4%B8%8D%E9%9A%BE%E8%BF%87%7C%E5%AD%99%E7%87%95%E5%A7%BF",
      "url": "https://www.kugou.com/song/#hash=3FD7E1EC51122C745C637735C8BDE716"
@@ -14746,7 +14746,7 @@
       "kuwo",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%8F%91%E5%A6%82%E9%9B%AA%7C%E5%91%A8%E6%9D%B0%E4%BC%A6",
      "url": "https://www.kugou.com/song/#hash=1F7E7659B9FFF4FB6F71562A61BBC25F"
@@ -14786,7 +14786,7 @@
       "kugou",
       "kuwo"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E8%AF%B4%E5%A5%BD%E5%86%8D%E8%A7%81%E5%8D%B4%E5%86%8D%E4%B9%9F%E4%B8%8D%E8%A7%81%7C%E8%BF%9F%E5%98%89%E8%89%AF",
      "url": "https://www.kugou.com/song/#hash=27EF9606EC564F439147158B641983D9"
@@ -14806,7 +14806,7 @@
      "platforms": [
       "kugou"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/callyourname%7Crngemie%2F%E6%BE%A4%E9%87%8E%E5%BC%98%E4%B9%8B",
      "url": "https://www.kugou.com/song/#hash=57EA72A1563336E7F07307898E680FDC"
@@ -14826,7 +14826,7 @@
       "kugou",
       "kuwo"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%97%A0%E5%A5%88%E7%9A%84%E6%80%9D%E7%BB%AA%7C%E5%98%89%E6%85%A7",
      "url": "https://www.kugou.com/song/#hash=EEC9FD2DBB1BB3C5C1A282C35C537814"
@@ -14849,7 +14849,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E7%94%B2%E4%B9%99%E4%B8%99%E4%B8%81%7C%E6%9D%8E%E4%BD%B3%E8%96%87",
      "url": "https://www.kugou.com/song/#hash=213D580CA0BDCC28A5FDBA995FFDA106"
@@ -14872,7 +14872,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%88%91%E5%A5%BD%E5%83%8F%E5%9C%A8%E5%93%AA%E8%A7%81%E8%BF%87%E4%BD%A0%7C%E8%96%9B%E4%B9%8B%E8%B0%A6",
      "url": "https://www.kugou.com/song/#hash=6A350E487263733359E7F2B64BD974AC"
@@ -14894,7 +14894,7 @@
       "kuwo",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%B3%AA%E6%B5%B7%7C%E8%AE%B8%E8%8C%B9%E8%8A%B8",
      "url": "https://www.kugou.com/song/#hash=FBC174E7C22B9AF471B7B93A61751E1B"
@@ -14934,7 +14934,7 @@
       "kugou",
       "kuwo"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%A4%A7%E6%A2%A6%E5%BD%92%7C%E5%91%A8%E6%B7%B1",
      "url": "https://www.kugou.com/song/#hash=FCEDAF78465CD283E1DA72A8DEAC553A"
@@ -14956,7 +14956,7 @@
       "kugou",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%88%91%E5%A5%BD%E6%83%B3%E4%BD%A0%7C%E8%8B%8F%E6%89%93%E7%BB%BF",
      "url": "https://www.kugou.com/song/#hash=55FEA1927AC4D460F6EB3B9262AC9981"
@@ -14996,7 +14996,7 @@
       "kugou",
       "kuwo"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E7%89%A1%E4%B8%B9%E4%BA%AD%7C%E6%B5%85%E5%BD%B1%E9%98%BF",
      "url": "https://www.kugou.com/song/#hash=E3DDA5DFCDC44BCF146E2BDC3916779A"
@@ -15058,7 +15058,7 @@
       "kugou",
       "kuwo"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%96%B0%E4%B8%8E%E5%A4%A9%E9%BD%90%7C%E6%8C%87%E5%B0%96%E7%AC%91",
      "url": "https://www.kugou.com/song/#hash=797AF2D4887AC927C5F238890C535EAF"
@@ -15205,7 +15205,7 @@
      "platforms": [
       "kugou"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E9%9A%94%E5%B2%B8%7C%E5%8F%AF%E6%A5%BC",
      "url": "https://www.kugou.com/song/#hash=9ECFE2D7D2E817288EB4A58AE4265ED8"
@@ -15245,7 +15245,7 @@
       "kugou",
       "kuwo"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E4%BD%A0%E6%9C%89%E6%B2%A1%E6%9C%89%E7%9C%9F%E7%9A%84%E7%88%B1%E8%BF%87%E6%88%91%7C%E9%98%BF%E5%9B%BE%E8%A1%A8%E5%A6%B9",
      "url": "https://www.kugou.com/song/#hash=FE39668F68770C3FB3BE57A3E86CCC10"
@@ -15331,7 +15331,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%B9%BB%E5%90%AC%7C%E8%AE%B8%E5%B5%A9",
      "url": "https://www.kugou.com/song/#hash=24F5E7555646965CD7D1A924452B3300"
@@ -15536,7 +15536,7 @@
      "platforms": [
       "kugou"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E4%B8%8D%E6%AD%BB%E9%B8%9F%7C%E9%9C%8D%E5%B0%8A",
      "url": "https://www.kugou.com/song/#hash=64A97CF5A13020E8B2475FD8C0B6BE93"
@@ -15636,7 +15636,7 @@
       "kugou",
       "qishui"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E8%8C%B6%E6%B1%A4%7C%E9%83%81%E5%8F%AF%E5%94%AF",
      "url": "https://www.kugou.com/song/#hash=E2948B4513F34F7A4C7767EAD15BC4F8"
@@ -15769,7 +15769,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E9%9B%A8%E7%88%B1%7C%E6%9D%A8%E4%B8%9E%E7%90%B3",
      "url": "https://www.kugou.com/song/#hash=2592FFA57A2D8B1A16F18D991B7098CD"
@@ -15788,7 +15788,7 @@
      "platforms": [
       "kugou"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E6%88%91%E5%90%AC%E4%BA%BA%E8%AF%B4%E6%80%9D%E5%BF%B5%E5%83%8F%E9%A3%8E%E4%B8%80%E6%A0%B7%7C%E9%A1%BF%E7%8F%A0%E6%8B%89%E5%A7%86",
      "url": "https://www.kugou.com/song/#hash=4BD20B3128CD16D408E9CF82E41386D3"
@@ -16218,7 +16218,7 @@
       "kugou",
       "apple"
      ],
-     "streak": 47,
+     "streak": 44,
      "days_on_board": 22,
      "song_path": "/song/%E5%AD%A3%E5%80%99%E9%A3%8E%7C%E7%8E%8B%E8%8F%B2",
      "url": "https://www.kugou.com/song/#hash=353B4FC5F4F055E8231B516329BC0258"
@@ -27483,7 +27483,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E5%A4%A9%E9%BE%99%E5%85%AB%E9%83%A8%E4%B9%8B%E5%AE%BF%E6%95%8C%7C%E8%AE%B8%E5%B5%A9",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6849381964508596226"
@@ -27506,7 +27506,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E6%88%91%E5%A5%BD%E5%83%8F%E5%9C%A8%E5%93%AA%E8%A7%81%E8%BF%87%E4%BD%A0%7C%E8%96%9B%E4%B9%8B%E8%B0%A6",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6778775242320906241"
@@ -27530,7 +27530,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E6%88%91%E4%B8%8D%E9%9A%BE%E8%BF%87%7C%E5%AD%99%E7%87%95%E5%A7%BF",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6705065595320141825"
@@ -27552,7 +27552,7 @@
       "kugou",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E6%97%B6%E8%BF%87%E5%A2%83%E8%BF%81%7C%E8%8B%8F%E8%89%BA%E9%A6%A8chency",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7688548940955781161"
@@ -27575,7 +27575,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E6%BC%94%E5%91%98%7C%E8%96%9B%E4%B9%8B%E8%B0%A6",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6778775241108752385"
@@ -27597,7 +27597,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E7%BA%A2%E8%89%B2%E9%AB%98%E8%B7%9F%E9%9E%8B%7C%E8%94%A1%E5%81%A5%E9%9B%85",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7068138081588611073"
@@ -27616,7 +27616,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 20,
+     "streak": 2,
      "days_on_board": 10,
      "song_path": "/song/callyourname%7C%E5%B0%8F%E7%B1%B3%E5%84%BF",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7688926437487249459"
@@ -27636,7 +27636,7 @@
       "netease",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E5%B0%8F%E5%8D%8A%7C%E9%99%88%E7%B2%92",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7079108541549643812"
@@ -27659,7 +27659,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E7%83%82%E5%A5%87%E8%BF%B9%7C%E6%9D%A8%E7%BE%8A%E7%83%8A",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7705267063577511990"
@@ -27682,7 +27682,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E6%88%91%E6%80%80%E5%BF%B5%E7%9A%84%7C%E5%AD%99%E7%87%95%E5%A7%BF",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6705014751795087362"
@@ -27704,7 +27704,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E5%81%8F%E7%88%B1%7C%E5%BC%A0%E8%8A%B8%E4%BA%AC",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7468197025571948560"
@@ -27725,7 +27725,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E5%BF%83%E5%A2%99%7C%E9%83%AD%E9%9D%99",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7169644136629274663"
@@ -27749,7 +27749,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E6%81%8B%E4%BA%BA%7C%E6%9D%8E%E8%8D%A3%E6%B5%A9",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7436998767289845777"
@@ -27771,7 +27771,7 @@
       "kugou",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E6%88%91%E5%A5%BD%E6%83%B3%E4%BD%A0%7C%E8%8B%8F%E6%89%93%E7%BB%BF",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6738435351683041282"
@@ -27790,7 +27790,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E9%9B%AA%E4%B8%8B%E7%9A%84%E6%97%B6%E5%80%99%7C%E4%B9%94%E4%BD%B3%E6%97%AD",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7554592201637693467"
@@ -27812,7 +27812,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/alwaysonline%7C%E6%9E%97%E4%BF%8A%E6%9D%B0",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6726058369783711745"
@@ -27835,7 +27835,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E7%94%B2%E4%B9%99%E4%B8%99%E4%B8%81%7C%E6%9D%8E%E4%BD%B3%E8%96%87",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7657099403009804305"
@@ -27854,7 +27854,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E4%BD%A0%E4%B8%8D%E8%AF%A5%E6%9D%83%E8%A1%A1%E5%88%A9%E5%BC%8A%7Cpopsicle",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7674873487907670054"
@@ -27874,7 +27874,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E6%85%A2%E5%86%B7%7C%E6%9D%8E%E8%8D%A3%E6%B5%A9",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7128288774983550977"
@@ -27893,7 +27893,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%9C%9B%E6%95%85%E4%B9%A1%7C%E5%90%B4%E7%9F%A5%E6%99%9A",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7706158569767389235"
@@ -27917,7 +27917,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E6%83%85%E6%AD%8C%7C%E6%A2%81%E9%9D%99%E8%8C%B9",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6990754046848010276"
@@ -27940,7 +27940,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E5%A4%B1%E7%9C%A0%7Csuki%E5%88%98%E8%88%92%E5%A6%A4",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7574231906780137489"
@@ -27959,7 +27959,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E5%BC%82%E4%B9%A1%E7%9A%84%E5%A4%9C%7C%E6%AC%A3%E6%99%9A%E6%9F%A0",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7695376967742769187"
@@ -27982,7 +27982,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E5%B9%BB%E5%90%AC%7C%E8%AE%B8%E5%B5%A9",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6849428442203555842"
@@ -28005,7 +28005,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E9%9B%A8%E8%BF%87%E5%90%8E%E7%9A%84%E9%A3%8E%E6%99%AF%7Cdizzydizzo",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7634441185327745025"
@@ -28024,7 +28024,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E9%81%97%E5%A4%B1%E7%9A%84%E5%BF%83%E8%B7%B3%7C%E8%90%A7%E4%BA%9A%E8%BD%A9",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6920323667041732609"
@@ -28048,7 +28048,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E9%9B%A8%E7%88%B1%7C%E6%9D%A8%E4%B8%9E%E7%90%B3",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6696408181523875842"
@@ -28068,7 +28068,7 @@
       "qq",
       "qishui"
      ],
-     "streak": 34,
+     "streak": 3,
      "days_on_board": 17,
      "song_path": "/song/%E5%A4%A9%E5%A4%96%E6%9D%A5%E7%89%A9%7C%E8%96%9B%E4%B9%8B%E8%B0%A6",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6850116360324810753"
@@ -28087,7 +28087,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E8%8B%B9%E6%9E%9C%E9%A6%99%7C%E7%91%B6%E6%B8%85",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7704212718422100031"
@@ -28106,7 +28106,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 20,
+     "streak": 2,
      "days_on_board": 10,
      "song_path": "/song/%E6%88%91%E7%9A%84%E6%AD%8C%E5%A3%B0%E9%87%8C%7C%E5%BD%92%E6%9C%9F%E7%94%B5%E5%8F%B0",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7702756970180708406"
@@ -28130,7 +28130,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E5%BC%80%E5%A7%8B%E6%87%82%E4%BA%86%7C%E5%AD%99%E7%87%95%E5%A7%BF",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6704952949321238529"
@@ -28152,7 +28152,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E7%89%B9%E5%88%AB%E7%9A%84%E4%BA%BA%7C%E6%96%B9%E5%A4%A7%E5%90%8C",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6918195036836349953"
@@ -28174,7 +28174,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E5%94%AF%E4%B8%80%7Cgem%E9%82%93%E7%B4%AB%E6%A3%8B",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7284443920741058562"
@@ -28194,7 +28194,7 @@
       "kugou",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E8%8C%B6%E6%B1%A4%7C%E9%83%81%E5%8F%AF%E5%94%AF",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7168861366286190604"
@@ -28215,7 +28215,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E6%B5%B7%E9%98%94%E5%A4%A9%E7%A9%BA%7Cbeyond",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6705003948140398594"
@@ -28235,7 +28235,7 @@
       "qq",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E7%9E%AC%7C%E9%83%91%E6%B6%A6%E6%B3%BD",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7255195662504740866"
@@ -28257,7 +28257,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 20,
+     "streak": 2,
      "days_on_board": 10,
      "song_path": "/song/lettinggo%7C%E8%94%A1%E5%81%A5%E9%9B%85",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6917708258018854913"
@@ -28276,7 +28276,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E7%AC%AC57%E6%AC%A1%E5%8F%96%E6%B6%88%E5%8F%91%E9%80%81%7C%E9%99%86%E7%BB%AE%E8%8F%B2",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7491130229642283025"
@@ -28297,7 +28297,7 @@
       "qq",
       "qishui"
      ],
-     "streak": 34,
+     "streak": 3,
      "days_on_board": 17,
      "song_path": "/song/%E5%8F%AF%E4%B8%8D%E5%8F%AF%E4%BB%A5%7C%E5%BC%A0%E7%B4%AB%E8%B1%AA",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7296021946923141122"
@@ -28320,7 +28320,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%7Cbestie",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6870951710504781825"
@@ -28341,7 +28341,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E7%9B%9B%E5%A4%8F%E7%9A%84%E6%9E%9C%E5%AE%9E%7C%E8%8E%AB%E6%96%87%E8%94%9A",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7168856635396327463"
@@ -28360,7 +28360,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 34,
+     "streak": 3,
      "days_on_board": 17,
      "song_path": "/song/%E7%9D%A1%E5%89%8D%E5%88%AB%E6%83%B3%E5%A4%AA%E5%A4%9A%7C%E6%9D%8E%E9%9B%A8%E9%9C%8F",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7689447702921349121"
@@ -28380,7 +28380,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E8%8C%B6%E8%8A%B1%E5%BC%80%E4%BA%86%7C%E7%8E%8B%E7%9D%BF%E5%8D%93",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7441873398400894977"
@@ -28399,7 +28399,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E5%A5%BD%E8%B5%B0%E4%B8%8D%E8%A7%81%7C%E6%9B%B9%E6%A0%BC",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7168991636456736779"
@@ -28419,7 +28419,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E6%8C%87%E7%BA%B9%7C%E6%9D%9C%E5%AE%A3%E8%BE%BE",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7025566199207430145"
@@ -28441,7 +28441,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 20,
+     "streak": 2,
      "days_on_board": 10,
      "song_path": "/song/%E7%8E%BB%E7%92%83%7Cgaretht",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7640738269363587073"
@@ -28463,7 +28463,7 @@
       "kugou",
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E8%8C%89%E8%8C%89%7Cnzwin%E9%BB%84%E8%B7%83%E6%88%90",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7696444848367831041"
@@ -28482,7 +28482,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E6%88%91%E5%90%AC%E8%A7%81%E4%BA%86%E4%BD%A0%E7%9A%84%E7%97%9B%E8%8B%A6%E6%88%90%E7%AB%8B%7C%E4%BE%9B%E9%94%80%E7%A4%BE%E4%B9%90%E9%98%9F",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7646998266635094067"
@@ -28502,7 +28502,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 39,
+     "streak": 4,
      "days_on_board": 19,
      "song_path": "/song/%E6%88%92%E7%83%9F%7C%E6%9D%8E%E8%8D%A3%E6%B5%A9",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6704980467805849601"
@@ -28523,7 +28523,7 @@
       "qishui",
       "apple"
      ],
-     "streak": 34,
+     "streak": 3,
      "days_on_board": 17,
      "song_path": "/song/%E5%85%B6%E5%AE%9E%7C%E8%96%9B%E4%B9%8B%E8%B0%A6",
      "url": "https://music.douyin.com/qishui/share/track?track_id=6726058972337424385"
@@ -28559,7 +28559,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E7%83%82%E5%A5%87%E8%BF%B9%7C%E6%9D%A8%E7%BE%8A%E7%83%8A",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7705267063577511990"
@@ -28580,7 +28580,7 @@
       "kugou",
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%88%91%E5%8F%AF%E4%BB%A5%7C%E5%BC%A0%E9%91%AB",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7703856318196893734"
@@ -28599,7 +28599,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%9C%9B%E6%95%85%E4%B9%A1%7C%E5%90%B4%E7%9F%A5%E6%99%9A",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7706158569767389235"
@@ -28618,7 +28618,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E8%8B%B9%E6%9E%9C%E9%A6%99%7C%E7%91%B6%E6%B8%85",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7704212718422100031"
@@ -28637,7 +28637,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E9%95%BF%E9%A3%8E%E6%9D%A5%7C%E5%AD%9F%E8%A5%BF",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7707195306404694017"
@@ -28656,7 +28656,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%88%91%E7%9A%84%E6%AD%8C%E5%A3%B0%E9%87%8C%7C%E5%BD%92%E6%9C%9F%E7%94%B5%E5%8F%B0",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7702756970180708406"
@@ -28675,7 +28675,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E9%A3%8E%E9%9B%A8%E6%97%A0%E9%98%BB%7Cdj%E9%98%BF%E8%B6%85",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7706012136116209707"
@@ -28698,7 +28698,7 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%85%8C%E5%95%A5%E5%AD%90%E5%98%9B%7C%E8%B5%B5%E6%9C%AC%E5%B1%B1",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7707574371884632065"
@@ -28717,7 +28717,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E5%A4%A9%E4%B8%8B%E6%9C%89%E6%83%85%E4%BA%BA%7C%E6%BE%9C%E9%9B%A8%E4%B8%B4%E6%B1%80",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7704726904372512783"
@@ -28736,7 +28736,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E4%BA%BA%E7%94%9F%E4%B8%8D%E8%BF%87%E4%B8%89%E4%B8%87%E5%A4%A9%7C%E7%A6%BB%E6%99%9A%E6%83%85%E6%AD%8C",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7702367786971482147"
@@ -28756,7 +28756,7 @@
       "kugou",
       "qishui"
      ],
-     "streak": 20,
+     "streak": 2,
      "days_on_board": 10,
      "song_path": "/song/%E9%A3%8E%E5%90%B9%E8%BF%87%7C%E5%BC%A0%E7%8E%AE",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7697529725602940979"
@@ -28775,7 +28775,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E8%BF%B7%E9%9B%BE%E6%95%A3%E5%B0%BD%E4%B8%80%E5%88%87%E7%BB%88%E4%BA%8E%E5%8F%98%E6%B8%85%E6%99%B0%7C%E7%BB%B4%E5%A6%AE",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7707996874494232611"
@@ -28794,7 +28794,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E5%B1%B1%E5%A4%96%E5%B1%B1%7C%E7%96%8F%E7%96%8F%E5%91%80",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7705641976683317263"
@@ -28813,7 +28813,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E5%A4%9C%E9%97%B4%E5%B7%A1%E8%88%AA%7Ckytherian",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7704533801566078995"
@@ -28832,7 +28832,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E4%B9%9F%E6%9C%89%E6%98%A5%E8%8A%B1%E7%A7%8B%E6%9C%88%7C%E6%98%9F%E7%A6%BE%E7%A6%BE",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7703477435291158563"
@@ -28851,7 +28851,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%B5%AA%E4%BA%BA%E7%90%B5%E7%90%B6%7C%E5%A5%B6%E9%85%AAovo",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7707115131444578355"
@@ -28870,7 +28870,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E5%8D%83%E5%B9%B4%E4%BF%AE%E5%BE%97%E5%85%B1%E6%9E%95%E7%9C%A0%7Clove2u",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7706024615732889636"
@@ -28889,7 +28889,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%85%A2%E5%80%8D%E9%80%9F%7C%E7%AE%80%E6%9F%AF",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7703583252494534699"
@@ -28908,7 +28908,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/sweetbutpsychodeep%7C4hhhi",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7704585748015548467"
@@ -28927,7 +28927,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%8A%8A%E5%9B%9E%E5%BF%86%E6%8B%BC%E5%A5%BD%E7%BB%99%E4%BD%A0%7C%E5%A6%99%E9%9F%B3",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7701533324322523187"
@@ -28946,7 +28946,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%88%91%E7%9A%84%E5%BF%83%E6%97%A9%E5%B7%B2%E8%A2%AB%E4%BD%A0%E5%AE%A0%E5%9D%8F%7Clove2u",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7706744769842808886"
@@ -28965,7 +28965,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%88%91%E6%9C%AC%E8%AF%A5%E5%91%BD%E9%80%94%E9%BD%90%E5%A4%A9%E5%94%AF%E6%9C%89%E7%A0%B4%E5%BC%80%E4%BA%86%E5%A4%A9%7C%E5%9C%86%E6%80%9D%E6%80%9Dyu",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7703089127147341859"
@@ -28984,7 +28984,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%88%91%E4%B8%80%E7%9B%B4%E5%9C%A8%E4%BD%A0%E8%BA%AB%E6%97%81%7C%E4%BA%91%E6%B5%B7%E7%91%B6",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7705697692467365888"
@@ -29003,7 +29003,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%88%91%E4%BB%AC%E8%AE%A4%E8%AF%86%E4%BA%86%E9%82%A3%E4%B9%88%E4%B9%85%7C%E7%83%9F%E5%97%93%E8%80%81%E5%BC%A0",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7704934390010480676"
@@ -29022,7 +29022,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%88%91%E4%B8%8D%E7%9F%A5%E7%82%BA%E4%BD%95%E4%BD%A0%E6%80%8E%E9%BA%BC%E5%BF%98%E4%BA%86%E4%BD%A0%E5%85%88%E8%AA%AA%E6%84%9B%E6%88%91%7C%E7%9F%A5%E7%A7%8B",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7703958660259399715"
@@ -29041,7 +29041,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%88%91%E4%B8%80%E7%9B%B4%E5%9C%A8%E4%BD%A0%E8%BA%AB%E6%97%81%7C%E6%89%8E%E8%A5%BF%E5%B0%95%E5%B0%94",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7704508718734362634"
@@ -29060,7 +29060,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%88%91%E6%9C%AC%E8%AF%A5%E5%91%BD%E9%80%94%E9%BD%90%E5%A4%A9%7C%E8%8B%8F%E5%90%91%E6%99%9A",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7701546995970017334"
@@ -29079,7 +29079,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E4%BD%A0%E7%9C%8B%E4%BD%A0%E7%9C%8B%E6%9C%88%E4%BA%AE%E7%9A%84%E8%84%B8%7Cdj%E9%98%BF%E8%B6%85",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7705998647239034906"
@@ -29098,7 +29098,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E7%88%B1%E4%B8%8E%E7%97%9B%E9%83%BD%E6%88%90%E5%9B%9E%E5%BF%86%7C%E8%83%A1%E5%97%92%E5%97%92",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7707853059658057779"
@@ -29117,7 +29117,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E4%BA%BA%E4%BB%AC%E6%8A%8A%E9%9A%BE%E8%A8%80%E7%9A%84%E7%88%B1%E9%83%BD%E5%9F%8B%E5%85%A5%E5%9C%9F%E5%A3%A4%E9%87%8C%7C%E8%BE%9B%E5%AD%90",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7706359398785222710"
@@ -29136,7 +29136,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%88%91%E6%83%B3%E8%B7%9F%E4%BD%A0%E5%9C%A8%E4%B8%80%E8%B5%B7%E4%B8%8D%E6%83%B3%E5%86%8D%E7%BB%8F%E5%8E%86%E7%A6%BB%E6%95%A3%7Clove2u",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7704518304790431780"
@@ -29155,7 +29155,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/fightpiracy%7Cyanglc",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7706483106560247827"
@@ -29174,7 +29174,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E9%9C%80%E8%A6%81%E4%BA%BA%E9%99%AA%7Clove2u",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7701936379455916095"
@@ -29193,7 +29193,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%88%91%E8%AF%A5%E8%AF%B4%E6%98%AF%E6%88%91%E6%83%B3%E4%BD%A0%E8%BF%98%E6%98%AF%E5%A4%A9%E5%86%B7%E4%BA%86%7C%E6%98%9F%E7%A6%BE%E7%A6%BE",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7704608151194585088"
@@ -29213,7 +29213,7 @@
       "netease",
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E4%BD%A0%E7%9A%84%E4%B8%8D%E7%BB%8F%E6%84%8F%7Cfozik%E4%BD%9B%E5%AD%90%E5%85%8B",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7698840430121191475"
@@ -29232,7 +29232,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%B7%8B%E4%B8%80%E5%9C%BA%E9%9B%A8%7C%E6%85%95%E7%96%8F%E7%A6%BE",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7706801760443222016"
@@ -29251,7 +29251,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/cryforme%7Cpexc",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7704521250891319315"
@@ -29271,7 +29271,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%88%91%E4%B8%8D%E6%84%BF%E7%9C%8B%E5%88%B0%E4%BD%A0%E6%B5%81%E6%B3%AA%E7%9A%84%E7%9C%BC%E7%9D%9B%7C%E6%B0%B8%E5%A4%9C%2F%E8%90%BD%E9%A3%8E%E6%B3%A2",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7701257545760589862"
@@ -29290,7 +29290,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%88%91%E5%90%AC%E8%A7%81%E4%BA%86%7C%E5%86%AC%E6%97%A5%E5%90%89%E4%BB%96%E7%8C%AB",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7702032128628066347"
@@ -29309,7 +29309,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E9%AC%BC%E8%BF%B7%E5%BF%83%E7%AA%8D%7C%E5%A4%A7%E5%A4%B4%E9%92%88scream",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7703399637500168235"
@@ -29328,7 +29328,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E4%B8%80%E5%8D%8A%E9%9D%92%E6%B6%A9%E4%B8%80%E5%8D%8A%E7%BA%AF%E7%9C%9F%7C%E8%8B%8F%E5%90%91%E6%99%9A",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7706390353923115051"
@@ -29347,7 +29347,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E4%BD%A0%E4%BB%8E%E6%9C%AA%E7%A6%BB%E5%8E%BB%7Cjerry%E9%9F%B3%E4%B9%90%E7%AB%99",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7701173928131774514"
@@ -29366,7 +29366,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E9%82%A3%E5%B0%B1%E8%BF%99%E6%A0%B7%E5%90%A7%7C%E9%BB%84%E9%9D%96%E8%BD%A9",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7704896978358814758"
@@ -29385,7 +29385,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E6%88%91%E8%B5%B0%E4%BA%86%E4%BD%A0%E5%88%AB%E5%86%8D%E9%9A%BE%E8%BF%87%7C%E5%B7%9D%E6%9D%BE%E6%98%9F%E5%AD%90",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7703916588380178467"
@@ -29405,7 +29405,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/fevertouch%7Cdj%E5%B0%8F%E8%A5%BF%2F%E7%A7%8B%E6%88%90",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7698565789204875291"
@@ -29424,7 +29424,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 6,
+     "streak": 1,
      "days_on_board": 3,
      "song_path": "/song/%E4%BD%A0%E5%92%8C%E6%88%91%E7%9A%84%E7%BB%9D%E5%AF%B9%E6%81%8B%E7%88%B1%E8%A7%84bgm%7Cinspiration",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7701554183447578678"
@@ -29444,7 +29444,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 4,
+     "streak": 1,
      "days_on_board": 2,
      "song_path": "/song/%E5%B1%B1%E5%A4%96%E5%B1%B1%7C7paste%2F%E7%B4%A2%E6%9C%97%E5%A4%AE%E5%A7%86",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7701914032824371250"
@@ -29463,7 +29463,7 @@
      "platforms": [
       "qishui"
      ],
-     "streak": 4,
+     "streak": 1,
      "days_on_board": 2,
      "song_path": "/song/%E7%88%B1%E4%B8%80%E4%B8%AA%E4%BA%BA%E5%A5%BD%E9%9A%BE%7C%E9%BB%84%E9%9D%96%E8%BD%A9",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7704130905145886761"
