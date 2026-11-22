@@ -4,7 +4,7 @@
  "contract_version": "charts-json/1",
  "key_version": 1,
  "key_format": "<normalized title>|<sorted normalized artists joined by '/'>",
- "key_note": "Dedupe keys are derived from the raw title and artists (see key-golden.json for the rule and runnable cases). Known gaps: 'X - Live' (dash suffix, no brackets) normalizes to 'xlive' and does not merge with 'X'; Separators inside one artist string are not split: 'R!N/Gemie' stays one artist, so it does not collide with artists ['R!N', 'Gemie']; Artist aliases (周杰伦 / Jay Chou) are not merged: the site undercounts cross-platform presence rather than inventing a merge; Bracket stripping also merges different recordings of the same title (a 65-second edit with the full-length original): the key is not a recording identity",
+ "key_note": "Dedupe keys are derived from the raw title and artists (see key-golden.json for the rule and runnable cases). Known gaps: 'X - Live' (dash suffix, no brackets) normalizes to 'xlive' and does not merge with 'X'; Separators inside one artist string are not split: 'R!N/Gemie' stays one artist, so it does not collide with artists ['R!N', 'Gemie']; Artist aliases (周杰伦 / Jay Chou) are not merged in the key: `/charts; Bracket stripping also merges different recordings of the same title (a 65-second edit with the full-length original): the key is not a recording identity",
  "key_golden": "https://xingyuan.beer/key-golden.json",
  "captured_at": "2026-11-22T21:40:11+08:00",
  "generated_at": "2026-11-22T21:45:09+08:00",
