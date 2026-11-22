@@ -20,17 +20,23 @@ after each collection run (09:40 and 21:40 Asia/Shanghai, twice a day).
 Download: [`data/latest.json`](data/latest.json) · [`data/latest.csv`](data/latest.csv)
 <!-- LATEST:END -->
 
-## This week (2026-11-14 → 2026-11-21)
+## This week (2026-11-15 → 2026-11-22)
 
 Eighteen boards were live on both days (nineteen now; QQ Music's Douyin Hot Songs came online on
-11-17 and is left out below). Read at the depth both days had, they held 1,128 distinct tracks a
-week ago and 1,121 today: 525 arrived, 532 left. Bilibili kept every row and Apple Music 95%; the
-fast boards turned over almost completely — Kugou's 6666 board kept 1%, Qishui's new-song board 2%.
+11-17 and is left out below). Read at the depth both days had, they held 1,044 distinct tracks a
+week ago and 1,049 today: 456 arrived, 451 left, so 593 rows survived the week.
+Bilibili kept all 97 rows, Apple Music 97 of 100, Kuwo Hot 93; the fast boards turn over almost
+completely — Kugou's rising board kept 1 of 100, Qishui's new-song board 1 of 48.
 
-The largest same-board climb was 《牡丹亭》 by 浅影阿, Kuwo Hot Songs #98 → #13 (+85). The widest
-runner was "time machine" by mj apanay and aren park — one board a week ago, four now — tied with
-队长's 《哪里都是你》. Weibo's board went from 73 to 100 ranks mid-week; every count above stops at
-the depth both days read, so the extra rows never turn into "arrivals".
+The largest same-board climb was 《北京没有你》 by z阿康, Kugou TOP500 #97 → #4 (+93). The widest
+runner was 《연애의 조건 (LOVE OPTIONS)》 by BESTie — two platforms a week ago, five now — followed by
+赵本山's 《慌啥子嘛》 (3 → 5) and 队长's 《哪里都是你》 (2 → 4). Weibo's board went from 72 to 100
+ranks mid-week, so every count above stops at the depth both days read.
+
+One title can hide a crowd: on today's boards twelve different credited singers share the title
+《慌啥子嘛》 — one original, eleven covers and remixes. `dedupe_key` keeps a different credited
+singer apart on purpose, so "how many tracks" here always means "how many distinct recordings", not
+"how many song names".
 
 Live view: <https://xingyuan.beer/trends?src=github> · weekly report: <https://xingyuan.beer/reports?src=github>
 
