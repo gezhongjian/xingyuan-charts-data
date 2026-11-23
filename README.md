@@ -20,18 +20,20 @@ after each collection run (09:40 and 21:40 Asia/Shanghai, twice a day).
 Download: [`data/latest.json`](data/latest.json) · [`data/latest.csv`](data/latest.csv)
 <!-- LATEST:END -->
 
-## This week (2026-11-15 → 2026-11-22)
+## This week (2026-11-16 → 2026-11-23)
 
 Eighteen boards were live on both days (nineteen now; QQ Music's Douyin Hot Songs came online on
-11-17 and is left out below). Read at the depth both days had, they held 1,044 distinct tracks a
-week ago and 1,049 today: 456 arrived, 451 left, so 593 rows survived the week.
-Bilibili kept all 97 rows, Apple Music 97 of 100, Kuwo Hot 93; the fast boards turn over almost
-completely — Kugou's rising board kept 1 of 100, Qishui's new-song board 1 of 48.
+11-17 and is left out below). Read at the depth both days had, they held 1,058 distinct tracks a
+week ago and 1,056 today: 459 arrived, 461 left, so 597 rows survived the week.
+Bilibili kept all 97 rows, Apple Music 96 of 100, NetEase Hot Songs 92; the fast boards turn over
+almost completely — Qishui's new-song board kept 1 of 48, Douyin's challenge board 3 of 50,
+QQ Music's new-song board 7 of 100.
 
-The largest same-board climb was 《北京没有你》 by z阿康, Kugou TOP500 #97 → #4 (+93). The widest
-runner was 《연애의 조건 (LOVE OPTIONS)》 by BESTie — two platforms a week ago, five now — followed by
-赵本山's 《慌啥子嘛》 (3 → 5) and 队长's 《哪里都是你》 (2 → 4). Weibo's board went from 72 to 100
-ranks mid-week, so every count above stops at the depth both days read.
+The largest same-board climb was Cherry Candy by Lunak, NetEase New Songs #97 → #19 (+78). The
+widest runner was 赵本山's 《慌啥子嘛》 — three platforms a week ago, five now — followed by
+林俊杰's 《美人鱼》 (2 → 4), then Viik潘唯奇's 《Kiss My Soul》 and 青蛙乐队's 《小跳蛙》
+(1 → 3 each). Weibo's board went from 79 to 100 ranks during the week, so every count above stops
+at the depth both days read.
 
 One title can hide a crowd: on today's boards twelve different credited singers share the title
 《慌啥子嘛》 — one original, eleven covers and remixes. `dedupe_key` keeps a different credited
