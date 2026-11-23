@@ -15,7 +15,7 @@ after each collection run (09:40 and 21:40 Asia/Shanghai, twice a day).
 | boards | 19 |
 | rows | 1745 |
 | cross-platform songs | 12 |
-| key_version | `1` |
+| key_version | `2` |
 
 Download: [`data/latest.json`](data/latest.json) · [`data/latest.csv`](data/latest.csv)
 <!-- LATEST:END -->
