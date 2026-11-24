@@ -7,7 +7,7 @@
  "key_note": "Dedupe keys use the normalized title only; artists and albums are attributes, not identity. '#r<N>' separates recordings of the same title when durations differ by more than 20 seconds (see key-golden.json for the rule and runnable cases). Known gaps: Same title with different artists merges into one work key when their durations are within the guard: v2 identity is title-first, artists are attributes; Recordings of the same title whose durations differ by 20 seconds or less stay merged (a 65-second edit and a 70-second edit); Translations/aliases of the same song (English vs Chinese vs Korean titles) still do not merge: the key is title-derived, not a catalogue ID; `#r<N>` is a duration cluster, not a stable recording ID: a re-measured duration can move a track to another cluster",
  "key_golden": "https://xingyuan.beer/key-golden.json",
  "captured_at": "2026-11-24T09:40:05+08:00",
- "generated_at": "2026-11-24T09:42:43+08:00",
+ "generated_at": "2026-11-24T11:35:36+08:00",
  "cadence": "09:40 / 21:40 Asia/Shanghai, twice a day; boards with cadence=weekly re-rank weekly (rank_delta stays 0 between snapshots of the same release)",
  "rank_delta_convention": "rank_delta > 0 = moved up, < 0 = moved down, 0 = unchanged; new entries carry is_new=true and may have no previous rank",
  "boards": [
