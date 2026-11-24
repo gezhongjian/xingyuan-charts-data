@@ -7,9 +7,9 @@
  "key_note": "Dedupe keys use the normalized title only; artists and albums are attributes, not identity. '#r<N>' separates recordings of the same title when durations differ by more than 20 seconds (see key-golden.json for the rule and runnable cases). Known gaps: Same title with different artists merges into one work key when their durations are within the guard: v2 identity is title-first, artists are attributes; Recordings of the same title whose durations differ by 20 seconds or less stay merged (a 65-second edit and a 70-second edit); Translations/aliases of the same song (English vs Chinese vs Korean titles) still do not merge: the key is title-derived, not a catalogue ID; `#r<N>` is a duration cluster, not a stable recording ID: a re-measured duration can move a track to another cluster",
  "key_golden": "https://xingyuan.beer/key-golden.json",
  "captured_at": "2026-11-24T21:40:06+08:00",
- "generated_at": "2026-11-24T21:43:21+08:00",
+ "generated_at": "2026-11-25T02:20:57+08:00",
  "cadence": "09:40 / 21:40 Asia/Shanghai, twice a day; boards with cadence=weekly re-rank weekly (rank_delta stays 0 between snapshots of the same release)",
- "rank_delta_convention": "rank_delta > 0 = moved up, < 0 = moved down, 0 = unchanged; new entries carry is_new=true and may have no previous rank",
+ "rank_delta_convention": "rank_delta > 0 = moved up, < 0 = moved down, 0 = unchanged; the baseline is the most recent capture whose content differs (see boards[].compared_at) — identical re-captures of one platform period are not counted as a new period; new entries carry is_new=true and may have no previous rank",
  "boards": [
   {
    "platform": "netease",
@@ -18,8 +18,10 @@
    "board_name": "热歌榜",
    "path": "/board/netease/netease-hot",
    "captured_at": "2026-11-24T21:40:06+08:00",
+   "compared_at": "2026-11-23T21:40:05+08:00",
    "total": 100,
    "cadence": "twice_daily",
+   "unchanged_since": "2026-11-24T09:40:05+08:00",
    "tracks": [
     {
      "rank": 1,
@@ -47,8 +49,8 @@
       "孙燕姿"
      ],
      "dedupe_key": "我不难过",
-     "prev_rank": 2,
-     "rank_delta": 0,
+     "prev_rank": 4,
+     "rank_delta": 2,
      "is_new": false,
      "platform_count": 6,
      "platforms": [
@@ -71,8 +73,8 @@
       "郑润泽"
      ],
      "dedupe_key": "如果呢",
-     "prev_rank": 3,
-     "rank_delta": 0,
+     "prev_rank": 12,
+     "rank_delta": 9,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -90,8 +92,8 @@
       "TizzyT"
      ],
      "dedupe_key": "99",
-     "prev_rank": 4,
-     "rank_delta": 0,
+     "prev_rank": 7,
+     "rank_delta": 3,
      "is_new": false,
      "platform_count": 2,
      "platforms": [
@@ -111,8 +113,8 @@
       "aren park"
      ],
      "dedupe_key": "timemachine",
-     "prev_rank": 5,
-     "rank_delta": 0,
+     "prev_rank": 2,
+     "rank_delta": -3,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -152,8 +154,8 @@
       "Nzwin 黄跃成"
      ],
      "dedupe_key": "茉茉",
-     "prev_rank": 7,
-     "rank_delta": 0,
+     "prev_rank": 8,
+     "rank_delta": 1,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -174,8 +176,8 @@
       "许嵩"
      ],
      "dedupe_key": "天龙八部之宿敌",
-     "prev_rank": 8,
-     "rank_delta": 0,
+     "prev_rank": 5,
+     "rank_delta": -3,
      "is_new": false,
      "platform_count": 6,
      "platforms": [
@@ -198,8 +200,8 @@
       "罗言"
      ],
      "dedupe_key": "冬天又来临",
-     "prev_rank": 9,
-     "rank_delta": 0,
+     "prev_rank": 10,
+     "rank_delta": 1,
      "is_new": false,
      "platform_count": 2,
      "platforms": [
@@ -218,8 +220,8 @@
       "李荣浩"
      ],
      "dedupe_key": "恋人",
-     "prev_rank": 10,
-     "rank_delta": 0,
+     "prev_rank": 11,
+     "rank_delta": 1,
      "is_new": false,
      "platform_count": 6,
      "platforms": [
@@ -242,8 +244,8 @@
       "BESTie"
      ],
      "dedupe_key": "연애의조건",
-     "prev_rank": 11,
-     "rank_delta": 0,
+     "prev_rank": 51,
+     "rank_delta": 40,
      "is_new": false,
      "platform_count": 5,
      "platforms": [
@@ -266,8 +268,8 @@
       "Wiz_H张子豪"
      ],
      "dedupe_key": "罗生门#r2",
-     "prev_rank": 12,
-     "rank_delta": 0,
+     "prev_rank": 9,
+     "rank_delta": -3,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -285,8 +287,8 @@
       "Gareth.T"
      ],
      "dedupe_key": "玻璃",
-     "prev_rank": 13,
-     "rank_delta": 0,
+     "prev_rank": 14,
+     "rank_delta": 1,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -307,8 +309,8 @@
       "李佳薇"
      ],
      "dedupe_key": "甲乙丙丁",
-     "prev_rank": 14,
-     "rank_delta": 0,
+     "prev_rank": 17,
+     "rank_delta": 3,
      "is_new": false,
      "platform_count": 5,
      "platforms": [
@@ -330,8 +332,8 @@
       "罗言"
      ],
      "dedupe_key": "红",
-     "prev_rank": 15,
-     "rank_delta": 0,
+     "prev_rank": 21,
+     "rank_delta": 6,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -349,8 +351,8 @@
       "林俊杰"
      ],
      "dedupe_key": "愿与愁",
-     "prev_rank": 16,
-     "rank_delta": 0,
+     "prev_rank": 18,
+     "rank_delta": 2,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -371,8 +373,8 @@
       "The Weeknd"
      ],
      "dedupe_key": "hongkong",
-     "prev_rank": 17,
-     "rank_delta": 0,
+     "prev_rank": 23,
+     "rank_delta": 6,
      "is_new": false,
      "platform_count": 5,
      "platforms": [
@@ -394,8 +396,8 @@
       "郑润泽"
      ],
      "dedupe_key": "于是",
-     "prev_rank": 18,
-     "rank_delta": 0,
+     "prev_rank": 13,
+     "rank_delta": -5,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -457,8 +459,8 @@
       "薛之谦"
      ],
      "dedupe_key": "污点证人",
-     "prev_rank": 21,
-     "rank_delta": 0,
+     "prev_rank": 50,
+     "rank_delta": 29,
      "is_new": false,
      "platform_count": 5,
      "platforms": [
@@ -480,8 +482,8 @@
       "队长"
      ],
      "dedupe_key": "哪里都是你",
-     "prev_rank": 22,
-     "rank_delta": 0,
+     "prev_rank": 16,
+     "rank_delta": -6,
      "is_new": false,
      "platform_count": 3,
      "platforms": [
@@ -501,8 +503,8 @@
       "Dizzy Dizzo (蔡诗芸)"
      ],
      "dedupe_key": "雨过后的风景",
-     "prev_rank": 23,
-     "rank_delta": 0,
+     "prev_rank": 24,
+     "rank_delta": 1,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -523,8 +525,8 @@
       "队长"
      ],
      "dedupe_key": "碎碎念",
-     "prev_rank": 24,
-     "rank_delta": 0,
+     "prev_rank": 22,
+     "rank_delta": -2,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -542,8 +544,8 @@
       "h3R3"
      ],
      "dedupe_key": "忘不掉的你",
-     "prev_rank": 25,
-     "rank_delta": 0,
+     "prev_rank": 3,
+     "rank_delta": -22,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -562,8 +564,8 @@
       "mac ova seas"
      ],
      "dedupe_key": "左转灯",
-     "prev_rank": 26,
-     "rank_delta": 0,
+     "prev_rank": 33,
+     "rank_delta": 7,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -582,8 +584,8 @@
       "二宮愛"
      ],
      "dedupe_key": "youareallineed",
-     "prev_rank": 27,
-     "rank_delta": 0,
+     "prev_rank": 32,
+     "rank_delta": 5,
      "is_new": false,
      "platform_count": 2,
      "platforms": [
@@ -603,8 +605,8 @@
       "R!N/Gemie"
      ],
      "dedupe_key": "callyournamegv",
-     "prev_rank": 28,
-     "rank_delta": 0,
+     "prev_rank": 27,
+     "rank_delta": -1,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -622,8 +624,8 @@
       "Zzh"
      ],
      "dedupe_key": "降温#r1",
-     "prev_rank": 29,
-     "rank_delta": 0,
+     "prev_rank": 25,
+     "rank_delta": -4,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -641,8 +643,8 @@
       "Gareth.T"
      ],
      "dedupe_key": "颜色",
-     "prev_rank": 30,
-     "rank_delta": 0,
+     "prev_rank": 35,
+     "rank_delta": 5,
      "is_new": false,
      "platform_count": 2,
      "platforms": [
@@ -661,8 +663,8 @@
       "赵本山"
      ],
      "dedupe_key": "慌啥子嘛#r4",
-     "prev_rank": 31,
-     "rank_delta": 0,
+     "prev_rank": 37,
+     "rank_delta": 6,
      "is_new": false,
      "platform_count": 5,
      "platforms": [
@@ -685,8 +687,8 @@
       "h3R3"
      ],
      "dedupe_key": "还是会想你",
-     "prev_rank": 32,
-     "rank_delta": 0,
+     "prev_rank": 15,
+     "rank_delta": -17,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -704,8 +706,8 @@
       "Suki刘舒妤"
      ],
      "dedupe_key": "失眠",
-     "prev_rank": 33,
-     "rank_delta": 0,
+     "prev_rank": 26,
+     "rank_delta": -7,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -726,8 +728,8 @@
       "颜人中"
      ],
      "dedupe_key": "嗜好",
-     "prev_rank": 34,
-     "rank_delta": 0,
+     "prev_rank": 28,
+     "rank_delta": -6,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -745,8 +747,8 @@
       "苏打绿"
      ],
      "dedupe_key": "我好想你",
-     "prev_rank": 35,
-     "rank_delta": 0,
+     "prev_rank": 34,
+     "rank_delta": -1,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -767,8 +769,8 @@
       "加木"
      ],
      "dedupe_key": "两难",
-     "prev_rank": 36,
-     "rank_delta": 0,
+     "prev_rank": 31,
+     "rank_delta": -5,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -786,8 +788,8 @@
       "队长"
      ],
      "dedupe_key": "予你#r2",
-     "prev_rank": 37,
-     "rank_delta": 0,
+     "prev_rank": 36,
+     "rank_delta": -1,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -805,8 +807,8 @@
       "郑润泽"
      ],
      "dedupe_key": "遐想",
-     "prev_rank": 38,
-     "rank_delta": 0,
+     "prev_rank": 30,
+     "rank_delta": -8,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -846,8 +848,8 @@
       "王贰浪"
      ],
      "dedupe_key": "把回忆拼好给你#r3",
-     "prev_rank": 40,
-     "rank_delta": 0,
+     "prev_rank": 38,
+     "rank_delta": -2,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -866,8 +868,8 @@
       "Demxntia"
      ],
      "dedupe_key": "无意",
-     "prev_rank": 41,
-     "rank_delta": 0,
+     "prev_rank": 46,
+     "rank_delta": 5,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -904,8 +906,8 @@
       "G.E.M.邓紫棋"
      ],
      "dedupe_key": "唯一",
-     "prev_rank": 43,
-     "rank_delta": 0,
+     "prev_rank": 48,
+     "rank_delta": 5,
      "is_new": false,
      "platform_count": 5,
      "platforms": [
@@ -951,8 +953,8 @@
       "许嵩"
      ],
      "dedupe_key": "幻听#r2",
-     "prev_rank": 45,
-     "rank_delta": 0,
+     "prev_rank": 40,
+     "rank_delta": -5,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -973,8 +975,8 @@
       "孙燕姿"
      ],
      "dedupe_key": "开始懂了",
-     "prev_rank": 46,
-     "rank_delta": 0,
+     "prev_rank": 54,
+     "rank_delta": 8,
      "is_new": false,
      "platform_count": 6,
      "platforms": [
@@ -997,8 +999,8 @@
       "陈粒"
      ],
      "dedupe_key": "小半",
-     "prev_rank": 47,
-     "rank_delta": 0,
+     "prev_rank": 43,
+     "rank_delta": -4,
      "is_new": false,
      "platform_count": 2,
      "platforms": [
@@ -1017,8 +1019,8 @@
       "TINY7"
      ],
      "dedupe_key": "浆果",
-     "prev_rank": 48,
-     "rank_delta": 0,
+     "prev_rank": 53,
+     "rank_delta": 5,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1036,8 +1038,8 @@
       "颜人中"
      ],
      "dedupe_key": "我只能离开",
-     "prev_rank": 49,
-     "rank_delta": 0,
+     "prev_rank": 45,
+     "rank_delta": -4,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1055,8 +1057,8 @@
       "梁博"
      ],
      "dedupe_key": "出现又离开#r1",
-     "prev_rank": 50,
-     "rank_delta": 0,
+     "prev_rank": 62,
+     "rank_delta": 12,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -1077,8 +1079,8 @@
       "h3R3"
      ],
      "dedupe_key": "再等冬天",
-     "prev_rank": 51,
-     "rank_delta": 0,
+     "prev_rank": 49,
+     "rank_delta": -2,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1096,8 +1098,8 @@
       "蔡健雅"
      ],
      "dedupe_key": "红色高跟鞋",
-     "prev_rank": 52,
-     "rank_delta": 0,
+     "prev_rank": 47,
+     "rank_delta": -5,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -1118,9 +1120,9 @@
       "江辰"
      ],
      "dedupe_key": "成全",
-     "prev_rank": 53,
-     "rank_delta": 0,
-     "is_new": false,
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 2,
      "platforms": [
       "netease",
@@ -1139,8 +1141,8 @@
       "GALI"
      ],
      "dedupe_key": "starcrossingnight",
-     "prev_rank": 54,
-     "rank_delta": 0,
+     "prev_rank": 55,
+     "rank_delta": 1,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1160,8 +1162,8 @@
       "FIVESTAR"
      ],
      "dedupe_key": "苦茶子",
-     "prev_rank": 55,
-     "rank_delta": 0,
+     "prev_rank": 41,
+     "rank_delta": -14,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1199,8 +1201,8 @@
       "苏艺馨Chency"
      ],
      "dedupe_key": "时过境迁#r3",
-     "prev_rank": 57,
-     "rank_delta": 0,
+     "prev_rank": 73,
+     "rank_delta": 16,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1218,8 +1220,8 @@
       "h3R3"
      ],
      "dedupe_key": "回到你身边#r2",
-     "prev_rank": 58,
-     "rank_delta": 0,
+     "prev_rank": 74,
+     "rank_delta": 16,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1237,8 +1239,8 @@
       "任然"
      ],
      "dedupe_key": "梦哑",
-     "prev_rank": 59,
-     "rank_delta": 0,
+     "prev_rank": 61,
+     "rank_delta": 2,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1256,8 +1258,8 @@
       "村口吴老二"
      ],
      "dedupe_key": "慌啥子嘛#r3",
-     "prev_rank": 60,
-     "rank_delta": 0,
+     "prev_rank": 58,
+     "rank_delta": -2,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -1278,8 +1280,8 @@
       "颜人中"
      ],
      "dedupe_key": "夏夜最后的烟火",
-     "prev_rank": 61,
-     "rank_delta": 0,
+     "prev_rank": 66,
+     "rank_delta": 5,
      "is_new": false,
      "platform_count": 2,
      "platforms": [
@@ -1298,8 +1300,8 @@
       "卢广仲"
      ],
      "dedupe_key": "刻在我心底的名字#r2",
-     "prev_rank": 62,
-     "rank_delta": 0,
+     "prev_rank": 59,
+     "rank_delta": -3,
      "is_new": false,
      "platform_count": 2,
      "platforms": [
@@ -1318,8 +1320,8 @@
       "郭一凡"
      ],
      "dedupe_key": "有我呢",
-     "prev_rank": 63,
-     "rank_delta": 0,
+     "prev_rank": 57,
+     "rank_delta": -6,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1337,8 +1339,8 @@
       "林俊杰"
      ],
      "dedupe_key": "alwaysonline",
-     "prev_rank": 64,
-     "rank_delta": 0,
+     "prev_rank": 52,
+     "rank_delta": -12,
      "is_new": false,
      "platform_count": 3,
      "platforms": [
@@ -1359,8 +1361,8 @@
       "INDEcompany"
      ],
      "dedupe_key": "marry",
-     "prev_rank": 65,
-     "rank_delta": 0,
+     "prev_rank": 71,
+     "rank_delta": 6,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1378,8 +1380,8 @@
       "Gareth.T"
      ],
      "dedupe_key": "去北极忘记你",
-     "prev_rank": 66,
-     "rank_delta": 0,
+     "prev_rank": 75,
+     "rank_delta": 9,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1397,8 +1399,8 @@
       "郑润泽"
      ],
      "dedupe_key": "小胡同",
-     "prev_rank": 67,
-     "rank_delta": 0,
+     "prev_rank": 63,
+     "rank_delta": -4,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1416,9 +1418,9 @@
       "G-DRAGON"
      ],
      "dedupe_key": "takeme",
-     "prev_rank": 68,
-     "rank_delta": 0,
-     "is_new": false,
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 3,
      "platforms": [
       "netease",
@@ -1437,8 +1439,8 @@
       "颜人中"
      ],
      "dedupe_key": "有些",
-     "prev_rank": 69,
-     "rank_delta": 0,
+     "prev_rank": 60,
+     "rank_delta": -9,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1457,8 +1459,8 @@
       "艾热 AIR"
      ],
      "dedupe_key": "周旋",
-     "prev_rank": 70,
-     "rank_delta": 0,
+     "prev_rank": 100,
+     "rank_delta": 30,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1476,8 +1478,8 @@
       "江辰"
      ],
      "dedupe_key": "锈",
-     "prev_rank": 71,
-     "rank_delta": 0,
+     "prev_rank": 64,
+     "rank_delta": -7,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1497,9 +1499,9 @@
       "雾明"
      ],
      "dedupe_key": "雪化作泪滴",
-     "prev_rank": 72,
-     "rank_delta": 0,
-     "is_new": false,
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 2,
      "platforms": [
       "netease",
@@ -1517,8 +1519,8 @@
       "Fozik佛子克"
      ],
      "dedupe_key": "你的不经意",
-     "prev_rank": 73,
-     "rank_delta": 0,
+     "prev_rank": 68,
+     "rank_delta": -5,
      "is_new": false,
      "platform_count": 2,
      "platforms": [
@@ -1537,8 +1539,8 @@
       "贾格JuggShots"
      ],
      "dedupe_key": "沦陷#r1",
-     "prev_rank": 74,
-     "rank_delta": 0,
+     "prev_rank": 76,
+     "rank_delta": 2,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1556,8 +1558,8 @@
       "梁静茹"
      ],
      "dedupe_key": "情歌",
-     "prev_rank": 75,
-     "rank_delta": 0,
+     "prev_rank": 72,
+     "rank_delta": -3,
      "is_new": false,
      "platform_count": 6,
      "platforms": [
@@ -1580,8 +1582,8 @@
       "陈奕迅"
      ],
      "dedupe_key": "富士山下#r1",
-     "prev_rank": 76,
-     "rank_delta": 0,
+     "prev_rank": 77,
+     "rank_delta": 1,
      "is_new": false,
      "platform_count": 3,
      "platforms": [
@@ -1601,8 +1603,8 @@
       "薛之谦"
      ],
      "dedupe_key": "我好像在哪见过你",
-     "prev_rank": 77,
-     "rank_delta": 0,
+     "prev_rank": 80,
+     "rank_delta": 3,
      "is_new": false,
      "platform_count": 5,
      "platforms": [
@@ -1647,8 +1649,8 @@
       "江辰"
      ],
      "dedupe_key": "互删",
-     "prev_rank": 79,
-     "rank_delta": 0,
+     "prev_rank": 69,
+     "rank_delta": -10,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1666,8 +1668,8 @@
       "利得汇"
      ],
      "dedupe_key": "再见太难",
-     "prev_rank": 80,
-     "rank_delta": 0,
+     "prev_rank": 90,
+     "rank_delta": 10,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1685,8 +1687,8 @@
       "杨羊烊"
      ],
      "dedupe_key": "烂奇迹#r4",
-     "prev_rank": 81,
-     "rank_delta": 0,
+     "prev_rank": 67,
+     "rank_delta": -14,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -1707,8 +1709,8 @@
       "郭静"
      ],
      "dedupe_key": "爱情讯息",
-     "prev_rank": 82,
-     "rank_delta": 0,
+     "prev_rank": 79,
+     "rank_delta": -3,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1726,8 +1728,8 @@
       "G.E.M.邓紫棋"
      ],
      "dedupe_key": "多远都要在一起",
-     "prev_rank": 83,
-     "rank_delta": 0,
+     "prev_rank": 81,
+     "rank_delta": -2,
      "is_new": false,
      "platform_count": 3,
      "platforms": [
@@ -1747,8 +1749,8 @@
       "郑润泽"
      ],
      "dedupe_key": "你",
-     "prev_rank": 84,
-     "rank_delta": 0,
+     "prev_rank": 65,
+     "rank_delta": -19,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1766,8 +1768,8 @@
       "郑润泽"
      ],
      "dedupe_key": "violet",
-     "prev_rank": 85,
-     "rank_delta": 0,
+     "prev_rank": 29,
+     "rank_delta": -56,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1785,8 +1787,8 @@
       "薛之谦"
      ],
      "dedupe_key": "演员",
-     "prev_rank": 86,
-     "rank_delta": 0,
+     "prev_rank": 70,
+     "rank_delta": -16,
      "is_new": false,
      "platform_count": 6,
      "platforms": [
@@ -1809,8 +1811,8 @@
       "礼越"
      ],
      "dedupe_key": "静音恋人",
-     "prev_rank": 87,
-     "rank_delta": 0,
+     "prev_rank": 91,
+     "rank_delta": 4,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1828,8 +1830,8 @@
       "汪苏泷"
      ],
      "dedupe_key": "我想念",
-     "prev_rank": 88,
-     "rank_delta": 0,
+     "prev_rank": 83,
+     "rank_delta": -5,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1848,8 +1850,8 @@
       "单依纯"
      ],
      "dedupe_key": "如果爱忘了",
-     "prev_rank": 89,
-     "rank_delta": 0,
+     "prev_rank": 96,
+     "rank_delta": 7,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -1868,9 +1870,9 @@
       "哦漏"
      ],
      "dedupe_key": "知我",
-     "prev_rank": 90,
-     "rank_delta": 0,
-     "is_new": false,
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "netease"
@@ -1887,8 +1889,8 @@
       "蔡健雅"
      ],
      "dedupe_key": "lettinggo#r1",
-     "prev_rank": 91,
-     "rank_delta": 0,
+     "prev_rank": 89,
+     "rank_delta": -2,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -1909,8 +1911,8 @@
       "陈奕迅"
      ],
      "dedupe_key": "最佳损友",
-     "prev_rank": 92,
-     "rank_delta": 0,
+     "prev_rank": 86,
+     "rank_delta": -6,
      "is_new": false,
      "platform_count": 3,
      "platforms": [
@@ -1930,8 +1932,8 @@
       "方大同"
      ],
      "dedupe_key": "麦恩莉",
-     "prev_rank": 93,
-     "rank_delta": 0,
+     "prev_rank": 82,
+     "rank_delta": -11,
      "is_new": false,
      "platform_count": 3,
      "platforms": [
@@ -1951,8 +1953,8 @@
       "李荣浩"
      ],
      "dedupe_key": "慢冷#r1",
-     "prev_rank": 94,
-     "rank_delta": 0,
+     "prev_rank": 85,
+     "rank_delta": -9,
      "is_new": false,
      "platform_count": 2,
      "platforms": [
@@ -1971,8 +1973,8 @@
       "韦礼安"
      ],
      "dedupe_key": "如果可以",
-     "prev_rank": 95,
-     "rank_delta": 0,
+     "prev_rank": 88,
+     "rank_delta": -7,
      "is_new": false,
      "platform_count": 2,
      "platforms": [
@@ -1991,8 +1993,8 @@
       "TC"
      ],
      "dedupe_key": "熄灭",
-     "prev_rank": 96,
-     "rank_delta": 0,
+     "prev_rank": 84,
+     "rank_delta": -12,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -2010,8 +2012,8 @@
       "张紫豪"
      ],
      "dedupe_key": "可不可以",
-     "prev_rank": 97,
-     "rank_delta": 0,
+     "prev_rank": 94,
+     "rank_delta": -3,
      "is_new": false,
      "platform_count": 3,
      "platforms": [
@@ -2031,8 +2033,8 @@
       "薛之谦"
      ],
      "dedupe_key": "其实",
-     "prev_rank": 98,
-     "rank_delta": 0,
+     "prev_rank": 87,
+     "rank_delta": -11,
      "is_new": false,
      "platform_count": 3,
      "platforms": [
@@ -2052,9 +2054,9 @@
       "茜拉"
      ],
      "dedupe_key": "到时说爱我",
-     "prev_rank": 99,
-     "rank_delta": 0,
-     "is_new": false,
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "netease"
@@ -2071,9 +2073,9 @@
       "许飞"
      ],
      "dedupe_key": "明年依然好时节",
-     "prev_rank": 100,
-     "rank_delta": 0,
-     "is_new": false,
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "netease"
@@ -2092,6 +2094,7 @@
    "board_name": "新歌榜",
    "path": "/board/netease/netease-new",
    "captured_at": "2026-11-24T21:40:06+08:00",
+   "compared_at": "2026-11-24T09:40:05+08:00",
    "total": 100,
    "cadence": "twice_daily",
    "tracks": [
@@ -4101,6 +4104,7 @@
    "board_name": "飙升榜",
    "path": "/board/netease/netease-rise",
    "captured_at": "2026-11-24T21:40:06+08:00",
+   "compared_at": "2026-11-24T09:40:05+08:00",
    "total": 100,
    "cadence": "twice_daily",
    "tracks": [
@@ -6078,6 +6082,7 @@
    "board_name": "抖音热歌榜",
    "path": "/board/qq/qq-douyin",
    "captured_at": "2026-11-24T21:40:06+08:00",
+   "compared_at": "2026-11-24T09:40:05+08:00",
    "total": 100,
    "cadence": "twice_daily",
    "tracks": [
@@ -8106,6 +8111,7 @@
    "board_name": "热歌榜",
    "path": "/board/qq/qq-hot",
    "captured_at": "2026-11-24T21:40:06+08:00",
+   "compared_at": "2026-11-24T09:40:05+08:00",
    "total": 100,
    "cadence": "twice_daily",
    "tracks": [
@@ -10230,6 +10236,7 @@
    "board_name": "新歌榜",
    "path": "/board/qq/qq-new",
    "captured_at": "2026-11-24T21:40:06+08:00",
+   "compared_at": "2026-11-24T09:40:05+08:00",
    "total": 100,
    "cadence": "twice_daily",
    "tracks": [
@@ -12275,6 +12282,7 @@
    "board_name": "飙升榜",
    "path": "/board/qq/qq-rise",
    "captured_at": "2026-11-24T21:40:06+08:00",
+   "compared_at": "2026-11-24T09:40:05+08:00",
    "total": 100,
    "cadence": "twice_daily",
    "tracks": [
@@ -14241,6 +14249,7 @@
    "board_name": "TOP500",
    "path": "/board/kugou/kugou-hot",
    "captured_at": "2026-11-24T21:40:06+08:00",
+   "compared_at": "2026-11-24T09:40:05+08:00",
    "total": 100,
    "cadence": "twice_daily",
    "tracks": [
@@ -16370,6 +16379,7 @@
    "board_name": "新歌榜",
    "path": "/board/kugou/kugou-new",
    "captured_at": "2026-11-24T21:40:06+08:00",
+   "compared_at": "2026-11-24T09:40:05+08:00",
    "total": 100,
    "cadence": "twice_daily",
    "tracks": [
@@ -18440,6 +18450,7 @@
    "board_name": "飙升榜",
    "path": "/board/kugou/kugou-rise",
    "captured_at": "2026-11-24T21:40:06+08:00",
+   "compared_at": "2026-11-24T09:40:05+08:00",
    "total": 100,
    "cadence": "twice_daily",
    "tracks": [
@@ -20409,6 +20420,7 @@
    "board_name": "挑战榜",
    "path": "/board/douyin/douyin-challenge",
    "captured_at": "2026-11-24T21:40:06+08:00",
+   "compared_at": "2026-11-24T09:40:05+08:00",
    "total": 50,
    "cadence": "twice_daily",
    "tracks": [
@@ -21273,6 +21285,7 @@
    "board_name": "酷我热歌榜",
    "path": "/board/kuwo/kuwo-hot",
    "captured_at": "2026-11-24T21:40:06+08:00",
+   "compared_at": "2026-11-24T09:40:05+08:00",
    "total": 100,
    "cadence": "twice_daily",
    "tracks": [
@@ -23320,6 +23333,7 @@
    "board_name": "酷我新歌榜",
    "path": "/board/kuwo/kuwo-new",
    "captured_at": "2026-11-24T21:40:06+08:00",
+   "compared_at": "2026-11-24T09:40:05+08:00",
    "total": 100,
    "cadence": "twice_daily",
    "tracks": [
@@ -25346,6 +25360,7 @@
    "board_name": "酷我飙升榜",
    "path": "/board/kuwo/kuwo-rise",
    "captured_at": "2026-11-24T21:40:06+08:00",
+   "compared_at": "2026-11-24T09:40:05+08:00",
    "total": 100,
    "cadence": "twice_daily",
    "tracks": [
@@ -27358,8 +27373,10 @@
    "board_name": "汽水热歌榜",
    "path": "/board/qishui/qishui-hot",
    "captured_at": "2026-11-24T21:40:06+08:00",
+   "compared_at": "2026-11-19T09:40:05+08:00",
    "total": 50,
    "cadence": "weekly",
+   "unchanged_since": "2026-11-19T18:06:26+08:00",
    "released_at": "2026-11-19T16:00:00+08:00",
    "tracks": [
     {
@@ -27369,8 +27386,8 @@
       "许嵩"
      ],
      "dedupe_key": "天龙八部之宿敌",
-     "prev_rank": 1,
-     "rank_delta": 0,
+     "prev_rank": 2,
+     "rank_delta": 1,
      "is_new": false,
      "platform_count": 6,
      "platforms": [
@@ -27393,8 +27410,8 @@
       "薛之谦"
      ],
      "dedupe_key": "我好像在哪见过你",
-     "prev_rank": 2,
-     "rank_delta": 0,
+     "prev_rank": 1,
+     "rank_delta": -1,
      "is_new": false,
      "platform_count": 5,
      "platforms": [
@@ -27507,8 +27524,8 @@
       "小米儿"
      ],
      "dedupe_key": "callyourname#r3",
-     "prev_rank": 7,
-     "rank_delta": 0,
+     "prev_rank": 29,
+     "rank_delta": 22,
      "is_new": false,
      "platform_count": 2,
      "platforms": [
@@ -27527,8 +27544,8 @@
       "陈粒"
      ],
      "dedupe_key": "小半",
-     "prev_rank": 8,
-     "rank_delta": 0,
+     "prev_rank": 21,
+     "rank_delta": 13,
      "is_new": false,
      "platform_count": 2,
      "platforms": [
@@ -27547,9 +27564,9 @@
       "杨羊烊"
      ],
      "dedupe_key": "烂奇迹#r4",
-     "prev_rank": 9,
-     "rank_delta": 0,
-     "is_new": false,
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 4,
      "platforms": [
       "netease",
@@ -27569,8 +27586,8 @@
       "孙燕姿"
      ],
      "dedupe_key": "我怀念的",
-     "prev_rank": 10,
-     "rank_delta": 0,
+     "prev_rank": 9,
+     "rank_delta": -1,
      "is_new": false,
      "platform_count": 6,
      "platforms": [
@@ -27593,8 +27610,8 @@
       "张芸京"
      ],
      "dedupe_key": "偏爱",
-     "prev_rank": 11,
-     "rank_delta": 0,
+     "prev_rank": 7,
+     "rank_delta": -4,
      "is_new": false,
      "platform_count": 3,
      "platforms": [
@@ -27614,8 +27631,8 @@
       "郭静"
      ],
      "dedupe_key": "心墙",
-     "prev_rank": 12,
-     "rank_delta": 0,
+     "prev_rank": 14,
+     "rank_delta": 2,
      "is_new": false,
      "platform_count": 3,
      "platforms": [
@@ -27635,8 +27652,8 @@
       "李荣浩"
      ],
      "dedupe_key": "恋人",
-     "prev_rank": 13,
-     "rank_delta": 0,
+     "prev_rank": 10,
+     "rank_delta": -3,
      "is_new": false,
      "platform_count": 6,
      "platforms": [
@@ -27659,8 +27676,8 @@
       "苏打绿"
      ],
      "dedupe_key": "我好想你",
-     "prev_rank": 14,
-     "rank_delta": 0,
+     "prev_rank": 15,
+     "rank_delta": 1,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -27681,8 +27698,8 @@
       "乔佳旭"
      ],
      "dedupe_key": "雪下的时候",
-     "prev_rank": 15,
-     "rank_delta": 0,
+     "prev_rank": 17,
+     "rank_delta": 2,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -27700,8 +27717,8 @@
       "林俊杰"
      ],
      "dedupe_key": "alwaysonline",
-     "prev_rank": 16,
-     "rank_delta": 0,
+     "prev_rank": 12,
+     "rank_delta": -4,
      "is_new": false,
      "platform_count": 3,
      "platforms": [
@@ -27721,8 +27738,8 @@
       "李佳薇"
      ],
      "dedupe_key": "甲乙丙丁",
-     "prev_rank": 17,
-     "rank_delta": 0,
+     "prev_rank": 8,
+     "rank_delta": -9,
      "is_new": false,
      "platform_count": 5,
      "platforms": [
@@ -27744,8 +27761,8 @@
       "Popsicle"
      ],
      "dedupe_key": "你不该权衡利弊#r1",
-     "prev_rank": 18,
-     "rank_delta": 0,
+     "prev_rank": 16,
+     "rank_delta": -2,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -27763,8 +27780,8 @@
       "李荣浩"
      ],
      "dedupe_key": "慢冷#r1",
-     "prev_rank": 19,
-     "rank_delta": 0,
+     "prev_rank": 23,
+     "rank_delta": 4,
      "is_new": false,
      "platform_count": 2,
      "platforms": [
@@ -27783,9 +27800,9 @@
       "吴知晚"
      ],
      "dedupe_key": "望故乡",
-     "prev_rank": 20,
-     "rank_delta": 0,
-     "is_new": false,
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
@@ -27802,8 +27819,8 @@
       "梁静茹"
      ],
      "dedupe_key": "情歌",
-     "prev_rank": 21,
-     "rank_delta": 0,
+     "prev_rank": 19,
+     "rank_delta": -2,
      "is_new": false,
      "platform_count": 6,
      "platforms": [
@@ -27826,8 +27843,8 @@
       "Suki刘舒妤"
      ],
      "dedupe_key": "失眠",
-     "prev_rank": 22,
-     "rank_delta": 0,
+     "prev_rank": 20,
+     "rank_delta": -2,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -27848,8 +27865,8 @@
       "欣晚柠"
      ],
      "dedupe_key": "异乡的夜",
-     "prev_rank": 23,
-     "rank_delta": 0,
+     "prev_rank": 30,
+     "rank_delta": 7,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -27867,8 +27884,8 @@
       "许嵩"
      ],
      "dedupe_key": "幻听#r2",
-     "prev_rank": 24,
-     "rank_delta": 0,
+     "prev_rank": 22,
+     "rank_delta": -2,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -27889,8 +27906,8 @@
       "Dizzy Dizzo (蔡诗芸)"
      ],
      "dedupe_key": "雨过后的风景",
-     "prev_rank": 25,
-     "rank_delta": 0,
+     "prev_rank": 24,
+     "rank_delta": -1,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -27954,8 +27971,8 @@
       "薛之谦"
      ],
      "dedupe_key": "天外来物",
-     "prev_rank": 28,
-     "rank_delta": 0,
+     "prev_rank": 25,
+     "rank_delta": -3,
      "is_new": false,
      "platform_count": 2,
      "platforms": [
@@ -27974,9 +27991,9 @@
       "瑶清"
      ],
      "dedupe_key": "苹果香",
-     "prev_rank": 29,
-     "rank_delta": 0,
-     "is_new": false,
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
@@ -27993,8 +28010,8 @@
       "归期电台"
      ],
      "dedupe_key": "我的歌声里",
-     "prev_rank": 30,
-     "rank_delta": 0,
+     "prev_rank": 13,
+     "rank_delta": -17,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -28012,8 +28029,8 @@
       "孙燕姿"
      ],
      "dedupe_key": "开始懂了",
-     "prev_rank": 31,
-     "rank_delta": 0,
+     "prev_rank": 32,
+     "rank_delta": 1,
      "is_new": false,
      "platform_count": 6,
      "platforms": [
@@ -28036,8 +28053,8 @@
       "方大同"
      ],
      "dedupe_key": "特别的人",
-     "prev_rank": 32,
-     "rank_delta": 0,
+     "prev_rank": 35,
+     "rank_delta": 3,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -28058,8 +28075,8 @@
       "G.E.M. 邓紫棋"
      ],
      "dedupe_key": "唯一",
-     "prev_rank": 33,
-     "rank_delta": 0,
+     "prev_rank": 39,
+     "rank_delta": 6,
      "is_new": false,
      "platform_count": 5,
      "platforms": [
@@ -28081,8 +28098,8 @@
       "郁可唯"
      ],
      "dedupe_key": "茶汤",
-     "prev_rank": 34,
-     "rank_delta": 0,
+     "prev_rank": 11,
+     "rank_delta": -23,
      "is_new": false,
      "platform_count": 2,
      "platforms": [
@@ -28101,8 +28118,8 @@
       "Beyond"
      ],
      "dedupe_key": "海阔天空#r1",
-     "prev_rank": 35,
-     "rank_delta": 0,
+     "prev_rank": 41,
+     "rank_delta": 6,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -28120,8 +28137,8 @@
       "郑润泽"
      ],
      "dedupe_key": "瞬",
-     "prev_rank": 36,
-     "rank_delta": 0,
+     "prev_rank": 34,
+     "rank_delta": -2,
      "is_new": false,
      "platform_count": 2,
      "platforms": [
@@ -28140,8 +28157,8 @@
       "蔡健雅"
      ],
      "dedupe_key": "lettinggo#r1",
-     "prev_rank": 37,
-     "rank_delta": 0,
+     "prev_rank": 43,
+     "rank_delta": 6,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -28182,8 +28199,8 @@
       "张紫豪"
      ],
      "dedupe_key": "可不可以",
-     "prev_rank": 39,
-     "rank_delta": 0,
+     "prev_rank": 36,
+     "rank_delta": -3,
      "is_new": false,
      "platform_count": 3,
      "platforms": [
@@ -28203,9 +28220,9 @@
       "BESTie"
      ],
      "dedupe_key": "연애의조건",
-     "prev_rank": 40,
-     "rank_delta": 0,
-     "is_new": false,
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 5,
      "platforms": [
       "netease",
@@ -28226,8 +28243,8 @@
       "莫文蔚"
      ],
      "dedupe_key": "盛夏的果实",
-     "prev_rank": 41,
-     "rank_delta": 0,
+     "prev_rank": 31,
+     "rank_delta": -10,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -28248,8 +28265,8 @@
       "李雨霏"
      ],
      "dedupe_key": "睡前别想太多",
-     "prev_rank": 42,
-     "rank_delta": 0,
+     "prev_rank": 28,
+     "rank_delta": -14,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -28267,9 +28284,9 @@
       "王睿卓"
      ],
      "dedupe_key": "茶花开了",
-     "prev_rank": 43,
-     "rank_delta": 0,
-     "is_new": false,
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 2,
      "platforms": [
       "kuwo",
@@ -28287,9 +28304,9 @@
       "曹格"
      ],
      "dedupe_key": "好走不见",
-     "prev_rank": 44,
-     "rank_delta": 0,
-     "is_new": false,
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "qishui"
@@ -28306,8 +28323,8 @@
       "杜宣达"
      ],
      "dedupe_key": "指纹",
-     "prev_rank": 45,
-     "rank_delta": 0,
+     "prev_rank": 37,
+     "rank_delta": -8,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -28325,8 +28342,8 @@
       "Gareth.T"
      ],
      "dedupe_key": "玻璃",
-     "prev_rank": 46,
-     "rank_delta": 0,
+     "prev_rank": 49,
+     "rank_delta": 3,
      "is_new": false,
      "platform_count": 4,
      "platforms": [
@@ -28347,9 +28364,9 @@
       "Nzwin黄跃成"
      ],
      "dedupe_key": "茉茉",
-     "prev_rank": 47,
-     "rank_delta": 0,
-     "is_new": false,
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 4,
      "platforms": [
       "netease",
@@ -28369,8 +28386,8 @@
       "供销社乐队"
      ],
      "dedupe_key": "我听见了你的痛苦成立",
-     "prev_rank": 48,
-     "rank_delta": 0,
+     "prev_rank": 18,
+     "rank_delta": -30,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -28388,8 +28405,8 @@
       "李荣浩"
      ],
      "dedupe_key": "戒烟",
-     "prev_rank": 49,
-     "rank_delta": 0,
+     "prev_rank": 46,
+     "rank_delta": -3,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -28407,8 +28424,8 @@
       "薛之谦"
      ],
      "dedupe_key": "其实",
-     "prev_rank": 50,
-     "rank_delta": 0,
+     "prev_rank": 40,
+     "rank_delta": -10,
      "is_new": false,
      "platform_count": 3,
      "platforms": [
@@ -28430,6 +28447,7 @@
    "board_name": "汽水新歌榜",
    "path": "/board/qishui/qishui-new",
    "captured_at": "2026-11-24T21:40:06+08:00",
+   "compared_at": "2026-11-24T09:40:05+08:00",
    "total": 46,
    "cadence": "weekly",
    "released_at": "2026-11-19T16:00:00+08:00",
@@ -29336,6 +29354,7 @@
    "board_name": "微博音乐榜",
    "path": "/board/weibo/weibo-hot",
    "captured_at": "2026-11-24T21:40:06+08:00",
+   "compared_at": "2026-11-24T09:40:05+08:00",
    "total": 100,
    "cadence": "twice_daily",
    "tracks": [
@@ -31282,8 +31301,10 @@
    "board_name": "B 站音乐区",
    "path": "/board/bilibili/bilibili-music",
    "captured_at": "2026-11-24T21:40:06+08:00",
+   "compared_at": "2026-11-24T09:40:05+08:00",
    "total": 97,
    "cadence": "twice_daily",
+   "unchanged_since": "2026-11-12T09:40:04+08:00",
    "tracks": [
     {
      "rank": 1,
@@ -33137,6 +33158,7 @@
    "board_name": "Apple 热门歌曲",
    "path": "/board/apple/apple-hot",
    "captured_at": "2026-11-24T21:40:06+08:00",
+   "compared_at": "2026-11-24T09:40:05+08:00",
    "total": 100,
    "cadence": "twice_daily",
    "tracks": [
