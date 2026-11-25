@@ -20,7 +20,7 @@ after each collection run (09:40 and 21:40 Asia/Shanghai, twice a day).
 Download: [`data/latest.json`](data/latest.json) · [`data/latest.csv`](data/latest.csv)
 <!-- LATEST:END -->
 
-## This week (2026-11-16 → 2026-11-23)
+## Week of 2026-11-16 → 2026-11-23
 
 Eighteen boards were live on both days (nineteen now; QQ Music's Douyin Hot Songs came online on
 11-17 and is left out below). Read at the depth both days had, they held 1,058 distinct tracks a
