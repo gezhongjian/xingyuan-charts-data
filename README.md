@@ -42,6 +42,12 @@ singer apart on purpose, so "how many tracks" here always means "how many distin
 
 Live view: <https://xingyuan.beer/trends?src=github> · weekly report: <https://xingyuan.beer/reports?src=github>
 
+## Week of 2026-11-23 → 2026-11-30 (in progress)
+
+Four days in, the week's clearest shape is a song that will not move: 赵本山's 《慌啥子嘛》 sits on nine boards across five platforms on 11-26, six of them at No.1 (QQ, Kugou, Kuwo). Its Douyin challenge topics tell the opposite story — No.1 on 11-19, No.16 today, with the acoustic take gone and an English rework climbing in its place. The covers rotate; the 189-second original stays. The title still hides a crowd: fifteen different credited singers share 《慌啥子嘛》 on today's boards, and `dedupe_key` counts recordings, not song names.
+
+Live view: <https://xingyuan.beer/trends?src=github>
+
 ## Files
 
 | path | what |
