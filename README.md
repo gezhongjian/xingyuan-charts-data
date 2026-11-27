@@ -44,7 +44,11 @@ Live view: <https://xingyuan.beer/trends?src=github> · weekly report: <https://
 
 ## Week of 2026-11-23 → 2026-11-30 (in progress)
 
-Four days in, the week's clearest shape is a song that will not move: 赵本山's 《慌啥子嘛》 sits on nine boards across five platforms on 11-26, six of them at No.1 (QQ, Kugou, Kuwo). Its Douyin challenge topics tell the opposite story — No.1 on 11-19, No.16 today, with the acoustic take gone and an English rework climbing in its place. The covers rotate; the 189-second original stays. The title still hides a crowd: fifteen different credited singers share 《慌啥子嘛》 on today's boards, and `dedupe_key` counts recordings, not song names.
+Five days in, one readable bright-screen-to-listening-platform sequence is 乔佳旭's 《雪下的时候》.
+It was already No.15 on Qishui Hot Songs at 21:40 on 11-23; the first listening-platform board to
+pick it up in these snapshots was Kuwo Hot Songs, No.94 at 21:40 on 11-25 — a 48-hour gap between
+captures. At 09:40 on 11-27 it remained on both, at Qishui No.12 and Kuwo No.78. That is chart
+confirmation across the two platform types, not proof that one caused the other or a forecast.
 
 Live view: <https://xingyuan.beer/trends?src=github>
 
