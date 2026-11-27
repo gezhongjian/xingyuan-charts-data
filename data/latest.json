@@ -6,8 +6,8 @@
  "key_format": "<normalized title>[#r<N>]",
  "key_note": "Dedupe keys use the normalized title only; artists and albums are attributes, not identity. '#r<N>' separates recordings of the same title when durations differ by more than 20 seconds (see key-golden.json for the rule and runnable cases). Known gaps: Same title with different artists merges into one work key when their durations are within the guard: v2 identity is title-first, artists are attributes; Recordings of the same title whose durations differ by 20 seconds or less stay merged (a 65-second edit and a 70-second edit); Translations/aliases of the same song (English vs Chinese vs Korean titles) still do not merge: the key is title-derived, not a catalogue ID; `#r<N>` is a duration cluster, not a stable recording ID: a re-measured duration can move a track to another cluster",
  "key_golden": "https://xingyuan.beer/key-golden.json",
- "captured_at": "2026-11-27T09:40:02+08:00",
- "generated_at": "2026-11-27T09:43:01+08:00",
+ "captured_at": "2026-11-27T15:50:00+08:00",
+ "generated_at": "2026-11-27T15:36:34+08:00",
  "cadence": "09:40 / 21:40 Asia/Shanghai, twice a day; boards with cadence=weekly release a new edition weekly, and rank_delta is computed against boards[].compared_at (the last capture whose contents differ), so it can be non-zero within one release when the platform adjusts ranks",
  "rank_delta_convention": "rank_delta > 0 = moved up, < 0 = moved down, 0 = unchanged; the baseline is the most recent capture whose content differs (see boards[].compared_at) — identical re-captures of one platform period are not counted as a new period; new entries carry is_new=true and may have no previous rank",
  "boards": [
@@ -510,7 +510,7 @@
      "artists": [
       "Dizzy Dizzo (蔡诗芸)"
      ],
-     "dedupe_key": "雨过后的风景",
+     "dedupe_key": "雨过后的风景#r2",
      "prev_rank": 22,
      "rank_delta": -2,
      "is_new": false,
@@ -523,7 +523,7 @@
      ],
      "streak": 55,
      "days_on_board": 28,
-     "song_path": "/song/%E9%9B%A8%E8%BF%87%E5%90%8E%E7%9A%84%E9%A3%8E%E6%99%AF",
+     "song_path": "/song/%E9%9B%A8%E8%BF%87%E5%90%8E%E7%9A%84%E9%A3%8E%E6%99%AF%23r2",
      "url": "https://music.163.com/song?id=215382"
     },
     {
@@ -577,10 +577,11 @@
      "prev_rank": 28,
      "rank_delta": 1,
      "is_new": false,
-     "platform_count": 2,
+     "platform_count": 3,
      "platforms": [
       "netease",
-      "kugou"
+      "kugou",
+      "douyin"
      ],
      "streak": 55,
      "days_on_board": 28,
@@ -4357,7 +4358,7 @@
      "artists": [
       "李健"
      ],
-     "dedupe_key": "传奇#r2",
+     "dedupe_key": "传奇#r3",
      "prev_rank": 26,
      "rank_delta": 12,
      "is_new": false,
@@ -4369,7 +4370,7 @@
      ],
      "streak": 3,
      "days_on_board": 2,
-     "song_path": "/song/%E4%BC%A0%E5%A5%87%23r2",
+     "song_path": "/song/%E4%BC%A0%E5%A5%87%23r3",
      "url": "https://music.163.com/song?id=110411"
     },
     {
@@ -8743,7 +8744,7 @@
      "artists": [
       "Dizzy Dizzo (蔡诗芸)"
      ],
-     "dedupe_key": "雨过后的风景",
+     "dedupe_key": "雨过后的风景#r2",
      "prev_rank": 29,
      "rank_delta": 0,
      "is_new": false,
@@ -8756,7 +8757,7 @@
      ],
      "streak": 55,
      "days_on_board": 28,
-     "song_path": "/song/%E9%9B%A8%E8%BF%87%E5%90%8E%E7%9A%84%E9%A3%8E%E6%99%AF",
+     "song_path": "/song/%E9%9B%A8%E8%BF%87%E5%90%8E%E7%9A%84%E9%A3%8E%E6%99%AF%23r2",
      "url": "https://y.qq.com/n/ryqq/songDetail/004GEXe13HYtsE"
     },
     {
@@ -9865,7 +9866,7 @@
      "artists": [
       "李健"
      ],
-     "dedupe_key": "传奇#r2",
+     "dedupe_key": "传奇#r3",
      "prev_rank": 83,
      "rank_delta": 0,
      "is_new": false,
@@ -9877,7 +9878,7 @@
      ],
      "streak": 2,
      "days_on_board": 2,
-     "song_path": "/song/%E4%BC%A0%E5%A5%87%23r2",
+     "song_path": "/song/%E4%BC%A0%E5%A5%87%23r3",
      "url": "https://y.qq.com/n/ryqq/songDetail/00471z1Z49DUmW"
     },
     {
@@ -11769,7 +11770,7 @@
      "artists": [
       "李健"
      ],
-     "dedupe_key": "传奇#r2",
+     "dedupe_key": "传奇#r3",
      "prev_rank": 76,
      "rank_delta": 0,
      "is_new": false,
@@ -11781,7 +11782,7 @@
      ],
      "streak": 2,
      "days_on_board": 2,
-     "song_path": "/song/%E4%BC%A0%E5%A5%87%23r2",
+     "song_path": "/song/%E4%BC%A0%E5%A5%87%23r3",
      "url": "https://y.qq.com/n/ryqq/songDetail/00471z1Z49DUmW"
     },
     {
@@ -12335,7 +12336,7 @@
      "artists": [
       "李健"
      ],
-     "dedupe_key": "传奇#r2",
+     "dedupe_key": "传奇#r3",
      "prev_rank": 4,
      "rank_delta": 0,
      "is_new": false,
@@ -12347,7 +12348,7 @@
      ],
      "streak": 4,
      "days_on_board": 3,
-     "song_path": "/song/%E4%BC%A0%E5%A5%87%23r2",
+     "song_path": "/song/%E4%BC%A0%E5%A5%87%23r3",
      "url": "https://y.qq.com/n/ryqq/songDetail/00471z1Z49DUmW"
     },
     {
@@ -12870,7 +12871,7 @@
      "artists": [
       "王菲"
      ],
-     "dedupe_key": "传奇#r2",
+     "dedupe_key": "传奇#r3",
      "prev_rank": 30,
      "rank_delta": 0,
      "is_new": false,
@@ -12882,7 +12883,7 @@
      ],
      "streak": 4,
      "days_on_board": 3,
-     "song_path": "/song/%E4%BC%A0%E5%A5%87%23r2",
+     "song_path": "/song/%E4%BC%A0%E5%A5%87%23r3",
      "url": "https://y.qq.com/n/ryqq/songDetail/002twZxX087cPx"
     },
     {
@@ -13107,7 +13108,7 @@
      "artists": [
       "鹿晗"
      ],
-     "dedupe_key": "吹吹风",
+     "dedupe_key": "吹吹风#r2",
      "prev_rank": 42,
      "rank_delta": 0,
      "is_new": false,
@@ -13117,7 +13118,7 @@
      ],
      "streak": 4,
      "days_on_board": 3,
-     "song_path": "/song/%E5%90%B9%E5%90%B9%E9%A3%8E",
+     "song_path": "/song/%E5%90%B9%E5%90%B9%E9%A3%8E%23r2",
      "url": "https://y.qq.com/n/ryqq/songDetail/001V0zUt0DoTqJ"
     },
     {
@@ -15485,7 +15486,7 @@
      "artists": [
       "Dizzy Dizzo (蔡诗芸)"
      ],
-     "dedupe_key": "雨过后的风景",
+     "dedupe_key": "雨过后的风景#r2",
      "prev_rank": 55,
      "rank_delta": -2,
      "is_new": false,
@@ -15498,7 +15499,7 @@
      ],
      "streak": 31,
      "days_on_board": 16,
-     "song_path": "/song/%E9%9B%A8%E8%BF%87%E5%90%8E%E7%9A%84%E9%A3%8E%E6%99%AF",
+     "song_path": "/song/%E9%9B%A8%E8%BF%87%E5%90%8E%E7%9A%84%E9%A3%8E%E6%99%AF%23r2",
      "url": "https://www.kugou.com/song/#hash=E3F046EDB5EB76BBA5A44FFA3D8F8C42"
     },
     {
@@ -20135,10 +20136,11 @@
      "prev_rank": null,
      "rank_delta": null,
      "is_new": true,
-     "platform_count": 2,
+     "platform_count": 3,
      "platforms": [
       "netease",
-      "kugou"
+      "kugou",
+      "douyin"
      ],
      "streak": 2,
      "days_on_board": 2,
@@ -20450,6 +20452,2525 @@
      "days_on_board": 2,
      "song_path": "/song/%E5%86%AC%E9%A3%8E%E5%B8%AE%E6%88%91%E6%8D%8E%E5%8E%BB%E6%80%9D%E5%BF%B5",
      "url": "https://www.kugou.com/song/#hash=27C11A16F51CE9AFA1FC80BA3A14E222"
+    }
+   ]
+  },
+  {
+   "platform": "douyin",
+   "board": "music_hot",
+   "name": "抖音 热歌榜",
+   "board_name": "热歌榜",
+   "path": "/board/douyin/douyin-music-hot",
+   "captured_at": "2026-11-27T15:50:00+08:00",
+   "compared_at": "",
+   "total": 60,
+   "cadence": "weekly",
+   "released_at": "2026-11-20",
+   "tracks": [
+    {
+     "rank": 1,
+     "title": "Peach",
+     "artists": [
+      "Submerge沦陷"
+     ],
+     "dedupe_key": "peach",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/peach",
+     "url": "https://www.douyin.com/music/7613266934335408171"
+    },
+    {
+     "rank": 2,
+     "title": "明年依然好时节（纵然我的相思）",
+     "artists": [
+      "许飞"
+     ],
+     "dedupe_key": "明年依然好时节#r1",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%98%8E%E5%B9%B4%E4%BE%9D%E7%84%B6%E5%A5%BD%E6%97%B6%E8%8A%82%23r1",
+     "url": "https://www.douyin.com/music/6913777506696841217"
+    },
+    {
+     "rank": 3,
+     "title": "Starlight (氛围纯享版)",
+     "artists": [
+      "BlastW"
+     ],
+     "dedupe_key": "starlight",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/starlight",
+     "url": "https://www.douyin.com/music/7611367330401699891"
+    },
+    {
+     "rank": 4,
+     "title": "ICEMAN X Timeless（5757E Remix）（剪辑版）",
+     "artists": [
+      "5757E"
+     ],
+     "dedupe_key": "icemanxtimeless",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/icemanxtimeless",
+     "url": "https://www.douyin.com/music/7614134406065145891"
+    },
+    {
+     "rank": 5,
+     "title": "失眠了",
+     "artists": [
+      "吴琳珂Moske"
+     ],
+     "dedupe_key": "失眠了",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A4%B1%E7%9C%A0%E4%BA%86",
+     "url": "https://www.douyin.com/music/7603751861397768208"
+    },
+    {
+     "rank": 6,
+     "title": "幻昼3.0 (纯音版)",
+     "artists": [
+      "昨夜梦醒"
+     ],
+     "dedupe_key": "幻昼30",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%B9%BB%E6%98%BC30",
+     "url": "https://www.douyin.com/music/7603937793131841599"
+    },
+    {
+     "rank": 7,
+     "title": "如果我一颗心被你俘虏",
+     "artists": [
+      "好久不见"
+     ],
+     "dedupe_key": "如果我一颗心被你俘虏",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A6%82%E6%9E%9C%E6%88%91%E4%B8%80%E9%A2%97%E5%BF%83%E8%A2%AB%E4%BD%A0%E4%BF%98%E8%99%8F",
+     "url": "https://www.douyin.com/music/7612495195403487266"
+    },
+    {
+     "rank": 8,
+     "title": "我和你要去闻闻新鲜的春天",
+     "artists": [
+      "梦翎"
+     ],
+     "dedupe_key": "我和你要去闻闻新鲜的春天",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E5%92%8C%E4%BD%A0%E8%A6%81%E5%8E%BB%E9%97%BB%E9%97%BB%E6%96%B0%E9%B2%9C%E7%9A%84%E6%98%A5%E5%A4%A9",
+     "url": "https://www.douyin.com/music/7582416301210044442"
+    },
+    {
+     "rank": 9,
+     "title": "马年进行曲",
+     "artists": [
+      "行走的荷尔蒙"
+     ],
+     "dedupe_key": "马年进行曲",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%A9%AC%E5%B9%B4%E8%BF%9B%E8%A1%8C%E6%9B%B2",
+     "url": "https://www.douyin.com/music/7598010257508223026"
+    },
+    {
+     "rank": 10,
+     "title": "City In Slow time",
+     "artists": [
+      "Prologue"
+     ],
+     "dedupe_key": "cityinslowtime",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/cityinslowtime",
+     "url": "https://www.douyin.com/music/7613365272854906896"
+    },
+    {
+     "rank": 11,
+     "title": "来不及爱你-降速版",
+     "artists": [
+      "h3R3"
+     ],
+     "dedupe_key": "来不及爱你降速版",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%9D%A5%E4%B8%8D%E5%8F%8A%E7%88%B1%E4%BD%A0%E9%99%8D%E9%80%9F%E7%89%88",
+     "url": "https://www.douyin.com/music/7541347542053636906"
+    },
+    {
+     "rank": 12,
+     "title": "传奇(Remix)",
+     "artists": [
+      "DJ不眠星"
+     ],
+     "dedupe_key": "传奇#r1",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BC%A0%E5%A5%87%23r1",
+     "url": "https://www.douyin.com/music/7611130444843960337"
+    },
+    {
+     "rank": 13,
+     "title": "咏春 (氛围版)（Cover 七朵组合）",
+     "artists": [
+      "图钉姐"
+     ],
+     "dedupe_key": "咏春#r2",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%92%8F%E6%98%A5%23r2",
+     "url": "https://www.douyin.com/music/7595207640864655369"
+    },
+    {
+     "rank": 14,
+     "title": "心绪(我想要的只是你在我身边)",
+     "artists": [
+      "宇宙草"
+     ],
+     "dedupe_key": "心绪",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%BF%83%E7%BB%AA",
+     "url": "https://www.douyin.com/music/7601122313841313793"
+    },
+    {
+     "rank": 15,
+     "title": "You And Me",
+     "artists": [
+      "Jamvana/ZEKEN"
+     ],
+     "dedupe_key": "youandme",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/youandme",
+     "url": "https://www.douyin.com/music/7599573295705688065"
+    },
+    {
+     "rank": 16,
+     "title": "花间",
+     "artists": [
+      "演奏"
+     ],
+     "dedupe_key": "花间",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E8%8A%B1%E9%97%B4",
+     "url": "https://www.douyin.com/music/7577280715662919715"
+    },
+    {
+     "rank": 17,
+     "title": "别辜负眼前季节 (咏春DJ)",
+     "artists": [
+      "阿兰"
+     ],
+     "dedupe_key": "别辜负眼前季节",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%88%AB%E8%BE%9C%E8%B4%9F%E7%9C%BC%E5%89%8D%E5%AD%A3%E8%8A%82",
+     "url": "https://www.douyin.com/music/7600968849777084443"
+    },
+    {
+     "rank": 18,
+     "title": "ditto(氛围感)",
+     "artists": [
+      "@天子"
+     ],
+     "dedupe_key": "ditto#r1",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/ditto%23r1",
+     "url": "https://www.douyin.com/music/7543081193115584539"
+    },
+    {
+     "rank": 19,
+     "title": "拿下拿下（Cover 王者阿水 & 阿水）（剪辑版）",
+     "artists": [
+      "长顺"
+     ],
+     "dedupe_key": "拿下拿下",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%8B%BF%E4%B8%8B%E6%8B%BF%E4%B8%8B",
+     "url": "https://www.douyin.com/music/7609557452958468123"
+    },
+    {
+     "rank": 20,
+     "title": "Someone In The Crowd(纯音乐)",
+     "artists": [
+      "BlastW"
+     ],
+     "dedupe_key": "someoneinthecrowd",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/someoneinthecrowd",
+     "url": "https://www.douyin.com/music/7613585934358251547"
+    },
+    {
+     "rank": 21,
+     "title": "春风吹",
+     "artists": [
+      "方大同"
+     ],
+     "dedupe_key": "春风吹",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%98%A5%E9%A3%8E%E5%90%B9",
+     "url": "https://www.douyin.com/music/268443345864265728"
+    },
+    {
+     "rank": 22,
+     "title": "你不必是一朵花（剪辑版）",
+     "artists": [
+      "J.H.H"
+     ],
+     "dedupe_key": "你不必是一朵花",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BD%A0%E4%B8%8D%E5%BF%85%E6%98%AF%E4%B8%80%E6%9C%B5%E8%8A%B1",
+     "url": "https://www.douyin.com/music/7607786623845828642"
+    },
+    {
+     "rank": 23,
+     "title": "几分之几（氛围r&b）（Cover 卢广仲）（剪辑版）",
+     "artists": [
+      "PPR"
+     ],
+     "dedupe_key": "几分之几#r1",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%87%A0%E5%88%86%E4%B9%8B%E5%87%A0%23r1",
+     "url": "https://www.douyin.com/music/7592128372325877786"
+    },
+    {
+     "rank": 24,
+     "title": "你说我们星座不相配 (Remix)",
+     "artists": [
+      "Levn Music"
+     ],
+     "dedupe_key": "你说我们星座不相配",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BD%A0%E8%AF%B4%E6%88%91%E4%BB%AC%E6%98%9F%E5%BA%A7%E4%B8%8D%E7%9B%B8%E9%85%8D",
+     "url": "https://www.douyin.com/music/7072025486540408869"
+    },
+    {
+     "rank": 25,
+     "title": "读心术（束一个马尾束起所有伤悲）",
+     "artists": [
+      "卓文萱"
+     ],
+     "dedupe_key": "读心术",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E8%AF%BB%E5%BF%83%E6%9C%AF",
+     "url": "https://www.douyin.com/music/7599963494714558480"
+    },
+    {
+     "rank": 26,
+     "title": "爱要拐几个弯才来",
+     "artists": [
+      "王齐语"
+     ],
+     "dedupe_key": "爱要拐几个弯才来",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%88%B1%E8%A6%81%E6%8B%90%E5%87%A0%E4%B8%AA%E5%BC%AF%E6%89%8D%E6%9D%A5",
+     "url": "https://www.douyin.com/music/7614522248834811921"
+    },
+    {
+     "rank": 27,
+     "title": "也不是谁的错",
+     "artists": [
+      "新海鹅乐队"
+     ],
+     "dedupe_key": "也不是谁的错",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%B9%9F%E4%B8%8D%E6%98%AF%E8%B0%81%E7%9A%84%E9%94%99",
+     "url": "https://www.douyin.com/music/7598919078564907024"
+    },
+    {
+     "rank": 28,
+     "title": "here with me (Tove Ball Remix)",
+     "artists": [
+      "Tove Ball"
+     ],
+     "dedupe_key": "herewithme",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/herewithme",
+     "url": "https://www.douyin.com/music/7439986145566492735"
+    },
+    {
+     "rank": 29,
+     "title": "光头强小曲 (DJ版)",
+     "artists": [
+      "Fkll"
+     ],
+     "dedupe_key": "光头强小曲",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%85%89%E5%A4%B4%E5%BC%BA%E5%B0%8F%E6%9B%B2",
+     "url": "https://www.douyin.com/music/7598742131261458483"
+    },
+    {
+     "rank": 30,
+     "title": "假心话",
+     "artists": [
+      "M3mo"
+     ],
+     "dedupe_key": "假心话",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%81%87%E5%BF%83%E8%AF%9D",
+     "url": "https://www.douyin.com/music/7613334587516389428"
+    },
+    {
+     "rank": 31,
+     "title": "只愿与你长相守",
+     "artists": [
+      "空白格"
+     ],
+     "dedupe_key": "只愿与你长相守",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%8F%AA%E6%84%BF%E4%B8%8E%E4%BD%A0%E9%95%BF%E7%9B%B8%E5%AE%88",
+     "url": "https://www.douyin.com/music/7576478680769660978"
+    },
+    {
+     "rank": 32,
+     "title": "你很哇塞(女神节版)",
+     "artists": [
+      "夏梓薰"
+     ],
+     "dedupe_key": "你很哇塞",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BD%A0%E5%BE%88%E5%93%87%E5%A1%9E",
+     "url": "https://www.douyin.com/music/7189933455286601784"
+    },
+    {
+     "rank": 33,
+     "title": "Scared 2 be lonely beat（当真爱降临）（剪辑版）",
+     "artists": [
+      "Yn1jasper"
+     ],
+     "dedupe_key": "scared2belonelybeat",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/scared2belonelybeat",
+     "url": "https://www.douyin.com/music/7607026727022888994"
+    },
+    {
+     "rank": 34,
+     "title": "幸福降临（剪辑版）",
+     "artists": [
+      "刘星宇"
+     ],
+     "dedupe_key": "幸福降临",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%B9%B8%E7%A6%8F%E9%99%8D%E4%B8%B4",
+     "url": "https://www.douyin.com/music/7592875430232623144"
+    },
+    {
+     "rank": 35,
+     "title": "想看你笑想和你闹",
+     "artists": [
+      "熊志朝"
+     ],
+     "dedupe_key": "想看你笑想和你闹",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%83%B3%E7%9C%8B%E4%BD%A0%E7%AC%91%E6%83%B3%E5%92%8C%E4%BD%A0%E9%97%B9",
+     "url": "https://www.douyin.com/music/7613827691881515025"
+    },
+    {
+     "rank": 36,
+     "title": "天下第一好",
+     "artists": [
+      "李小眼"
+     ],
+     "dedupe_key": "天下第一好",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A4%A9%E4%B8%8B%E7%AC%AC%E4%B8%80%E5%A5%BD",
+     "url": "https://www.douyin.com/music/7583663202706213682"
+    },
+    {
+     "rank": 37,
+     "title": "第一天（R&B律动版）（Cover 孙燕姿）（剪辑版）",
+     "artists": [
+      "时弦Sienn"
+     ],
+     "dedupe_key": "第一天#r1",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%AC%AC%E4%B8%80%E5%A4%A9%23r1",
+     "url": "https://www.douyin.com/music/7613262724970170420"
+    },
+    {
+     "rank": 38,
+     "title": "Memories",
+     "artists": [
+      "VodKe/Klinn"
+     ],
+     "dedupe_key": "memories#r2",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/memories%23r2",
+     "url": "https://www.douyin.com/music/7561263228492892211"
+    },
+    {
+     "rank": 39,
+     "title": "比比拉布 我的刀盾",
+     "artists": [
+      "阿吉野马"
+     ],
+     "dedupe_key": "比比拉布我的刀盾",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%AF%94%E6%AF%94%E6%8B%89%E5%B8%83%E6%88%91%E7%9A%84%E5%88%80%E7%9B%BE",
+     "url": "https://www.douyin.com/music/7604726740271925283"
+    },
+    {
+     "rank": 40,
+     "title": "一切都在变好（生命力BGM）",
+     "artists": [
+      "Martins Garix"
+     ],
+     "dedupe_key": "一切都在变好",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%B8%80%E5%88%87%E9%83%BD%E5%9C%A8%E5%8F%98%E5%A5%BD",
+     "url": "https://www.douyin.com/music/7552893524178733082"
+    },
+    {
+     "rank": 41,
+     "title": "删照片 (你删了我的照片 也删了我的微信)",
+     "artists": [
+      "李承翰（C$H）/ ND姜兆轩"
+     ],
+     "dedupe_key": "删照片",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%88%A0%E7%85%A7%E7%89%87",
+     "url": "https://www.douyin.com/music/7588425296078637860"
+    },
+    {
+     "rank": 42,
+     "title": "Heroes 3",
+     "artists": [
+      "VZEUS"
+     ],
+     "dedupe_key": "heroes3",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/heroes3",
+     "url": "https://www.douyin.com/music/7592565700519020560"
+    },
+    {
+     "rank": 43,
+     "title": "左转灯 (1000 Times+1)",
+     "artists": [
+      "派偉俊/mac ova sea"
+     ],
+     "dedupe_key": "左转灯",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 3,
+     "platforms": [
+      "netease",
+      "kugou",
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%B7%A6%E8%BD%AC%E7%81%AF",
+     "url": "https://www.douyin.com/music/7561006047303010321"
+    },
+    {
+     "rank": 44,
+     "title": "你知道天空有多藍",
+     "artists": [
+      "椅子樂團"
+     ],
+     "dedupe_key": "你知道天空有多藍",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BD%A0%E7%9F%A5%E9%81%93%E5%A4%A9%E7%A9%BA%E6%9C%89%E5%A4%9A%E8%97%8D",
+     "url": "https://www.douyin.com/music/7611207034357368848"
+    },
+    {
+     "rank": 45,
+     "title": "鼠牛功夫高",
+     "artists": [
+      "DJ小念"
+     ],
+     "dedupe_key": "鼠牛功夫高",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%BC%A0%E7%89%9B%E5%8A%9F%E5%A4%AB%E9%AB%98",
+     "url": "https://www.douyin.com/music/7455601874746591249"
+    },
+    {
+     "rank": 46,
+     "title": "太聪明R&B版（剪辑版）",
+     "artists": [
+      "Dave"
+     ],
+     "dedupe_key": "太聪明rb版",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A4%AA%E8%81%AA%E6%98%8Erb%E7%89%88",
+     "url": "https://www.douyin.com/music/7596326723956853558"
+    },
+    {
+     "rank": 47,
+     "title": "ぎのようなときめき（兔子般的心动） 変速 ver.（剪辑版）",
+     "artists": [
+      "鱼饼吃橘子"
+     ],
+     "dedupe_key": "ぎのようなときめき変速ver",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E3%81%8E%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%81%A8%E3%81%8D%E3%82%81%E3%81%8D%E5%A4%89%E9%80%9Fver",
+     "url": "https://www.douyin.com/music/7611036983691790345"
+    },
+    {
+     "rank": 48,
+     "title": "他只是经过",
+     "artists": [
+      "h3R3/高旭"
+     ],
+     "dedupe_key": "他只是经过",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BB%96%E5%8F%AA%E6%98%AF%E7%BB%8F%E8%BF%87",
+     "url": "https://www.douyin.com/music/6832151337652717581"
+    },
+    {
+     "rank": 49,
+     "title": "雨过后的风景（某年某月某个星期几）",
+     "artists": [
+      "dizzydizzo蔡诗芸"
+     ],
+     "dedupe_key": "雨过后的风景#r1",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%9B%A8%E8%BF%87%E5%90%8E%E7%9A%84%E9%A3%8E%E6%99%AF%23r1",
+     "url": "https://www.douyin.com/music/7591805424114912010"
+    },
+    {
+     "rank": 50,
+     "title": "咏春（副歌）",
+     "artists": [
+      "梨香JZH & 口古口古"
+     ],
+     "dedupe_key": "咏春#r1",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%92%8F%E6%98%A5%23r1",
+     "url": "https://www.douyin.com/music/7482770994295310374"
+    },
+    {
+     "rank": 51,
+     "title": "雨日思绪（雨の日の想い）（剪辑版2）",
+     "artists": [
+      "鱼饼吃橘子"
+     ],
+     "dedupe_key": "雨日思绪",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%9B%A8%E6%97%A5%E6%80%9D%E7%BB%AA",
+     "url": "https://www.douyin.com/music/7614150307036416006"
+    },
+    {
+     "rank": 52,
+     "title": "Proof(Slowed)",
+     "artists": [
+      "GOLD999"
+     ],
+     "dedupe_key": "proof",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/proof",
+     "url": "https://www.douyin.com/music/7604414083081996298"
+    },
+    {
+     "rank": 53,
+     "title": "我欲成冰再也无退路（剪辑版）",
+     "artists": [
+      "迷雾里的幻境"
+     ],
+     "dedupe_key": "我欲成冰再也无退路",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E6%AC%B2%E6%88%90%E5%86%B0%E5%86%8D%E4%B9%9F%E6%97%A0%E9%80%80%E8%B7%AF",
+     "url": "https://www.douyin.com/music/7609332944956196915"
+    },
+    {
+     "rank": 54,
+     "title": "4 AM Humming",
+     "artists": [
+      "WI:ZY"
+     ],
+     "dedupe_key": "4amhumming",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/4amhumming",
+     "url": "https://www.douyin.com/music/7614660052549388304"
+    },
+    {
+     "rank": 55,
+     "title": "够爱 (R&B版)（Cover 东城卫）（剪辑版）",
+     "artists": [
+      "大头钉"
+     ],
+     "dedupe_key": "够爱#r1",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A4%9F%E7%88%B1%23r1",
+     "url": "https://www.douyin.com/music/7612711516403451931"
+    },
+    {
+     "rank": 56,
+     "title": "远去的列车",
+     "artists": [
+      "四熹丸子"
+     ],
+     "dedupe_key": "远去的列车",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E8%BF%9C%E5%8E%BB%E7%9A%84%E5%88%97%E8%BD%A6",
+     "url": "https://www.douyin.com/music/7468232856016472080"
+    },
+    {
+     "rank": 57,
+     "title": "无尽幸福",
+     "artists": [
+      "凌晨一点的莱茵猫 & 二乘"
+     ],
+     "dedupe_key": "无尽幸福",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%97%A0%E5%B0%BD%E5%B9%B8%E7%A6%8F",
+     "url": "https://www.douyin.com/music/7513467386999097396"
+    },
+    {
+     "rank": 58,
+     "title": "りんごなんてつまらなくないもん！（苹果才不无聊呢！）",
+     "artists": [
+      "鱼饼吃橘子"
+     ],
+     "dedupe_key": "りんごなんてつまらなくないもん",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E3%82%8A%E3%82%93%E3%81%94%E3%81%AA%E3%82%93%E3%81%A6%E3%81%A4%E3%81%BE%E3%82%89%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%84%E3%82%82%E3%82%93",
+     "url": "https://www.douyin.com/music/7612403400110344228"
+    },
+    {
+     "rank": 59,
+     "title": "我就爱这乱七八糟的生活",
+     "artists": [
+      "2menG"
+     ],
+     "dedupe_key": "我就爱这乱七八糟的生活",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E5%B0%B1%E7%88%B1%E8%BF%99%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F%E7%9A%84%E7%94%9F%E6%B4%BB",
+     "url": "https://www.douyin.com/music/7610434361887885362"
+    },
+    {
+     "rank": 60,
+     "title": "Autumn Leaf",
+     "artists": [
+      "RePlus (リプラス)"
+     ],
+     "dedupe_key": "autumnleaf",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/autumnleaf",
+     "url": "https://www.douyin.com/music/7330698422363686948"
+    }
+   ]
+  },
+  {
+   "platform": "douyin",
+   "board": "music_rise",
+   "name": "抖音 飙升榜",
+   "board_name": "飙升榜",
+   "path": "/board/douyin/douyin-music-rise",
+   "captured_at": "2026-11-27T15:50:00+08:00",
+   "compared_at": "",
+   "total": 71,
+   "cadence": "weekly",
+   "released_at": "2026-11-20",
+   "tracks": [
+    {
+     "rank": 1,
+     "title": "谁会问我累不累（剪辑版5）",
+     "artists": [
+      "于洋"
+     ],
+     "dedupe_key": "谁会问我累不累",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E8%B0%81%E4%BC%9A%E9%97%AE%E6%88%91%E7%B4%AF%E4%B8%8D%E7%B4%AF",
+     "url": "https://www.douyin.com/music/7451592644307470377"
+    },
+    {
+     "rank": 2,
+     "title": "Falling again （剪辑版）",
+     "artists": [
+      "Lunak"
+     ],
+     "dedupe_key": "fallingagain",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/fallingagain",
+     "url": "https://www.douyin.com/music/7507219580100659994"
+    },
+    {
+     "rank": 3,
+     "title": "加绒摇",
+     "artists": [
+      "罗一刻"
+     ],
+     "dedupe_key": "加绒摇",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%8A%A0%E7%BB%92%E6%91%87",
+     "url": "https://www.douyin.com/music/7500022718490839846"
+    },
+    {
+     "rank": 4,
+     "title": "妹似青山一枝梅（剪辑版2）",
+     "artists": [
+      "小田儿"
+     ],
+     "dedupe_key": "妹似青山一枝梅",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A6%B9%E4%BC%BC%E9%9D%92%E5%B1%B1%E4%B8%80%E6%9E%9D%E6%A2%85",
+     "url": "https://www.douyin.com/music/7486396253049128999"
+    },
+    {
+     "rank": 5,
+     "title": "九万字（我爱你苍凉双眼留有余温）",
+     "artists": [
+      "张靓颖"
+     ],
+     "dedupe_key": "九万字#r1",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%B9%9D%E4%B8%87%E5%AD%97%23r1",
+     "url": "https://www.douyin.com/music/7500947992883579657"
+    },
+    {
+     "rank": 6,
+     "title": "Echo of You（剪辑版）",
+     "artists": [
+      "蓝爵醺调"
+     ],
+     "dedupe_key": "echoofyou",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/echoofyou",
+     "url": "https://www.douyin.com/music/7511325370465978387"
+    },
+    {
+     "rank": 7,
+     "title": "笑一笑没烦恼（副歌）",
+     "artists": [
+      "小琢"
+     ],
+     "dedupe_key": "笑一笑没烦恼",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%AC%91%E4%B8%80%E7%AC%91%E6%B2%A1%E7%83%A6%E6%81%BC",
+     "url": "https://www.douyin.com/music/7451815644134639651"
+    },
+    {
+     "rank": 8,
+     "title": "亲爱的你啊（徐远书剪辑版）",
+     "artists": [
+      "徐远书"
+     ],
+     "dedupe_key": "亲爱的你啊",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BA%B2%E7%88%B1%E7%9A%84%E4%BD%A0%E5%95%8A",
+     "url": "https://www.douyin.com/music/7507601606154767123"
+    },
+    {
+     "rank": 9,
+     "title": "对自己好点吧（剪辑版2）",
+     "artists": [
+      "导航哥"
+     ],
+     "dedupe_key": "对自己好点吧",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%AF%B9%E8%87%AA%E5%B7%B1%E5%A5%BD%E7%82%B9%E5%90%A7",
+     "url": "https://www.douyin.com/music/7484078399695865906"
+    },
+    {
+     "rank": 10,
+     "title": "想自由(人和人的沟通)_王安宇版",
+     "artists": [
+      "王安宇"
+     ],
+     "dedupe_key": "想自由王安宇版",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%83%B3%E8%87%AA%E7%94%B1%E7%8E%8B%E5%AE%89%E5%AE%87%E7%89%88",
+     "url": "https://www.douyin.com/music/7503001892704897807"
+    },
+    {
+     "rank": 11,
+     "title": "爱河（如果晚霞绕过火车）",
+     "artists": [
+      "ZaZaZsu"
+     ],
+     "dedupe_key": "爱河",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%88%B1%E6%B2%B3",
+     "url": "https://www.douyin.com/music/7486495923556584204"
+    },
+    {
+     "rank": 12,
+     "title": "带你看看花花草草（剪辑版）",
+     "artists": [
+      "罗美丽"
+     ],
+     "dedupe_key": "带你看看花花草草",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%B8%A6%E4%BD%A0%E7%9C%8B%E7%9C%8B%E8%8A%B1%E8%8A%B1%E8%8D%89%E8%8D%89",
+     "url": "https://www.douyin.com/music/7495006509247236122"
+    },
+    {
+     "rank": 13,
+     "title": "Deadman",
+     "artists": [
+      "蔡徐坤"
+     ],
+     "dedupe_key": "deadman#r2",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/deadman%23r2",
+     "url": "https://www.douyin.com/music/7509329737476933649"
+    },
+    {
+     "rank": 14,
+     "title": "大山深处风景美（DJ版）（主歌）",
+     "artists": [
+      "晓晓"
+     ],
+     "dedupe_key": "大山深处风景美",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A4%A7%E5%B1%B1%E6%B7%B1%E5%A4%84%E9%A3%8E%E6%99%AF%E7%BE%8E",
+     "url": "https://www.douyin.com/music/7477222011987691532"
+    },
+    {
+     "rank": 15,
+     "title": "Got lt 5 (PHONK终章)",
+     "artists": [
+      "MKMS"
+     ],
+     "dedupe_key": "gotlt5",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/gotlt5",
+     "url": "https://www.douyin.com/music/7507158206863870002"
+    },
+    {
+     "rank": 16,
+     "title": "健康永远是第一（Live合唱版）（副歌）",
+     "artists": [
+      "姜雨涵"
+     ],
+     "dedupe_key": "健康永远是第一",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%81%A5%E5%BA%B7%E6%B0%B8%E8%BF%9C%E6%98%AF%E7%AC%AC%E4%B8%80",
+     "url": "https://www.douyin.com/music/7482401874395088947"
+    },
+    {
+     "rank": 17,
+     "title": "You Make Me Smile（主歌）",
+     "artists": [
+      "A.I.微雨"
+     ],
+     "dedupe_key": "youmakemesmile",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/youmakemesmile",
+     "url": "https://www.douyin.com/music/7510005802636904499"
+    },
+    {
+     "rank": 18,
+     "title": "Chrome Reflections",
+     "artists": [
+      "Slip n' Sly"
+     ],
+     "dedupe_key": "chromereflections",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/chromereflections",
+     "url": "https://www.douyin.com/music/7503637456512878608"
+    },
+    {
+     "rank": 19,
+     "title": "蹦蹦跳跳(跟我一起蹦蹦跳跳)",
+     "artists": [
+      "李昕融/付佳钰"
+     ],
+     "dedupe_key": "蹦蹦跳跳",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E8%B9%A6%E8%B9%A6%E8%B7%B3%E8%B7%B3",
+     "url": "https://www.douyin.com/music/7507911049644296208"
+    },
+    {
+     "rank": 20,
+     "title": "空荡的酒杯（丫蛋版）",
+     "artists": [
+      "丫蛋"
+     ],
+     "dedupe_key": "空荡的酒杯",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%A9%BA%E8%8D%A1%E7%9A%84%E9%85%92%E6%9D%AF",
+     "url": "https://www.douyin.com/music/7491230531640757044"
+    },
+    {
+     "rank": 21,
+     "title": "月亮照山川（DJ默涵片段）",
+     "artists": [
+      "窝窝"
+     ],
+     "dedupe_key": "月亮照山川",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%9C%88%E4%BA%AE%E7%85%A7%E5%B1%B1%E5%B7%9D",
+     "url": "https://www.douyin.com/music/7492369383168346931"
+    },
+    {
+     "rank": 22,
+     "title": "sweetie girl",
+     "artists": [
+      "Luv8z"
+     ],
+     "dedupe_key": "sweetiegirl",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/sweetiegirl",
+     "url": "https://www.douyin.com/music/7510173215668045839"
+    },
+    {
+     "rank": 23,
+     "title": "卡农 in Love（片段）",
+     "artists": [
+      "蔡佩轩"
+     ],
+     "dedupe_key": "卡农inlove",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%8D%A1%E5%86%9Cinlove",
+     "url": "https://www.douyin.com/music/7475343673207589686"
+    },
+    {
+     "rank": 24,
+     "title": "小手拉大手（神兔小P版）（剪辑版）",
+     "artists": [
+      "神兔小P"
+     ],
+     "dedupe_key": "小手拉大手",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%B0%8F%E6%89%8B%E6%8B%89%E5%A4%A7%E6%89%8B",
+     "url": "https://www.douyin.com/music/7469427455683119145"
+    },
+    {
+     "rank": 25,
+     "title": "第一天(清新版)",
+     "artists": [
+      "猪猪"
+     ],
+     "dedupe_key": "第一天#r2",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%AC%AC%E4%B8%80%E5%A4%A9%23r2",
+     "url": "https://www.douyin.com/music/7509748808713848849"
+    },
+    {
+     "rank": 26,
+     "title": "Strawberry Cream （剪辑版）",
+     "artists": [
+      "Lunak"
+     ],
+     "dedupe_key": "strawberrycream",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/strawberrycream",
+     "url": "https://www.douyin.com/music/7506449178214730536"
+    },
+    {
+     "rank": 27,
+     "title": "想自由(为将来的难测)_王安宇版",
+     "artists": [
+      "王安宇"
+     ],
+     "dedupe_key": "想自由王安宇版",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%83%B3%E8%87%AA%E7%94%B1%E7%8E%8B%E5%AE%89%E5%AE%87%E7%89%88",
+     "url": "https://www.douyin.com/music/7509431836771813377"
+    },
+    {
+     "rank": 28,
+     "title": "负心的你",
+     "artists": [
+      "柳欢欢"
+     ],
+     "dedupe_key": "负心的你",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E8%B4%9F%E5%BF%83%E7%9A%84%E4%BD%A0",
+     "url": "https://www.douyin.com/music/7458101863092373530"
+    },
+    {
+     "rank": 29,
+     "title": "向前冲吧（向前出发）",
+     "artists": [
+      "蒋敦豪"
+     ],
+     "dedupe_key": "向前冲吧",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%90%91%E5%89%8D%E5%86%B2%E5%90%A7",
+     "url": "https://www.douyin.com/music/7512291473784014849"
+    },
+    {
+     "rank": 30,
+     "title": "九万字（剪辑版）",
+     "artists": [
+      "张靓颖 刘宇宁"
+     ],
+     "dedupe_key": "九万字#r1",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%B9%9D%E4%B8%87%E5%AD%97%23r1",
+     "url": "https://www.douyin.com/music/7502736071430196004"
+    },
+    {
+     "rank": 31,
+     "title": "好想见你一面1.2x",
+     "artists": [
+      "宁治国"
+     ],
+     "dedupe_key": "好想见你一面12x",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A5%BD%E6%83%B3%E8%A7%81%E4%BD%A0%E4%B8%80%E9%9D%A212x",
+     "url": "https://www.douyin.com/music/7509059370757474345"
+    },
+    {
+     "rank": 32,
+     "title": "Minimal love（剪辑版）",
+     "artists": [
+      "陈言知"
+     ],
+     "dedupe_key": "minimallove",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/minimallove",
+     "url": "https://www.douyin.com/music/7495326345988769804"
+    },
+    {
+     "rank": 33,
+     "title": "Hours（氛围版）",
+     "artists": [
+      "DLSS"
+     ],
+     "dedupe_key": "hours",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/hours",
+     "url": "https://www.douyin.com/music/7496490698348595216"
+    },
+    {
+     "rank": 34,
+     "title": "心情好比什么都好（DJ梦东版）（副歌2）",
+     "artists": [
+      "小琢"
+     ],
+     "dedupe_key": "心情好比什么都好",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%BF%83%E6%83%85%E5%A5%BD%E6%AF%94%E4%BB%80%E4%B9%88%E9%83%BD%E5%A5%BD",
+     "url": "https://www.douyin.com/music/7459275040380143652"
+    },
+    {
+     "rank": 35,
+     "title": "零距离的思念（剪辑版）",
+     "artists": [
+      "TINY7"
+     ],
+     "dedupe_key": "零距离的思念#r1",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%9B%B6%E8%B7%9D%E7%A6%BB%E7%9A%84%E6%80%9D%E5%BF%B5%23r1",
+     "url": "https://www.douyin.com/music/7503529187983018767"
+    },
+    {
+     "rank": 36,
+     "title": "预报失灵（甜舞版）",
+     "artists": [
+      "蒋孜怡"
+     ],
+     "dedupe_key": "预报失灵",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%A2%84%E6%8A%A5%E5%A4%B1%E7%81%B5",
+     "url": "https://www.douyin.com/music/7507586042405407515"
+    },
+    {
+     "rank": 37,
+     "title": "Kiss Kiss 莎莎（1.2剪辑版）",
+     "artists": [
+      "ANGELA"
+     ],
+     "dedupe_key": "kisskiss莎莎",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/kisskiss%E8%8E%8E%E8%8E%8E",
+     "url": "https://www.douyin.com/music/7510159199974934544"
+    },
+    {
+     "rank": 38,
+     "title": "你如少年拉满弓（副歌）",
+     "artists": [
+      "鱼精"
+     ],
+     "dedupe_key": "你如少年拉满弓",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BD%A0%E5%A6%82%E5%B0%91%E5%B9%B4%E6%8B%89%E6%BB%A1%E5%BC%93",
+     "url": "https://www.douyin.com/music/7512768619731273729"
+    },
+    {
+     "rank": 39,
+     "title": "深深（DJ版副歌）",
+     "artists": [
+      "阿梨粤"
+     ],
+     "dedupe_key": "深深",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%B7%B1%E6%B7%B1",
+     "url": "https://www.douyin.com/music/7499407694932297744"
+    },
+    {
+     "rank": 40,
+     "title": "尝过人世七分苦（热播版）",
+     "artists": [
+      "质变"
+     ],
+     "dedupe_key": "尝过人世七分苦",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%B0%9D%E8%BF%87%E4%BA%BA%E4%B8%96%E4%B8%83%E5%88%86%E8%8B%A6",
+     "url": "https://www.douyin.com/music/7494916226831370255"
+    },
+    {
+     "rank": 41,
+     "title": "Run",
+     "artists": [
+      "CAISEN"
+     ],
+     "dedupe_key": "run",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/run",
+     "url": "https://www.douyin.com/music/7484130337095714825"
+    },
+    {
+     "rank": 42,
+     "title": "大山（剪辑版）",
+     "artists": [
+      "王睿卓"
+     ],
+     "dedupe_key": "大山",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A4%A7%E5%B1%B1",
+     "url": "https://www.douyin.com/music/7452996515145975825"
+    },
+    {
+     "rank": 43,
+     "title": "城北的花（架子鼓版）",
+     "artists": [
+      "王宇宙Leto/乔浚丞"
+     ],
+     "dedupe_key": "城北的花",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%9F%8E%E5%8C%97%E7%9A%84%E8%8A%B1",
+     "url": "https://www.douyin.com/music/7481184976222849829"
+    },
+    {
+     "rank": 44,
+     "title": "100%晴天（百分百晴天）（剪辑版）",
+     "artists": [
+      "DOS BeatSpace"
+     ],
+     "dedupe_key": "100晴天",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/100%E6%99%B4%E5%A4%A9",
+     "url": "https://www.douyin.com/music/7499020587487250443"
+    },
+    {
+     "rank": 45,
+     "title": "FATAL IT",
+     "artists": [
+      "Jamvana"
+     ],
+     "dedupe_key": "fatalit",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/fatalit",
+     "url": "https://www.douyin.com/music/7508684527046248464"
+    },
+    {
+     "rank": 46,
+     "title": "亲爱的你啊（架子鼓版）",
+     "artists": [
+      "任素汐"
+     ],
+     "dedupe_key": "亲爱的你啊",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BA%B2%E7%88%B1%E7%9A%84%E4%BD%A0%E5%95%8A",
+     "url": "https://www.douyin.com/music/7499414777794628389"
+    },
+    {
+     "rank": 47,
+     "title": "吹吹风（片段）",
+     "artists": [
+      "鹿晗"
+     ],
+     "dedupe_key": "吹吹风#r1",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%90%B9%E5%90%B9%E9%A3%8E%23r1",
+     "url": "https://www.douyin.com/music/7497965849104599041"
+    },
+    {
+     "rank": 48,
+     "title": "笛韵山谷（国风纯音乐）（剪辑版4）",
+     "artists": [
+      "刘宗胜"
+     ],
+     "dedupe_key": "笛韵山谷",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%AC%9B%E9%9F%B5%E5%B1%B1%E8%B0%B7",
+     "url": "https://www.douyin.com/music/7510152542966564873"
+    },
+    {
+     "rank": 49,
+     "title": "一花一草一风景",
+     "artists": [
+      "罗美丽"
+     ],
+     "dedupe_key": "一花一草一风景",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%B8%80%E8%8A%B1%E4%B8%80%E8%8D%89%E4%B8%80%E9%A3%8E%E6%99%AF",
+     "url": "https://www.douyin.com/music/7456982282943858739"
+    },
+    {
+     "rank": 50,
+     "title": "风铃",
+     "artists": [
+      "Wwk"
+     ],
+     "dedupe_key": "风铃",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%A3%8E%E9%93%83",
+     "url": "https://www.douyin.com/music/7501655625483749403"
+    },
+    {
+     "rank": 51,
+     "title": "姬芽摇",
+     "artists": [
+      "罗一刻"
+     ],
+     "dedupe_key": "姬芽摇",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A7%AC%E8%8A%BD%E6%91%87",
+     "url": "https://www.douyin.com/music/7495326928862333705"
+    },
+    {
+     "rank": 52,
+     "title": "Turbo（PHONK)（剪辑版）",
+     "artists": [
+      "Tamboss"
+     ],
+     "dedupe_key": "turbo",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/turbo",
+     "url": "https://www.douyin.com/music/7510162556623800336"
+    },
+    {
+     "rank": 53,
+     "title": "那些喊给天空的（氛围版）",
+     "artists": [
+      "黄子弘凡"
+     ],
+     "dedupe_key": "那些喊给天空的",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%82%A3%E4%BA%9B%E5%96%8A%E7%BB%99%E5%A4%A9%E7%A9%BA%E7%9A%84",
+     "url": "https://www.douyin.com/music/7497590497452641050"
+    },
+    {
+     "rank": 54,
+     "title": "Deadman（剪辑版1）",
+     "artists": [
+      "蔡徐坤"
+     ],
+     "dedupe_key": "deadman#r1",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/deadman%23r1",
+     "url": "https://www.douyin.com/music/7509329737476474897"
+    },
+    {
+     "rank": 55,
+     "title": "累了就抱抱自己 （剪辑版）",
+     "artists": [
+      "善善²²³"
+     ],
+     "dedupe_key": "累了就抱抱自己",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%B4%AF%E4%BA%86%E5%B0%B1%E6%8A%B1%E6%8A%B1%E8%87%AA%E5%B7%B1",
+     "url": "https://www.douyin.com/music/7507548144167602177"
+    },
+    {
+     "rank": 56,
+     "title": "祝福（主歌）",
+     "artists": [
+      "于海涛"
+     ],
+     "dedupe_key": "祝福",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%A5%9D%E7%A6%8F",
+     "url": "https://www.douyin.com/music/7495601471324243987"
+    },
+    {
+     "rank": 57,
+     "title": "好好把生活享受（主歌）",
+     "artists": [
+      "小琢"
+     ],
+     "dedupe_key": "好好把生活享受",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A5%BD%E5%A5%BD%E6%8A%8A%E7%94%9F%E6%B4%BB%E4%BA%AB%E5%8F%97",
+     "url": "https://www.douyin.com/music/7498320040048838682"
+    },
+    {
+     "rank": 58,
+     "title": "西厢寻他（0.8x）片段",
+     "artists": [
+      "slow_77"
+     ],
+     "dedupe_key": "西厢寻他片段",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E8%A5%BF%E5%8E%A2%E5%AF%BB%E4%BB%96%E7%89%87%E6%AE%B5",
+     "url": "https://www.douyin.com/music/7470425414512969744"
+    },
+    {
+     "rank": 59,
+     "title": "我的菜园生活(Dj翊轩版)",
+     "artists": [
+      "金莎莎"
+     ],
+     "dedupe_key": "我的菜园生活#r2",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E7%9A%84%E8%8F%9C%E5%9B%AD%E7%94%9F%E6%B4%BB%23r2",
+     "url": "https://www.douyin.com/music/7443521574224185380"
+    },
+    {
+     "rank": 60,
+     "title": "海浪、海鸥与你",
+     "artists": [
+      "AnRain安林"
+     ],
+     "dedupe_key": "海浪海鸥与你",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%B5%B7%E6%B5%AA%E6%B5%B7%E9%B8%A5%E4%B8%8E%E4%BD%A0",
+     "url": "https://www.douyin.com/music/7466886335807195151"
+    },
+    {
+     "rank": 61,
+     "title": "Used To（剪辑版）",
+     "artists": [
+      "Ray Saetta"
+     ],
+     "dedupe_key": "usedto",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/usedto",
+     "url": "https://www.douyin.com/music/7505315006670571531"
+    },
+    {
+     "rank": 62,
+     "title": "恋夏（副歌）",
+     "artists": [
+      "雪球"
+     ],
+     "dedupe_key": "恋夏",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%81%8B%E5%A4%8F",
+     "url": "https://www.douyin.com/music/7497790994693326849"
+    },
+    {
+     "rank": 63,
+     "title": "我的菜园生活(Dj翊轩版)（副歌）",
+     "artists": [
+      "金莎莎"
+     ],
+     "dedupe_key": "我的菜园生活#r1",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E7%9A%84%E8%8F%9C%E5%9B%AD%E7%94%9F%E6%B4%BB%23r1",
+     "url": "https://www.douyin.com/music/7443521574224234532"
+    },
+    {
+     "rank": 64,
+     "title": "我想出去转一圈（剪辑版2）",
+     "artists": [
+      "伊然 & 晓东"
+     ],
+     "dedupe_key": "我想出去转一圈",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E6%83%B3%E5%87%BA%E5%8E%BB%E8%BD%AC%E4%B8%80%E5%9C%88",
+     "url": "https://www.douyin.com/music/7447070308153018394"
+    },
+    {
+     "rank": 65,
+     "title": "在这首歌里陷入爱河",
+     "artists": [
+      "Newave.7"
+     ],
+     "dedupe_key": "在这首歌里陷入爱河",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%9C%A8%E8%BF%99%E9%A6%96%E6%AD%8C%E9%87%8C%E9%99%B7%E5%85%A5%E7%88%B1%E6%B2%B3",
+     "url": "https://www.douyin.com/music/7445209925854709775"
+    },
+    {
+     "rank": 66,
+     "title": "千万次想象（若能再相爱一场）",
+     "artists": [
+      "张杰"
+     ],
+     "dedupe_key": "千万次想象",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%8D%83%E4%B8%87%E6%AC%A1%E6%83%B3%E8%B1%A1",
+     "url": "https://www.douyin.com/music/7506431222363195393"
+    },
+    {
+     "rank": 67,
+     "title": "又活了一天（花花正式DJ版）",
+     "artists": [
+      "庄东茹（豆芽鱼）"
+     ],
+     "dedupe_key": "又活了一天",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%8F%88%E6%B4%BB%E4%BA%86%E4%B8%80%E5%A4%A9",
+     "url": "https://www.douyin.com/music/7503442568530397247"
+    },
+    {
+     "rank": 68,
+     "title": "Black（剪辑版）",
+     "artists": [
+      "E27XG_"
+     ],
+     "dedupe_key": "black#r1",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/black%23r1",
+     "url": "https://www.douyin.com/music/7509239787586308148"
+    },
+    {
+     "rank": 69,
+     "title": "淡水悠悠（剪辑版）",
+     "artists": [
+      "IngsY"
+     ],
+     "dedupe_key": "淡水悠悠",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%B7%A1%E6%B0%B4%E6%82%A0%E6%82%A0",
+     "url": "https://www.douyin.com/music/7507923963059783714"
+    },
+    {
+     "rank": 70,
+     "title": "Fall In Love At Dusk（Inst.)（剪辑版）",
+     "artists": [
+      "灵魂配乐师"
+     ],
+     "dedupe_key": "fallinloveatdusk",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/fallinloveatdusk",
+     "url": "https://www.douyin.com/music/7461908159689820214"
+    },
+    {
+     "rank": 71,
+     "title": "我站在烈烈风中",
+     "artists": [
+      "M爷"
+     ],
+     "dedupe_key": "我站在烈烈风中",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E7%AB%99%E5%9C%A8%E7%83%88%E7%83%88%E9%A3%8E%E4%B8%AD",
+     "url": "https://www.douyin.com/music/7490802550573385745"
     }
    ]
   },
@@ -25619,7 +28140,7 @@
      "artists": [
       "李健"
      ],
-     "dedupe_key": "传奇#r2",
+     "dedupe_key": "传奇#r3",
      "prev_rank": 73,
      "rank_delta": 62,
      "is_new": false,
@@ -25631,7 +28152,7 @@
      ],
      "streak": 4,
      "days_on_board": 3,
-     "song_path": "/song/%E4%BC%A0%E5%A5%87%23r2",
+     "song_path": "/song/%E4%BC%A0%E5%A5%87%23r3",
      "url": "https://www.kuwo.cn/play_detail/150208"
     },
     {
@@ -25936,7 +28457,7 @@
      "artists": [
       "狂小波"
      ],
-     "dedupe_key": "传奇#r1",
+     "dedupe_key": "传奇#r2",
      "prev_rank": null,
      "rank_delta": null,
      "is_new": true,
@@ -25946,7 +28467,7 @@
      ],
      "streak": 2,
      "days_on_board": 2,
-     "song_path": "/song/%E4%BC%A0%E5%A5%87%23r1",
+     "song_path": "/song/%E4%BC%A0%E5%A5%87%23r2",
      "url": "https://www.kuwo.cn/play_detail/672498634"
     },
     {
@@ -27896,7 +30417,7 @@
      "artists": [
       "Dizzy Dizzo (蔡诗芸)"
      ],
-     "dedupe_key": "雨过后的风景",
+     "dedupe_key": "雨过后的风景#r2",
      "prev_rank": 24,
      "rank_delta": 0,
      "is_new": false,
@@ -27909,7 +30430,7 @@
      ],
      "streak": 5,
      "days_on_board": 25,
-     "song_path": "/song/%E9%9B%A8%E8%BF%87%E5%90%8E%E7%9A%84%E9%A3%8E%E6%99%AF",
+     "song_path": "/song/%E9%9B%A8%E8%BF%87%E5%90%8E%E7%9A%84%E9%A3%8E%E6%99%AF%23r2",
      "url": "https://music.douyin.com/qishui/share/track?track_id=7634441185327745025"
     },
     {
