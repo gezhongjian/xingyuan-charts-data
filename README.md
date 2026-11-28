@@ -44,11 +44,12 @@ Live view: <https://xingyuan.beer/trends?src=github> · weekly report: <https://
 
 ## Week of 2026-11-23 → 2026-11-30 (in progress)
 
-Five days in, one readable bright-screen-to-listening-platform sequence is 乔佳旭's 《雪下的时候》.
-It was already No.15 on Qishui Hot Songs at 21:40 on 11-23; the first listening-platform board to
-pick it up in these snapshots was Kuwo Hot Songs, No.94 at 21:40 on 11-25 — a 48-hour gap between
-captures. At 09:40 on 11-27 it remained on both, at Qishui No.12 and Kuwo No.78. That is chart
-confirmation across the two platform types, not proof that one caused the other or a forecast.
+Six days in, one readable short-video-to-listening sequence is HiLXG's 《GOUYOSE（蔑称）》.
+Its matching Douyin topic first appeared at No.12 at 21:40 on 11-26; no listening chart in these
+snapshots carried the same track then or at 09:40 on 11-27. At 09:40 on 11-28, the song appeared
+at No.55 on NetEase Rising with the same track ID as the identified topic sound. The topic had
+already left the top 50 by then. This is an observed sequence, not proof that one side caused the
+other, a promise that every song will follow, or a fixed forecast window.
 
 Live view: <https://xingyuan.beer/trends?src=github>
 
