@@ -6,8 +6,8 @@
  "key_format": "<normalized title>[#r<N>]",
  "key_note": "Dedupe keys use the normalized title only; artists and albums are attributes, not identity. '#r<N>' separates recordings of the same title when durations differ by more than 20 seconds (see key-golden.json for the rule and runnable cases). Known gaps: Same title with different artists merges into one work key when their durations are within the guard: v2 identity is title-first, artists are attributes; Recordings of the same title whose durations differ by 20 seconds or less stay merged (a 65-second edit and a 70-second edit); Translations/aliases of the same song (English vs Chinese vs Korean titles) still do not merge: the key is title-derived, not a catalogue ID; `#r<N>` is a duration cluster, not a stable recording ID: a re-measured duration can move a track to another cluster",
  "key_golden": "https://xingyuan.beer/key-golden.json",
- "captured_at": "2026-11-28T21:40:03+08:00",
- "generated_at": "2026-11-28T21:43:18+08:00",
+ "captured_at": "2026-11-28T22:30:03+08:00",
+ "generated_at": "2026-11-28T22:30:05+08:00",
  "cadence": "09:40 / 21:40 Asia/Shanghai, twice a day; boards with cadence=weekly release a new edition weekly, and rank_delta is computed against boards[].compared_at (the last capture whose contents differ), so it can be non-zero within one release when the platform adjusts ranks",
  "rank_delta_convention": "rank_delta > 0 = moved up, < 0 = moved down, 0 = unchanged; the baseline is the most recent capture whose content differs (see boards[].compared_at) — identical re-captures of one platform period are not counted as a new period; new entries carry is_new=true and may have no previous rank",
  "boards": [
@@ -23183,8 +23183,8 @@
    "name": "抖音 挑战榜",
    "board_name": "挑战榜",
    "path": "/board/douyin/douyin-challenge",
-   "captured_at": "2026-11-28T21:40:03+08:00",
-   "compared_at": "2026-11-28T21:30:05+08:00",
+   "captured_at": "2026-11-28T22:30:03+08:00",
+   "compared_at": "2026-11-28T22:00:04+08:00",
    "total": 50,
    "cadence": "twice_daily",
    "tracks": [
@@ -23224,28 +23224,11 @@
     },
     {
      "rank": 3,
-     "title": "用小火人的方式打开甄嬛传",
-     "artists": [],
-     "dedupe_key": "用小火人的方式打开甄嬛传",
-     "prev_rank": 3,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E7%94%A8%E5%B0%8F%E7%81%AB%E4%BA%BA%E7%9A%84%E6%96%B9%E5%BC%8F%E6%89%93%E5%BC%80%E7%94%84%E5%AC%9B%E4%BC%A0",
-     "url": "https://www.douyin.com/music/7712899794464705331"
-    },
-    {
-     "rank": 4,
      "title": "萌宠的星期六是灰色的",
      "artists": [],
      "dedupe_key": "萌宠的星期六是灰色的",
      "prev_rank": 4,
-     "rank_delta": 0,
+     "rank_delta": 1,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23255,6 +23238,23 @@
      "days_on_board": 1,
      "song_path": "/song/%E8%90%8C%E5%AE%A0%E7%9A%84%E6%98%9F%E6%9C%9F%E5%85%AD%E6%98%AF%E7%81%B0%E8%89%B2%E7%9A%84",
      "url": "https://www.douyin.com/music/7712417241141758783"
+    },
+    {
+     "rank": 4,
+     "title": "用小火人的方式打开甄嬛传",
+     "artists": [],
+     "dedupe_key": "用小火人的方式打开甄嬛传",
+     "prev_rank": 3,
+     "rank_delta": -1,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%94%A8%E5%B0%8F%E7%81%AB%E4%BA%BA%E7%9A%84%E6%96%B9%E5%BC%8F%E6%89%93%E5%BC%80%E7%94%84%E5%AC%9B%E4%BC%A0",
+     "url": "https://www.douyin.com/music/7712899794464705331"
     },
     {
      "rank": 5,
@@ -23275,27 +23275,10 @@
     },
     {
      "rank": 6,
-     "title": "二档大姨模仿申请出战",
-     "artists": [],
-     "dedupe_key": "二档大姨模仿申请出战",
-     "prev_rank": 6,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 3,
-     "days_on_board": 2,
-     "song_path": "/song/%E4%BA%8C%E6%A1%A3%E5%A4%A7%E5%A7%A8%E6%A8%A1%E4%BB%BF%E7%94%B3%E8%AF%B7%E5%87%BA%E6%88%98",
-     "url": "https://www.douyin.com/music/7111118345172208398"
-    },
-    {
-     "rank": 7,
      "title": "你看世间朗朗有光照",
      "artists": [],
      "dedupe_key": "你看世间朗朗有光照",
-     "prev_rank": 7,
+     "prev_rank": 6,
      "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
@@ -23308,46 +23291,29 @@
      "url": "https://www.douyin.com/music/7300888722852023078"
     },
     {
-     "rank": 8,
-     "title": "严苛的训练迎来了专业选手",
+     "rank": 7,
+     "title": "二档大姨模仿申请出战",
      "artists": [],
-     "dedupe_key": "严苛的训练迎来了专业选手",
-     "prev_rank": 1,
-     "rank_delta": -7,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E4%B8%A5%E8%8B%9B%E7%9A%84%E8%AE%AD%E7%BB%83%E8%BF%8E%E6%9D%A5%E4%BA%86%E4%B8%93%E4%B8%9A%E9%80%89%E6%89%8B",
-     "url": "https://www.douyin.com/music/7688681379433237290"
-    },
-    {
-     "rank": 9,
-     "title": "我爱上一张脸失去所有底线",
-     "artists": [],
-     "dedupe_key": "我爱上一张脸失去所有底线",
-     "prev_rank": 9,
+     "dedupe_key": "二档大姨模仿申请出战",
+     "prev_rank": 7,
      "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
       "douyin"
      ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E6%88%91%E7%88%B1%E4%B8%8A%E4%B8%80%E5%BC%A0%E8%84%B8%E5%A4%B1%E5%8E%BB%E6%89%80%E6%9C%89%E5%BA%95%E7%BA%BF",
-     "url": "https://www.douyin.com/music/7710922627065400106"
+     "streak": 3,
+     "days_on_board": 2,
+     "song_path": "/song/%E4%BA%8C%E6%A1%A3%E5%A4%A7%E5%A7%A8%E6%A8%A1%E4%BB%BF%E7%94%B3%E8%AF%B7%E5%87%BA%E6%88%98",
+     "url": "https://www.douyin.com/music/7111118345172208398"
     },
     {
-     "rank": 10,
+     "rank": 8,
      "title": "看看前世的自己",
      "artists": [],
      "dedupe_key": "看看前世的自己",
-     "prev_rank": 10,
-     "rank_delta": 0,
+     "prev_rank": 11,
+     "rank_delta": 3,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23359,12 +23325,46 @@
      "url": "https://www.douyin.com/music/7699121233438280498"
     },
     {
+     "rank": 9,
+     "title": "严苛的训练迎来了专业选手",
+     "artists": [],
+     "dedupe_key": "严苛的训练迎来了专业选手",
+     "prev_rank": 1,
+     "rank_delta": -8,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%B8%A5%E8%8B%9B%E7%9A%84%E8%AE%AD%E7%BB%83%E8%BF%8E%E6%9D%A5%E4%BA%86%E4%B8%93%E4%B8%9A%E9%80%89%E6%89%8B",
+     "url": "https://www.douyin.com/music/7688681379433237290"
+    },
+    {
+     "rank": 10,
+     "title": "我爱上一张脸失去所有底线",
+     "artists": [],
+     "dedupe_key": "我爱上一张脸失去所有底线",
+     "prev_rank": 9,
+     "rank_delta": -1,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E7%88%B1%E4%B8%8A%E4%B8%80%E5%BC%A0%E8%84%B8%E5%A4%B1%E5%8E%BB%E6%89%80%E6%9C%89%E5%BA%95%E7%BA%BF",
+     "url": "https://www.douyin.com/music/7710922627065400106"
+    },
+    {
      "rank": 11,
      "title": "摊牌了 我真有点实力",
      "artists": [],
      "dedupe_key": "摊牌了我真有点实力",
-     "prev_rank": 11,
-     "rank_delta": 0,
+     "prev_rank": 12,
+     "rank_delta": 1,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23380,8 +23380,8 @@
      "title": "要抱抱2.0继续跳",
      "artists": [],
      "dedupe_key": "要抱抱20继续跳",
-     "prev_rank": 12,
-     "rank_delta": 0,
+     "prev_rank": 13,
+     "rank_delta": 1,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23397,8 +23397,8 @@
      "title": "想当切块大师手快的人先来",
      "artists": [],
      "dedupe_key": "想当切块大师手快的人先来",
-     "prev_rank": 13,
-     "rank_delta": 0,
+     "prev_rank": 14,
+     "rank_delta": 1,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23411,11 +23411,11 @@
     },
     {
      "rank": 14,
-     "title": "张远同款走路复刻挑战",
+     "title": "严肃进入舒服过冬模式",
      "artists": [],
-     "dedupe_key": "张远同款走路复刻挑战",
-     "prev_rank": 14,
-     "rank_delta": 0,
+     "dedupe_key": "严肃进入舒服过冬模式",
+     "prev_rank": 15,
+     "rank_delta": 1,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23423,16 +23423,16 @@
      ],
      "streak": 3,
      "days_on_board": 2,
-     "song_path": "/song/%E5%BC%A0%E8%BF%9C%E5%90%8C%E6%AC%BE%E8%B5%B0%E8%B7%AF%E5%A4%8D%E5%88%BB%E6%8C%91%E6%88%98",
-     "url": "https://www.douyin.com/music/7712777535494720283"
+     "song_path": "/song/%E4%B8%A5%E8%82%83%E8%BF%9B%E5%85%A5%E8%88%92%E6%9C%8D%E8%BF%87%E5%86%AC%E6%A8%A1%E5%BC%8F",
+     "url": "https://www.douyin.com/music/7711650467431926543"
     },
     {
      "rank": 15,
      "title": "就这样线下查无此人",
      "artists": [],
      "dedupe_key": "就这样线下查无此人",
-     "prev_rank": 15,
-     "rank_delta": 0,
+     "prev_rank": 10,
+     "rank_delta": -5,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23445,9 +23445,9 @@
     },
     {
      "rank": 16,
-     "title": "严肃进入舒服过冬模式",
+     "title": "张远同款走路复刻挑战",
      "artists": [],
-     "dedupe_key": "严肃进入舒服过冬模式",
+     "dedupe_key": "张远同款走路复刻挑战",
      "prev_rank": 16,
      "rank_delta": 0,
      "is_new": false,
@@ -23457,16 +23457,16 @@
      ],
      "streak": 3,
      "days_on_board": 2,
-     "song_path": "/song/%E4%B8%A5%E8%82%83%E8%BF%9B%E5%85%A5%E8%88%92%E6%9C%8D%E8%BF%87%E5%86%AC%E6%A8%A1%E5%BC%8F",
-     "url": "https://www.douyin.com/music/7711650467431926543"
+     "song_path": "/song/%E5%BC%A0%E8%BF%9C%E5%90%8C%E6%AC%BE%E8%B5%B0%E8%B7%AF%E5%A4%8D%E5%88%BB%E6%8C%91%E6%88%98",
+     "url": "https://www.douyin.com/music/7712777535494720283"
     },
     {
      "rank": 17,
      "title": "我懵懵懂懂过了一年",
      "artists": [],
      "dedupe_key": "我懵懵懂懂过了一年",
-     "prev_rank": 18,
-     "rank_delta": 1,
+     "prev_rank": 17,
+     "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23482,8 +23482,8 @@
      "title": "你落泪的那刻心脏就快要暂停",
      "artists": [],
      "dedupe_key": "你落泪的那刻心脏就快要暂停",
-     "prev_rank": 17,
-     "rank_delta": -1,
+     "prev_rank": 18,
+     "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23530,28 +23530,11 @@
     },
     {
      "rank": 21,
-     "title": "今年过年我回家belike",
-     "artists": [],
-     "dedupe_key": "今年过年我回家belike",
-     "prev_rank": 21,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E4%BB%8A%E5%B9%B4%E8%BF%87%E5%B9%B4%E6%88%91%E5%9B%9E%E5%AE%B6belike",
-     "url": "https://www.douyin.com/music/7712850604875451179"
-    },
-    {
-     "rank": 22,
      "title": "卓玛翻唱",
      "artists": [],
      "dedupe_key": "卓玛翻唱",
-     "prev_rank": 24,
-     "rank_delta": 2,
+     "prev_rank": 21,
+     "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23563,28 +23546,79 @@
      "url": "https://www.douyin.com/music/7712810295722576680"
     },
     {
-     "rank": 23,
-     "title": "这只腊肠犬鼻子有点长",
+     "rank": 22,
+     "title": "天有多高转场挑战",
      "artists": [],
-     "dedupe_key": "这只腊肠犬鼻子有点长",
-     "prev_rank": 22,
-     "rank_delta": -1,
+     "dedupe_key": "天有多高转场挑战",
+     "prev_rank": 24,
+     "rank_delta": 2,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
       "douyin"
      ],
-     "streak": 3,
-     "days_on_board": 2,
-     "song_path": "/song/%E8%BF%99%E5%8F%AA%E8%85%8A%E8%82%A0%E7%8A%AC%E9%BC%BB%E5%AD%90%E6%9C%89%E7%82%B9%E9%95%BF",
-     "url": "https://www.douyin.com/music/7711967781814127396"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A4%A9%E6%9C%89%E5%A4%9A%E9%AB%98%E8%BD%AC%E5%9C%BA%E6%8C%91%E6%88%98",
+     "url": "https://www.douyin.com/music/7711681061163387683"
+    },
+    {
+     "rank": 23,
+     "title": "用这首松花晒出家乡",
+     "artists": [],
+     "dedupe_key": "用这首松花晒出家乡",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%94%A8%E8%BF%99%E9%A6%96%E6%9D%BE%E8%8A%B1%E6%99%92%E5%87%BA%E5%AE%B6%E4%B9%A1",
+     "url": "https://www.douyin.com/music/7712368007032359731"
     },
     {
      "rank": 24,
+     "title": "看海BO3挑战",
+     "artists": [],
+     "dedupe_key": "看海bo3挑战",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%9C%8B%E6%B5%B7bo3%E6%8C%91%E6%88%98",
+     "url": "https://www.douyin.com/music/7711999716690594598"
+    },
+    {
+     "rank": 25,
+     "title": "用歌词念MV画面挑战",
+     "artists": [],
+     "dedupe_key": "用歌词念mv画面挑战",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%94%A8%E6%AD%8C%E8%AF%8D%E5%BF%B5mv%E7%94%BB%E9%9D%A2%E6%8C%91%E6%88%98",
+     "url": "https://www.douyin.com/music/7712838999148153642"
+    },
+    {
+     "rank": 26,
      "title": "大话西游台词对口型挑战",
      "artists": [],
      "dedupe_key": "大话西游台词对口型挑战",
-     "prev_rank": 23,
+     "prev_rank": 25,
      "rank_delta": -1,
      "is_new": false,
      "platform_count": 1,
@@ -23597,12 +23631,12 @@
      "url": "https://www.douyin.com/music/7702354949149100851"
     },
     {
-     "rank": 25,
+     "rank": 27,
      "title": "还记得前生盟誓",
      "artists": [],
      "dedupe_key": "还记得前生盟誓",
-     "prev_rank": 25,
-     "rank_delta": 0,
+     "prev_rank": 26,
+     "rank_delta": -1,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23614,12 +23648,12 @@
      "url": "https://www.douyin.com/music/7706098421991541545"
     },
     {
-     "rank": 26,
-     "title": "香水瓶卡点手势舞",
+     "rank": 28,
+     "title": "酸奶怎么放酸奶怎么放",
      "artists": [],
-     "dedupe_key": "香水瓶卡点手势舞",
-     "prev_rank": 26,
-     "rank_delta": 0,
+     "dedupe_key": "酸奶怎么放酸奶怎么放",
+     "prev_rank": 27,
+     "rank_delta": -1,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23627,32 +23661,15 @@
      ],
      "streak": 1,
      "days_on_board": 1,
-     "song_path": "/song/%E9%A6%99%E6%B0%B4%E7%93%B6%E5%8D%A1%E7%82%B9%E6%89%8B%E5%8A%BF%E8%88%9E",
-     "url": "https://www.douyin.com/music/7712418138241092403"
+     "song_path": "/song/%E9%85%B8%E5%A5%B6%E6%80%8E%E4%B9%88%E6%94%BE%E9%85%B8%E5%A5%B6%E6%80%8E%E4%B9%88%E6%94%BE",
+     "url": "https://www.douyin.com/music/7708343142520589065"
     },
     {
-     "rank": 27,
-     "title": "有了友爱力量 我的法力变强",
-     "artists": [],
-     "dedupe_key": "有了友爱力量我的法力变强",
-     "prev_rank": 29,
-     "rank_delta": 2,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 7,
-     "days_on_board": 4,
-     "song_path": "/song/%E6%9C%89%E4%BA%86%E5%8F%8B%E7%88%B1%E5%8A%9B%E9%87%8F%E6%88%91%E7%9A%84%E6%B3%95%E5%8A%9B%E5%8F%98%E5%BC%BA",
-     "url": "https://www.douyin.com/music/7708660827666008873"
-    },
-    {
-     "rank": 28,
+     "rank": 29,
      "title": "你往这我往这你不炸了吗",
      "artists": [],
      "dedupe_key": "你往这我往这你不炸了吗",
-     "prev_rank": 27,
+     "prev_rank": 28,
      "rank_delta": -1,
      "is_new": false,
      "platform_count": 1,
@@ -23665,11 +23682,11 @@
      "url": "https://www.douyin.com/music/7710936537805966123"
     },
     {
-     "rank": 29,
+     "rank": 30,
      "title": "试试看手势舞",
      "artists": [],
      "dedupe_key": "试试看手势舞",
-     "prev_rank": 28,
+     "prev_rank": 29,
      "rank_delta": -1,
      "is_new": false,
      "platform_count": 1,
@@ -23682,29 +23699,12 @@
      "url": "https://www.douyin.com/music/7708697985227442987"
     },
     {
-     "rank": 30,
-     "title": "酸奶怎么放酸奶怎么放",
-     "artists": [],
-     "dedupe_key": "酸奶怎么放酸奶怎么放",
-     "prev_rank": 31,
-     "rank_delta": 1,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E9%85%B8%E5%A5%B6%E6%80%8E%E4%B9%88%E6%94%BE%E9%85%B8%E5%A5%B6%E6%80%8E%E4%B9%88%E6%94%BE",
-     "url": "https://www.douyin.com/music/7708343142520589065"
-    },
-    {
      "rank": 31,
      "title": "是苦是乐这一年都要结束了",
      "artists": [],
      "dedupe_key": "是苦是乐这一年都要结束了",
-     "prev_rank": 32,
-     "rank_delta": 1,
+     "prev_rank": 31,
+     "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23717,45 +23717,11 @@
     },
     {
      "rank": 32,
-     "title": "你要的全拿走 把回忆化成空",
-     "artists": [],
-     "dedupe_key": "你要的全拿走把回忆化成空",
-     "prev_rank": 30,
-     "rank_delta": -2,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E4%BD%A0%E8%A6%81%E7%9A%84%E5%85%A8%E6%8B%BF%E8%B5%B0%E6%8A%8A%E5%9B%9E%E5%BF%86%E5%8C%96%E6%88%90%E7%A9%BA",
-     "url": "https://www.douyin.com/music/7601918360586177315"
-    },
-    {
-     "rank": 33,
-     "title": "天有多高手有多骚",
-     "artists": [],
-     "dedupe_key": "天有多高手有多骚",
-     "prev_rank": 35,
-     "rank_delta": 2,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E5%A4%A9%E6%9C%89%E5%A4%9A%E9%AB%98%E6%89%8B%E6%9C%89%E5%A4%9A%E9%AA%9A",
-     "url": "https://www.douyin.com/music/7711681061163387683"
-    },
-    {
-     "rank": 34,
      "title": "十二万亿年后我们再相见",
      "artists": [],
      "dedupe_key": "十二万亿年后我们再相见",
-     "prev_rank": 34,
-     "rank_delta": 0,
+     "prev_rank": 33,
+     "rank_delta": 1,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23767,28 +23733,28 @@
      "url": "https://www.douyin.com/music/7151385536366643202"
     },
     {
-     "rank": 35,
-     "title": "天冷拍甜甜手势舞",
+     "rank": 33,
+     "title": "有了友爱力量 我的法力变强",
      "artists": [],
-     "dedupe_key": "天冷拍甜甜手势舞",
-     "prev_rank": 28,
-     "rank_delta": -7,
+     "dedupe_key": "有了友爱力量我的法力变强",
+     "prev_rank": 30,
+     "rank_delta": -3,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
       "douyin"
      ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E5%A4%A9%E5%86%B7%E6%8B%8D%E7%94%9C%E7%94%9C%E6%89%8B%E5%8A%BF%E8%88%9E",
-     "url": "https://www.douyin.com/music/7708697985227442987"
+     "streak": 7,
+     "days_on_board": 4,
+     "song_path": "/song/%E6%9C%89%E4%BA%86%E5%8F%8B%E7%88%B1%E5%8A%9B%E9%87%8F%E6%88%91%E7%9A%84%E6%B3%95%E5%8A%9B%E5%8F%98%E5%BC%BA",
+     "url": "https://www.douyin.com/music/7708660827666008873"
     },
     {
-     "rank": 36,
+     "rank": 34,
      "title": "DONT STOP继续跳",
      "artists": [],
      "dedupe_key": "dontstop继续跳",
-     "prev_rank": 36,
+     "prev_rank": 34,
      "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
@@ -23801,11 +23767,28 @@
      "url": "https://www.douyin.com/music/7710227468304714522"
     },
     {
-     "rank": 37,
+     "rank": 35,
+     "title": "法海你不懂爱喊麦挑战",
+     "artists": [],
+     "dedupe_key": "法海你不懂爱喊麦挑战",
+     "prev_rank": 38,
+     "rank_delta": 3,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 7,
+     "days_on_board": 4,
+     "song_path": "/song/%E6%B3%95%E6%B5%B7%E4%BD%A0%E4%B8%8D%E6%87%82%E7%88%B1%E5%96%8A%E9%BA%A6%E6%8C%91%E6%88%98",
+     "url": "https://www.douyin.com/music/7709787625980267318"
+    },
+    {
+     "rank": 36,
      "title": "如果没有超级棒棒糖",
      "artists": [],
      "dedupe_key": "如果没有超级棒棒糖",
-     "prev_rank": 37,
+     "prev_rank": 36,
      "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
@@ -23818,21 +23801,38 @@
      "url": "https://www.douyin.com/music/7703602900624001043"
     },
     {
-     "rank": 38,
-     "title": "法海你不懂爱喊麦挑战",
+     "rank": 37,
+     "title": "香水瓶卡点手势舞",
      "artists": [],
-     "dedupe_key": "法海你不懂爱喊麦挑战",
-     "prev_rank": 38,
-     "rank_delta": 0,
+     "dedupe_key": "香水瓶卡点手势舞",
+     "prev_rank": 32,
+     "rank_delta": -5,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
       "douyin"
      ],
-     "streak": 7,
-     "days_on_board": 4,
-     "song_path": "/song/%E6%B3%95%E6%B5%B7%E4%BD%A0%E4%B8%8D%E6%87%82%E7%88%B1%E5%96%8A%E9%BA%A6%E6%8C%91%E6%88%98",
-     "url": "https://www.douyin.com/music/7709787625980267318"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%A6%99%E6%B0%B4%E7%93%B6%E5%8D%A1%E7%82%B9%E6%89%8B%E5%8A%BF%E8%88%9E",
+     "url": "https://www.douyin.com/music/7712418138241092403"
+    },
+    {
+     "rank": 38,
+     "title": "天冷拍甜甜手势舞",
+     "artists": [],
+     "dedupe_key": "天冷拍甜甜手势舞",
+     "prev_rank": 29,
+     "rank_delta": -9,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A4%A9%E5%86%B7%E6%8B%8D%E7%94%9C%E7%94%9C%E6%89%8B%E5%8A%BF%E8%88%9E",
+     "url": "https://www.douyin.com/music/7708697985227442987"
     },
     {
      "rank": 39,
@@ -23854,28 +23854,11 @@
     },
     {
      "rank": 40,
-     "title": "众人皆醉我独醒太通透了",
-     "artists": [],
-     "dedupe_key": "众人皆醉我独醒太通透了",
-     "prev_rank": 40,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 2,
-     "days_on_board": 1,
-     "song_path": "/song/%E4%BC%97%E4%BA%BA%E7%9A%86%E9%86%89%E6%88%91%E7%8B%AC%E9%86%92%E5%A4%AA%E9%80%9A%E9%80%8F%E4%BA%86",
-     "url": "https://www.douyin.com/music/7708709580804918025"
-    },
-    {
-     "rank": 41,
      "title": "叽嘎拉拉呼呼对口型挑战",
      "artists": [],
      "dedupe_key": "叽嘎拉拉呼呼对口型挑战",
-     "prev_rank": 42,
-     "rank_delta": 1,
+     "prev_rank": 40,
+     "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23887,10 +23870,27 @@
      "url": "https://www.douyin.com/music/7707619650481195810"
     },
     {
-     "rank": 42,
-     "title": "小猫爪手势舞",
+     "rank": 41,
+     "title": "七天七色变装挑战",
      "artists": [],
-     "dedupe_key": "小猫爪手势舞",
+     "dedupe_key": "七天七色变装挑战",
+     "prev_rank": 45,
+     "rank_delta": 4,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%B8%83%E5%A4%A9%E4%B8%83%E8%89%B2%E5%8F%98%E8%A3%85%E6%8C%91%E6%88%98",
+     "url": "https://www.douyin.com/music/7712042325106527019"
+    },
+    {
+     "rank": 42,
+     "title": "众人皆醉我独醒太通透了",
+     "artists": [],
+     "dedupe_key": "众人皆醉我独醒太通透了",
      "prev_rank": 41,
      "rank_delta": -1,
      "is_new": false,
@@ -23898,120 +23898,18 @@
      "platforms": [
       "douyin"
      ],
-     "streak": 1,
+     "streak": 2,
      "days_on_board": 1,
-     "song_path": "/song/%E5%B0%8F%E7%8C%AB%E7%88%AA%E6%89%8B%E5%8A%BF%E8%88%9E",
-     "url": "https://www.douyin.com/music/7698672409783634698"
+     "song_path": "/song/%E4%BC%97%E4%BA%BA%E7%9A%86%E9%86%89%E6%88%91%E7%8B%AC%E9%86%92%E5%A4%AA%E9%80%9A%E9%80%8F%E4%BA%86",
+     "url": "https://www.douyin.com/music/7708709580804918025"
     },
     {
      "rank": 43,
-     "title": "你有没有养小猫小狗在你家里住",
-     "artists": [],
-     "dedupe_key": "你有没有养小猫小狗在你家里住",
-     "prev_rank": 43,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E4%BD%A0%E6%9C%89%E6%B2%A1%E6%9C%89%E5%85%BB%E5%B0%8F%E7%8C%AB%E5%B0%8F%E7%8B%97%E5%9C%A8%E4%BD%A0%E5%AE%B6%E9%87%8C%E4%BD%8F",
-     "url": "https://www.douyin.com/music/7705481156745071401"
-    },
-    {
-     "rank": 44,
-     "title": "我想跟你在一起不想再经历离散",
-     "artists": [],
-     "dedupe_key": "我想跟你在一起不想再经历离散",
-     "prev_rank": 44,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E6%88%91%E6%83%B3%E8%B7%9F%E4%BD%A0%E5%9C%A8%E4%B8%80%E8%B5%B7%E4%B8%8D%E6%83%B3%E5%86%8D%E7%BB%8F%E5%8E%86%E7%A6%BB%E6%95%A3",
-     "url": "https://www.douyin.com/music/7700990525482666771"
-    },
-    {
-     "rank": 45,
-     "title": "可那些没有天赋的人呢",
-     "artists": [],
-     "dedupe_key": "可那些没有天赋的人呢",
-     "prev_rank": 45,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E5%8F%AF%E9%82%A3%E4%BA%9B%E6%B2%A1%E6%9C%89%E5%A4%A9%E8%B5%8B%E7%9A%84%E4%BA%BA%E5%91%A2",
-     "url": "https://www.douyin.com/music/7707180696808605748"
-    },
-    {
-     "rank": 46,
-     "title": "一半青涩一半纯真",
-     "artists": [],
-     "dedupe_key": "一半青涩一半纯真",
-     "prev_rank": 46,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 3,
-     "days_on_board": 2,
-     "song_path": "/song/%E4%B8%80%E5%8D%8A%E9%9D%92%E6%B6%A9%E4%B8%80%E5%8D%8A%E7%BA%AF%E7%9C%9F",
-     "url": "https://www.douyin.com/music/7703555586134476810"
-    },
-    {
-     "rank": 47,
-     "title": "第一次拥抱你 那时你也才二十几",
-     "artists": [],
-     "dedupe_key": "第一次拥抱你那时你也才二十几",
-     "prev_rank": 47,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%8B%A5%E6%8A%B1%E4%BD%A0%E9%82%A3%E6%97%B6%E4%BD%A0%E4%B9%9F%E6%89%8D%E4%BA%8C%E5%8D%81%E5%87%A0",
-     "url": "https://www.douyin.com/music/7710880700014119699"
-    },
-    {
-     "rank": 48,
-     "title": "每个女孩都在期待完美的爱情",
-     "artists": [],
-     "dedupe_key": "每个女孩都在期待完美的爱情",
-     "prev_rank": 50,
-     "rank_delta": 2,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E6%AF%8F%E4%B8%AA%E5%A5%B3%E5%AD%A9%E9%83%BD%E5%9C%A8%E6%9C%9F%E5%BE%85%E5%AE%8C%E7%BE%8E%E7%9A%84%E7%88%B1%E6%83%85",
-     "url": "https://www.douyin.com/music/7710102163829148442"
-    },
-    {
-     "rank": 49,
      "title": "手搓覆面系转场",
      "artists": [],
      "dedupe_key": "手搓覆面系转场",
-     "prev_rank": 48,
-     "rank_delta": -1,
+     "prev_rank": 47,
+     "rank_delta": 4,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -24023,10 +23921,44 @@
      "url": "https://www.douyin.com/music/7702016867409546022"
     },
     {
-     "rank": 50,
-     "title": "七天七色变装挑战",
+     "rank": 44,
+     "title": "每个女孩都在期待完美的爱情",
      "artists": [],
-     "dedupe_key": "七天七色变装挑战",
+     "dedupe_key": "每个女孩都在期待完美的爱情",
+     "prev_rank": 48,
+     "rank_delta": 4,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%AF%8F%E4%B8%AA%E5%A5%B3%E5%AD%A9%E9%83%BD%E5%9C%A8%E6%9C%9F%E5%BE%85%E5%AE%8C%E7%BE%8E%E7%9A%84%E7%88%B1%E6%83%85",
+     "url": "https://www.douyin.com/music/7710102163829148442"
+    },
+    {
+     "rank": 45,
+     "title": "你有没有养小猫小狗在你家里住",
+     "artists": [],
+     "dedupe_key": "你有没有养小猫小狗在你家里住",
+     "prev_rank": 42,
+     "rank_delta": -3,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BD%A0%E6%9C%89%E6%B2%A1%E6%9C%89%E5%85%BB%E5%B0%8F%E7%8C%AB%E5%B0%8F%E7%8B%97%E5%9C%A8%E4%BD%A0%E5%AE%B6%E9%87%8C%E4%BD%8F",
+     "url": "https://www.douyin.com/music/7705481156745071401"
+    },
+    {
+     "rank": 46,
+     "title": "拆正缘星座盲盒",
+     "artists": [],
+     "dedupe_key": "拆正缘星座盲盒",
      "prev_rank": null,
      "rank_delta": null,
      "is_new": true,
@@ -24036,8 +23968,76 @@
      ],
      "streak": 1,
      "days_on_board": 1,
-     "song_path": "/song/%E4%B8%83%E5%A4%A9%E4%B8%83%E8%89%B2%E5%8F%98%E8%A3%85%E6%8C%91%E6%88%98",
-     "url": "https://www.douyin.com/music/7712042325106527019"
+     "song_path": "/song/%E6%8B%86%E6%AD%A3%E7%BC%98%E6%98%9F%E5%BA%A7%E7%9B%B2%E7%9B%92",
+     "url": "https://www.douyin.com/music/7683478915138030362"
+    },
+    {
+     "rank": 47,
+     "title": "可那些没有天赋的人呢",
+     "artists": [],
+     "dedupe_key": "可那些没有天赋的人呢",
+     "prev_rank": 44,
+     "rank_delta": -3,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%8F%AF%E9%82%A3%E4%BA%9B%E6%B2%A1%E6%9C%89%E5%A4%A9%E8%B5%8B%E7%9A%84%E4%BA%BA%E5%91%A2",
+     "url": "https://www.douyin.com/music/7707180696808605748"
+    },
+    {
+     "rank": 48,
+     "title": "我想跟你在一起不想再经历离散",
+     "artists": [],
+     "dedupe_key": "我想跟你在一起不想再经历离散",
+     "prev_rank": 43,
+     "rank_delta": -5,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E6%83%B3%E8%B7%9F%E4%BD%A0%E5%9C%A8%E4%B8%80%E8%B5%B7%E4%B8%8D%E6%83%B3%E5%86%8D%E7%BB%8F%E5%8E%86%E7%A6%BB%E6%95%A3",
+     "url": "https://www.douyin.com/music/7700990525482666771"
+    },
+    {
+     "rank": 49,
+     "title": "火影玩家不敢听第二遍的歌",
+     "artists": [],
+     "dedupe_key": "火影玩家不敢听第二遍的歌",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%81%AB%E5%BD%B1%E7%8E%A9%E5%AE%B6%E4%B8%8D%E6%95%A2%E5%90%AC%E7%AC%AC%E4%BA%8C%E9%81%8D%E7%9A%84%E6%AD%8C",
+     "url": "https://www.douyin.com/music/6561059333877009156"
+    },
+    {
+     "rank": 50,
+     "title": "最近想谈恋爱现在突然想开了",
+     "artists": [],
+     "dedupe_key": "最近想谈恋爱现在突然想开了",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%9C%80%E8%BF%91%E6%83%B3%E8%B0%88%E6%81%8B%E7%88%B1%E7%8E%B0%E5%9C%A8%E7%AA%81%E7%84%B6%E6%83%B3%E5%BC%80%E4%BA%86",
+     "url": "https://www.douyin.com/music/7705673823122770731"
     }
    ]
   },
@@ -24090,8 +24090,8 @@
       "kugou",
       "kuwo"
      ],
-     "streak": 52,
-     "days_on_board": 26,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E4%BD%A0%E6%9C%89%E6%B2%A1%E6%9C%89%E7%9C%9F%E7%9A%84%E7%88%B1%E8%BF%87%E6%88%91",
      "url": "https://www.kuwo.cn/play_detail/567247828"
     },
@@ -24110,8 +24110,8 @@
       "kugou",
       "kuwo"
      ],
-     "streak": 52,
-     "days_on_board": 26,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E5%B1%B1%E9%A3%8E%E5%B1%B1%E9%A3%8E%E7%AD%89%E7%AD%89%E6%88%91%23r2",
      "url": "https://www.kuwo.cn/play_detail/624683929"
     },
@@ -24153,8 +24153,8 @@
       "kugou",
       "kuwo"
      ],
-     "streak": 52,
-     "days_on_board": 26,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E6%97%A0%E5%A5%88%E7%9A%84%E6%80%9D%E7%BB%AA%23r2",
      "url": "https://www.kuwo.cn/play_detail/651621673"
     },
@@ -24173,8 +24173,8 @@
       "qq",
       "kuwo"
      ],
-     "streak": 52,
-     "days_on_board": 26,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E5%A6%82%E6%84%BF",
      "url": "https://www.kuwo.cn/play_detail/193290598"
     },
@@ -24195,8 +24195,8 @@
       "kugou",
       "kuwo"
      ],
-     "streak": 52,
-     "days_on_board": 26,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E9%BB%84%E6%98%8F%23r2",
      "url": "https://www.kuwo.cn/play_detail/1044318"
     },
@@ -24219,8 +24219,8 @@
       "qishui",
       "apple"
      ],
-     "streak": 52,
-     "days_on_board": 26,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E5%A4%A9%E9%BE%99%E5%85%AB%E9%83%A8%E4%B9%8B%E5%AE%BF%E6%95%8C",
      "url": "https://www.kuwo.cn/play_detail/1090336"
     },
@@ -24239,8 +24239,8 @@
       "kugou",
       "kuwo"
      ],
-     "streak": 52,
-     "days_on_board": 26,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E4%BA%BA%E7%94%9F%E8%B7%AF%E6%BC%AB%E6%BC%AB",
      "url": "https://www.kuwo.cn/play_detail/550221152"
     },
@@ -24262,8 +24262,8 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 52,
-     "days_on_board": 26,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E7%94%B2%E4%B9%99%E4%B8%99%E4%B8%81",
      "url": "https://www.kuwo.cn/play_detail/611237221"
     },
@@ -24281,8 +24281,8 @@
      "platforms": [
       "kuwo"
      ],
-     "streak": 52,
-     "days_on_board": 26,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E5%B2%81%E6%9C%88%E5%A6%82%E7%AC%94%E5%86%99%E6%98%A5%E7%A7%8B%23r3",
      "url": "https://www.kuwo.cn/play_detail/570482802"
     },
@@ -24304,8 +24304,8 @@
       "kuwo",
       "qishui"
      ],
-     "streak": 52,
-     "days_on_board": 26,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E6%88%91%E5%A5%BD%E5%83%8F%E5%9C%A8%E5%93%AA%E8%A7%81%E8%BF%87%E4%BD%A0",
      "url": "https://www.kuwo.cn/play_detail/7201115"
     },
@@ -24323,8 +24323,8 @@
      "platforms": [
       "kuwo"
      ],
-     "streak": 52,
-     "days_on_board": 26,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E9%9D%92%E8%8A%B1",
      "url": "https://www.kuwo.cn/play_detail/320462"
     },
@@ -24364,8 +24364,8 @@
      "platforms": [
       "kuwo"
      ],
-     "streak": 52,
-     "days_on_board": 26,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E7%BA%A2%E5%B0%98%E8%AF%AF%E6%AD%A4%E7%94%9F",
      "url": "https://www.kuwo.cn/play_detail/651031866"
     },
@@ -24384,8 +24384,8 @@
      "platforms": [
       "kuwo"
      ],
-     "streak": 52,
-     "days_on_board": 26,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E7%90%B5%E7%90%B6%E6%9B%B2%23r2",
      "url": "https://www.kuwo.cn/play_detail/543882869"
     },
@@ -24408,8 +24408,8 @@
       "qishui",
       "apple"
      ],
-     "streak": 52,
-     "days_on_board": 26,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E9%9B%A8%E7%88%B1%23r2",
      "url": "https://www.kuwo.cn/play_detail/1035026"
     },
@@ -24427,8 +24427,8 @@
      "platforms": [
       "kuwo"
      ],
-     "streak": 52,
-     "days_on_board": 26,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E8%8C%B6%E8%8A%B1%E5%BC%80%E4%BA%86",
      "url": "https://www.kuwo.cn/play_detail/442087398"
     },
@@ -24446,8 +24446,8 @@
      "platforms": [
       "kuwo"
      ],
-     "streak": 35,
-     "days_on_board": 18,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E5%8F%AF%E8%83%BD",
      "url": "https://www.kuwo.cn/play_detail/221822646"
     },
@@ -24484,8 +24484,8 @@
      "platforms": [
       "kuwo"
      ],
-     "streak": 35,
-     "days_on_board": 18,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E5%A4%A9%E5%9C%B0%E9%BE%99%E9%B3%9E",
      "url": "https://www.kuwo.cn/play_detail/201182467"
     },
@@ -24524,8 +24524,8 @@
       "qq",
       "kuwo"
      ],
-     "streak": 39,
-     "days_on_board": 20,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E6%B5%B7%E9%98%94%E5%A4%A9%E7%A9%BA%23r2",
      "url": "https://www.kuwo.cn/play_detail/5886682"
     },
@@ -24606,8 +24606,8 @@
       "qishui",
       "apple"
      ],
-     "streak": 43,
-     "days_on_board": 22,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E6%88%91%E4%B8%8D%E9%9A%BE%E8%BF%87",
      "url": "https://www.kuwo.cn/play_detail/95769"
     },
@@ -24625,8 +24625,8 @@
      "platforms": [
       "kuwo"
      ],
-     "streak": 35,
-     "days_on_board": 18,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E5%A5%A2%E9%A6%99%E5%A4%AB%E4%BA%BA",
      "url": "https://www.kuwo.cn/play_detail/501646"
     },
@@ -27236,8 +27236,8 @@
      "platforms": [
       "kuwo"
      ],
-     "streak": 39,
-     "days_on_board": 20,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E6%97%A0%E6%98%8E%E5%AE%99%23r1",
      "url": "https://www.kuwo.cn/play_detail/666764544"
     },
@@ -27516,8 +27516,8 @@
      "platforms": [
       "kuwo"
      ],
-     "streak": 35,
-     "days_on_board": 18,
+     "streak": 34,
+     "days_on_board": 17,
      "song_path": "/song/%E4%BA%91%E6%98%AF%E5%A4%A9%E7%A9%BA%E5%86%99%E7%9A%84%E4%BF%A1",
      "url": "https://www.kuwo.cn/play_detail/666764501"
     },
@@ -32328,7 +32328,7 @@
      "platforms": [
       "weibo"
      ],
-     "streak": 52,
+     "streak": 50,
      "days_on_board": 26,
      "song_path": "/song/%E8%BD%BB%E8%BD%BB",
      "url": "https://m.weibo.cn/detail/5370337025854388"
@@ -32347,7 +32347,7 @@
      "platforms": [
       "weibo"
      ],
-     "streak": 52,
+     "streak": 50,
      "days_on_board": 26,
      "song_path": "/song/%E6%88%91%E4%BB%AC",
      "url": "https://m.weibo.cn/detail/5370335827334406"
@@ -32366,7 +32366,7 @@
      "platforms": [
       "weibo"
      ],
-     "streak": 52,
+     "streak": 50,
      "days_on_board": 26,
      "song_path": "/song/%E5%BC%82%E6%83%B3%E5%A4%A9%E5%BC%80",
      "url": "https://m.weibo.cn/detail/5370326587802536"
@@ -32385,7 +32385,7 @@
      "platforms": [
       "weibo"
      ],
-     "streak": 44,
+     "streak": 43,
      "days_on_board": 22,
      "song_path": "/song/%E6%97%A0%E6%98%8E%E5%AE%99",
      "url": "https://m.weibo.cn/detail/5370341033772749"
@@ -32463,7 +32463,7 @@
      "platforms": [
       "weibo"
      ],
-     "streak": 51,
+     "streak": 49,
      "days_on_board": 26,
      "song_path": "/song/%E4%BD%93%E8%B4%B4",
      "url": "https://m.weibo.cn/detail/5370343684312911"
@@ -32482,7 +32482,7 @@
      "platforms": [
       "weibo"
      ],
-     "streak": 52,
+     "streak": 50,
      "days_on_board": 26,
      "song_path": "/song/%E4%B8%8D%E5%90%88%E6%97%B6%E5%AE%9C",
      "url": "https://m.weibo.cn/detail/5370295536846685"
@@ -32563,7 +32563,7 @@
      "platforms": [
       "weibo"
      ],
-     "streak": 42,
+     "streak": 41,
      "days_on_board": 21,
      "song_path": "/song/%E6%BC%82%E6%B5%81",
      "url": "https://m.weibo.cn/detail/5370286853849355"
@@ -32620,8 +32620,8 @@
      "platforms": [
       "weibo"
      ],
-     "streak": 38,
-     "days_on_board": 19,
+     "streak": 46,
+     "days_on_board": 24,
      "song_path": "/song/%E6%88%91%E5%92%8C%E6%88%91%E7%9A%84%E7%A5%96%E5%9B%BD",
      "url": "https://m.weibo.cn/detail/5370296049601686"
     },
@@ -32660,7 +32660,7 @@
      "platforms": [
       "weibo"
      ],
-     "streak": 43,
+     "streak": 42,
      "days_on_board": 22,
      "song_path": "/song/%E4%B8%8D%E8%A6%81%E5%9B%9E%E5%A4%B4",
      "url": "https://m.weibo.cn/detail/5370295590324701"
@@ -32679,7 +32679,7 @@
      "platforms": [
       "weibo"
      ],
-     "streak": 44,
+     "streak": 43,
      "days_on_board": 22,
      "song_path": "/song/%E7%81%AF%E5%A1%94",
      "url": "https://m.weibo.cn/detail/5370286867218711"
@@ -33540,7 +33540,7 @@
      "platforms": [
       "weibo"
      ],
-     "streak": 52,
+     "streak": 50,
      "days_on_board": 26,
      "song_path": "/song/%E5%A4%A9%E6%98%9F%E6%9C%AF",
      "url": "https://m.weibo.cn/detail/5370172034518907"
@@ -34248,9 +34248,10 @@
    "board_name": "B 站音乐区",
    "path": "/board/bilibili/bilibili-music",
    "captured_at": "2026-11-28T21:40:03+08:00",
-   "compared_at": "2026-11-28T09:40:03+08:00",
+   "compared_at": "2026-11-27T21:40:05+08:00",
    "total": 97,
    "cadence": "twice_daily",
+   "unchanged_since": "2026-11-12T09:40:04+08:00",
    "tracks": [
     {
      "rank": 1,
@@ -34266,7 +34267,7 @@
      "platforms": [
       "bilibili"
      ],
-     "streak": 52,
+     "streak": 49,
      "days_on_board": 26,
      "song_path": "/song/%E7%BB%99%E6%88%91%E4%BB%AC%E7%9A%84%E7%BB%84%E5%90%88%E8%B5%B7%E4%B8%AA%E5%90%8D",
      "url": "https://www.bilibili.com/video/BV17VZpY1ENA"
@@ -34285,7 +34286,7 @@
      "platforms": [
       "bilibili"
      ],
-     "streak": 52,
+     "streak": 49,
      "days_on_board": 26,
      "song_path": "/song/20%E4%B8%96%E7%BA%AA%E7%BE%8E%E5%9B%BD%E4%B9%A1%E6%9D%91%E7%BB%8F%E5%85%B8%E6%B0%91%E8%B0%A3%E9%98%B3%E5%85%89%E5%BD%A9%E8%99%B9%E5%B0%8F%E7%99%BD%E9%A9%AC",
      "url": "https://www.bilibili.com/video/BV1zKZrYAEi8"
@@ -34304,7 +34305,7 @@
      "platforms": [
       "bilibili"
      ],
-     "streak": 52,
+     "streak": 49,
      "days_on_board": 26,
      "song_path": "/song/%E5%BE%AA%E7%8E%AF%E6%AD%8C%E5%8D%95%E8%B0%81%E6%87%82%E6%86%8B%E4%BD%AC%E4%BB%94%E5%87%BA%E6%9D%A5%E6%97%B6%E7%9A%84%E6%95%91%E8%B5%8E%E6%84%9F",
      "url": "https://www.bilibili.com/video/BV11eZ8Y5EVi"
@@ -34323,7 +34324,7 @@
      "platforms": [
       "bilibili"
      ],
-     "streak": 52,
+     "streak": 49,
      "days_on_board": 26,
      "song_path": "/song/%E7%9B%98%E7%82%B9%E7%94%B7%E7%BB%84%E5%90%88%E9%82%A3%E4%BA%9B%E7%A5%9E%E7%BA%A7%E7%BF%BB%E5%94%B1%E4%BD%A0%E6%9C%80%E5%96%9C%E6%AC%A2%E5%93%AA%E4%B8%AA%E7%BB%84%E5%90%88%E5%91%A2",
      "url": "https://www.bilibili.com/video/BV1DDZHYhE59"
@@ -34342,7 +34343,7 @@
      "platforms": [
       "bilibili"
      ],
-     "streak": 52,
+     "streak": 49,
      "days_on_board": 26,
      "song_path": "/song/%E9%98%B3%E5%85%89%E5%94%A2%E5%91%90%E5%B0%8F%E7%99%BD%E9%A9%AC",
      "url": "https://www.bilibili.com/video/BV1RdZEY8E8T"
@@ -34361,7 +34362,7 @@
      "platforms": [
       "bilibili"
      ],
-     "streak": 52,
+     "streak": 49,
      "days_on_board": 26,
      "song_path": "/song/%E5%90%91%E4%BD%90vs%E8%8D%AF%E6%B0%B4%E5%93%A5%E5%89%91%E7%81%B52%E5%8F%8C%E4%BA%BA%E5%AF%B9%E5%86%B3mv%E7%81%B5%E5%B8%A7%E8%B5%B7%E6%89%8B%E4%B8%8A%E7%BA%BF",
      "url": "https://www.bilibili.com/video/BV1MXZJYpEuN"
@@ -34380,7 +34381,7 @@
      "platforms": [
       "bilibili"
      ],
-     "streak": 52,
+     "streak": 49,
      "days_on_board": 26,
      "song_path": "/song/smtr25introductionfilm%E6%9D%BE%E6%B2%B3",
      "url": "https://www.bilibili.com/video/BV1t1Z4YgEcM"
@@ -34399,7 +34400,7 @@
      "platforms": [
       "bilibili"
      ],
-     "streak": 52,
+     "streak": 49,
      "days_on_board": 26,
      "song_path": "/song/%E6%81%8B%E7%88%B1%E5%BE%AA%E7%8E%AF",
      "url": "https://www.bilibili.com/video/BV1KRZhYSE98"
@@ -34418,7 +34419,7 @@
      "platforms": [
       "bilibili"
      ],
-     "streak": 52,
+     "streak": 49,
      "days_on_board": 26,
      "song_path": "/song/%E4%B8%AD%E5%9B%BD%E5%94%A2%E5%91%90%E7%A1%AC%E6%8E%A7%E7%94%B2%E4%BA%A2%E5%93%A520%E7%A7%92%E6%B2%A1%E6%9C%89%E4%BA%BA%E8%83%BD%E9%80%83%E5%BE%97%E8%BF%87%E4%B8%80%E9%A6%96%E9%80%9A%E5%A4%A9%E5%A4%A7%E9%81%93%E5%AE%BD%E5%8F%88%E9%98%94",
      "url": "https://www.bilibili.com/video/BV16gZpYmEqW"
@@ -34437,7 +34438,7 @@
      "platforms": [
       "bilibili"
      ],
-     "streak": 52,
+     "streak": 49,
      "days_on_board": 26,
      "song_path": "/song/%E4%BB%96%E4%BB%AC%E6%9C%9D%E6%88%91%E6%89%94%E6%B3%A5%E5%B7%B4%E6%88%91%E6%8B%BF%E6%B3%A5%E5%B7%B4%E7%A7%8D%E8%8D%B7%E8%8A%B1",
      "url": "https://www.bilibili.com/video/BV15bZfY3E8B"
@@ -34456,7 +34457,7 @@
      "platforms": [
       "bilibili"
      ],
-     "streak": 52,
+     "streak": 49,
      "days_on_board": 26,
      "song_path": "/song/tiatia%E9%83%BD%E9%9C%80%E8%A6%81%E4%BD%A0%E7%88%B1%E4%B8%8D%E5%BE%97%E4%B8%8D%E7%88%B1",
      "url": "https://www.bilibili.com/video/BV1e6ZHYMEtS"
@@ -34468,15 +34469,15 @@
       "康养彭于晏"
      ],
      "dedupe_key": "当我穿越回到小时候遇见小时候的自己时",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 12,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E5%BD%93%E6%88%91%E7%A9%BF%E8%B6%8A%E5%9B%9E%E5%88%B0%E5%B0%8F%E6%97%B6%E5%80%99%E9%81%87%E8%A7%81%E5%B0%8F%E6%97%B6%E5%80%99%E7%9A%84%E8%87%AA%E5%B7%B1%E6%97%B6",
      "url": "https://www.bilibili.com/video/BV1vgZrY8Eoo"
     },
@@ -34487,15 +34488,15 @@
       "屁屁猪ne"
      ],
      "dedupe_key": "我们俩吉他弹唱",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 13,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E6%88%91%E4%BB%AC%E4%BF%A9%E5%90%89%E4%BB%96%E5%BC%B9%E5%94%B1",
      "url": "https://www.bilibili.com/video/BV1S1oeYbEe1"
     },
@@ -34506,15 +34507,15 @@
       "钢琴波波"
      ],
      "dedupe_key": "今天遇到高手了",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 14,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E4%BB%8A%E5%A4%A9%E9%81%87%E5%88%B0%E9%AB%98%E6%89%8B%E4%BA%86",
      "url": "https://www.bilibili.com/video/BV1eAZAYDEYC"
     },
@@ -34525,15 +34526,15 @@
       "是青橘啦"
      ],
      "dedupe_key": "盘点2025上半年爆火的9首破亿神曲很多人听过却不知道歌名",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 15,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E7%9B%98%E7%82%B92025%E4%B8%8A%E5%8D%8A%E5%B9%B4%E7%88%86%E7%81%AB%E7%9A%849%E9%A6%96%E7%A0%B4%E4%BA%BF%E7%A5%9E%E6%9B%B2%E5%BE%88%E5%A4%9A%E4%BA%BA%E5%90%AC%E8%BF%87%E5%8D%B4%E4%B8%8D%E7%9F%A5%E9%81%93%E6%AD%8C%E5%90%8D",
      "url": "https://www.bilibili.com/video/BV1bdZxYCEXi"
     },
@@ -34544,15 +34545,15 @@
       "楷智吃饱了"
      ],
      "dedupe_key": "将鬼畜动机编成曲居然只需要这几步",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 16,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E5%B0%86%E9%AC%BC%E7%95%9C%E5%8A%A8%E6%9C%BA%E7%BC%96%E6%88%90%E6%9B%B2%E5%B1%85%E7%84%B6%E5%8F%AA%E9%9C%80%E8%A6%81%E8%BF%99%E5%87%A0%E6%AD%A5",
      "url": "https://www.bilibili.com/video/BV1FSZnYVE7P"
     },
@@ -34563,15 +34564,15 @@
       "那边那个g蛋"
      ],
      "dedupe_key": "声音是从电路板出来的电路板叫stylosette有音色跟效果就是你链到香蕉上或者黄瓜上他也出来这种声只要物体导电他就会出声音物体只是作为一个按键",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 17,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E5%A3%B0%E9%9F%B3%E6%98%AF%E4%BB%8E%E7%94%B5%E8%B7%AF%E6%9D%BF%E5%87%BA%E6%9D%A5%E7%9A%84%E7%94%B5%E8%B7%AF%E6%9D%BF%E5%8F%ABstylosette%E6%9C%89%E9%9F%B3%E8%89%B2%E8%B7%9F%E6%95%88%E6%9E%9C%E5%B0%B1%E6%98%AF%E4%BD%A0%E9%93%BE%E5%88%B0%E9%A6%99%E8%95%89%E4%B8%8A%E6%88%96%E8%80%85%E9%BB%84%E7%93%9C%E4%B8%8A%E4%BB%96%E4%B9%9F%E5%87%BA%E6%9D%A5%E8%BF%99%E7%A7%8D%E5%A3%B0%E5%8F%AA%E8%A6%81%E7%89%A9%E4%BD%93%E5%AF%BC%E7%94%B5%E4%BB%96%E5%B0%B1%E4%BC%9A%E5%87%BA%E5%A3%B0%E9%9F%B3%E7%89%A9%E4%BD%93%E5%8F%AA%E6%98%AF%E4%BD%9C%E4%B8%BA%E4%B8%80%E4%B8%AA%E6%8C%89%E9%94%AE",
      "url": "https://www.bilibili.com/video/BV1J6ZzYwEJU"
     },
@@ -34582,15 +34583,15 @@
       "王心凌桔梗花"
      ],
      "dedupe_key": "以前的不容易心酸通过这首歌真的奔向星辰大海了黄霄雲星辰大海黄霄雲广州演唱会",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 18,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E4%BB%A5%E5%89%8D%E7%9A%84%E4%B8%8D%E5%AE%B9%E6%98%93%E5%BF%83%E9%85%B8%E9%80%9A%E8%BF%87%E8%BF%99%E9%A6%96%E6%AD%8C%E7%9C%9F%E7%9A%84%E5%A5%94%E5%90%91%E6%98%9F%E8%BE%B0%E5%A4%A7%E6%B5%B7%E4%BA%86%E9%BB%84%E9%9C%84%E9%9B%B2%E6%98%9F%E8%BE%B0%E5%A4%A7%E6%B5%B7%E9%BB%84%E9%9C%84%E9%9B%B2%E5%B9%BF%E5%B7%9E%E6%BC%94%E5%94%B1%E4%BC%9A",
      "url": "https://www.bilibili.com/video/BV1YQZxYjEBX"
     },
@@ -34601,15 +34602,15 @@
       "Da圣音乐"
      ],
      "dedupe_key": "胜利之舞是啥短短几天播放43亿网友太魔性",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 19,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E8%83%9C%E5%88%A9%E4%B9%8B%E8%88%9E%E6%98%AF%E5%95%A5%E7%9F%AD%E7%9F%AD%E5%87%A0%E5%A4%A9%E6%92%AD%E6%94%BE43%E4%BA%BF%E7%BD%91%E5%8F%8B%E5%A4%AA%E9%AD%94%E6%80%A7",
      "url": "https://www.bilibili.com/video/BV1oko9YAE9C"
     },
@@ -34620,15 +34621,15 @@
       "BBoxer酋长"
      ],
      "dedupe_key": "一边打bbox一边吃纳豆",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 20,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E4%B8%80%E8%BE%B9%E6%89%93bbox%E4%B8%80%E8%BE%B9%E5%90%83%E7%BA%B3%E8%B1%86",
      "url": "https://www.bilibili.com/video/BV12uZbYkEo5"
     },
@@ -34639,15 +34640,15 @@
       "音乐分享君-"
      ],
      "dedupe_key": "周杰伦暗黑系风格歌曲你都听过那几首",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 21,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E5%91%A8%E6%9D%B0%E4%BC%A6%E6%9A%97%E9%BB%91%E7%B3%BB%E9%A3%8E%E6%A0%BC%E6%AD%8C%E6%9B%B2%E4%BD%A0%E9%83%BD%E5%90%AC%E8%BF%87%E9%82%A3%E5%87%A0%E9%A6%96",
      "url": "https://www.bilibili.com/video/BV1ptZAYeE31"
     },
@@ -34658,15 +34659,15 @@
       "音符拾光阁"
      ],
      "dedupe_key": "循环歌单你枯我不曾萎",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 22,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E5%BE%AA%E7%8E%AF%E6%AD%8C%E5%8D%95%E4%BD%A0%E6%9E%AF%E6%88%91%E4%B8%8D%E6%9B%BE%E8%90%8E",
      "url": "https://www.bilibili.com/video/BV17RZaYzEJx"
     },
@@ -34677,15 +34678,15 @@
       "X1AOKA1God小凯"
      ],
      "dedupe_key": "ruby让我爱上了jennie首专即神专万字乐评jennie新专ruby又来一枚kpop年专预备役",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 23,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/ruby%E8%AE%A9%E6%88%91%E7%88%B1%E4%B8%8A%E4%BA%86jennie%E9%A6%96%E4%B8%93%E5%8D%B3%E7%A5%9E%E4%B8%93%E4%B8%87%E5%AD%97%E4%B9%90%E8%AF%84jennie%E6%96%B0%E4%B8%93ruby%E5%8F%88%E6%9D%A5%E4%B8%80%E6%9E%9Akpop%E5%B9%B4%E4%B8%93%E9%A2%84%E5%A4%87%E5%BD%B9",
      "url": "https://www.bilibili.com/video/BV1mXZJYHE4u"
     },
@@ -34696,15 +34697,15 @@
       "蓝色星尘2"
      ],
      "dedupe_key": "第二十九章恶魔地球",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 24,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B9%9D%E7%AB%A0%E6%81%B6%E9%AD%94%E5%9C%B0%E7%90%83",
      "url": "https://www.bilibili.com/video/BV1t8ZCYsECf"
     },
@@ -34715,15 +34716,15 @@
       "符尓摩斯R7"
      ],
      "dedupe_key": "百年一遇的模仿奇才",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 25,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E7%99%BE%E5%B9%B4%E4%B8%80%E9%81%87%E7%9A%84%E6%A8%A1%E4%BB%BF%E5%A5%87%E6%89%8D",
      "url": "https://www.bilibili.com/video/BV1WvZzYvEHi"
     },
@@ -34734,15 +34735,15 @@
       "挽风丶Sama"
      ],
      "dedupe_key": "如果忧郁是种天赋",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 26,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E5%A6%82%E6%9E%9C%E5%BF%A7%E9%83%81%E6%98%AF%E7%A7%8D%E5%A4%A9%E8%B5%8B",
      "url": "https://www.bilibili.com/video/BV1ngZsYxECt"
     },
@@ -34753,15 +34754,15 @@
       "多巴胺音乐FM"
      ],
      "dedupe_key": "一口气带你听完爆火全网的十二首人物进行曲你更喜欢哪一首呢",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 27,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E4%B8%80%E5%8F%A3%E6%B0%94%E5%B8%A6%E4%BD%A0%E5%90%AC%E5%AE%8C%E7%88%86%E7%81%AB%E5%85%A8%E7%BD%91%E7%9A%84%E5%8D%81%E4%BA%8C%E9%A6%96%E4%BA%BA%E7%89%A9%E8%BF%9B%E8%A1%8C%E6%9B%B2%E4%BD%A0%E6%9B%B4%E5%96%9C%E6%AC%A2%E5%93%AA%E4%B8%80%E9%A6%96%E5%91%A2",
      "url": "https://www.bilibili.com/video/BV1nKZnYkELV"
     },
@@ -34772,15 +34773,15 @@
       "GEM鄧紫棋"
      ],
      "dedupe_key": "iamgloria世界巡玩之洛杉矶拉斯维加斯篇",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 28,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/iamgloria%E4%B8%96%E7%95%8C%E5%B7%A1%E7%8E%A9%E4%B9%8B%E6%B4%9B%E6%9D%89%E7%9F%B6%E6%8B%89%E6%96%AF%E7%BB%B4%E5%8A%A0%E6%96%AF%E7%AF%87",
      "url": "https://www.bilibili.com/video/BV1C3fcYhEb6"
     },
@@ -34791,15 +34792,15 @@
       "陶喆的音乐产房"
      ],
      "dedupe_key": "陶喆新專輯這次是真的",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 29,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E9%99%B6%E5%96%86%E6%96%B0%E5%B0%88%E8%BC%AF%E9%80%99%E6%AC%A1%E6%98%AF%E7%9C%9F%E7%9A%84",
      "url": "https://www.bilibili.com/video/BV1EuZnY6EP7"
     },
@@ -34810,15 +34811,15 @@
       "蒲熠星"
      ],
      "dedupe_key": "真在真实和荒诞之间起舞官方mv",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 30,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E7%9C%9F%E5%9C%A8%E7%9C%9F%E5%AE%9E%E5%92%8C%E8%8D%92%E8%AF%9E%E4%B9%8B%E9%97%B4%E8%B5%B7%E8%88%9E%E5%AE%98%E6%96%B9mv",
      "url": "https://www.bilibili.com/video/BV1uxZnYfEgo"
     },
@@ -34829,15 +34830,15 @@
       "JKAI杰凯"
      ],
      "dedupe_key": "国外声乐老师对比张国荣梅艳芳陈慧娴周深近藤真彦千千阙歌夕阳之歌舞台reaction",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 31,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E5%9B%BD%E5%A4%96%E5%A3%B0%E4%B9%90%E8%80%81%E5%B8%88%E5%AF%B9%E6%AF%94%E5%BC%A0%E5%9B%BD%E8%8D%A3%E6%A2%85%E8%89%B3%E8%8A%B3%E9%99%88%E6%85%A7%E5%A8%B4%E5%91%A8%E6%B7%B1%E8%BF%91%E8%97%A4%E7%9C%9F%E5%BD%A6%E5%8D%83%E5%8D%83%E9%98%99%E6%AD%8C%E5%A4%95%E9%98%B3%E4%B9%8B%E6%AD%8C%E8%88%9E%E5%8F%B0reaction",
      "url": "https://www.bilibili.com/video/BV1S2ZkY9EA6"
     },
@@ -34848,15 +34849,15 @@
       "布陆"
      ],
      "dedupe_key": "开播20年依旧无法超越中国仙侠配乐天花板什么水平仙剑奇侠传1麦振鸿胡歌",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 32,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E5%BC%80%E6%92%AD20%E5%B9%B4%E4%BE%9D%E6%97%A7%E6%97%A0%E6%B3%95%E8%B6%85%E8%B6%8A%E4%B8%AD%E5%9B%BD%E4%BB%99%E4%BE%A0%E9%85%8D%E4%B9%90%E5%A4%A9%E8%8A%B1%E6%9D%BF%E4%BB%80%E4%B9%88%E6%B0%B4%E5%B9%B3%E4%BB%99%E5%89%91%E5%A5%87%E4%BE%A0%E4%BC%A01%E9%BA%A6%E6%8C%AF%E9%B8%BF%E8%83%A1%E6%AD%8C",
      "url": "https://www.bilibili.com/video/BV1ihZJYiEAu"
     },
@@ -34867,15 +34868,15 @@
       "不是词神"
      ],
      "dedupe_key": "求求你别再刀了b站陈奕迅跳楼机真粤语版",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 33,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E6%B1%82%E6%B1%82%E4%BD%A0%E5%88%AB%E5%86%8D%E5%88%80%E4%BA%86b%E7%AB%99%E9%99%88%E5%A5%95%E8%BF%85%E8%B7%B3%E6%A5%BC%E6%9C%BA%E7%9C%9F%E7%B2%A4%E8%AF%AD%E7%89%88",
      "url": "https://www.bilibili.com/video/BV1daXrY2EPt"
     },
@@ -34886,15 +34887,15 @@
       "赵赵violin"
      ],
      "dedupe_key": "我感觉我在家里直接当起了海盗",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 34,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E6%88%91%E6%84%9F%E8%A7%89%E6%88%91%E5%9C%A8%E5%AE%B6%E9%87%8C%E7%9B%B4%E6%8E%A5%E5%BD%93%E8%B5%B7%E4%BA%86%E6%B5%B7%E7%9B%97",
      "url": "https://www.bilibili.com/video/BV1hLZzYEEi3"
     },
@@ -34905,15 +34906,15 @@
       "WOVOP"
      ],
      "dedupe_key": "我是初音未来",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 35,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E6%88%91%E6%98%AF%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5",
      "url": "https://www.bilibili.com/video/BV1MmZ6YjEDT"
     },
@@ -34924,15 +34925,15 @@
       "Maggie_桃"
      ],
      "dedupe_key": "我为苏瀑零下二十八度的冬天写了一首歌已上线名叫28below",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 36,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E6%88%91%E4%B8%BA%E8%8B%8F%E7%80%91%E9%9B%B6%E4%B8%8B%E4%BA%8C%E5%8D%81%E5%85%AB%E5%BA%A6%E7%9A%84%E5%86%AC%E5%A4%A9%E5%86%99%E4%BA%86%E4%B8%80%E9%A6%96%E6%AD%8C%E5%B7%B2%E4%B8%8A%E7%BA%BF%E5%90%8D%E5%8F%AB28below",
      "url": "https://www.bilibili.com/video/BV12kZwYNE8V"
     },
@@ -34943,15 +34944,15 @@
       "KG音乐"
      ],
      "dedupe_key": "宿命感の小曲山海皆可平",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 37,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E5%AE%BF%E5%91%BD%E6%84%9F%E3%81%AE%E5%B0%8F%E6%9B%B2%E5%B1%B1%E6%B5%B7%E7%9A%86%E5%8F%AF%E5%B9%B3",
      "url": "https://www.bilibili.com/video/BV1f7ZPYFEPU"
     },
@@ -34962,15 +34963,15 @@
       "上官龍輝"
      ],
      "dedupe_key": "八番站台一命速通一镜到底",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 38,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E5%85%AB%E7%95%AA%E7%AB%99%E5%8F%B0%E4%B8%80%E5%91%BD%E9%80%9F%E9%80%9A%E4%B8%80%E9%95%9C%E5%88%B0%E5%BA%95",
      "url": "https://www.bilibili.com/video/BV12sZzYGER9"
     },
@@ -34981,15 +34982,15 @@
       "没有花香的HANA"
      ],
      "dedupe_key": "超超超超级讨厌hana的中文填词",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 39,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E8%B6%85%E8%B6%85%E8%B6%85%E8%B6%85%E7%BA%A7%E8%AE%A8%E5%8E%8Chana%E7%9A%84%E4%B8%AD%E6%96%87%E5%A1%AB%E8%AF%8D",
      "url": "https://www.bilibili.com/video/BV1aYZ4YEEZs"
     },
@@ -35000,15 +35001,15 @@
       "方块识曲"
      ],
      "dedupe_key": "猜歌大会",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 40,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E7%8C%9C%E6%AD%8C%E5%A4%A7%E4%BC%9A",
      "url": "https://www.bilibili.com/video/BV1H8ZvYpEdw"
     },
@@ -35019,15 +35020,15 @@
       "Jiaber吴伯滔"
      ],
      "dedupe_key": "谁懂啊唱着唱着本人出现了",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 41,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E8%B0%81%E6%87%82%E5%95%8A%E5%94%B1%E7%9D%80%E5%94%B1%E7%9D%80%E6%9C%AC%E4%BA%BA%E5%87%BA%E7%8E%B0%E4%BA%86",
      "url": "https://www.bilibili.com/video/BV1VuZ5YjECu"
     },
@@ -35038,15 +35039,15 @@
       "华晨宇火星环游日志"
      ],
      "dedupe_key": "音乐创作中的版权边界与艺术使命从某艺人对华晨宇烟火里的尘埃改编的侵权争议看创作伦理",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 42,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E9%9F%B3%E4%B9%90%E5%88%9B%E4%BD%9C%E4%B8%AD%E7%9A%84%E7%89%88%E6%9D%83%E8%BE%B9%E7%95%8C%E4%B8%8E%E8%89%BA%E6%9C%AF%E4%BD%BF%E5%91%BD%E4%BB%8E%E6%9F%90%E8%89%BA%E4%BA%BA%E5%AF%B9%E5%8D%8E%E6%99%A8%E5%AE%87%E7%83%9F%E7%81%AB%E9%87%8C%E7%9A%84%E5%B0%98%E5%9F%83%E6%94%B9%E7%BC%96%E7%9A%84%E4%BE%B5%E6%9D%83%E4%BA%89%E8%AE%AE%E7%9C%8B%E5%88%9B%E4%BD%9C%E4%BC%A6%E7%90%86",
      "url": "https://www.bilibili.com/video/BV1SafKYHE5m"
     },
@@ -35057,15 +35058,15 @@
       "Zacky_Y"
      ],
      "dedupe_key": "兔毛手袋の小电台feedingsatiety人声cvzacky",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 43,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E5%85%94%E6%AF%9B%E6%89%8B%E8%A2%8B%E3%81%AE%E5%B0%8F%E7%94%B5%E5%8F%B0feedingsatiety%E4%BA%BA%E5%A3%B0cvzacky",
      "url": "https://www.bilibili.com/video/BV1WJZYYHEgg"
     },
@@ -35076,15 +35077,15 @@
       "沙拉拉发"
      ],
      "dedupe_key": "沉浸式假装一对男女在唱我们好像在哪见过",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 44,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E6%B2%89%E6%B5%B8%E5%BC%8F%E5%81%87%E8%A3%85%E4%B8%80%E5%AF%B9%E7%94%B7%E5%A5%B3%E5%9C%A8%E5%94%B1%E6%88%91%E4%BB%AC%E5%A5%BD%E5%83%8F%E5%9C%A8%E5%93%AA%E8%A7%81%E8%BF%87",
      "url": "https://www.bilibili.com/video/BV1nvXLYSEVC"
     },
@@ -35095,15 +35096,15 @@
       "王心凌FM"
      ],
      "dedupe_key": "挑战全网王心凌最丝滑变装霸总们又整活了那就再看亿遍吧",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 45,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E6%8C%91%E6%88%98%E5%85%A8%E7%BD%91%E7%8E%8B%E5%BF%83%E5%87%8C%E6%9C%80%E4%B8%9D%E6%BB%91%E5%8F%98%E8%A3%85%E9%9C%B8%E6%80%BB%E4%BB%AC%E5%8F%88%E6%95%B4%E6%B4%BB%E4%BA%86%E9%82%A3%E5%B0%B1%E5%86%8D%E7%9C%8B%E4%BA%BF%E9%81%8D%E5%90%A7",
      "url": "https://www.bilibili.com/video/BV1YnoqYVEPF"
     },
@@ -35114,15 +35115,15 @@
       "经典果冻音乐"
      ],
      "dedupe_key": "循环歌单震惊哪吒和敖丙合唱了我乃哪吒三太子瀚墨吕艳婷王朝1982",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 46,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E5%BE%AA%E7%8E%AF%E6%AD%8C%E5%8D%95%E9%9C%87%E6%83%8A%E5%93%AA%E5%90%92%E5%92%8C%E6%95%96%E4%B8%99%E5%90%88%E5%94%B1%E4%BA%86%E6%88%91%E4%B9%83%E5%93%AA%E5%90%92%E4%B8%89%E5%A4%AA%E5%AD%90%E7%80%9A%E5%A2%A8%E5%90%95%E8%89%B3%E5%A9%B7%E7%8E%8B%E6%9C%9D1982",
      "url": "https://www.bilibili.com/video/BV1PMZPYTE6u"
     },
@@ -35133,15 +35134,15 @@
       "绮梦音乐馆Qm"
      ],
      "dedupe_key": "一口气带你听完李启萌那些神级翻唱你都过哪几首呢李启萌神级翻唱句号放个大招给你看123我爱你",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 47,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E4%B8%80%E5%8F%A3%E6%B0%94%E5%B8%A6%E4%BD%A0%E5%90%AC%E5%AE%8C%E6%9D%8E%E5%90%AF%E8%90%8C%E9%82%A3%E4%BA%9B%E7%A5%9E%E7%BA%A7%E7%BF%BB%E5%94%B1%E4%BD%A0%E9%83%BD%E8%BF%87%E5%93%AA%E5%87%A0%E9%A6%96%E5%91%A2%E6%9D%8E%E5%90%AF%E8%90%8C%E7%A5%9E%E7%BA%A7%E7%BF%BB%E5%94%B1%E5%8F%A5%E5%8F%B7%E6%94%BE%E4%B8%AA%E5%A4%A7%E6%8B%9B%E7%BB%99%E4%BD%A0%E7%9C%8B123%E6%88%91%E7%88%B1%E4%BD%A0",
      "url": "https://www.bilibili.com/video/BV1hCZJYtEFq"
     },
@@ -35152,15 +35153,15 @@
       "JLRS-jayfm"
      ],
      "dedupe_key": "愿戴荣光坠入天渊鸣潮卡提希娅主题曲",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 48,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E6%84%BF%E6%88%B4%E8%8D%A3%E5%85%89%E5%9D%A0%E5%85%A5%E5%A4%A9%E6%B8%8A%E9%B8%A3%E6%BD%AE%E5%8D%A1%E6%8F%90%E5%B8%8C%E5%A8%85%E4%B8%BB%E9%A2%98%E6%9B%B2",
      "url": "https://www.bilibili.com/video/BV1zUZFYpE9Z"
     },
@@ -35171,15 +35172,15 @@
       "魔人周干"
      ],
      "dedupe_key": "一首ggbond人群炸开花",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 49,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E4%B8%80%E9%A6%96ggbond%E4%BA%BA%E7%BE%A4%E7%82%B8%E5%BC%80%E8%8A%B1",
      "url": "https://www.bilibili.com/video/BV1PpQ8YFEMP"
     },
@@ -35190,15 +35191,15 @@
       "咻咻满"
      ],
      "dedupe_key": "初见她漫步溪桥下相思遥绝美戏腔翻唱",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 50,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 49,
+     "days_on_board": 26,
      "song_path": "/song/%E5%88%9D%E8%A7%81%E5%A5%B9%E6%BC%AB%E6%AD%A5%E6%BA%AA%E6%A1%A5%E4%B8%8B%E7%9B%B8%E6%80%9D%E9%81%A5%E7%BB%9D%E7%BE%8E%E6%88%8F%E8%85%94%E7%BF%BB%E5%94%B1",
      "url": "https://www.bilibili.com/video/BV1FAfPYeE4P"
     },
@@ -35209,15 +35210,15 @@
       "SMTOWN"
      ],
      "dedupe_key": "smtr25officialtrailerfilm",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 51,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/smtr25officialtrailerfilm",
      "url": "https://www.bilibili.com/video/BV1uyZ6YEErN"
     },
@@ -35228,15 +35229,15 @@
       "鼓手Shawn"
      ],
      "dedupe_key": "唐汉霄就是哪吒架子鼓演奏",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 52,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E5%94%90%E6%B1%89%E9%9C%84%E5%B0%B1%E6%98%AF%E5%93%AA%E5%90%92%E6%9E%B6%E5%AD%90%E9%BC%93%E6%BC%94%E5%A5%8F",
      "url": "https://www.bilibili.com/video/BV1c5KWeVEsA"
     },
@@ -35247,15 +35248,15 @@
       "心刚音乐库"
      ],
      "dedupe_key": "循环歌单严肃猫の小曲wakeupmoondeity动态歌词",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 53,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E5%BE%AA%E7%8E%AF%E6%AD%8C%E5%8D%95%E4%B8%A5%E8%82%83%E7%8C%AB%E3%81%AE%E5%B0%8F%E6%9B%B2wakeupmoondeity%E5%8A%A8%E6%80%81%E6%AD%8C%E8%AF%8D",
      "url": "https://www.bilibili.com/video/BV1h5ZAYVE8q"
     },
@@ -35266,15 +35267,15 @@
       "盘点音乐2023"
      ],
      "dedupe_key": "千万不要低估情歌王子的含金量",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 54,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E5%8D%83%E4%B8%87%E4%B8%8D%E8%A6%81%E4%BD%8E%E4%BC%B0%E6%83%85%E6%AD%8C%E7%8E%8B%E5%AD%90%E7%9A%84%E5%90%AB%E9%87%91%E9%87%8F",
      "url": "https://www.bilibili.com/video/BV1hdZxYCEfg"
     },
@@ -35285,15 +35286,15 @@
       "鸣潮先行公约"
      ],
      "dedupe_key": "鸣潮ost幕后特别影像辉煌圣堂的垂怜",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 55,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E9%B8%A3%E6%BD%AEost%E5%B9%95%E5%90%8E%E7%89%B9%E5%88%AB%E5%BD%B1%E5%83%8F%E8%BE%89%E7%85%8C%E5%9C%A3%E5%A0%82%E7%9A%84%E5%9E%82%E6%80%9C",
      "url": "https://www.bilibili.com/video/BV1b2ZJYxEFG"
     },
@@ -35304,15 +35305,15 @@
       "byd小绫"
      ],
      "dedupe_key": "我在520睡觉1314准时起520am",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 56,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E6%88%91%E5%9C%A8520%E7%9D%A1%E8%A7%891314%E5%87%86%E6%97%B6%E8%B5%B7520am",
      "url": "https://www.bilibili.com/video/BV15CZcY1Ef1"
     },
@@ -35323,15 +35324,15 @@
       "洛少爷"
      ],
      "dedupe_key": "神呐神呐救救我吧qaq弄舌",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 57,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E7%A5%9E%E5%91%90%E7%A5%9E%E5%91%90%E6%95%91%E6%95%91%E6%88%91%E5%90%A7qaq%E5%BC%84%E8%88%8C",
      "url": "https://www.bilibili.com/video/BV1HjZ4YFEaX"
     },
@@ -35342,15 +35343,15 @@
       "贾队长1"
      ],
      "dedupe_key": "临表涕零不知所言",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 58,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E4%B8%B4%E8%A1%A8%E6%B6%95%E9%9B%B6%E4%B8%8D%E7%9F%A5%E6%89%80%E8%A8%80",
      "url": "https://www.bilibili.com/video/BV1VPRAYgEPC"
     },
@@ -35361,15 +35362,15 @@
       "绪笔梦生花"
      ],
      "dedupe_key": "normalnomore循环版很多时候不单单是在听曲子而是在听回忆",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 59,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/normalnomore%E5%BE%AA%E7%8E%AF%E7%89%88%E5%BE%88%E5%A4%9A%E6%97%B6%E5%80%99%E4%B8%8D%E5%8D%95%E5%8D%95%E6%98%AF%E5%9C%A8%E5%90%AC%E6%9B%B2%E5%AD%90%E8%80%8C%E6%98%AF%E5%9C%A8%E5%90%AC%E5%9B%9E%E5%BF%86",
      "url": "https://www.bilibili.com/video/BV1dYZkYYERA"
     },
@@ -35380,15 +35381,15 @@
       "雾月夜子子QWQ"
      ],
      "dedupe_key": "却像个智障一样醉倒在柏油路上草东没有派对老张翻唱电吉他cover",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 60,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E5%8D%B4%E5%83%8F%E4%B8%AA%E6%99%BA%E9%9A%9C%E4%B8%80%E6%A0%B7%E9%86%89%E5%80%92%E5%9C%A8%E6%9F%8F%E6%B2%B9%E8%B7%AF%E4%B8%8A%E8%8D%89%E4%B8%9C%E6%B2%A1%E6%9C%89%E6%B4%BE%E5%AF%B9%E8%80%81%E5%BC%A0%E7%BF%BB%E5%94%B1%E7%94%B5%E5%90%89%E4%BB%96cover",
      "url": "https://www.bilibili.com/video/BV1P2ZiYhErW"
     },
@@ -35399,15 +35400,15 @@
       "Maggie_麦吉"
      ],
      "dedupe_key": "春天就要唱宣告春天啊",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 61,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E6%98%A5%E5%A4%A9%E5%B0%B1%E8%A6%81%E5%94%B1%E5%AE%A3%E5%91%8A%E6%98%A5%E5%A4%A9%E5%95%8A",
      "url": "https://www.bilibili.com/video/BV13cXnYEEdD"
     },
@@ -35418,15 +35419,15 @@
       "KBShinya"
      ],
      "dedupe_key": "虽然你不认识我但可能听过我写的歌",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 62,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E8%99%BD%E7%84%B6%E4%BD%A0%E4%B8%8D%E8%AE%A4%E8%AF%86%E6%88%91%E4%BD%86%E5%8F%AF%E8%83%BD%E5%90%AC%E8%BF%87%E6%88%91%E5%86%99%E7%9A%84%E6%AD%8C",
      "url": "https://www.bilibili.com/video/BV1fuZ3YUEm3"
     },
@@ -35437,15 +35438,15 @@
       "王力宏"
      ],
      "dedupe_key": "王力宏最好的地方演唱会4k官摄",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 63,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E7%8E%8B%E5%8A%9B%E5%AE%8F%E6%9C%80%E5%A5%BD%E7%9A%84%E5%9C%B0%E6%96%B9%E6%BC%94%E5%94%B1%E4%BC%9A4k%E5%AE%98%E6%91%84",
      "url": "https://www.bilibili.com/video/BV1v8Z6YZEpZ"
     },
@@ -35456,15 +35457,15 @@
       "黄霄雲"
      ],
      "dedupe_key": "不潮不用花钱舞台直拍和我一起左左右右扭扭",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 64,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E4%B8%8D%E6%BD%AE%E4%B8%8D%E7%94%A8%E8%8A%B1%E9%92%B1%E8%88%9E%E5%8F%B0%E7%9B%B4%E6%8B%8D%E5%92%8C%E6%88%91%E4%B8%80%E8%B5%B7%E5%B7%A6%E5%B7%A6%E5%8F%B3%E5%8F%B3%E6%89%AD%E6%89%AD",
      "url": "https://www.bilibili.com/video/BV1BMovYCE7d"
     },
@@ -35475,15 +35476,15 @@
       "单推人六花"
      ],
      "dedupe_key": "他们朝我扔粑粑",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 65,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E4%BB%96%E4%BB%AC%E6%9C%9D%E6%88%91%E6%89%94%E7%B2%91%E7%B2%91",
      "url": "https://www.bilibili.com/video/BV1cnZJY5E6U"
     },
@@ -35494,15 +35495,15 @@
       "开心蛙蛙_"
      ],
      "dedupe_key": "请赏牛黄",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 66,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E8%AF%B7%E8%B5%8F%E7%89%9B%E9%BB%84",
      "url": "https://www.bilibili.com/video/BV1xxZzYrErh"
     },
@@ -35513,15 +35514,15 @@
       "Breeze微分"
      ],
      "dedupe_key": "单曲循环大手子の小曲和平精英の小曲使命召唤大手子の小曲",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 67,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E5%8D%95%E6%9B%B2%E5%BE%AA%E7%8E%AF%E5%A4%A7%E6%89%8B%E5%AD%90%E3%81%AE%E5%B0%8F%E6%9B%B2%E5%92%8C%E5%B9%B3%E7%B2%BE%E8%8B%B1%E3%81%AE%E5%B0%8F%E6%9B%B2%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E5%A4%A7%E6%89%8B%E5%AD%90%E3%81%AE%E5%B0%8F%E6%9B%B2",
      "url": "https://www.bilibili.com/video/BV1baZpYYEuT"
     },
@@ -35532,15 +35533,15 @@
       "小少焱"
      ],
      "dedupe_key": "你说这燕云十六州什么时候能回来啊",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 68,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E4%BD%A0%E8%AF%B4%E8%BF%99%E7%87%95%E4%BA%91%E5%8D%81%E5%85%AD%E5%B7%9E%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E8%83%BD%E5%9B%9E%E6%9D%A5%E5%95%8A",
      "url": "https://www.bilibili.com/video/BV1K4ZjYkERG"
     },
@@ -35551,15 +35552,15 @@
       "Rickrocknroll"
      ],
      "dedupe_key": "点击观看您的愚人节专属视频",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 69,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E7%82%B9%E5%87%BB%E8%A7%82%E7%9C%8B%E6%82%A8%E7%9A%84%E6%84%9A%E4%BA%BA%E8%8A%82%E4%B8%93%E5%B1%9E%E8%A7%86%E9%A2%91",
      "url": "https://www.bilibili.com/video/BV1mVZHYdECn"
     },
@@ -35570,15 +35571,15 @@
       "果粒橙音乐"
      ],
      "dedupe_key": "第七期盘点九首好听的戏腔古风歌曲",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 70,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E7%AC%AC%E4%B8%83%E6%9C%9F%E7%9B%98%E7%82%B9%E4%B9%9D%E9%A6%96%E5%A5%BD%E5%90%AC%E7%9A%84%E6%88%8F%E8%85%94%E5%8F%A4%E9%A3%8E%E6%AD%8C%E6%9B%B2",
      "url": "https://www.bilibili.com/video/BV1odFveHEKY"
     },
@@ -35589,15 +35590,15 @@
       "一只小璇崽"
      ],
      "dedupe_key": "高中生翻唱火力全开拼好歌系列",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 71,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E9%AB%98%E4%B8%AD%E7%94%9F%E7%BF%BB%E5%94%B1%E7%81%AB%E5%8A%9B%E5%85%A8%E5%BC%80%E6%8B%BC%E5%A5%BD%E6%AD%8C%E7%B3%BB%E5%88%97",
      "url": "https://www.bilibili.com/video/BV1khZqY8EM6"
     },
@@ -35608,15 +35609,15 @@
       "明前奶粉罐"
      ],
      "dedupe_key": "神人翻唱哆啦ave睦",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 72,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E7%A5%9E%E4%BA%BA%E7%BF%BB%E5%94%B1%E5%93%86%E5%95%A6ave%E7%9D%A6",
      "url": "https://www.bilibili.com/video/BV1XCoiYBEwm"
     },
@@ -35627,15 +35628,15 @@
       "龙虾ゞ"
      ],
      "dedupe_key": "用42款二游合奏一曲群青",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 73,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E7%94%A842%E6%AC%BE%E4%BA%8C%E6%B8%B8%E5%90%88%E5%A5%8F%E4%B8%80%E6%9B%B2%E7%BE%A4%E9%9D%92",
      "url": "https://www.bilibili.com/video/BV113Z7YrEj8"
     },
@@ -35646,15 +35647,15 @@
       "无损音乐合集"
      ],
      "dedupe_key": "周杰伦歌曲精选100首歌词版纯享地表最高音质每一首都是顶级文案中国流行音乐开拓者jay",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 74,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E5%91%A8%E6%9D%B0%E4%BC%A6%E6%AD%8C%E6%9B%B2%E7%B2%BE%E9%80%89100%E9%A6%96%E6%AD%8C%E8%AF%8D%E7%89%88%E7%BA%AF%E4%BA%AB%E5%9C%B0%E8%A1%A8%E6%9C%80%E9%AB%98%E9%9F%B3%E8%B4%A8%E6%AF%8F%E4%B8%80%E9%A6%96%E9%83%BD%E6%98%AF%E9%A1%B6%E7%BA%A7%E6%96%87%E6%A1%88%E4%B8%AD%E5%9B%BD%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E5%BC%80%E6%8B%93%E8%80%85jay",
      "url": "https://www.bilibili.com/video/BV1q4FTeBEMj"
     },
@@ -35665,15 +35666,15 @@
       "肇岁初十"
      ],
      "dedupe_key": "别给我小马唱死了英雄",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 75,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E5%88%AB%E7%BB%99%E6%88%91%E5%B0%8F%E9%A9%AC%E5%94%B1%E6%AD%BB%E4%BA%86%E8%8B%B1%E9%9B%84",
      "url": "https://www.bilibili.com/video/BV1gUZYYaEEP"
     },
@@ -35684,15 +35685,15 @@
       "洋芋坨坨公主"
      ],
      "dedupe_key": "溯reverse地下室空灵沉浸版",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 76,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E6%BA%AFreverse%E5%9C%B0%E4%B8%8B%E5%AE%A4%E7%A9%BA%E7%81%B5%E6%B2%89%E6%B5%B8%E7%89%88",
      "url": "https://www.bilibili.com/video/BV1EWX8YWEs6"
     },
@@ -35703,15 +35704,15 @@
       "八零九零音乐"
      ],
      "dedupe_key": "8090后当年就是吃了多少细糠才看不上现在的新歌",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 77,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/8090%E5%90%8E%E5%BD%93%E5%B9%B4%E5%B0%B1%E6%98%AF%E5%90%83%E4%BA%86%E5%A4%9A%E5%B0%91%E7%BB%86%E7%B3%A0%E6%89%8D%E7%9C%8B%E4%B8%8D%E4%B8%8A%E7%8E%B0%E5%9C%A8%E7%9A%84%E6%96%B0%E6%AD%8C",
      "url": "https://www.bilibili.com/video/BV1ryZ3YRESy"
     },
@@ -35722,15 +35723,15 @@
       "真栗"
      ],
      "dedupe_key": "我真的爱你句句不轻易我是否是你的唯一",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 78,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E6%88%91%E7%9C%9F%E7%9A%84%E7%88%B1%E4%BD%A0%E5%8F%A5%E5%8F%A5%E4%B8%8D%E8%BD%BB%E6%98%93%E6%88%91%E6%98%AF%E5%90%A6%E6%98%AF%E4%BD%A0%E7%9A%84%E5%94%AF%E4%B8%80",
      "url": "https://www.bilibili.com/video/BV1MwZBYuEpp"
     },
@@ -35741,15 +35742,15 @@
       "南风未满"
      ],
      "dedupe_key": "前奏一响遗憾登场#r2",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 79,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E5%89%8D%E5%A5%8F%E4%B8%80%E5%93%8D%E9%81%97%E6%86%BE%E7%99%BB%E5%9C%BA%23r2",
      "url": "https://www.bilibili.com/video/BV1V9X6YCEbh"
     },
@@ -35760,15 +35761,15 @@
       "陈亦洺"
      ],
      "dedupe_key": "你可能不认识我但你应该听过我的歌来认识一下不",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 80,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E4%BD%A0%E5%8F%AF%E8%83%BD%E4%B8%8D%E8%AE%A4%E8%AF%86%E6%88%91%E4%BD%86%E4%BD%A0%E5%BA%94%E8%AF%A5%E5%90%AC%E8%BF%87%E6%88%91%E7%9A%84%E6%AD%8C%E6%9D%A5%E8%AE%A4%E8%AF%86%E4%B8%80%E4%B8%8B%E4%B8%8D",
      "url": "https://www.bilibili.com/video/BV1J2ZuY1EKd"
     },
@@ -35779,15 +35780,15 @@
       "七十六喵"
      ],
      "dedupe_key": "如何仅30s学会三首歌曲",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 81,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E5%A6%82%E4%BD%95%E4%BB%8530s%E5%AD%A6%E4%BC%9A%E4%B8%89%E9%A6%96%E6%AD%8C%E6%9B%B2",
      "url": "https://www.bilibili.com/video/BV1NDoRY2EH3"
     },
@@ -35798,15 +35799,15 @@
       "HOPICO"
      ],
      "dedupe_key": "90的人在电视里听过的bgm今天终于知道歌名了丨hopico",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 82,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/90%E7%9A%84%E4%BA%BA%E5%9C%A8%E7%94%B5%E8%A7%86%E9%87%8C%E5%90%AC%E8%BF%87%E7%9A%84bgm%E4%BB%8A%E5%A4%A9%E7%BB%88%E4%BA%8E%E7%9F%A5%E9%81%93%E6%AD%8C%E5%90%8D%E4%BA%86%E4%B8%A8hopico",
      "url": "https://www.bilibili.com/video/BV1S6ZPY5E7f"
     },
@@ -35817,15 +35818,15 @@
       "小朱忆音"
      ],
      "dedupe_key": "九首顶级emo神曲你不哭算我输",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 83,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E4%B9%9D%E9%A6%96%E9%A1%B6%E7%BA%A7emo%E7%A5%9E%E6%9B%B2%E4%BD%A0%E4%B8%8D%E5%93%AD%E7%AE%97%E6%88%91%E8%BE%93",
      "url": "https://www.bilibili.com/video/BV17qZvYmESq"
     },
@@ -35836,15 +35837,15 @@
       "NCTDREAM"
      ],
      "dedupe_key": "00z的老小是谁dreamxdream",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 84,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/00z%E7%9A%84%E8%80%81%E5%B0%8F%E6%98%AF%E8%B0%81dreamxdream",
      "url": "https://www.bilibili.com/video/BV1XyZWYVEZB"
     },
@@ -35855,15 +35856,15 @@
       "Yuki_可依"
      ],
      "dedupe_key": "自律的痛苦轻如鸿毛后悔的痛苦重于泰山onelasttime",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 85,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E8%87%AA%E5%BE%8B%E7%9A%84%E7%97%9B%E8%8B%A6%E8%BD%BB%E5%A6%82%E9%B8%BF%E6%AF%9B%E5%90%8E%E6%82%94%E7%9A%84%E7%97%9B%E8%8B%A6%E9%87%8D%E4%BA%8E%E6%B3%B0%E5%B1%B1onelasttime",
      "url": "https://www.bilibili.com/video/BV1d5ZFY1Ef4"
     },
@@ -35874,15 +35875,15 @@
       "SHENPPER"
      ],
      "dedupe_key": "救命演出图拍成这样怎么办",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 86,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E6%95%91%E5%91%BD%E6%BC%94%E5%87%BA%E5%9B%BE%E6%8B%8D%E6%88%90%E8%BF%99%E6%A0%B7%E6%80%8E%E4%B9%88%E5%8A%9E",
      "url": "https://www.bilibili.com/video/BV1A7oiY4Eti"
     },
@@ -35893,15 +35894,15 @@
       "在虚无中永存"
      ],
      "dedupe_key": "英雄主义",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 87,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E8%8B%B1%E9%9B%84%E4%B8%BB%E4%B9%89",
      "url": "https://www.bilibili.com/video/BV1ixQgY4EmM"
     },
@@ -35912,15 +35913,15 @@
       "下饭音乐"
      ],
      "dedupe_key": "八方来财火爆国外老外越听越上头中国留学生一开口外教懵了",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 88,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E5%85%AB%E6%96%B9%E6%9D%A5%E8%B4%A2%E7%81%AB%E7%88%86%E5%9B%BD%E5%A4%96%E8%80%81%E5%A4%96%E8%B6%8A%E5%90%AC%E8%B6%8A%E4%B8%8A%E5%A4%B4%E4%B8%AD%E5%9B%BD%E7%95%99%E5%AD%A6%E7%94%9F%E4%B8%80%E5%BC%80%E5%8F%A3%E5%A4%96%E6%95%99%E6%87%B5%E4%BA%86",
      "url": "https://www.bilibili.com/video/BV1hoZtYDExh"
     },
@@ -35931,15 +35932,15 @@
       "Hayd_CN"
      ],
      "dedupe_key": "howlonghowlow预告片段",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 89,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/howlonghowlow%E9%A2%84%E5%91%8A%E7%89%87%E6%AE%B5",
      "url": "https://www.bilibili.com/video/BV1YhZ4YSEEc"
     },
@@ -35950,15 +35951,15 @@
       "火火带你去流浪"
      ],
      "dedupe_key": "你真的懂唯一的定义结尾有惊喜",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 90,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E4%BD%A0%E7%9C%9F%E7%9A%84%E6%87%82%E5%94%AF%E4%B8%80%E7%9A%84%E5%AE%9A%E4%B9%89%E7%BB%93%E5%B0%BE%E6%9C%89%E6%83%8A%E5%96%9C",
      "url": "https://www.bilibili.com/video/BV1GSZvYzEkz"
     },
@@ -35969,15 +35970,15 @@
       "大家的音乐机"
      ],
      "dedupe_key": "听说冷门歌手来b站了",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 91,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E5%90%AC%E8%AF%B4%E5%86%B7%E9%97%A8%E6%AD%8C%E6%89%8B%E6%9D%A5b%E7%AB%99%E4%BA%86",
      "url": "https://www.bilibili.com/video/BV1ffZ4Y8EY5"
     },
@@ -35988,15 +35989,15 @@
       "SnowList_"
      ],
      "dedupe_key": "经典韩语歌单古早抒情胶片显影同时播放的抒情诗与饶舌信如果思念有声音",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 92,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E7%BB%8F%E5%85%B8%E9%9F%A9%E8%AF%AD%E6%AD%8C%E5%8D%95%E5%8F%A4%E6%97%A9%E6%8A%92%E6%83%85%E8%83%B6%E7%89%87%E6%98%BE%E5%BD%B1%E5%90%8C%E6%97%B6%E6%92%AD%E6%94%BE%E7%9A%84%E6%8A%92%E6%83%85%E8%AF%97%E4%B8%8E%E9%A5%B6%E8%88%8C%E4%BF%A1%E5%A6%82%E6%9E%9C%E6%80%9D%E5%BF%B5%E6%9C%89%E5%A3%B0%E9%9F%B3",
      "url": "https://www.bilibili.com/video/BV1Nyo8YyEwG"
     },
@@ -36007,15 +36008,15 @@
       "咖啡影音"
      ],
      "dedupe_key": "李羲承进行曲是啥短短几天播放90亿太魔性了",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 93,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E6%9D%8E%E7%BE%B2%E6%89%BF%E8%BF%9B%E8%A1%8C%E6%9B%B2%E6%98%AF%E5%95%A5%E7%9F%AD%E7%9F%AD%E5%87%A0%E5%A4%A9%E6%92%AD%E6%94%BE90%E4%BA%BF%E5%A4%AA%E9%AD%94%E6%80%A7%E4%BA%86",
      "url": "https://www.bilibili.com/video/BV1dQZEYAEjN"
     },
@@ -36026,15 +36027,15 @@
       "盆克吉他手AA"
      ],
      "dedupe_key": "通天大道",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 94,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E9%80%9A%E5%A4%A9%E5%A4%A7%E9%81%93",
      "url": "https://www.bilibili.com/video/BV1PrZpY4EN3"
     },
@@ -36045,15 +36046,15 @@
       "明天见Night"
      ],
      "dedupe_key": "英文歌单爱是缠绵的诗篇半是呢喃半是叹息暧昧放松恋爱忧伤旋律",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 95,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E8%8B%B1%E6%96%87%E6%AD%8C%E5%8D%95%E7%88%B1%E6%98%AF%E7%BC%A0%E7%BB%B5%E7%9A%84%E8%AF%97%E7%AF%87%E5%8D%8A%E6%98%AF%E5%91%A2%E5%96%83%E5%8D%8A%E6%98%AF%E5%8F%B9%E6%81%AF%E6%9A%A7%E6%98%A7%E6%94%BE%E6%9D%BE%E6%81%8B%E7%88%B1%E5%BF%A7%E4%BC%A4%E6%97%8B%E5%BE%8B",
      "url": "https://www.bilibili.com/video/BV1VNQrYGELx"
     },
@@ -36064,15 +36065,15 @@
       "K-PLANET"
      ],
      "dedupe_key": "2025gdragon权志龙高阳演唱会4k直拍day1übermensch250329",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 96,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/2025gdragon%E6%9D%83%E5%BF%97%E9%BE%99%E9%AB%98%E9%98%B3%E6%BC%94%E5%94%B1%E4%BC%9A4k%E7%9B%B4%E6%8B%8Dday1%C3%BCbermensch250329",
      "url": "https://www.bilibili.com/video/BV1rDZiYoE5Z"
     },
@@ -36083,15 +36084,15 @@
       "瑞典厨师"
      ],
      "dedupe_key": "全世界都在数星星",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
+     "prev_rank": 97,
+     "rank_delta": 0,
+     "is_new": false,
      "platform_count": 1,
      "platforms": [
       "bilibili"
      ],
-     "streak": 1,
-     "days_on_board": 1,
+     "streak": 33,
+     "days_on_board": 17,
      "song_path": "/song/%E5%85%A8%E4%B8%96%E7%95%8C%E9%83%BD%E5%9C%A8%E6%95%B0%E6%98%9F%E6%98%9F",
      "url": "https://www.bilibili.com/video/BV1HDZVYbEtD"
     }
