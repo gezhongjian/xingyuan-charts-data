@@ -6,8 +6,8 @@
  "key_format": "<normalized title>[#r<N>]",
  "key_note": "Dedupe keys use the normalized title only; artists and albums are attributes, not identity. '#r<N>' separates recordings of the same title when durations differ by more than 20 seconds (see key-golden.json for the rule and runnable cases). Known gaps: Same title with different artists merges into one work key when their durations are within the guard: v2 identity is title-first, artists are attributes; Recordings of the same title whose durations differ by 20 seconds or less stay merged (a 65-second edit and a 70-second edit); Translations/aliases of the same song (English vs Chinese vs Korean titles) still do not merge: the key is title-derived, not a catalogue ID; `#r<N>` is a duration cluster, not a stable recording ID: a re-measured duration can move a track to another cluster",
  "key_golden": "https://xingyuan.beer/key-golden.json",
- "captured_at": "2026-11-28T18:30:05+08:00",
- "generated_at": "2026-11-28T18:30:07+08:00",
+ "captured_at": "2026-11-28T19:30:03+08:00",
+ "generated_at": "2026-11-28T19:30:04+08:00",
  "cadence": "09:40 / 21:40 Asia/Shanghai, twice a day; boards with cadence=weekly release a new edition weekly, and rank_delta is computed against boards[].compared_at (the last capture whose contents differ), so it can be non-zero within one release when the platform adjusts ranks",
  "rank_delta_convention": "rank_delta > 0 = moved up, < 0 = moved down, 0 = unchanged; the baseline is the most recent capture whose content differs (see boards[].compared_at) — identical re-captures of one platform period are not counted as a new period; new entries carry is_new=true and may have no previous rank",
  "boards": [
@@ -22904,8 +22904,8 @@
    "name": "抖音 挑战榜",
    "board_name": "挑战榜",
    "path": "/board/douyin/douyin-challenge",
-   "captured_at": "2026-11-28T18:30:05+08:00",
-   "compared_at": "2026-11-28T18:00:03+08:00",
+   "captured_at": "2026-11-28T19:30:03+08:00",
+   "compared_at": "2026-11-28T19:00:03+08:00",
    "total": 50,
    "cadence": "twice_daily",
    "tracks": [
@@ -22928,61 +22928,10 @@
     },
     {
      "rank": 2,
-     "title": "大话西游台词对口型挑战",
-     "artists": [],
-     "dedupe_key": "大话西游台词对口型挑战",
-     "prev_rank": 2,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 3,
-     "days_on_board": 2,
-     "song_path": "/song/%E5%A4%A7%E8%AF%9D%E8%A5%BF%E6%B8%B8%E5%8F%B0%E8%AF%8D%E5%AF%B9%E5%8F%A3%E5%9E%8B%E6%8C%91%E6%88%98",
-     "url": "https://www.douyin.com/music/7702354949149100851"
-    },
-    {
-     "rank": 3,
-     "title": "萌宠的星期六是灰色的",
-     "artists": [],
-     "dedupe_key": "萌宠的星期六是灰色的",
-     "prev_rank": 6,
-     "rank_delta": 3,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E8%90%8C%E5%AE%A0%E7%9A%84%E6%98%9F%E6%9C%9F%E5%85%AD%E6%98%AF%E7%81%B0%E8%89%B2%E7%9A%84",
-     "url": "https://www.douyin.com/music/7712417241141758783"
-    },
-    {
-     "rank": 4,
-     "title": "我就这样暴力长开",
-     "artists": [],
-     "dedupe_key": "我就这样暴力长开",
-     "prev_rank": 4,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E6%88%91%E5%B0%B1%E8%BF%99%E6%A0%B7%E6%9A%B4%E5%8A%9B%E9%95%BF%E5%BC%80",
-     "url": "https://www.douyin.com/music/7699341991804816137"
-    },
-    {
-     "rank": 5,
      "title": "我担的KissMySoul甜到我心里了",
      "artists": [],
      "dedupe_key": "我担的kissmysoul甜到我心里了",
-     "prev_rank": 7,
+     "prev_rank": 4,
      "rank_delta": 2,
      "is_new": false,
      "platform_count": 1,
@@ -22995,12 +22944,12 @@
      "url": "https://www.douyin.com/music/7711743941557095231"
     },
     {
-     "rank": 6,
+     "rank": 3,
      "title": "用小火人的方式打开甄嬛传",
      "artists": [],
      "dedupe_key": "用小火人的方式打开甄嬛传",
-     "prev_rank": 12,
-     "rank_delta": 6,
+     "prev_rank": 5,
+     "rank_delta": 2,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23012,11 +22961,28 @@
      "url": "https://www.douyin.com/music/7712899794464705331"
     },
     {
-     "rank": 7,
-     "title": "我爱上一张脸失去所有底线",
+     "rank": 4,
+     "title": "萌宠的星期六是灰色的",
      "artists": [],
-     "dedupe_key": "我爱上一张脸失去所有底线",
-     "prev_rank": 8,
+     "dedupe_key": "萌宠的星期六是灰色的",
+     "prev_rank": 3,
+     "rank_delta": -1,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E8%90%8C%E5%AE%A0%E7%9A%84%E6%98%9F%E6%9C%9F%E5%85%AD%E6%98%AF%E7%81%B0%E8%89%B2%E7%9A%84",
+     "url": "https://www.douyin.com/music/7712417241141758783"
+    },
+    {
+     "rank": 5,
+     "title": "我就这样暴力长开",
+     "artists": [],
+     "dedupe_key": "我就这样暴力长开",
+     "prev_rank": 6,
      "rank_delta": 1,
      "is_new": false,
      "platform_count": 1,
@@ -23025,15 +22991,15 @@
      ],
      "streak": 1,
      "days_on_board": 1,
-     "song_path": "/song/%E6%88%91%E7%88%B1%E4%B8%8A%E4%B8%80%E5%BC%A0%E8%84%B8%E5%A4%B1%E5%8E%BB%E6%89%80%E6%9C%89%E5%BA%95%E7%BA%BF",
-     "url": "https://www.douyin.com/music/7710922627065400106"
+     "song_path": "/song/%E6%88%91%E5%B0%B1%E8%BF%99%E6%A0%B7%E6%9A%B4%E5%8A%9B%E9%95%BF%E5%BC%80",
+     "url": "https://www.douyin.com/music/7699341991804816137"
     },
     {
-     "rank": 8,
+     "rank": 6,
      "title": "你看世间朗朗有光照",
      "artists": [],
      "dedupe_key": "你看世间朗朗有光照",
-     "prev_rank": 10,
+     "prev_rank": 8,
      "rank_delta": 2,
      "is_new": false,
      "platform_count": 1,
@@ -23044,6 +23010,40 @@
      "days_on_board": 2,
      "song_path": "/song/%E4%BD%A0%E7%9C%8B%E4%B8%96%E9%97%B4%E6%9C%97%E6%9C%97%E6%9C%89%E5%85%89%E7%85%A7",
      "url": "https://www.douyin.com/music/7300888722852023078"
+    },
+    {
+     "rank": 7,
+     "title": "二档大姨模仿申请出战",
+     "artists": [],
+     "dedupe_key": "二档大姨模仿申请出战",
+     "prev_rank": 7,
+     "rank_delta": 0,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 3,
+     "days_on_board": 2,
+     "song_path": "/song/%E4%BA%8C%E6%A1%A3%E5%A4%A7%E5%A7%A8%E6%A8%A1%E4%BB%BF%E7%94%B3%E8%AF%B7%E5%87%BA%E6%88%98",
+     "url": "https://www.douyin.com/music/7111118345172208398"
+    },
+    {
+     "rank": 8,
+     "title": "就这样线下查无此人",
+     "artists": [],
+     "dedupe_key": "就这样线下查无此人",
+     "prev_rank": 16,
+     "rank_delta": 8,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 2,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%B0%B1%E8%BF%99%E6%A0%B7%E7%BA%BF%E4%B8%8B%E6%9F%A5%E6%97%A0%E6%AD%A4%E4%BA%BA",
+     "url": "https://www.douyin.com/music/7711235943587580699"
     },
     {
      "rank": 9,
@@ -23064,62 +23064,28 @@
     },
     {
      "rank": 10,
-     "title": "二档大姨模仿申请出战",
+     "title": "我爱上一张脸失去所有底线",
      "artists": [],
-     "dedupe_key": "二档大姨模仿申请出战",
-     "prev_rank": 5,
-     "rank_delta": -5,
+     "dedupe_key": "我爱上一张脸失去所有底线",
+     "prev_rank": 10,
+     "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
       "douyin"
      ],
-     "streak": 3,
-     "days_on_board": 2,
-     "song_path": "/song/%E4%BA%8C%E6%A1%A3%E5%A4%A7%E5%A7%A8%E6%A8%A1%E4%BB%BF%E7%94%B3%E8%AF%B7%E5%87%BA%E6%88%98",
-     "url": "https://www.douyin.com/music/7111118345172208398"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E6%88%91%E7%88%B1%E4%B8%8A%E4%B8%80%E5%BC%A0%E8%84%B8%E5%A4%B1%E5%8E%BB%E6%89%80%E6%9C%89%E5%BA%95%E7%BA%BF",
+     "url": "https://www.douyin.com/music/7710922627065400106"
     },
     {
      "rank": 11,
-     "title": "还记得前生盟誓",
-     "artists": [],
-     "dedupe_key": "还记得前生盟誓",
-     "prev_rank": 3,
-     "rank_delta": -8,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 9,
-     "days_on_board": 5,
-     "song_path": "/song/%E8%BF%98%E8%AE%B0%E5%BE%97%E5%89%8D%E7%94%9F%E7%9B%9F%E8%AA%93",
-     "url": "https://www.douyin.com/music/7706098421991541545"
-    },
-    {
-     "rank": 12,
-     "title": "要抱抱2.0继续跳",
-     "artists": [],
-     "dedupe_key": "要抱抱20继续跳",
-     "prev_rank": 13,
-     "rank_delta": 1,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 3,
-     "days_on_board": 2,
-     "song_path": "/song/%E8%A6%81%E6%8A%B1%E6%8A%B120%E7%BB%A7%E7%BB%AD%E8%B7%B3",
-     "url": "https://www.douyin.com/music/7712425642004253476"
-    },
-    {
-     "rank": 13,
      "title": "看看前世的自己",
      "artists": [],
      "dedupe_key": "看看前世的自己",
-     "prev_rank": 14,
-     "rank_delta": 1,
+     "prev_rank": 11,
+     "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23131,12 +23097,12 @@
      "url": "https://www.douyin.com/music/7699121233438280498"
     },
     {
-     "rank": 14,
+     "rank": 12,
      "title": "摊牌了 我真有点实力",
      "artists": [],
      "dedupe_key": "摊牌了我真有点实力",
-     "prev_rank": 16,
-     "rank_delta": 2,
+     "prev_rank": 12,
+     "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23148,11 +23114,28 @@
      "url": "https://www.douyin.com/music/7704515227848559411"
     },
     {
-     "rank": 15,
+     "rank": 13,
+     "title": "要抱抱2.0继续跳",
+     "artists": [],
+     "dedupe_key": "要抱抱20继续跳",
+     "prev_rank": 13,
+     "rank_delta": 0,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 3,
+     "days_on_board": 2,
+     "song_path": "/song/%E8%A6%81%E6%8A%B1%E6%8A%B120%E7%BB%A7%E7%BB%AD%E8%B7%B3",
+     "url": "https://www.douyin.com/music/7712425642004253476"
+    },
+    {
+     "rank": 14,
      "title": "想当切块大师手快的人先来",
      "artists": [],
      "dedupe_key": "想当切块大师手快的人先来",
-     "prev_rank": 15,
+     "prev_rank": 14,
      "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
@@ -23165,12 +23148,12 @@
      "url": "https://www.douyin.com/music/7712258745031609129"
     },
     {
-     "rank": 16,
+     "rank": 15,
      "title": "严肃进入舒服过冬模式",
      "artists": [],
      "dedupe_key": "严肃进入舒服过冬模式",
-     "prev_rank": 17,
-     "rank_delta": 1,
+     "prev_rank": 15,
+     "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23182,46 +23165,12 @@
      "url": "https://www.douyin.com/music/7711650467431926543"
     },
     {
-     "rank": 17,
-     "title": "就这样线下查无此人",
+     "rank": 16,
+     "title": "张远同款走路复刻挑战",
      "artists": [],
-     "dedupe_key": "就这样线下查无此人",
+     "dedupe_key": "张远同款走路复刻挑战",
      "prev_rank": 18,
-     "rank_delta": 1,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 2,
-     "days_on_board": 1,
-     "song_path": "/song/%E5%B0%B1%E8%BF%99%E6%A0%B7%E7%BA%BF%E4%B8%8B%E6%9F%A5%E6%97%A0%E6%AD%A4%E4%BA%BA",
-     "url": "https://www.douyin.com/music/7711235943587580699"
-    },
-    {
-     "rank": 18,
-     "title": "看海BO3挑战",
-     "artists": [],
-     "dedupe_key": "看海bo3挑战",
-     "prev_rank": 20,
      "rank_delta": 2,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 2,
-     "days_on_board": 1,
-     "song_path": "/song/%E7%9C%8B%E6%B5%B7bo3%E6%8C%91%E6%88%98",
-     "url": "https://www.douyin.com/music/7712766347884890880"
-    },
-    {
-     "rank": 19,
-     "title": "这只腊肠犬鼻子有点长",
-     "artists": [],
-     "dedupe_key": "这只腊肠犬鼻子有点长",
-     "prev_rank": 19,
-     "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23229,16 +23178,16 @@
      ],
      "streak": 3,
      "days_on_board": 2,
-     "song_path": "/song/%E8%BF%99%E5%8F%AA%E8%85%8A%E8%82%A0%E7%8A%AC%E9%BC%BB%E5%AD%90%E6%9C%89%E7%82%B9%E9%95%BF",
-     "url": "https://www.douyin.com/music/7711967781814127396"
+     "song_path": "/song/%E5%BC%A0%E8%BF%9C%E5%90%8C%E6%AC%BE%E8%B5%B0%E8%B7%AF%E5%A4%8D%E5%88%BB%E6%8C%91%E6%88%98",
+     "url": "https://www.douyin.com/music/7712777535494720283"
     },
     {
-     "rank": 20,
+     "rank": 17,
      "title": "你落泪的那刻心脏就快要暂停",
      "artists": [],
      "dedupe_key": "你落泪的那刻心脏就快要暂停",
-     "prev_rank": 21,
-     "rank_delta": 1,
+     "prev_rank": 17,
+     "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23250,29 +23199,12 @@
      "url": "https://www.douyin.com/music/7709840962675165992"
     },
     {
-     "rank": 21,
-     "title": "我懵懵懂懂过了一年",
-     "artists": [],
-     "dedupe_key": "我懵懵懂懂过了一年",
-     "prev_rank": 23,
-     "rank_delta": 2,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 3,
-     "days_on_board": 2,
-     "song_path": "/song/%E6%88%91%E6%87%B5%E6%87%B5%E6%87%82%E6%87%82%E8%BF%87%E4%BA%86%E4%B8%80%E5%B9%B4",
-     "url": "https://www.douyin.com/music/7693453141747977003"
-    },
-    {
-     "rank": 22,
+     "rank": 18,
      "title": "魔性sikiti ta摇",
      "artists": [],
      "dedupe_key": "魔性sikitita摇",
-     "prev_rank": 22,
-     "rank_delta": 0,
+     "prev_rank": 21,
+     "rank_delta": 3,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23284,11 +23216,62 @@
      "url": "https://www.douyin.com/music/7712861103365409587"
     },
     {
-     "rank": 23,
+     "rank": 19,
+     "title": "我懵懵懂懂过了一年",
+     "artists": [],
+     "dedupe_key": "我懵懵懂懂过了一年",
+     "prev_rank": 20,
+     "rank_delta": 1,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 3,
+     "days_on_board": 2,
+     "song_path": "/song/%E6%88%91%E6%87%B5%E6%87%B5%E6%87%82%E6%87%82%E8%BF%87%E4%BA%86%E4%B8%80%E5%B9%B4",
+     "url": "https://www.douyin.com/music/7693453141747977003"
+    },
+    {
+     "rank": 20,
+     "title": "今年过年我回家belike",
+     "artists": [],
+     "dedupe_key": "今年过年我回家belike",
+     "prev_rank": 24,
+     "rank_delta": 4,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BB%8A%E5%B9%B4%E8%BF%87%E5%B9%B4%E6%88%91%E5%9B%9E%E5%AE%B6belike",
+     "url": "https://www.douyin.com/music/7712850604875451179"
+    },
+    {
+     "rank": 21,
+     "title": "看海BO3挑战",
+     "artists": [],
+     "dedupe_key": "看海bo3挑战",
+     "prev_rank": 22,
+     "rank_delta": 1,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 2,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%9C%8B%E6%B5%B7bo3%E6%8C%91%E6%88%98",
+     "url": "https://www.douyin.com/music/7712766347884890880"
+    },
+    {
+     "rank": 22,
      "title": "谁给我馒头 谁给我拳头",
      "artists": [],
      "dedupe_key": "谁给我馒头谁给我拳头",
-     "prev_rank": 24,
+     "prev_rank": 23,
      "rank_delta": 1,
      "is_new": false,
      "platform_count": 1,
@@ -23301,12 +23284,12 @@
      "url": "https://www.douyin.com/music/7712021834069969704"
     },
     {
-     "rank": 24,
-     "title": "张远同款走路复刻挑战",
+     "rank": 23,
+     "title": "这只腊肠犬鼻子有点长",
      "artists": [],
-     "dedupe_key": "张远同款走路复刻挑战",
-     "prev_rank": 25,
-     "rank_delta": 1,
+     "dedupe_key": "这只腊肠犬鼻子有点长",
+     "prev_rank": 19,
+     "rank_delta": -4,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23314,14 +23297,31 @@
      ],
      "streak": 3,
      "days_on_board": 2,
-     "song_path": "/song/%E5%BC%A0%E8%BF%9C%E5%90%8C%E6%AC%BE%E8%B5%B0%E8%B7%AF%E5%A4%8D%E5%88%BB%E6%8C%91%E6%88%98",
-     "url": "https://www.douyin.com/music/7712777535494720283"
+     "song_path": "/song/%E8%BF%99%E5%8F%AA%E8%85%8A%E8%82%A0%E7%8A%AC%E9%BC%BB%E5%AD%90%E6%9C%89%E7%82%B9%E9%95%BF",
+     "url": "https://www.douyin.com/music/7711967781814127396"
+    },
+    {
+     "rank": 24,
+     "title": "大话西游台词对口型挑战",
+     "artists": [],
+     "dedupe_key": "大话西游台词对口型挑战",
+     "prev_rank": 2,
+     "rank_delta": -22,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 3,
+     "days_on_board": 2,
+     "song_path": "/song/%E5%A4%A7%E8%AF%9D%E8%A5%BF%E6%B8%B8%E5%8F%B0%E8%AF%8D%E5%AF%B9%E5%8F%A3%E5%9E%8B%E6%8C%91%E6%88%98",
+     "url": "https://www.douyin.com/music/7702354949149100851"
     },
     {
      "rank": 25,
-     "title": "今年过年我回家belike",
+     "title": "悄悄做个梦给你手势舞",
      "artists": [],
-     "dedupe_key": "今年过年我回家belike",
+     "dedupe_key": "悄悄做个梦给你手势舞",
      "prev_rank": 26,
      "rank_delta": 1,
      "is_new": false,
@@ -23329,18 +23329,35 @@
      "platforms": [
       "douyin"
      ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E4%BB%8A%E5%B9%B4%E8%BF%87%E5%B9%B4%E6%88%91%E5%9B%9E%E5%AE%B6belike",
-     "url": "https://www.douyin.com/music/7712850604875451179"
+     "streak": 6,
+     "days_on_board": 3,
+     "song_path": "/song/%E6%82%84%E6%82%84%E5%81%9A%E4%B8%AA%E6%A2%A6%E7%BB%99%E4%BD%A0%E6%89%8B%E5%8A%BF%E8%88%9E",
+     "url": "https://www.douyin.com/music/7712032613363698458"
     },
     {
      "rank": 26,
+     "title": "还记得前生盟誓",
+     "artists": [],
+     "dedupe_key": "还记得前生盟誓",
+     "prev_rank": 25,
+     "rank_delta": -1,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 9,
+     "days_on_board": 5,
+     "song_path": "/song/%E8%BF%98%E8%AE%B0%E5%BE%97%E5%89%8D%E7%94%9F%E7%9B%9F%E8%AA%93",
+     "url": "https://www.douyin.com/music/7706098421991541545"
+    },
+    {
+     "rank": 27,
      "title": "你往这我往这你不炸了吗",
      "artists": [],
      "dedupe_key": "你往这我往这你不炸了吗",
-     "prev_rank": 11,
-     "rank_delta": -15,
+     "prev_rank": 27,
+     "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23350,23 +23367,6 @@
      "days_on_board": 6,
      "song_path": "/song/%E4%BD%A0%E5%BE%80%E8%BF%99%E6%88%91%E5%BE%80%E8%BF%99%E4%BD%A0%E4%B8%8D%E7%82%B8%E4%BA%86%E5%90%97",
      "url": "https://www.douyin.com/music/7710936537805966123"
-    },
-    {
-     "rank": 27,
-     "title": "蒲熠星oc二创挑战",
-     "artists": [],
-     "dedupe_key": "蒲熠星oc二创挑战",
-     "prev_rank": 27,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E8%92%B2%E7%86%A0%E6%98%9Foc%E4%BA%8C%E5%88%9B%E6%8C%91%E6%88%98",
-     "url": "https://www.douyin.com/music/7712453536743164735"
     },
     {
      "rank": 28,
@@ -23387,44 +23387,10 @@
     },
     {
      "rank": 29,
-     "title": "你要的全拿走 把回忆化成空",
-     "artists": [],
-     "dedupe_key": "你要的全拿走把回忆化成空",
-     "prev_rank": 29,
-     "rank_delta": 0,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E4%BD%A0%E8%A6%81%E7%9A%84%E5%85%A8%E6%8B%BF%E8%B5%B0%E6%8A%8A%E5%9B%9E%E5%BF%86%E5%8C%96%E6%88%90%E7%A9%BA",
-     "url": "https://www.douyin.com/music/7601918360586177315"
-    },
-    {
-     "rank": 30,
-     "title": "酸奶怎么放酸奶怎么放",
-     "artists": [],
-     "dedupe_key": "酸奶怎么放酸奶怎么放",
-     "prev_rank": 33,
-     "rank_delta": 3,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E9%85%B8%E5%A5%B6%E6%80%8E%E4%B9%88%E6%94%BE%E9%85%B8%E5%A5%B6%E6%80%8E%E4%B9%88%E6%94%BE",
-     "url": "https://www.douyin.com/music/7708343142520589065"
-    },
-    {
-     "rank": 31,
      "title": "试试看手势舞",
      "artists": [],
      "dedupe_key": "试试看手势舞",
-     "prev_rank": 32,
+     "prev_rank": 30,
      "rank_delta": 1,
      "is_new": false,
      "platform_count": 1,
@@ -23437,12 +23403,46 @@
      "url": "https://www.douyin.com/music/7708697985227442987"
     },
     {
+     "rank": 30,
+     "title": "你要的全拿走 把回忆化成空",
+     "artists": [],
+     "dedupe_key": "你要的全拿走把回忆化成空",
+     "prev_rank": 29,
+     "rank_delta": -1,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E4%BD%A0%E8%A6%81%E7%9A%84%E5%85%A8%E6%8B%BF%E8%B5%B0%E6%8A%8A%E5%9B%9E%E5%BF%86%E5%8C%96%E6%88%90%E7%A9%BA",
+     "url": "https://www.douyin.com/music/7601918360586177315"
+    },
+    {
+     "rank": 31,
+     "title": "酸奶怎么放酸奶怎么放",
+     "artists": [],
+     "dedupe_key": "酸奶怎么放酸奶怎么放",
+     "prev_rank": 31,
+     "rank_delta": 0,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%85%B8%E5%A5%B6%E6%80%8E%E4%B9%88%E6%94%BE%E9%85%B8%E5%A5%B6%E6%80%8E%E4%B9%88%E6%94%BE",
+     "url": "https://www.douyin.com/music/7708343142520589065"
+    },
+    {
      "rank": 32,
      "title": "是苦是乐这一年都要结束了",
      "artists": [],
      "dedupe_key": "是苦是乐这一年都要结束了",
-     "prev_rank": 34,
-     "rank_delta": 2,
+     "prev_rank": 32,
+     "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23455,28 +23455,28 @@
     },
     {
      "rank": 33,
-     "title": "悄悄做个梦给你手势舞",
+     "title": "十二万亿年后我们再相见",
      "artists": [],
-     "dedupe_key": "悄悄做个梦给你手势舞",
-     "prev_rank": 30,
-     "rank_delta": -3,
+     "dedupe_key": "十二万亿年后我们再相见",
+     "prev_rank": 33,
+     "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
       "douyin"
      ],
-     "streak": 6,
-     "days_on_board": 3,
-     "song_path": "/song/%E6%82%84%E6%82%84%E5%81%9A%E4%B8%AA%E6%A2%A6%E7%BB%99%E4%BD%A0%E6%89%8B%E5%8A%BF%E8%88%9E",
-     "url": "https://www.douyin.com/music/7712032613363698458"
+     "streak": 11,
+     "days_on_board": 6,
+     "song_path": "/song/%E5%8D%81%E4%BA%8C%E4%B8%87%E4%BA%BF%E5%B9%B4%E5%90%8E%E6%88%91%E4%BB%AC%E5%86%8D%E7%9B%B8%E8%A7%81",
+     "url": "https://www.douyin.com/music/7151385536366643202"
     },
     {
      "rank": 34,
      "title": "DONT STOP继续跳",
      "artists": [],
      "dedupe_key": "dontstop继续跳",
-     "prev_rank": 36,
-     "rank_delta": 2,
+     "prev_rank": 34,
+     "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23489,44 +23489,10 @@
     },
     {
      "rank": 35,
-     "title": "十二万亿年后我们再相见",
-     "artists": [],
-     "dedupe_key": "十二万亿年后我们再相见",
-     "prev_rank": 37,
-     "rank_delta": 2,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 11,
-     "days_on_board": 6,
-     "song_path": "/song/%E5%8D%81%E4%BA%8C%E4%B8%87%E4%BA%BF%E5%B9%B4%E5%90%8E%E6%88%91%E4%BB%AC%E5%86%8D%E7%9B%B8%E8%A7%81",
-     "url": "https://www.douyin.com/music/7151385536366643202"
-    },
-    {
-     "rank": 36,
-     "title": "太阳照在我手上好干净",
-     "artists": [],
-     "dedupe_key": "太阳照在我手上好干净",
-     "prev_rank": 31,
-     "rank_delta": -5,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 2,
-     "days_on_board": 1,
-     "song_path": "/song/%E5%A4%AA%E9%98%B3%E7%85%A7%E5%9C%A8%E6%88%91%E6%89%8B%E4%B8%8A%E5%A5%BD%E5%B9%B2%E5%87%80",
-     "url": "https://www.douyin.com/music/7620826594055031598"
-    },
-    {
-     "rank": 37,
      "title": "天冷拍甜甜手势舞",
      "artists": [],
      "dedupe_key": "天冷拍甜甜手势舞",
-     "prev_rank": 32,
+     "prev_rank": 30,
      "rank_delta": -5,
      "is_new": false,
      "platform_count": 1,
@@ -23539,11 +23505,11 @@
      "url": "https://www.douyin.com/music/7708697985227442987"
     },
     {
-     "rank": 38,
+     "rank": 36,
      "title": "如果没有超级棒棒糖",
      "artists": [],
      "dedupe_key": "如果没有超级棒棒糖",
-     "prev_rank": 38,
+     "prev_rank": 36,
      "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
@@ -23556,11 +23522,11 @@
      "url": "https://www.douyin.com/music/7703602900624001043"
     },
     {
-     "rank": 39,
+     "rank": 37,
      "title": "法海你不懂爱喊麦挑战",
      "artists": [],
      "dedupe_key": "法海你不懂爱喊麦挑战",
-     "prev_rank": 40,
+     "prev_rank": 38,
      "rank_delta": 1,
      "is_new": false,
      "platform_count": 1,
@@ -23573,29 +23539,12 @@
      "url": "https://www.douyin.com/music/7709787625980267318"
     },
     {
-     "rank": 40,
-     "title": "小猫爪手势舞",
-     "artists": [],
-     "dedupe_key": "小猫爪手势舞",
-     "prev_rank": 39,
-     "rank_delta": -1,
-     "is_new": false,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 1,
-     "days_on_board": 1,
-     "song_path": "/song/%E5%B0%8F%E7%8C%AB%E7%88%AA%E6%89%8B%E5%8A%BF%E8%88%9E",
-     "url": "https://www.douyin.com/music/7698672409783634698"
-    },
-    {
-     "rank": 41,
+     "rank": 38,
      "title": "你是我心尖尖上的人",
      "artists": [],
      "dedupe_key": "你是我心尖尖上的人",
-     "prev_rank": 42,
-     "rank_delta": 1,
+     "prev_rank": 40,
+     "rank_delta": 2,
      "is_new": false,
      "platform_count": 2,
      "platforms": [
@@ -23608,12 +23557,46 @@
      "url": "https://www.douyin.com/music/7710184553754823487"
     },
     {
-     "rank": 42,
+     "rank": 39,
+     "title": "小猫爪手势舞",
+     "artists": [],
+     "dedupe_key": "小猫爪手势舞",
+     "prev_rank": 39,
+     "rank_delta": 0,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%B0%8F%E7%8C%AB%E7%88%AA%E6%89%8B%E5%8A%BF%E8%88%9E",
+     "url": "https://www.douyin.com/music/7698672409783634698"
+    },
+    {
+     "rank": 40,
+     "title": "太阳照在我手上好干净",
+     "artists": [],
+     "dedupe_key": "太阳照在我手上好干净",
+     "prev_rank": 37,
+     "rank_delta": -3,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 2,
+     "days_on_board": 1,
+     "song_path": "/song/%E5%A4%AA%E9%98%B3%E7%85%A7%E5%9C%A8%E6%88%91%E6%89%8B%E4%B8%8A%E5%A5%BD%E5%B9%B2%E5%87%80",
+     "url": "https://www.douyin.com/music/7620826594055031598"
+    },
+    {
+     "rank": 41,
      "title": "众人皆醉我独醒太通透了",
      "artists": [],
      "dedupe_key": "众人皆醉我独醒太通透了",
      "prev_rank": 41,
-     "rank_delta": -1,
+     "rank_delta": 0,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23625,29 +23608,29 @@
      "url": "https://www.douyin.com/music/7708709580804918025"
     },
     {
-     "rank": 43,
-     "title": "一半青涩一半纯真",
+     "rank": 42,
+     "title": "香水瓶卡点手势舞",
      "artists": [],
-     "dedupe_key": "一半青涩一半纯真",
-     "prev_rank": 43,
-     "rank_delta": 0,
-     "is_new": false,
+     "dedupe_key": "香水瓶卡点手势舞",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
      "platform_count": 1,
      "platforms": [
       "douyin"
      ],
-     "streak": 3,
-     "days_on_board": 2,
-     "song_path": "/song/%E4%B8%80%E5%8D%8A%E9%9D%92%E6%B6%A9%E4%B8%80%E5%8D%8A%E7%BA%AF%E7%9C%9F",
-     "url": "https://www.douyin.com/music/7703555586134476810"
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E9%A6%99%E6%B0%B4%E7%93%B6%E5%8D%A1%E7%82%B9%E6%89%8B%E5%8A%BF%E8%88%9E",
+     "url": "https://www.douyin.com/music/7712418138241092403"
     },
     {
-     "rank": 44,
+     "rank": 43,
      "title": "你有没有养小猫小狗在你家里住",
      "artists": [],
      "dedupe_key": "你有没有养小猫小狗在你家里住",
-     "prev_rank": 45,
-     "rank_delta": 1,
+     "prev_rank": 42,
+     "rank_delta": -1,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23657,6 +23640,23 @@
      "days_on_board": 1,
      "song_path": "/song/%E4%BD%A0%E6%9C%89%E6%B2%A1%E6%9C%89%E5%85%BB%E5%B0%8F%E7%8C%AB%E5%B0%8F%E7%8B%97%E5%9C%A8%E4%BD%A0%E5%AE%B6%E9%87%8C%E4%BD%8F",
      "url": "https://www.douyin.com/music/7705481156745071401"
+    },
+    {
+     "rank": 44,
+     "title": "一半青涩一半纯真",
+     "artists": [],
+     "dedupe_key": "一半青涩一半纯真",
+     "prev_rank": 43,
+     "rank_delta": -1,
+     "is_new": false,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 3,
+     "days_on_board": 2,
+     "song_path": "/song/%E4%B8%80%E5%8D%8A%E9%9D%92%E6%B6%A9%E4%B8%80%E5%8D%8A%E7%BA%AF%E7%9C%9F",
+     "url": "https://www.douyin.com/music/7703555586134476810"
     },
     {
      "rank": 45,
@@ -23680,8 +23680,8 @@
      "title": "别辜负眼前季节",
      "artists": [],
      "dedupe_key": "别辜负眼前季节",
-     "prev_rank": 46,
-     "rank_delta": 0,
+     "prev_rank": 45,
+     "rank_delta": -1,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23694,11 +23694,11 @@
     },
     {
      "rank": 47,
-     "title": "时间在倒数你在左右",
+     "title": "每个女孩都在期待完美的爱情",
      "artists": [],
-     "dedupe_key": "时间在倒数你在左右",
-     "prev_rank": 47,
-     "rank_delta": 0,
+     "dedupe_key": "每个女孩都在期待完美的爱情",
+     "prev_rank": 49,
+     "rank_delta": 2,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23706,16 +23706,16 @@
      ],
      "streak": 1,
      "days_on_board": 1,
-     "song_path": "/song/%E6%97%B6%E9%97%B4%E5%9C%A8%E5%80%92%E6%95%B0%E4%BD%A0%E5%9C%A8%E5%B7%A6%E5%8F%B3",
-     "url": "https://www.douyin.com/music/7709390011086506761"
+     "song_path": "/song/%E6%AF%8F%E4%B8%AA%E5%A5%B3%E5%AD%A9%E9%83%BD%E5%9C%A8%E6%9C%9F%E5%BE%85%E5%AE%8C%E7%BE%8E%E7%9A%84%E7%88%B1%E6%83%85",
+     "url": "https://www.douyin.com/music/7710102163829148442"
     },
     {
      "rank": 48,
      "title": "可那些没有天赋的人呢",
      "artists": [],
      "dedupe_key": "可那些没有天赋的人呢",
-     "prev_rank": 50,
-     "rank_delta": 2,
+     "prev_rank": 46,
+     "rank_delta": -2,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23728,28 +23728,11 @@
     },
     {
      "rank": 49,
-     "title": "八千里路明月照接唱",
+     "title": "叽嘎拉拉呼呼对口型挑战",
      "artists": [],
-     "dedupe_key": "八千里路明月照接唱",
-     "prev_rank": null,
-     "rank_delta": null,
-     "is_new": true,
-     "platform_count": 1,
-     "platforms": [
-      "douyin"
-     ],
-     "streak": 2,
-     "days_on_board": 1,
-     "song_path": "/song/%E5%85%AB%E5%8D%83%E9%87%8C%E8%B7%AF%E6%98%8E%E6%9C%88%E7%85%A7%E6%8E%A5%E5%94%B1",
-     "url": "https://www.douyin.com/music/7711305100983044906"
-    },
-    {
-     "rank": 50,
-     "title": "当天气秋凉当树叶泛黄",
-     "artists": [],
-     "dedupe_key": "当天气秋凉当树叶泛黄",
+     "dedupe_key": "叽嘎拉拉呼呼对口型挑战",
      "prev_rank": 48,
-     "rank_delta": -2,
+     "rank_delta": -1,
      "is_new": false,
      "platform_count": 1,
      "platforms": [
@@ -23757,8 +23740,25 @@
      ],
      "streak": 1,
      "days_on_board": 1,
-     "song_path": "/song/%E5%BD%93%E5%A4%A9%E6%B0%94%E7%A7%8B%E5%87%89%E5%BD%93%E6%A0%91%E5%8F%B6%E6%B3%9B%E9%BB%84",
-     "url": "https://www.douyin.com/music/7534961781267712777"
+     "song_path": "/song/%E5%8F%BD%E5%98%8E%E6%8B%89%E6%8B%89%E5%91%BC%E5%91%BC%E5%AF%B9%E5%8F%A3%E5%9E%8B%E6%8C%91%E6%88%98",
+     "url": "https://www.douyin.com/music/7707619650481195810"
+    },
+    {
+     "rank": 50,
+     "title": "火影玩家不敢听第二遍的歌",
+     "artists": [],
+     "dedupe_key": "火影玩家不敢听第二遍的歌",
+     "prev_rank": null,
+     "rank_delta": null,
+     "is_new": true,
+     "platform_count": 1,
+     "platforms": [
+      "douyin"
+     ],
+     "streak": 1,
+     "days_on_board": 1,
+     "song_path": "/song/%E7%81%AB%E5%BD%B1%E7%8E%A9%E5%AE%B6%E4%B8%8D%E6%95%A2%E5%90%AC%E7%AC%AC%E4%BA%8C%E9%81%8D%E7%9A%84%E6%AD%8C",
+     "url": "https://www.douyin.com/music/6561059333877009156"
     }
    ]
   },
