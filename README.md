@@ -47,9 +47,10 @@ Live view: <https://xingyuan.beer/trends?src=github> · weekly report: <https://
 Six days in, one readable short-video-to-listening sequence is HiLXG's 《GOUYOSE（蔑称）》.
 Its matching Douyin topic first appeared at No.12 at 21:40 on 11-26; no listening chart in these
 snapshots carried the same track then or at 09:40 on 11-27. At 09:40 on 11-28, the song appeared
-at No.55 on NetEase Rising with the same track ID as the identified topic sound. The topic had
-already left the top 50 by then. This is an observed sequence, not proof that one side caused the
-other, a promise that every song will follow, or a fixed forecast window.
+at No.55 on NetEase Rising with the same track ID as the identified topic sound. The original
+topic had left the top 50 by then; a different matching topic was No.18 at 10:06, so this was
+topic turnover rather than all Douyin activity ending. This is an observed sequence, not proof
+that one side caused the other, a promise that every song will follow, or a fixed forecast window.
 
 Live view: <https://xingyuan.beer/trends?src=github>
 
